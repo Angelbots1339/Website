@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angelbotics</title>
+    <link type="text/css" rel="stylesheet" href="Styles/essential.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <script src="https://use.typekit.net/ith7tvl.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="homelink">
+        <a href = "index.html"><img src="Images/Logo.svg" width="175px" height="175px"></a>
+      </div>
+      <div class="top">
+		     <div><a href= "robots.html" class="robots">Robots</a></div>
+	       <div><a href="people.html" class="people">People</a></div>
+      </div>
+      <ul class="left">
+        <li><a href = "history.html">History</a></li>
+        <li><a href = "resources.html">Resources</a></li>
+        <li><a href = "calendar.html">Calendar</a></li>
+        <li><a href = "sponsors.html">Sponsors</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href = "supportus.html">Support Us</a></li>
+        <li><a href = "aboutus.html">About Us</a></li>
+        <li><a href = "alumni.html">Alumni</a></li>
+        <li><a href = "news.html">News</a></li>
+      </ul>
+    </nav>
+
+    <div id="slideshow" style="height"><ul id="slides">
+      <li class="slide showing"><img src="Images/slideshow-badges1.jpg"></li>
+      <li class="slide"><img src="Images/slideshow-bus1.jpg"></li>
+      <li class="slide"><img src="Images/slideshow-competition1.jpg"></li>
+      <li class="slide"><img src="Images/slideshow-field1.jpg"></li>
+      <li class="slide"><img src="Images/slideshow-kickoff1.jpg"></li>
+      <li class="slide"><img src="Images/slideshow-victory1.jpg"></li>
+    </ul>
+    <div class="sldprv" onclick="prevSlide()"><i class="fa fa-angle-left fa-2x"></i></div>
+    <div class="sldnxt" onclick="nextSlide()"><i class="fa fa-angle-right fa-2x"></i></div>
+  </div>
+
+  <table id="misvid">
+    <tr>
+      <td>
+        <span id="mission">
+          <h2 class="red_box" style="margin:0 auto">Our Mission Statement</h2>
+            <p style="padding:1em;">Angelbotics combines each student’s skills and experiences with those of their peers and mentors to share and develop new and existing technologies,ideas, and skills while harnessing the lessons andpositive culture of competitive robotics.
+            </p>
+        </span>
+      </td>
+      <td id="vline"></td>
+      <td>
+        <span id="homevideo">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QhyeI6-TvxI" frameborder="0" allowfullscreen></iframe>
+        </span>
+      </td>
+    </tr>
+  </table>
+
+  <h2 class="red_box" id="quotes_head">Team Quotes</h2>
+  <table id="teamquotes">
+    <tr>
+      <td><p>“Robotics is a melting pot where people from different backgrounds and cultures can grow off of each other intellectually.” <em>&mdash; Carlos Yosten</em>
+        </p></td>
+      <td><p>“If you’re willing to learn, we’ll teach you.” <em>&mdash; Tyler Zancanella</em>
+        </p></td>
+      <td><p>“My past three years on this robotics team have pushed me to learn more than has ever been expected of me before. I crave the thrill of there always being something new to learn.” </br><em>&mdash; Joseph Brodsky</em>
+        </p></td>
+    </tr>
+  </table>
+
+    <div class="footer">
+      <h3>Angelbotics</h3>
+      <a class="red_box" id="contact" href="mailto:angelbots1339@gmail.com">Contact Us</a>
+    </div>
+
+    <script src="Scripts/slideshow.js"></script>
+    <script>
+    var heightInterval = setInterval(changeDivHeight,100);
+
+    function changeDivHeight(){
+       var imgHeight = document.querySelector('.showing img').height;
+    	 document.querySelector('#slideshow').style.height = imgHeight + 'px';
+    }
+    </script>
+
+  </body>
+</html>

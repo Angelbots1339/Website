@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>History</title>
+    <link type="text/css" rel="stylesheet" href="Styles/essential.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="homelink">
+        <a href = "index.html"><img src="Images/Logo.svg" width="175px" height="175px"></a>
+      </div>
+      <div class="top">
+		     <div><a href= "robots.html" class="robots">Robots</a></div>
+	       <div><a href="people.html" class="people">People</a></div>
+      </div>
+      <ul class="left">
+        <li class="active"><a href = "history.html">History</a></li>
+        <li><a href = "resources.html">Resources</a></li>
+        <li><a href = "calendar.html">Calendar</a></li>
+        <li><a href = "sponsors.html">Sponsors</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href = "supportus.html">Support Us</a></li>
+        <li><a href = "aboutus.html">About Us</a></li>
+        <li><a href = "alumni.html">Alumni</a></li>
+        <li><a href = "news.html">News</a></li>
+      </ul>
+    </nav>
+
+    <div class="accordion">
+
+      <button class="h_tab" onclick="accTabOpen(event, 'genh')">General History</button>
+        <div class="h_panel" id="genh"></div>
+
+      <button class="h_tab" onclick="accTabOpen(event, '1617h')">2016-2017</button>
+        <div class="h_panel" id="1617h"></div>
+
+      <button class="h_tab" onclick="accTabOpen(event, '1516h')">2015-2016</button>
+        <div class="h_panel" id="1516h"></div>
+
+      <button class="h_tab" onclick="accTabOpen(event, '1415h')">2014-2015</button>
+        <div class="h_panel" id="1415h"></div>
+
+      <button class="h_tab" onclick="accTabOpen(event, '1415h')">2013-2014</button>
+        <div class="h_panel" id="1314h"></div>
+
+    </div>
+
+
+  </body>
+</html>
