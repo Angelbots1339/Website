@@ -1,4 +1,17 @@
  /*====================
+  Bebas Neue Font
+  ====================*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/Fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('/Fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /*====================
   General declarations
  =====================*/
 
@@ -411,5 +424,83 @@
   }
 
   /*====================
-    Media Declarations
+    Accordion Styling
   =====================*/
+
+.accordion {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.info-content {
+  width:800px;
+  overflow:hidden;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+
+.item {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    width:50px;
+    float: left;
+    background-color: #950000;
+    border: 1px solid #7f8c8d;
+    height: 850px;
+    line-height: 50px;
+    cursor: pointer;
+    writing-mode: vertical-lr;
+    text-align:left;
+    padding-top:20px;
+    box-sizing: border-box;
+    
+}
+
+.active-accordion {
+    background-color: #BE0000;
+}
+
+.info {
+    text-align:left;
+    width: 0;
+    float: left;
+    background-color: #FEEEEE;
+    color: #950000;
+    height: 850px;
+    display: none;
+    font-family: lato, sans-serif;
+    box-sizing: border-box;
+}
+
+.header-block {
+  float:left;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.hb-header {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #BE0000;
+  line-height: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+.hb-subheader {
+  padding: 4px 0;
+  width:200px;
+  margin-top: 3px;
+  text-align: center;
+  line-height: 22px;
+  background-color: #950000;
+  color: white;
+  font-size: 22px;
+  font-family: 'Bebas Neue', sans-serif;
+
+}
