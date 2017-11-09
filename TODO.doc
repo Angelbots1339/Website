@@ -18,7 +18,8 @@ TODO:
 
 -Add a footer
 
--Fix the accordion
-
-
 -*Possibly* justify all text (opinionated)
+
+DONE:
+
+-Fix accordion animation desynch bug
