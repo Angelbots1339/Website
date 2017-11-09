@@ -429,7 +429,7 @@
 
 .accordion {
     margin: 0 auto;
-    width: 1015px; /*stupid hack*/
+    width: 1000px;
     text-align: center;
 }
 
