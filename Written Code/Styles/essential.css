@@ -169,7 +169,7 @@
   #resource_frc img {
     padding: 15px;
   }
-  #resource_vex {
+  #resource_best {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,10 +178,10 @@
     margin: 0 auto;
     padding-bottom: 2em;
   }
-  #resource_vex img {
+  #resource_best img {
     padding: 15px;
   }
-  #resource_vex p {
+  #resource_best p {
     text-align: right;
   }
   #supp_h2 {
