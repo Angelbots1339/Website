@@ -14,8 +14,6 @@ TODO:
 
 -Change Tyler's info on the 'Support Us' page
 
--'People' page looks bad (formatting for subteam menu breaks with large or small window size)
-
 -Add a footer
 
 -*Possibly* justify all text (opinionated)
@@ -25,3 +23,5 @@ TODO:
 DONE:
 
 -Fix accordion animation desynch bug. For real this time.
+
+-'People' page looks bad (formatting for subteam menu breaks with large or small window size)
