@@ -16,12 +16,14 @@ TODO:
 
 -'People' page looks bad (formatting for subteam menu breaks with large or small window size)
 
--Add a footer
-
 -*Possibly* justify all text (opinionated)
 
 -Center the 'Contact Us' box at the bottom of the main page
 
+-Fix the footer on some pages
+
 DONE:
 
 -Fix accordion animation desynch bug. For real this time.
+
+-Add a footer
