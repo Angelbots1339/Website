@@ -51,23 +51,6 @@
     text-decoration: none;
   }
 
-  .red_box_news {
-    display: block;
-    text-align: center;
-    width: 200px;
-    height: 1.5em;
-    line-height: 1.5em;
-    padding-top: .25em;
-
-    background-color: #be0000;
-    color: #feeeee;
-
-    font-family: "Bebas Neue", "Lato", "Verdana", sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    text-decoration: none;
-  }
-
   /*==================
      Specific IDs
   ===================*/
@@ -525,28 +508,20 @@
   Footer Styling
 =====================*/
 
-.newsFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  clear: both;
-  background-color: #93040B;
-  height: 7em;
+.footer-news {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+.footer-news h3 {
+  margin-top:0;
 }
 
 .footer {
   clear: both;
   background-color: #93040B;
   height: 12em;
-}
-
-.newsFooter h3 {
-  color:white;
-  text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 20xpx;
-  padding-top: 0.25em;
-  margin-bottom: 0.25em;
 }
 
 #contact {
