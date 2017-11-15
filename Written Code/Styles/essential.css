@@ -508,15 +508,6 @@
   Footer Styling
 =====================*/
 
-.footer-news {
-  position:absolute;
-  bottom:0;
-  width:100%;
-}
-
-.footer-news h3 {
-  margin-top:0;
-}
 
 .footer {
   clear: both;
