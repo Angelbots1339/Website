@@ -20,11 +20,11 @@ TODO:
 
 -Center the 'Contact Us' box at the bottom of the main page
 
--Fix the footer on news.html (footer is on top of iframe)
+-Add footer to tumblr page
 
 DONE:
 
--Fix accordion animation desynch bug. For real this time.
+-Fix accordion animation desynch bug.
 
 -Add a footer
 
