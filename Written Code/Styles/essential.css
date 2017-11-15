@@ -508,8 +508,17 @@
   Footer Styling
 =====================*/
 
+.newsFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  background-color: #93040B;
+  height: 12em;
+}
+
 .footer {
-  clear:both;
+  clear: both;
   background-color: #93040B;
   height: 12em;
 }
