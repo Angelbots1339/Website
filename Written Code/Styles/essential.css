@@ -523,6 +523,15 @@
   height: 12em;
 }
 
+.newsFooter h3 {
+  color:white;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 #contact {
   margin: 1em auto 0 auto;
 }
