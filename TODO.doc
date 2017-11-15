@@ -12,15 +12,21 @@ TODO:
 
 -Make the 'About Us' page more readable
 
--Add a footer
+-Change Tyler's info on the 'Support Us' page
+
+-'People' page looks bad (formatting for subteam menu breaks with large or small window size)
 
 -*Possibly* justify all text (opinionated)
 
 -Center the 'Contact Us' box at the bottom of the main page
 
+-Fix the footer on news.html (footer is on top of iframe)
+
 DONE:
 
 -Fix accordion animation desynch bug. For real this time.
+
+-Add a footer
 
 -'People' page looks bad (formatting for subteam menu breaks with large or small window size)
 

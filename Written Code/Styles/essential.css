@@ -467,7 +467,7 @@
     text-align:left;
     padding-top:20px;
     box-sizing: border-box;
-    
+
 }
 
 .active-accordion {
@@ -513,5 +513,44 @@
   color: white;
   font-size: 22px;
   font-family: 'Bebas Neue', sans-serif;
+}
+
+/*====================
+  Footer Styling
+=====================*/
+
+
+.footer {
+  clear: both;
+  background-color: #93040B;
+  height: 12em;
+}
+
+#contact {
+  margin: 1em auto 0 auto;
+}
+
+.footer h3 {
+  color:white;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.footer .red_box {
+  margin-top: 1em;
+}
+
+.footer .red_box:hover {
+}
+
+
+.white-bar {
+  height: 2px;
+  width: 25em;
+  background-color: white;
+  margin: 0 auto;
 
 }
