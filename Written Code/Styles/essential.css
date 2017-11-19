@@ -125,6 +125,11 @@
     font-size: 14px;
   }
 
+  #subteams {
+    display:flex;
+    align-content: stretch;
+  }
+
   #sub_tab {
     width: 70%;
     margin: 0 auto;
@@ -133,29 +138,35 @@
   }
   .s_tab {
     border: none;
+    border-radius: 0;
     outline: none;
     background-color: #950000;
     color: #feeeee;
     font-family: "Bebas Neue", "Lato", "Verdana", sans-serif;
     font-size: 18px;
     float: left;
+    flex-grow: 1;
     display: inline-block;
-    min-width: 10%;
     padding: 0.75em 1em;
   }
   .s_tab:hover, button.active{
     background-color: #be0000;
   }
+
+  .tabcont {
+    clear: both;
+  }
+
   .tabcont img {
     float: left;
     padding: 1em;
   }
+
   .tabcont p {
     display: table-cell;
     padding: 1em 1em 0 0;
   }
 
-  /* History Styles */
 
   /* Resources Styles */
   #resource_frc {
@@ -456,7 +467,7 @@
     text-align:left;
     padding-top:20px;
     box-sizing: border-box;
-    
+
 }
 
 .active-accordion {
@@ -502,5 +513,44 @@
   color: white;
   font-size: 22px;
   font-family: 'Bebas Neue', sans-serif;
+}
+
+/*====================
+  Footer Styling
+=====================*/
+
+
+.footer {
+  clear: both;
+  background-color: #93040B;
+  height: 12em;
+}
+
+#contact {
+  margin: 1em auto 0 auto;
+}
+
+.footer h3 {
+  color:white;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.footer .red_box {
+  margin-top: 1em;
+}
+
+.footer .red_box:hover {
+}
+
+
+.white-bar {
+  height: 2px;
+  width: 25em;
+  background-color: white;
+  margin: 0 auto;
 
 }
