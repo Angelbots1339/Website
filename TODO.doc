@@ -1,7 +1,5 @@
 TODO:
 
--On 'resources', get rid of Vex and add Best. Maybe make them both alligned left?
-
 -The calendar looks ugly
 
 -Sponsors page. On the muse version, the 'Interested?' button had a bug--Ask Judah
@@ -20,9 +18,15 @@ TODO:
 
 -Center the 'Contact Us' box at the bottom of the main page
 
--Add footer to tumblr page
+-Replace filler BEST text on resources page.
 
 DONE:
+
+-Fix accordion animation desynch bug. For real this time.
+
+-On 'resources', get rid of Vex and add Best.
+
+-Add footer to tumblr page
 
 -Fix accordion animation desynch bug.
 
