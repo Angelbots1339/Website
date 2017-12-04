@@ -144,7 +144,7 @@
     color: #feeeee;
     font-family: "Bebas Neue", "Lato", "Verdana", sans-serif;
     font-size: 18px;
-    float: left;
+    /* float: left; */
     flex-grow: 1;
     display: inline-block;
     padding: 0.75em 1em;
@@ -523,10 +523,15 @@
 .footer {
   clear: both;
   background-color: #93040B;
-  height: 12em;
+  height: 20em;
 }
 
 #contact {
+  margin: 1em auto 0 auto;
+  
+}
+
+#shop {
   margin: 1em auto 0 auto;
 }
 
