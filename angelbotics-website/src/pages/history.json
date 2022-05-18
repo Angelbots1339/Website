@@ -1,0 +1,65 @@
+{
+  "tabs": [
+    {
+      "year": "2022",
+      "RobotImagePath": "/images/history/2022/JazzyJudi.JPG",
+      "CadModelPath": "/images/history/2022/2022CAD.obj",
+      "CadMaterialPath": "/images/history/2022/2022CAD.mtl",
+      "GameDescription": "2022's game, Rapid React, consists mainly of scoring balls into a central hub. There are 2 levels, with the top level being worth 2 points, and the bottom 1. Towards the end of the game, robots climb rungs as high as possible, with the top rung being worth 15 points.",
+      "GameName": "2022 Rapid React",
+      "RevealVideo": "3rqnEFxyrlM",
+      "GameReveal": "LgniEjI9cCM",
+      "RecapVideoURL": "",
+      "GithubCodeURL": "https://github.com/Angelbots1339/2022_Competition_Season",
+      "RobotName": "Jazzy Judi"
+    },
+    {
+      "year": "2020",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Small yellow ball go brrrrrr",
+      "GameName": "2020 Infinite Recharge",
+      "RevealVideo": "",
+      "GameReveal": "gmiYWTmFRVE",
+      "RecapVideo": "",
+      "GithubCode": "",
+      "RobotName": ""
+    },
+    {
+      "year": "2019",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Idk I have to look up what happened this year",
+      "GameName": "Destination: Deep Space",
+      "RevealVideo": "",
+      "GameReveal": "Mew6G_og-PI",
+      "RecapVideo": "",
+      "GithubCode": "",
+      "RobotName": ""
+    },
+    {
+      "year": "2018",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Stack da boxes",
+      "GameName": "FIRST Power Up",
+      "RevealVideo": "L9aCeTpfUKk",
+      "GameReveal": "HZbdwYiCY74",
+      "RecapVideo": "tbb_z9BS53g",
+      "GithubCode": "",
+      "RobotName": ""
+    },
+    {
+      "year": "2017",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Shoot an absurd amount of tiny yellow balls",
+      "GameName": "FIRST Steamworks",
+      "RevealVideo": "",
+      "GameReveal": "EMiNmJW7enI",
+      "RecapVideo": "",
+      "GithubCode": "",
+      "RobotName": ""
+    }
+  ]
+}
