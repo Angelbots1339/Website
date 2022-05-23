@@ -1,0 +1,14 @@
+{
+  "Sponsors": [
+    {
+      "name": "The Wizard's Chest",
+      "level": 1,
+      "logo": "/images/logos/wizardschest.jpg"
+    },
+    {
+      "name": "Ball Aerospace",
+      "level": 1,
+      "logo": "/images/logos/Ball-Aerospace.jpeg"
+    }
+  ]
+}
