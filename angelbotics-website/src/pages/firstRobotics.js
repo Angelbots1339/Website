@@ -48,12 +48,12 @@ export default function FirstRobotics() {
                         display: "flex",
                         alignItems: "center",
                         width: "95%",
-                        height: 2100,
+                        height: 2150,
                         marginLeft: '2.5%',
                         marginTop: 50
                     }}>
 
-                        <Paper sx={{width: "100%", height: 2100}}>
+                        <Paper sx={{width: "100%", height: 2150}}>
 
                             <div style={{
                                 display: "flex",
@@ -190,12 +190,12 @@ export default function FirstRobotics() {
                                 display: 'flex',
                                 alignItems: "center",
                                 width: "90%",
-                                height: 600,
+                                height: 700,
                                 marginLeft: '5%',
                                 marginTop: 100
                             }}>
 
-                                <Card sx={{width: "50%", height: "100%"}}>
+                                <Card sx={{width: "48%", height: "100%", marginRight:"4%"}}>
 
                                     <Typography variant="h3" sx={{marginBottom: 5}}>
                                         First Tech Challenge
@@ -229,7 +229,7 @@ export default function FirstRobotics() {
                                 </Card>
 
 
-                                <Card sx={{width: "50%", height: "100%"}}>
+                                <Card sx={{width: "48%", height: "100%"}}>
 
                                     <Typography variant="h3" sx={{marginBottom: 5}}>
                                         First Lego League

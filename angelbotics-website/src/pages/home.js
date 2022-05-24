@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {Box, Paper} from "@mui/material";
+import {Box, Paper, Typography} from "@mui/material";
 import {Helmet} from "react-helmet";
 import ky from 'ky';
 import homeJSON from "./home.json";
@@ -19,11 +19,9 @@ export default function Home() {
     const homeJSON = require('./home.json');
 
 
-
     useEffect(() => {
 
         setScreenBig(window.innerWidth > 1200);
-
 
 
     }, []);
@@ -49,9 +47,9 @@ export default function Home() {
                     }}>
 
 
-                        <Paper sx={{width: '100%', height: 650, backgroundColor:"#ffffff"}}>
+                        <Paper sx={{width: '100%', height: 650, backgroundColor: "#ffffff"}}>
 
-                            <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop:0}}>
+                            <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
                                 <SimpleImageSlider
                                     width="70%"
@@ -88,8 +86,8 @@ export default function Home() {
 
                             <Box display="flex" alignItems="center" justifyContent="center">
 
-                               {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
-                               {/* <InstagramPost/>*/}
+                                {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
+                                {/* <InstagramPost/>*/}
 
 
                             </Box>
@@ -100,7 +98,23 @@ export default function Home() {
 
                             <Box display="flex" alignItems="center" justifyContent="center">
 
-                                <p>Info about the team/mission statement</p>
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: "auto",
+                                    marginLeft: '5%',
+                                    marginRight: '5%',
+                                    marginTop: 50
+                                }}>
+
+                                    <Typography variant="h4">
+                                        Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization
+                                        affiliated with East High School Denver. Team 1339 Angelbotics was started
+                                        around 2003, and has been competing ever since. We are based in Denver, Colorado,
+                                        right in the center of the city.
+                                    </Typography>
+
+                                </div>
 
                             </Box>
 
@@ -146,10 +160,9 @@ export default function Home() {
                 <div style={{alignItems: "center", width: "100", height: 700}}>
 
 
+                    <Paper sx={{width: '100%', height: 200, backgroundColor: "#ffffff"}}>
 
-                    <Paper sx={{width: '100%', height: 200, backgroundColor:"#ffffff"}}>
-
-                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop:0}}>
+                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
                             <SimpleImageSlider
                                 width="100%"
@@ -168,16 +181,15 @@ export default function Home() {
 
                     </Paper>
 
-                    <Paper sx={{width: '100%', height: 300, marginTop:3}}>
+                    <Paper sx={{width: '100%', height: 300, marginTop: 3}}>
 
-                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop:0}}>
+                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
                             <CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>
 
                         </Box>
 
                     </Paper>
-
 
 
                 </div>

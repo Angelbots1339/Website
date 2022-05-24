@@ -234,6 +234,13 @@ function App() {
                                 autoPlay={true}
                                 autoPlayDelay={4}
                                 bgColor={"#000000"}
+                                onClick={(idx, event) => {
+
+                                    window.open(sponsorsJSON.Sponsors[idx].website);
+
+
+                                }
+                                }
                             />
 
 
