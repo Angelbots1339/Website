@@ -48,6 +48,7 @@ export default function RobotHistoryTabComputer(props) {
         obj.name = "Robot Cad Model";
 
         return <primitive
+            {...props}
             object={obj}
             ref={ref}
         />;
@@ -135,7 +136,7 @@ export default function RobotHistoryTabComputer(props) {
                             <pointLight position={[10, 10, 10]}/>
                             {/*<DefaultCube position={[3, 0, 0]}/>*/}
                             {/*<Monkey position={[0, 0, 0]}/>*/}
-                            <CadModel position={[0, 0, 0]}/>
+                            <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
                             <OrbitControls/>
                             <Environment preset="sunset"/>
                         </Suspense>
@@ -154,7 +155,9 @@ export default function RobotHistoryTabComputer(props) {
                 marginTop: 20
             }}>
 
+                {data.tabs[index].RobotImagePath &&
                 <img src={data.tabs[index].RobotImagePath} height="390" width="auto" alt={data.tabs[index].year + " robot picture"}/>
+                }
 
                 {data.tabs[index].RevealVideo &&
                     <div style={{marginLeft:10}}>
@@ -176,6 +179,55 @@ export default function RobotHistoryTabComputer(props) {
 
 
                     </div>}
+
+            </div>
+
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                width: "95%",
+                height: "auto",
+                marginLeft: '2.5%',
+                marginTop: 20
+            }}>
+
+
+                {data.tabs[index].RecapVideo &&
+                    <div style={{marginLeft:10}}>
+                        <YouTube
+
+                            videoId={data.tabs[index].RecapVideo}
+                            opts={{
+                                height: '390',
+                                width: '640',
+                                playerVars: {
+                                    // https://developers.google.com/youtube/player_parameters
+                                    autoplay: 0,
+                                    disablekb: 0,
+                                    loop: 0,
+                                    modestbranding: 1,
+
+                                },
+                            }}/>
+
+
+                    </div>}
+
+                {data.tabs[index].yearSummary &&
+                    <Card variant='outlined'
+                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 5, height: 390, width: 400}}>
+
+                        <Typography variant='h6' sx={{m: 5}} width="auto" height='390'>
+
+                            {data.tabs[index].yearSummary}
+
+
+                        </Typography>
+
+                    </Card>
+
+                }
+
 
             </div>
 

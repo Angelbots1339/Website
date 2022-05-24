@@ -93,13 +93,13 @@ function App() {
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
-                                        to={'contact'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>Contact Us</Typography>
+                                        to={'firstRobotics'}>
+                                    <Typography variant={"h6"} sx={{m: 1}}>FIRST Robotics</Typography>
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
-                                        to={'firstRobotics'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>FIRST Robotics</Typography>
+                                        to={'resources'}>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                                 </Button>
 
 
@@ -122,8 +122,11 @@ function App() {
 
                                         <Grid item xs={4} sx={{ mx: "auto", textAlign: "center", height:90 }} key={sponsor}>
 
+                                            <a rel="noreferrer noopener" target="_blank"
+                                               href={sponsor.website}
+                                               style={{color: '#000000'}}>
                                                 <img src={sponsor.logo} width="auto" height={85}/>
-
+                                            </a>
 
                                         </Grid>
                                     )
@@ -195,14 +198,14 @@ function App() {
                                     <Typography variant={"h5"} sx={{m: 1}}>History</Typography>
                                 </ListItemButton>
                             </ListItem>
-                            <ListItem sx={{backgroundColor: currentPage === "/contact" ? drawerHighlightColor : ''}}>
-                                <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/contact'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>Contact Us</Typography>
-                                </ListItemButton>
-                            </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/firstRobotics" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/firstRobotics'}>
                                     <Typography variant={"h5"} sx={{m: 1}}>FIRST Robotics</Typography>
+                                </ListItemButton>
+                            </ListItem>
+                            <ListItem sx={{backgroundColor: currentPage === "/resources" ? drawerHighlightColor : ''}}>
+                                <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
+                                    <Typography variant={"h5"} sx={{m: 1}}>Resources</Typography>
                                 </ListItemButton>
                             </ListItem>
 

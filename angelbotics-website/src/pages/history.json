@@ -9,9 +9,10 @@
       "GameName": "2022 Rapid React",
       "RevealVideo": "3rqnEFxyrlM",
       "GameReveal": "LgniEjI9cCM",
-      "RecapVideoURL": "",
-      "GithubCodeURL": "https://github.com/Angelbots1339/2022_Competition_Season",
-      "RobotName": "Jazzy Judi"
+      "RecapVideo": "l-FUae_8Po4",
+      "GithubCode": "https://github.com/Angelbots1339/2022_Competition_Season",
+      "RobotName": "Jazzy Judi",
+      "yearSummary": "We went to the Orange County Regional in California and placed 3rd, we won the Colorado Regional, and we made it to the FRC World Championship where we placed 7th in the Hopper division, and unseated the 3rd seeded team."
     },
     {
       "year": "2020",
@@ -23,7 +24,8 @@
       "GameReveal": "gmiYWTmFRVE",
       "RecapVideo": "",
       "GithubCode": "",
-      "RobotName": ""
+      "RobotName": "",
+      "yearSummary": ""
     },
     {
       "year": "2019",
@@ -35,7 +37,8 @@
       "GameReveal": "Mew6G_og-PI",
       "RecapVideo": "",
       "GithubCode": "",
-      "RobotName": ""
+      "RobotName": "",
+      "yearSummary": ""
     },
     {
       "year": "2018",
@@ -47,7 +50,8 @@
       "GameReveal": "HZbdwYiCY74",
       "RecapVideo": "tbb_z9BS53g",
       "GithubCode": "",
-      "RobotName": ""
+      "RobotName": "",
+      "yearSummary": ""
     },
     {
       "year": "2017",
@@ -55,11 +59,65 @@
       "CadModelPath": "",
       "GameDescription": "Shoot an absurd amount of tiny yellow balls",
       "GameName": "FIRST Steamworks",
-      "RevealVideo": "",
+      "RevealVideo": "QhyeI6-TvxI",
       "GameReveal": "EMiNmJW7enI",
+      "RecapVideo": "IdiKnDzAIPI",
+      "GithubCode": "",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2016",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Breach the castle, get the points",
+      "GameName": "FIRST Stronghold",
+      "RevealVideo": "",
+      "GameReveal": "VqOKzoHJDjA",
+      "RecapVideo": "7fZWoDd7_gY",
+      "GithubCode": "",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2015",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Stack as many bins as possible",
+      "GameName": "Recycle Rush",
+      "RevealVideo": "v3Gank-Nxe0",
+      "GameReveal": "W6UYFKNGHJ8",
       "RecapVideo": "",
       "GithubCode": "",
-      "RobotName": ""
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2014",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Throw around large balls in different ways to get points",
+      "GameName": "Aerial Assist",
+      "RevealVideo": "BiZ5JvySo2k",
+      "GameReveal": "oxp4dkMQ1Vo",
+      "RecapVideo": "",
+      "GithubCode": "",
+      "RobotName": "",
+      "yearSummary": ""
     }
-  ]
+  ],
+  "template (For copy-paste to tabs only)": {
+    "year": "",
+    "RobotImagePath": "",
+    "CadModelPath": "",
+    "GameDescription": "",
+    "GameName": "",
+    "RevealVideo": "",
+    "GameReveal": "",
+    "RecapVideo": "",
+    "GithubCode": "",
+    "RobotName": "",
+    "yearSummary": ""
+  }
 }
+

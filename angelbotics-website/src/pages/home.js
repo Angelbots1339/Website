@@ -5,6 +5,7 @@ import ky from 'ky';
 import homeJSON from "./home.json";
 import SimpleImageSlider from "react-simple-image-slider";
 import CuratorWidget from "./CuratorWidget";
+import InstagramPost from "./instagramPost";
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
 
     useEffect(() => {
 
-        setScreenBig(window.innerWidth > 800);
+        setScreenBig(window.innerWidth > 1200);
 
 
 
@@ -87,7 +88,8 @@ export default function Home() {
 
                             <Box display="flex" alignItems="center" justifyContent="center">
 
-                               <CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>
+                               {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
+                               {/* <InstagramPost/>*/}
 
 
                             </Box>

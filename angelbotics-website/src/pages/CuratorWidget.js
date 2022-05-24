@@ -24,7 +24,7 @@ export default class CuratorWidget extends React.Component {
 
     componentDidMount() {
         this.loadScript('https://cdn.curator.io/published/cc149bda-3c10-493d-afa8-fa4c8c792434.js' );// + this.props.feedId + '.js');
-        console.log('loaded script');
+        console.log('loaded curator script');
     }
 
     render() {

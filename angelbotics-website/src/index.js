@@ -8,9 +8,9 @@ import {mainTheme} from "./theme";
 import {Route, Routes} from "react-router";
 import {BrowserRouter} from "react-router-dom";
 import Home from "./pages/home";
-import Contact from "./pages/contact";
 import FirstRobotics from "./pages/firstRobotics";
 import History from "./pages/history";
+import Resources from "./pages/resources";
 
 
 ReactDOM.render(
@@ -19,10 +19,11 @@ ReactDOM.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App/>}>
-                    <Route path="contact" element={<Contact/>}/>
+                    <Route path="history" element={<History/>}/>
                     <Route path="/" element={<Home/>}/>
                     <Route path="firstRobotics" element={<FirstRobotics/>}/>
-                    <Route path="history" element={<History/>}/>
+                    <Route path="resources" element={<Resources/>}/>
+
                 </Route>
             </Routes>
         </BrowserRouter>
