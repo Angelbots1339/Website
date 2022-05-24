@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import FirstRobotics from "./pages/firstRobotics";
 import History from "./pages/history";
 import Resources from "./pages/resources";
+import Supporters from "./pages/supporters";
 
 
 ReactDOM.render(
@@ -23,6 +24,8 @@ ReactDOM.render(
                     <Route path="/" element={<Home/>}/>
                     <Route path="firstRobotics" element={<FirstRobotics/>}/>
                     <Route path="resources" element={<Resources/>}/>
+                    <Route path="supporters" element={<Supporters/>}/>
+
 
                 </Route>
             </Routes>

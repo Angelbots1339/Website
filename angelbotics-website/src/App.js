@@ -6,7 +6,7 @@ import {
     List,
     ListItem,
     ListItemButton,
-    Paper, styled, Toolbar,
+    Paper, Toolbar,
     Typography
 } from "@mui/material";
 import {useEffect, useState} from "react";
@@ -15,7 +15,6 @@ import {Outlet} from "react-router";
 import {Link} from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
 import homeJSON from "./pages/home.json";
-import {mainTheme} from "./theme";
 
 
 function App() {
@@ -86,7 +85,6 @@ function App() {
                                     <Typography variant={"h6"} sx={{m: 1}}>Home</Typography>
                                 </Button>
 
-
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'history'}>
                                     <Typography variant={"h6"} sx={{m: 1}}>History</Typography>
@@ -98,9 +96,16 @@ function App() {
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
+                                        to={'supporters'}>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Supporters</Typography>
+                                </Button>
+
+                                <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'resources'}>
                                     <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                                 </Button>
+
+
 
 
                             </ButtonGroup>
@@ -203,11 +208,17 @@ function App() {
                                     <Typography variant={"h5"} sx={{m: 1}}>FIRST Robotics</Typography>
                                 </ListItemButton>
                             </ListItem>
+                            <ListItem sx={{backgroundColor: currentPage === "/supporters" ? drawerHighlightColor : ''}}>
+                                <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/supporters'}>
+                                    <Typography variant={"h5"} sx={{m: 1}}>Supporters</Typography>
+                                </ListItemButton>
+                            </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/resources" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
                                     <Typography variant={"h5"} sx={{m: 1}}>Resources</Typography>
                                 </ListItemButton>
                             </ListItem>
+
 
 
 
@@ -235,12 +246,8 @@ function App() {
                                 autoPlayDelay={4}
                                 bgColor={"#000000"}
                                 onClick={(idx, event) => {
-
                                     window.open(sponsorsJSON.Sponsors[idx].website);
-
-
-                                }
-                                }
+                                }}
                             />
 
 

@@ -11,6 +11,19 @@
       "level": 1,
       "logo": "/images/logos/Ball-Aerospace.jpeg",
       "website": "https://www.ball.com/aerospace"
+    },
+    {
+      "name": "Denver Public Schools",
+      "level": 4,
+      "logo": "/images/logos/DPSLogo.jpg",
+      "website": "https://www.dpsk12.org/"
     }
-  ]
+  ],
+
+  "Template (For Copying Only)": {
+    "name": "",
+    "level": 1,
+    "logo": "",
+    "website": ""
+  }
 }
