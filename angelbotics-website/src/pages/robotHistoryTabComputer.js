@@ -9,7 +9,6 @@ import {useLoader} from "@react-three/fiber";
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
-import data from "./history.json";
 
 
 export default function RobotHistoryTabComputer(props) {
@@ -32,7 +31,7 @@ export default function RobotHistoryTabComputer(props) {
         // Hold state for hovered and clicked events
 
 
-            const materials = useLoader(MTLLoader, data.tabs[index].CadMaterialPath ?  data.tabs[index].CadMaterialPath :"");
+        const materials = useLoader(MTLLoader, data.tabs[index].CadMaterialPath ? data.tabs[index].CadMaterialPath : "");
 
 
         const obj = useLoader(OBJLoader, data.tabs[index].CadModelPath, (loader) => {
@@ -70,13 +69,12 @@ export default function RobotHistoryTabComputer(props) {
 
 
             {data.tabs[index].GameName &&
-                    <Typography variant="h2" sx={{marginLeft:"30%"}}>
+                <Typography variant="h2" sx={{marginLeft: "30%"}}>
 
-                        {data.tabs[index].GameName}
+                    {data.tabs[index].GameName}
 
-                    </Typography>
+                </Typography>
             }
-
 
 
             <div style={{
@@ -156,11 +154,12 @@ export default function RobotHistoryTabComputer(props) {
             }}>
 
                 {data.tabs[index].RobotImagePath &&
-                <img src={data.tabs[index].RobotImagePath} height="390" width="auto" alt={data.tabs[index].year + " robot picture"}/>
+                    <img src={data.tabs[index].RobotImagePath} height="390" width="auto"
+                         alt={data.tabs[index].year + " robot picture"}/>
                 }
 
                 {data.tabs[index].RevealVideo &&
-                    <div style={{marginLeft:10}}>
+                    <div style={{marginLeft: 10}}>
                         <YouTube
 
                             videoId={data.tabs[index].RevealVideo}
@@ -193,7 +192,7 @@ export default function RobotHistoryTabComputer(props) {
 
 
                 {data.tabs[index].RecapVideo &&
-                    <div style={{marginLeft:10}}>
+                    <div style={{marginLeft: 10}}>
                         <YouTube
 
                             videoId={data.tabs[index].RecapVideo}
@@ -229,7 +228,18 @@ export default function RobotHistoryTabComputer(props) {
                 }
 
 
+
+
             </div>
+
+            {data.tabs[index].GithubCode &&
+                <a rel="noreferrer noopener" target="_blank"
+                   href={data.tabs[index].GithubCode}
+                   style={{color: '#90caf9'}}>
+                    <img src="/images/resources/GitHub_Logo.png" alt="Link To Github Repo" width="auto"
+                         height="100"/>
+                </a>
+            }
 
         </div>
     );

@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
-import data from "./history.json";
 
 
 export default function FirstRobotics() {

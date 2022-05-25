@@ -175,6 +175,15 @@ export default function RobotHistoryTabMobile(props) {
 
                 </Card>
 
+                {data.tabs[index].GithubCode &&
+                    <a rel="noreferrer noopener" target="_blank"
+                       href={data.tabs[index].GithubCode}
+                       style={{color: '#90caf9'}}>
+                        <img src="/images/resources/GitHub_Logo.png" alt="Link To Github Repo" width="auto"
+                             height="100"/>
+                    </a>
+                }
+
             </div>
 
 

@@ -79,6 +79,8 @@ export default function History() {
                                         <Tab label="2016" {...a11yProps(5)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
                                         <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
                                         <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+
 
 
                                     </Tabs>
@@ -100,6 +102,7 @@ export default function History() {
                                 <RobotHistoryTabComputer value={value} index={5}/>
                                 <RobotHistoryTabComputer value={value} index={6}/>
                                 <RobotHistoryTabComputer value={value} index={7}/>
+                                <RobotHistoryTabComputer value={value} index={8}/>
 
 
 
@@ -150,9 +153,11 @@ export default function History() {
                                         <Tab label="2019" {...a11yProps(2)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
                                         <Tab label="2018" {...a11yProps(3)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
                                         <Tab label="2017" {...a11yProps(4)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2019" {...a11yProps(5)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2018" {...a11yProps(6)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2017" {...a11yProps(7)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2016" {...a11yProps(5)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+
 
 
                                     </Tabs>
@@ -174,6 +179,8 @@ export default function History() {
                                 <RobotHistoryTabMobile value={value} index={5}/>
                                 <RobotHistoryTabMobile value={value} index={6}/>
                                 <RobotHistoryTabMobile value={value} index={7}/>
+                                <RobotHistoryTabMobile value={value} index={8}/>
+
 
 
                             </Paper>

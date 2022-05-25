@@ -8,37 +8,30 @@ export default function Supporters() {
 
     const sponsorsLevel1 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 1) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel2 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 2) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel3 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 3) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel4 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 4) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel5 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 5) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel6 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 6) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sponsorsLevel7 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 7) return sponsor;
-        return;
     }).filter(Boolean);
 
     const sortedSponsorArray = [sponsorsLevel1, sponsorsLevel2, sponsorsLevel3, sponsorsLevel4, sponsorsLevel5, sponsorsLevel6, sponsorsLevel7];
@@ -200,11 +193,6 @@ export default function Supporters() {
                         marginLeft: '2.5%',
                         marginTop: 50
                     }}>
-
-
-
-
-
                         <Grid container spacing={2} sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
 
 
@@ -287,7 +275,7 @@ export default function Supporters() {
                     }}>
                         <Grid container spacing={2} sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
                             {sponsorsLevel5.map((sponsor) =>
-                                <Grid item xs={2} sx={{mx: "auto", textAlign: "center", height: 90}} key={sponsor}>
+                                <Grid item xs={1} sx={{mx: "auto", textAlign: "center", height: 90}} key={sponsor}>
                                     <a rel="noreferrer noopener" target="_blank"
                                        href={sponsor.website}
                                        style={{color: '#000000'}}>
