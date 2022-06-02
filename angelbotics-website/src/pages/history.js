@@ -56,7 +56,7 @@ export default function History() {
                         }}>
 
 
-                            <Paper sx={{width: '20%', height: "auto", marginBottom: 30}}>
+                            <Paper sx={{width: '20%', height: "auto", marginBottom: 10}}>
 
                                 <Box
                                     sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 2000}}
@@ -91,7 +91,7 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '80%', height: 2000, marginLeft: '5%', marginBottom: 30, alignItems:'center'}}>
+                            <Paper sx={{width: '80%', height: 2000, marginLeft: '5%', marginBottom: 10, alignItems:'center'}}>
 
                                 <div style={{
                                     alignItems: "center",

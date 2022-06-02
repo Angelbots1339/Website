@@ -60,21 +60,47 @@ export default function Supporters() {
 
             {isScreenBig &&
                 <div>
+
+                    <Paper sx={{width: '100%', height: 'auto'}}>
+
+                        <div style={{
+                            display: "flex",
+                            alignItems: "center",
+                            width: "95%",
+                            height: 'auto',
+                            marginLeft: '2.5%',
+                            paddingTop:10,
+                            paddingBottom:10
+                        }}>
+
+
+                        <Typography variant="h1" sx={{marginLeft:'40%'}}>
+
+                            Mentors
+
+                        </Typography>
+
+                        </div>
+
+                    </Paper>
+
+
+
                     <div style={{
                         display: "flex",
                         alignItems: "center",
                         width: "95%",
-                        height: 250,
+                        height: 'auto',
                         marginLeft: '2.5%',
                         marginTop: 30
                     }}>
 
-                        <Paper sx={{width: '50%', height: 250}}>
+                        <Paper sx={{width: '50%', height: 'auto'}}>
                             <div style={{
                                 display: 'flex',
                                 alignItems: "center",
                                 width: "95%",
-                                height: 250,
+                                height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 0
                             }}>
@@ -84,23 +110,21 @@ export default function Supporters() {
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
                                         Joel Noble
                                     </Typography>
-                                    <Typography variant="h6" sx={{marginLeft: 5}}>
-                                        Joel Noble is the founding mentor of the team, and has been the lead mentor
-                                        since the
-                                        team started around 2004. He plays a crucial role in keeping Angelbotics
-                                        operational,
-                                        and is an amazing person.
+                                    <Typography variant="h6" sx={{marginLeft: 5, mb:10}}>
+                                        Joel Noble is a founder, and has been the lead mentor and head coach
+                                        since the team started in 2004. He plays a crucial role in keeping
+                                        Angelbotics operational, and is an amazing person.
                                     </Typography>
                                 </div>
                             </div>
                         </Paper>
 
-                        <Paper sx={{width: '50%', height: 250, marginLeft: 2}}>
+                        <Paper sx={{width: '50%', height: 'auto', marginLeft: 2}}>
                             <div style={{
                                 display: 'flex',
                                 alignItems: "center",
                                 width: "95%",
-                                height: 250,
+                                height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 0
                             }}>
@@ -124,17 +148,17 @@ export default function Supporters() {
                         display: "flex",
                         alignItems: "center",
                         width: "95%",
-                        height: 250,
+                        height: 'auto',
                         marginLeft: '2.5%',
                         marginTop: 30
                     }}>
 
-                        <Paper sx={{width: '50%', height: 250}}>
+                        <Paper sx={{width: '50%', height: 'auto'}}>
                             <div style={{
                                 display: 'flex',
                                 alignItems: "center",
                                 width: "95%",
-                                height: 250,
+                                height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 0
                             }}>
@@ -146,8 +170,7 @@ export default function Supporters() {
                                     </Typography>
                                     <Typography variant="h6" sx={{marginLeft: 5}}>
                                         Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues
-                                        with the
-                                        electrical, and helps brainstorm about the concept behind the code.
+                                        with the electrical, and helps brainstorm about the concept behind the code.
                                     </Typography>
                                 </div>
                             </div>
