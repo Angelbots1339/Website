@@ -17,7 +17,7 @@ export default function RobotHistoryTabMobile(props) {
 
     const {children, value, index, ...other} = props;
 
-    const data = require('/Users/dresden/WebstormProjects/Website/angelbotics-website/src/pages/history.json');
+    const data = require('./history.json');
 
 
     function CadModel(props) {
