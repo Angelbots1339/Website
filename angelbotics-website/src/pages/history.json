@@ -1,0 +1,136 @@
+{
+  "tabs": [
+    {
+      "year": "2022",
+      "RobotImagePath": "/images/history/2022/JazzyJudi.JPG",
+      "CadModelPath": "/images/history/2022/2022CAD.obj",
+      "CadMaterialPath": "/images/history/2022/2022CAD.mtl",
+      "GameDescription": "2022's game, Rapid React, consists mainly of scoring balls into a central hub. There are 2 levels, with the top level being worth 2 points, and the bottom 1. Towards the end of the game, robots climb rungs as high as possible, with the top rung being worth 15 points.",
+      "GameName": "2022 Rapid React",
+      "RevealVideo": "3rqnEFxyrlM",
+      "GameReveal": "LgniEjI9cCM",
+      "RecapVideo": "l-FUae_8Po4",
+      "GithubCode": "https://github.com/Angelbots1339/2022_Competition_Season",
+      "RobotName": "Jazzy Judi",
+      "yearSummary": "We went to the Orange County Regional in California and placed 3rd, we won the Colorado Regional, and we made it to the FRC World Championship where we placed 7th in the Hopper division, and unseated the 3rd seeded team."
+    },
+    {
+      "year": "2020",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "In the game of 2020, Infinite Recharge, robots competed to score small yellow balls into goals. The low goal is worth 1 point, the high is worth 2, and a smaller goal inside the high shot is worth 3. In the endgame, robots climb their team's tilting bar, and if they can balance it with robots, they score extra points.",
+      "GameName": "2020 Infinite Recharge",
+      "RevealVideo": "",
+      "GameReveal": "gmiYWTmFRVE",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2020FinalBot",
+      "RobotName": "Imperator",
+      "yearSummary": "Not much happened this year because the COVID-19 pandemic started mid-season."
+    },
+    {
+      "year": "2019",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "For 2019's game, robots competed to store cargo (balls) into several containers labeled rocket ships, and then install circular hatch panels into the holes they just put cargo through. There are points available for moving off the flush or raised starting platforms, and returning to them at the end of the game.",
+      "GameName": "2019 Destination: Deep Space",
+      "RevealVideo": "",
+      "GameReveal": "Mew6G_og-PI",
+      "RecapVideo": "",
+      "GithubCode": "",
+      "RobotName": "Xenomorph",
+      "yearSummary": ""
+    },
+    {
+      "year": "2018",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "The game of 2018 consists of robots placing large yellow cubes in their team's assigned area of a switch or scale. These are rotating platforms, and whichever team has the most blocks will weigh down their side. While a side is weighed down, the team will earn a set amount of points per second, until they lose that station.",
+      "GameName": "2018 FIRST Power Up",
+      "RevealVideo": "L9aCeTpfUKk",
+      "GameReveal": "HZbdwYiCY74",
+      "RecapVideo": "tbb_z9BS53g",
+      "GithubCode": "https://github.com/Angelbots1339/2018-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2017",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "In 2017's game, there are hoppers placed around the field full of tiny, plastic yellow balls. These are then scored in the top or bottom of a team's boiler, top being worth more points. There are also gears delivered to raised human player stations in the middle of the field, and in endgame, robots climb a string hanging from these stations.",
+      "GameName": "2017 FIRST Steamworks",
+      "RevealVideo": "QhyeI6-TvxI",
+      "GameReveal": "EMiNmJW7enI",
+      "RecapVideo": "qnfytMcyrTg",
+      "GithubCode": "https://github.com/Angelbots1339/2017-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2016",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "Each alliance in the 2016 game has a castle, and a row of defenses. These defences can be configured however the alliance decides. Robots launch boulders into the enemy castle, and after enough have been launched, the tower can be captured by all 3 attacking robots surrounding it, with an optional climb.",
+      "GameName": "2016 FIRST Stronghold",
+      "RevealVideo": "",
+      "GameReveal": "VqOKzoHJDjA",
+      "RecapVideo": "7fZWoDd7_gY",
+      "GithubCode": "https://github.com/Angelbots1339/2016-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2015",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "The 2015 game consists of stacking grey tote boxes, then recycling bins, and subsequently filling those bins with litter (foam noodles). These bins can only be stacked in specific areas. Any of the opposing alliance's litter that is not in a bin or the landfill at the center gives 4 points.",
+      "GameName": "2015 Recycle Rush",
+      "RevealVideo": "v3Gank-Nxe0",
+      "GameReveal": "W6UYFKNGHJ8",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2015-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2014",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "The main game piece of the 2014 game is giant exercise balls. These can be scored in either a high goal above the driver station, or a low goal to either side. Assisting a teammate in scoring the ball nets more points, and throwing a ball over the truss in the center gives even more.",
+      "GameName": "2014 Aerial Assist",
+      "RevealVideo": "BiZ5JvySo2k",
+      "GameReveal": "oxp4dkMQ1Vo",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2014-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
+      "year": "2013",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "GameDescription": "The 2013 game consists of robots shooting plastic disks into a series of goals. There are several above driver stations, and one at the top of each team's pyramid on the field. At the end of the game, robots climb their alliance's pyramid, the higher the bar reached the more points they receive.",
+      "GameName": "2013 Ultimate Ascent",
+      "RevealVideo": "",
+      "GameReveal": "itHNW2OFr4Y",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2013-Robot",
+      "RobotName": "",
+      "yearSummary": ""
+    }
+  ],
+  "template (For copy-paste to tabs only)": {
+    "year": "",
+    "RobotImagePath": "",
+    "CadModelPath": "",
+    "GameDescription": "",
+    "GameName": "",
+    "RevealVideo": "",
+    "GameReveal": "",
+    "RecapVideo": "",
+    "GithubCode": "",
+    "RobotName": "",
+    "yearSummary": ""
+  }
+}
+

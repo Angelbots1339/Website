@@ -1,0 +1,29 @@
+{
+  "Sponsors": [
+    {
+      "name": "The Wizard's Chest",
+      "level": 1,
+      "logo": "/images/logos/wizardschest.jpg",
+      "website": "https://www.wizardschest.com/"
+    },
+    {
+      "name": "Ball Aerospace",
+      "level": 1,
+      "logo": "/images/logos/Ball-Aerospace.jpeg",
+      "website": "https://www.ball.com/aerospace"
+    },
+    {
+      "name": "Denver Public Schools",
+      "level": 1,
+      "logo": "/images/logos/DPSLogo.png",
+      "website": "https://www.dpsk12.org/"
+    }
+  ],
+
+  "Template (For Copying Only)": {
+    "name": "",
+    "level": 1,
+    "logo": "",
+    "website": ""
+  }
+}
