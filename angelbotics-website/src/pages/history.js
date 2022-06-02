@@ -91,8 +91,14 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '80%', height: 2000, marginLeft: '5%', marginBottom: 30}}>
+                            <Paper sx={{width: '80%', height: 2000, marginLeft: '5%', marginBottom: 30, alignItems:'center'}}>
 
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "100%",
+                                    height: "auto",
+                                    marginLeft: '0%'
+                                }}>
 
                                 <RobotHistoryTabComputer value={value} index={0}/>
                                 <RobotHistoryTabComputer value={value} index={1}/>
@@ -104,7 +110,7 @@ export default function History() {
                                 <RobotHistoryTabComputer value={value} index={7}/>
                                 <RobotHistoryTabComputer value={value} index={8}/>
 
-
+                                </div>
 
                             </Paper>
 

@@ -191,10 +191,11 @@ export default function Resources() {
 
 
                                     <Typography variant='h5' sx={{mt:5}}>
-                                        The Blue Alliance is a website that displays a ton of data about FRC. You can
+                                        <a rel="noreferrer noopener" target="_blank"
+                                           href={"https://www.thebluealliance.com/team/1339"}
+                                           style={{color: '#90caf9'}}>The Blue Alliance</a> is a website that displays a ton of data about FRC. You can
                                         find information on individual teams like their stats, the competitions they were
                                         in, and how well they did in individual matches or an entire competition.
-
                                     </Typography>
 
                                     {/*Open Alliance Link: https://www.chiefdelphi.com/t/the-open-alliance-is-officially-open-to-all-teams/397951 */}

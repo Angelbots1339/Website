@@ -119,7 +119,7 @@ export default function RobotHistoryTabMobile(props) {
                                 <pointLight position={[10, 10, 10]}/>
                                 {/*<DefaultCube position={[3, 0, 0]}/>*/}
                                 {/*<Monkey position={[0, 0, 0]}/>*/}
-                                <CadModel position={[0, 0, 0]}/>
+                                <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
                                 <OrbitControls/>
                                 <Environment preset="sunset"/>
                             </Suspense>

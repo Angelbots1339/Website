@@ -104,12 +104,12 @@ export default function FirstRobotics() {
                                     marginTop: 100
                                 }}>
 
-                                    <img src="/images/firstRobotics/frcLogo.jpg" alt="FRC Logo" width="90%"
-                                         height="auto"/>
-                                    <img src="/images/firstRobotics/ftcLogo.jpg" alt="FTC Logo" width="90%"
-                                         height="auto"/>
-                                    <img src="/images/firstRobotics/fllLogo.png" alt="FLL Logo" width="90%"
-                                         height="auto"/>
+                                    <img src="/images/firstRobotics/frcLogo.jpg" alt="FRC Logo" width="auto"
+                                         height="200"/>
+                                    <img src="/images/firstRobotics/ftcLogo.jpg" alt="FTC Logo" width="auto"
+                                         height="200"/>
+                                    <img src="/images/firstRobotics/fllLogo.png" alt="FLL Logo" width="auto"
+                                         height="200"/>
 
 
                                 </div>

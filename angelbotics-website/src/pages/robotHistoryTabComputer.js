@@ -89,9 +89,9 @@ export default function RobotHistoryTabComputer(props) {
 
                 {data.tabs[index].GameDescription &&
                     <Card variant='outlined'
-                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 5, height: 390, width: 400}}>
+                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 5, height: 'auto', width: 400}}>
 
-                        <Typography variant='h6' sx={{m: 5}} width="auto" height='390'>
+                        <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
 
                             {data.tabs[index].GameDescription}
 
@@ -214,9 +214,9 @@ export default function RobotHistoryTabComputer(props) {
 
                 {data.tabs[index].yearSummary &&
                     <Card variant='outlined'
-                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 5, height: 390, width: 400}}>
+                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 5, height: 'auto', width: 400}}>
 
-                        <Typography variant='h6' sx={{m: 5}} width="auto" height='390'>
+                        <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
 
                             {data.tabs[index].yearSummary}
 

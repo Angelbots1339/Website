@@ -1,11 +1,7 @@
 import {useEffect, useState} from "react";
 import {Box, Paper, Typography} from "@mui/material";
-import {Helmet} from "react-helmet";
-import ky from 'ky';
-import homeJSON from "./home.json";
 import SimpleImageSlider from "react-simple-image-slider";
 import CuratorWidget from "./CuratorWidget";
-import InstagramPost from "./instagramPost";
 
 
 export default function Home() {
@@ -15,16 +11,28 @@ export default function Home() {
     //
     //
     const [isScreenBig, setScreenBig] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(0);
 
     const homeJSON = require('./home.json');
-
 
     useEffect(() => {
 
         setScreenBig(window.innerWidth > 1200);
 
+        setScreenWidth(window.innerWidth);
+
 
     }, []);
+
+
+    function slideshowHeight() {
+        let width = screenWidth * 0.7;
+        return width / 2;
+    }
+  function slideshowHeightMobile() {
+        let width = screenWidth;
+        return width / 1.777777;
+    }
 
 
     return (
@@ -47,13 +55,13 @@ export default function Home() {
                     }}>
 
 
-                        <Paper sx={{width: '100%', height: 650, backgroundColor: "#ffffff"}}>
+                        <Paper sx={{width: '100%', height: slideshowHeight(), backgroundColor: "#ffffff"}}>
 
                             <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
                                 <SimpleImageSlider
                                     width="70%"
-                                    height={650}
+                                    height={slideshowHeight()}
                                     images={homeJSON.imageCarousel}
                                     showBullets={false}
                                     showNavs={true}
@@ -87,8 +95,6 @@ export default function Home() {
                             <Box display="flex" alignItems="center" justifyContent="center">
 
                                 {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
-                                {/* <InstagramPost/>*/}
-
 
                             </Box>
 
@@ -110,7 +116,8 @@ export default function Home() {
                                     <Typography variant="h4">
                                         Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization
                                         affiliated with East High School Denver. Team 1339 Angelbotics was started
-                                        around 2003, and has been competing ever since. We are based in Denver, Colorado,
+                                        around 2004, and has been competing ever since. We are based in Denver,
+                                        Colorado,
                                         right in the center of the city.
                                     </Typography>
 
@@ -160,13 +167,13 @@ export default function Home() {
                 <div style={{alignItems: "center", width: "100", height: 700}}>
 
 
-                    <Paper sx={{width: '100%', height: 200, backgroundColor: "#ffffff"}}>
+                    <Paper sx={{width: '100%', height: slideshowHeightMobile(), backgroundColor: "#ffffff"}}>
 
                         <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
                             <SimpleImageSlider
                                 width="100%"
-                                height={200}
+                                height={slideshowHeightMobile()}
                                 images={homeJSON.imageCarousel}
                                 showBullets={false}
                                 showNavs={true}
@@ -185,7 +192,7 @@ export default function Home() {
 
                         <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
 
-                            <CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>
+                            {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
 
                         </Box>
 
