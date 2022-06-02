@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
+import data from "./firstRobotics.json";
 
 
 export default function FirstRobotics() {
@@ -237,8 +238,9 @@ export default function FirstRobotics() {
                                     </Typography>
 
                                     <Typography variant="h5" sx={{marginRight: 5, marginBottom: 2, marginLeft: "5%"}}>
-                                        In FLL, robots are made of Legos, and they have to complete specific challenges.
-                                        There is only one robot on the field at a time, unlike FTC and FRC.
+                                        In FLL, robots are made of Legos, and they have to complete specific challenges
+                                        throughout the game field. Similar to FTC and FRC, there is a different game
+                                        every year, but unlike them there is only a single robot on the field at a time.
                                     </Typography>
 
                                     <div style={{marginLeft: '5%'}}>
@@ -279,14 +281,154 @@ export default function FirstRobotics() {
 
             {!isScreenBig &&
 
-                <div style={{display: "flex", alignItems: "center", width: "100", height: 700}}>
+                <div style={{alignItems: "center", width: "100", height: 'auto'}}>
 
+                    <Paper sx={{width: "100%", height: 'auto'}}>
+
+                        <div style={{
+                            alignItems: "center",
+                            width: "90%",
+                            height: 'auto',
+                            marginLeft: '5%',
+                            marginTop: 50,
+                            paddingTop:15,
+                            paddingBottom:30
+                        }}>
+                            <Card sx={{width: "90%", height: 'auto', mt: 5, pt: 1, marginLeft: '5%'}}>
+
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: "auto",
+                                    marginLeft: '5%',
+                                    marginTop: 20,
+                                    marginBottom: 20
+                                }}>
+                                    <Typography variant="h6" sx={{mb: 5}}>
+
+                                        FIRST Robotics is an organization that maintains a series of unique robotics
+                                        competitions. They are the creators of:
+
+                                    </Typography>
+
+
+                                    <img src="/images/firstRobotics/frcLogo.jpg" alt="FRC Logo" width="90%"
+                                         height="auto"/>
+                                    <img src="/images/firstRobotics/ftcLogo.jpg" alt="FTC Logo" width="90%"
+                                         height="auto"/>
+                                    <img src="/images/firstRobotics/fllLogo.png" alt="FLL Logo" width="90%"
+                                         height="auto"/>
+
+                                </div>
+                            </Card>
+
+
+                            <Card sx={{width: "90%", height: "auto", mt: 5, ml: '5%'}}>
+
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: 'auto',
+                                    marginLeft: '5%',
+                                    marginTop: 10
+                                }}>
+
+                                    <Typography variant="h5" sx={{marginBottom: 10}}>
+                                        <a rel="noreferrer noopener" target="_blank"
+                                           href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}
+                                           style={{color: '#90caf9'}}>
+                                            First Robotics Competition
+                                        </a>
+                                    </Typography>
+
+                                    <Typography variant="h6" sx={{marginRight: 5}}>
+                                        FRC is the game that we participate in. Similar to the other two
+                                        competitions, there is a new game concept each year, and they are wildly
+                                        unique. The game gets released in early January, and we have 8-9 weeks
+                                        to build a fully-functioning robot. The robots in FRC are generally big,
+                                        heavy, and fast-moving. Robots are made from many different materials,
+                                        like
+                                        Aluminum and Polycarbonate, and parts are often custom-machined, 3D
+                                        printed,
+                                        or bought from a vendor.
+                                    </Typography>
+
+                                </div>
+
+
+                            </Card>
+
+
+                            <Card sx={{width: "90%", height: "auto", mt: 5, ml: '5%'}}>
+
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: 'auto',
+                                    marginLeft: '5%',
+                                    marginTop: 10
+                                }}>
+
+                                    <Typography variant="h5" sx={{marginBottom: 10}}>
+                                        <a rel="noreferrer noopener" target="_blank"
+                                           href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}
+                                           style={{color: '#90caf9'}}>
+                                            First Tech Challenge
+                                        </a>
+                                    </Typography>
+
+                                    <Typography variant="h6" sx={{marginRight: 5}}>
+                                        In FTC, robots are generally much smaller, and much more compact. The idea is
+                                        similar to FRC where there is a different game every year. The robots are also
+                                        constructed in a similar way to FRC robots, where things are custom-machined.
+                                    </Typography>
+
+                                </div>
+
+
+                            </Card>
+
+
+                            <Card sx={{width: "90%", height: "auto", mt: 5, ml: '5%'}}>
+
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: 'auto',
+                                    marginLeft: '5%',
+                                    marginTop: 10
+                                }}>
+
+                                    <Typography variant="h5" sx={{marginBottom: 10}}>
+                                        <a rel="noreferrer noopener" target="_blank"
+                                           href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}
+                                           style={{color: '#90caf9'}}>
+                                            First Lego League
+                                        </a>
+                                    </Typography>
+
+                                    <Typography variant="h6" sx={{marginRight: 5}}>
+                                        In FLL, robots are made of Legos, and they have to complete specific challenges
+                                        throughout the game field. Similar to FTC and FRC, there is a different game
+                                        every year, but unlike them there is only a single robot on the field at a time.
+                                    </Typography>
+
+                                </div>
+
+
+                            </Card>
+
+
+                        </div>
+
+                    </Paper>
                 </div>
 
             }
 
 
         </div>
+
     );
 
 

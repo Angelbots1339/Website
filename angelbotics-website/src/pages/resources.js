@@ -221,6 +221,10 @@ export default function Resources() {
 
                 <div style={{display: "flex", alignItems: "center", width: "100", height: 700}}>
 
+                    <Typography variant="h4" sx={{marginLeft:'10%'}}>
+                        Mobile Version In Progress
+                    </Typography>
+
                 </div>
 
             }
