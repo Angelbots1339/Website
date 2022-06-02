@@ -48,7 +48,7 @@ export default function History() {
                     <div>
                         <div style={{
                             display: "flex",
-                            alignItems: "center",
+                            alignItems: "start",
                             width: "95%",
                             height: "auto",
                             marginLeft: '2.5%',
@@ -91,7 +91,7 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '80%', height: 2000, marginLeft: '5%', marginBottom: 10, alignItems:'center'}}>
+                            <Paper sx={{width: '80%', height: 'auto', marginLeft: '5%', marginBottom: 10, alignItems:'center'}}>
 
                                 <div style={{
                                     alignItems: "center",

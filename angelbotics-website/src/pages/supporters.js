@@ -102,12 +102,13 @@ export default function Supporters() {
                                 width: "95%",
                                 height: 'auto',
                                 marginLeft: '2.5%',
-                                marginTop: 0
+                                marginTop: 10,
+                                marginBottom:10
                             }}>
                                 <img src="/images/supporters/noble.JPG" alt="Joel Noble" width="auto" height="200"/>
 
                                 <div>
-                                    <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
+                                    <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 2}}>
                                         Joel Noble
                                     </Typography>
                                     <Typography variant="h6" sx={{marginLeft: 5, mb:10}}>
@@ -126,9 +127,10 @@ export default function Supporters() {
                                 width: "95%",
                                 height: 'auto',
                                 marginLeft: '2.5%',
-                                marginTop: 0
+                                marginTop: 10,
+                                marginBottom:10
                             }}>
-                                <img src="/images/supporters/" alt="Carol Layng" width="auto" height="200"/>
+                                <img src="/images/supporters/noble.JPG" alt="Carol Layng" width="auto" height="200"/>
 
                                 <div>
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
@@ -160,9 +162,10 @@ export default function Supporters() {
                                 width: "95%",
                                 height: 'auto',
                                 marginLeft: '2.5%',
-                                marginTop: 0
+                                marginTop: 10,
+                                marginBottom:10
                             }}>
-                                <img src="/images/supporters/" alt="Chad B" width="auto" height="200"/>
+                                <img src="/images/supporters/noble.JPG" alt="Chad B" width="auto" height="200"/>
 
                                 <div>
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
@@ -422,6 +425,30 @@ export default function Supporters() {
 
             {!isScreenBig &&
                 <div>
+
+                    <Paper sx={{width: '100%', height: 'auto'}}>
+
+                        <div style={{
+                            display: "flex",
+                            alignItems: "center",
+                            width: "95%",
+                            height: 'auto',
+                            marginLeft: '2.5%',
+                            paddingTop:10,
+                            paddingBottom:10
+                        }}>
+
+
+                            <Typography variant="h3" sx={{marginLeft:'20%'}}>
+
+                                Mentors
+
+                            </Typography>
+
+                        </div>
+
+                    </Paper>
+
 
                     <Paper sx={{width: '100%', height: 300}}>
 
