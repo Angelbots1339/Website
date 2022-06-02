@@ -29,7 +29,8 @@ export default function Home() {
         let width = screenWidth * 0.7;
         return width / 2;
     }
-  function slideshowHeightMobile() {
+
+    function slideshowHeightMobile() {
         let width = screenWidth;
         return width / 1.777777;
     }
@@ -93,9 +94,19 @@ export default function Home() {
                         <Paper sx={{width: '55%', height: 600}}>
 
                             <Box display="flex" alignItems="center" justifyContent="center">
+                                <div style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: "auto",
+                                    marginLeft: '5%',
+                                    marginTop: 10
+                                }}>
 
-                                {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
+                                    <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="auto"
+                                         height="580"/>
 
+                                </div>
                             </Box>
 
                         </Paper>
@@ -140,16 +151,16 @@ export default function Home() {
                     }}>
 
 
-                        <Paper sx={{width: '90%', height: 500, marginLeft: '5%'}}>
+                        {/*<Paper sx={{width: '90%', height: 500, marginLeft: '5%'}}>*/}
 
-                            <Box display="flex" alignItems="center" justifyContent="center">
+                        {/*    <Box display="flex" alignItems="center" justifyContent="center">*/}
 
-                                <p>More Info Here</p>
+                        {/*        <p>More Info Here</p>*/}
 
-                            </Box>
+                        {/*    </Box>*/}
 
 
-                        </Paper>
+                        {/*</Paper>*/}
 
 
                     </div>
@@ -188,11 +199,53 @@ export default function Home() {
 
                     </Paper>
 
-                    <Paper sx={{width: '100%', height: 300, marginTop: 3}}>
+                    <Paper sx={{width: '100%', height: 'auto', marginTop: 3}}>
 
-                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
+                        <Box display="flex" alignItems="center" justifyContent="center">
 
-                            {/*<CuratorWidget feedId="cc149bda-3c10-493d-afa8-fa4c8c792434"/>*/}
+                            <div style={{
+                                alignItems: "center",
+                                width: "90%",
+                                height: "auto",
+                                marginLeft: '5%',
+                                marginRight: '5%',
+                                marginTop: 15,
+                                marginBottom: 15
+                            }}>
+
+                                <Typography variant="h6">
+                                    Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization
+                                    affiliated with East High School Denver. Team 1339 Angelbotics was started
+                                    around 2004, and has been competing ever since. We are based in Denver,
+                                    Colorado,
+                                    right in the center of the city.
+                                </Typography>
+
+                            </div>
+
+                        </Box>
+
+                    </Paper>
+
+
+                    <Paper sx={{width: '100%', height: 'auto', marginTop: 3}}>
+
+                        <Box display="flex" alignItems="center" justifyContent="center">
+
+                            <div style={{
+                                alignItems: "center",
+                                width: "90%",
+                                height: "auto",
+                                marginLeft: '5%',
+                                marginRight: '5%',
+                                marginTop: 15,
+                                marginBottom: 15
+                            }}>
+
+                                <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="100%"
+                                     height="auto"/>
+
+                            </div>
 
                         </Box>
 
