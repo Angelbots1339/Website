@@ -81,10 +81,10 @@ export default function RobotHistoryTabMobile(props) {
             }}>
 
                 <Card variant='outlined'
-                      sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 1, height: 200, width: "90%"}}>
+                      sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 1, height: "auto", width: "90%"}}>
 
                     <div>
-                        <Typography variant='p' fontSize='1' width="auto" height='390' margin="10">
+                        <Typography variant='p' fontSize='1' width="90%" height='390' margin="10" padding="auto">
 
                             {data.tabs[index].GameDescription}
 
@@ -150,7 +150,7 @@ export default function RobotHistoryTabMobile(props) {
                           border: 1,
                           borderWidth: 2,
                           m: 1,
-                          height: 200,
+                          height: "auto",
                           width: "90%",
                           alignContent: 'center',
                           alignItems: 'center'

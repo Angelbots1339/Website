@@ -174,7 +174,7 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '95%', height: 2000, marginLeft: '2.5%', marginBottom: 30}}>
+                            <Paper sx={{width: '95%', height:'auto', marginLeft: '2.5%', marginBottom: 30}}>
 
 
                                 <RobotHistoryTabMobile value={value} index={0}/>
