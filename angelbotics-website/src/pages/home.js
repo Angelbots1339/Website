@@ -103,8 +103,8 @@ export default function Home() {
                                     marginTop: 10
                                 }}>
 
-                                    <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="auto"
-                                         height="580"/>
+                                    <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="90%"
+                                         height="auto" style={{marginLeft:'2%'}}/>
 
                                 </div>
                             </Box>
