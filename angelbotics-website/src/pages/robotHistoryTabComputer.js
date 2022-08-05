@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import YouTube from "react-youtube";
 import {Canvas} from "@react-three/fiber";
 import {Environment, Html, OrbitControls} from "@react-three/drei";
-import {Suspense, useRef} from "react";
+import {Suspense, useEffect, useRef, useState} from "react";
 import * as THREE from "three";
 import {useLoader} from "@react-three/fiber";
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
+import data from "./firstRobotics.json";
 
 
 export default function RobotHistoryTabComputer(props) {
@@ -16,6 +17,85 @@ export default function RobotHistoryTabComputer(props) {
     function LoadingBar() {
         return <Html center>Loading...</Html>
     }
+
+    const [forceRenderNum, setForceRenderNum] = useState({});
+
+    const robotRevealRef = new useRef(null);
+    const gameRevealRef = new useRef(null);
+    const recapRef = new useRef(null);
+
+
+    const reveal2022Ref = new useRef(null);
+    const reveal2020Ref = new useRef(null);
+    const reveal2019Ref = new useRef(null);
+    const reveal2018Ref = new useRef(null);
+    const reveal2017Ref = new useRef(null);
+    const reveal2016Ref = new useRef(null);
+    const reveal2015Ref = new useRef(null);
+    const reveal2014Ref = new useRef(null);
+    const reveal2013Ref = new useRef(null);
+
+    const recap2022Ref = new useRef(null);
+    const recap2020Ref = new useRef(null);
+    const recap2019Ref = new useRef(null);
+    const recap2018Ref = new useRef(null);
+    const recap2017Ref = new useRef(null);
+    const recap2016Ref = new useRef(null);
+    const recap2015Ref = new useRef(null);
+    const recap2014Ref = new useRef(null);
+    const recap2013Ref = new useRef(null);
+
+    const gameReveal2022Ref = new useRef(null);
+    const gameReveal2020Ref = new useRef(null);
+    const gameReveal2019Ref = new useRef(null);
+    const gameReveal2018Ref = new useRef(null);
+    const gameReveal2017Ref = new useRef(null);
+    const gameReveal2016Ref = new useRef(null);
+    const gameReveal2015Ref = new useRef(null);
+    const gameReveal2014Ref = new useRef(null);
+    const gameReveal2013Ref = new useRef(null);
+    const gameReveal2012Ref = new useRef(null);
+    const gameReveal2011Ref = new useRef(null);
+    const gameReveal2010Ref = new useRef(null);
+    const gameReveal2009Ref = new useRef(null);
+    const gameReveal2008Ref = new useRef(null);
+    const gameReveal2007Ref = new useRef(null);
+    const gameReveal2004Ref = new useRef(null);
+
+
+    const [hasYTLoaded, setYTLoaded] = useState({});
+    const [YTLoadInterval, setYTLoadInterval] = useState({});
+    const onPlayerReady = (id, ref) => {
+        YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+    }
+    const delayedOnPlayerReady = (id, ref) => {
+        if(!hasYTLoaded[id] && ref.current != null) {
+            let clientWidthBool = ref.current.clientWidth >= 5;
+            hasYTLoaded[id] = clientWidthBool;
+            clearInterval(YTLoadInterval[id]);
+            setForceRenderNum(forceRenderNum + 1);
+        }}
+
+
+    // useEffect(() => {
+    //
+    //     hasYTLoaded[data.tabs[index].GameReveal] = false;
+    //     hasYTLoaded[data.tabs[index].RevealVideo] = false;
+    //     hasYTLoaded[data.tabs[index].RecapVideo] = false;
+    //
+    //     YTLoadInterval[data.tabs[index].GameReveal] = null;
+    //     YTLoadInterval[data.tabs[index].RevealVideo] = null;
+    //     YTLoadInterval[data.tabs[index].RecapVideo] = null;
+    //
+    //
+    //
+    // }, [hasYTLoaded, YTLoadInterval, data.tabs[index].GameReveal, data.tabs[index].RevealVideo, data.tabs[index].RecapVideo, forceRenderNum]);
+
+
+
+
+
+
 
     const {children, value, index, ...other} = props;
 

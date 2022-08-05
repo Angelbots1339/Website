@@ -186,7 +186,7 @@ function App() {
                     >
 
                         <List sx={{marginX: '20', backgroundColor:'#ffd4d4', height:"100%"}}>
-                            <ListItem sx={{backgroundColor:'#ff001b'}}>
+                            <ListItem sx={{backgroundColor:'#ab0000'}}>
 
                                 <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
                                     <img src="/Logo.svg" width="80" height="80"/>
