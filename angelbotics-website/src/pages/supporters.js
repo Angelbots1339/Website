@@ -69,21 +69,20 @@ export default function Supporters() {
                             width: "95%",
                             height: 'auto',
                             marginLeft: '2.5%',
-                            paddingTop:10,
-                            paddingBottom:10
+                            paddingTop: 10,
+                            paddingBottom: 10
                         }}>
 
 
-                        <Typography variant="h1" sx={{marginLeft:'40%'}}>
+                            <Typography variant="h1" sx={{marginLeft: '40%'}}>
 
-                            Mentors
+                                Mentors
 
-                        </Typography>
+                            </Typography>
 
                         </div>
 
                     </Paper>
-
 
 
                     <div style={{
@@ -103,7 +102,7 @@ export default function Supporters() {
                                 height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 10,
-                                marginBottom:10
+                                marginBottom: 10
                             }}>
                                 <img src="/images/supporters/noble.JPG" alt="Joel Noble" width="auto" height="200"/>
 
@@ -111,7 +110,7 @@ export default function Supporters() {
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 2}}>
                                         Joel Noble
                                     </Typography>
-                                    <Typography variant="h6" sx={{marginLeft: 5, mb:10}}>
+                                    <Typography variant="h6" sx={{marginLeft: 5, mb: 10}}>
                                         Joel Noble is a founder, and has been the lead mentor and head coach
                                         since the team started in 2004. He plays a crucial role in keeping
                                         Angelbotics operational, and is an amazing person.
@@ -128,18 +127,17 @@ export default function Supporters() {
                                 height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 10,
-                                marginBottom:10
+                                marginBottom: 10
                             }}>
-                                <img src="/images/supporters/noble.JPG" alt="Carol Layng" width="auto" height="200"/>
+                                <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="200"/>
 
                                 <div>
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
                                         Carol Layng
                                     </Typography>
                                     <Typography variant="h6" sx={{marginLeft: 5}}>
-                                        Carol specializes in strategy, and contributes to scouting. She also does a ton
-                                        of
-                                        planning, and ensures that the team will be able to compete.
+                                        Carol specializes in strategy, and contributes to scouting. She also is in charge of the
+                                        logistics for travel, ensuring that the team will be able to compete.
                                     </Typography>
                                 </div>
                             </div>
@@ -163,9 +161,9 @@ export default function Supporters() {
                                 height: 'auto',
                                 marginLeft: '2.5%',
                                 marginTop: 10,
-                                marginBottom:10
+                                marginBottom: 10
                             }}>
-                                <img src="/images/supporters/noble.JPG" alt="Chad B" width="auto" height="200"/>
+                                <img src="/images/supporters/mentor_chad.jpg" alt="Chad B" width="auto" height="200"/>
 
                                 <div>
                                     <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
@@ -222,7 +220,7 @@ export default function Supporters() {
                                 marginLeft: '0%',
                                 marginTop: 20,
                                 marginBottom: 20,
-                                paddingBottom:50
+                                paddingBottom: 50
                             }}>
                                 <Typography variant="h1" sx={{marginLeft: "40%"}}>
                                     Sponsors
@@ -434,12 +432,12 @@ export default function Supporters() {
                             width: "95%",
                             height: 'auto',
                             marginLeft: '2.5%',
-                            paddingTop:10,
-                            paddingBottom:10
+                            paddingTop: 10,
+                            paddingBottom: 10
                         }}>
 
 
-                            <Typography variant="h3" sx={{marginLeft:'20%'}}>
+                            <Typography variant="h3" sx={{marginLeft: '20%'}}>
 
                                 Mentors
 
@@ -491,8 +489,8 @@ export default function Supporters() {
                             </Typography>
                         </div>
                         <Typography variant="h6" sx={{marginLeft: 1}}>
-                            Carol specializes in strategy, and contributes to scouting. She also does a ton of
-                            planning, and ensures that the team will be able to compete.
+                            Carol specializes in strategy, and contributes to scouting. She also is in charge of the
+                            logistics for travel, ensuring that the team will be able to compete.
                         </Typography>
                     </Paper>
                     <Paper sx={{width: '100%', height: 300, marginTop: 2, marginBottom: 5}}>
@@ -504,7 +502,7 @@ export default function Supporters() {
                             marginLeft: '2.5%'
 
                         }}>
-                            <img src="" alt="Chad B" width="auto" height="100"/>
+                            <img src="/images/supporters/mentor_chad.jpg" alt="Chad B" width="auto" height="100"/>
                             <Typography variant="h5" sx={{marginLeft: 5, marginRight: 5}}>
                                 Chad B
                             </Typography>

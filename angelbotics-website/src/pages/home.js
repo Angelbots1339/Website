@@ -7,11 +7,11 @@ import CuratorWidget from "./CuratorWidget";
 export default function Home() {
 
 
-    // This code can be used for variable size on mobile vs desktop
-    //
-    //
+
     const [isScreenBig, setScreenBig] = useState(false);
     const [screenWidth, setScreenWidth] = useState(0);
+    // This code can be used for variable size on mobile vs desktop
+
 
     const homeJSON = require('./home.json');
 
@@ -175,7 +175,7 @@ export default function Home() {
 
             {!isScreenBig &&
 
-                <div style={{alignItems: "center", width: "100", height: 700}}>
+                <div style={{alignItems: "center", width: "100", height: "auto"}}>
 
 
                     <Paper sx={{width: '100%', height: slideshowHeightMobile(), backgroundColor: "#ffffff"}}>

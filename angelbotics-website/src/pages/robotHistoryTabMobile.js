@@ -160,17 +160,17 @@ export default function RobotHistoryTabMobile(props) {
                         <Typography variant='h5' fontSize='1' width="auto" height='390' margin="10">
                             {data.tabs[index].GameReveal && <a rel="noreferrer noopener" target="_blank"
                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}
-                                                               style={{color: '#90caf9'}}>{data.tabs[index].year + " Game Animation \n"}</a>}
+                                                               >{data.tabs[index].year + " Game Animation \n"}</a>}
                         </Typography>
                         <Typography variant='h5' fontSize='1' width="auto" height='390' margin="10">
                             {data.tabs[index].RevealVideo && <a rel="noreferrer noopener" target="_blank"
                                                                 href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}
-                                                                style={{color: '#90caf9'}}>{data.tabs[index].year + " Robot Reveal \n"}</a>}
+                                                                >{data.tabs[index].year + " Robot Reveal \n"}</a>}
                         </Typography>
                         <Typography variant='h5' fontSize='1' width="auto" height='390' margin="10">
                             {data.tabs[index].RecapVideo && <a rel="noreferrer noopener" target="_blank"
                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}
-                                                               style={{color: '#90caf9'}}>{data.tabs[index].year + " Season Recap \n"}</a>}
+                                                               >{data.tabs[index].year + " Season Recap \n"}</a>}
                         </Typography>
 
                 </Card>

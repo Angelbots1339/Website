@@ -1,25 +1,58 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
 import data from "./firstRobotics.json";
 
-
 export default function FirstRobotics() {
 
-
-    // This code can be used for variable size on mobile vs desktop
-    //
-    //
     const [isScreenBig, setScreenBig] = useState(false);
+    // This code can be used for variable size on mobile vs desktop
+
+    const [forceRenderNum, setForceRenderNum] = useState({});
 
     const data = require('./firstRobotics.json');
+
+    // const videosArray = ["Placeholder", data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo] // Skips the first index for some reason, so I added placeholder
+
+    // const [YTRefs, setYTRefs] = useState(new Map()); // videosArray.reduce((a, v) => ({ ...a, [v]: createRef()}), {});
+
+    const FRCVidRef = new useRef(null);
+    const FTCVidRef = new useRef(null);
+    const FLLVidRef = new useRef(null);
+    const [hasYTLoaded, setYTLoaded] = useState({});
+    const [YTLoadInterval, setYTLoadInterval] = useState({});
+    const onPlayerReady = (id, ref) => {
+        YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+    }
+    const delayedOnPlayerReady = (id, ref) => {
+        if(!hasYTLoaded[id] && ref.current != null) {
+            let clientWidthBool = ref.current.clientWidth >= 5;
+            hasYTLoaded[id] = clientWidthBool;
+            clearInterval(YTLoadInterval[id]);
+            setForceRenderNum(forceRenderNum + 1);
+        }}
+
 
 
     useEffect(() => {
 
         setScreenBig(window.innerWidth > 1200);
 
-    }, []);
+
+
+        hasYTLoaded[data.FRC.gameVideo] = false;
+        hasYTLoaded[data.FTC.gameVideo] = false;
+        hasYTLoaded[data.FLL.gameVideo] = false;
+
+        YTLoadInterval[data.FRC.gameVideo] = null;
+        YTLoadInterval[data.FTC.gameVideo] = null;
+        YTLoadInterval[data.FLL.gameVideo] = null;
+
+
+
+    }, [hasYTLoaded, YTLoadInterval, data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo, forceRenderNum]);
+
+
 
     return (
 
@@ -48,12 +81,12 @@ export default function FirstRobotics() {
                         display: "flex",
                         alignItems: "center",
                         width: "95%",
-                        height: 2200,
+                        height: 2300,
                         marginLeft: '2.5%',
                         marginTop: 50
                     }}>
 
-                        <Paper sx={{width: "100%", height: 2200}}>
+                        <Paper sx={{width: "100%", height: 2300}}>
 
                             <div style={{
                                 display: "flex",
@@ -63,14 +96,15 @@ export default function FirstRobotics() {
                                 marginLeft: '5%',
                                 marginTop: 0
                             }}>
-                                <Card sx={{width: "50%", height: 600, mt: 20}}>
+                                <Card sx={{width: "50%", height: "auto", mt: 20}}>
 
                                     <div style={{
                                         alignItems: "center",
                                         width: "90%",
                                         height: "auto",
                                         marginLeft: '5%',
-                                        marginTop: 20
+                                        marginTop: 20,
+                                        marginBottom:20
                                     }}>
                                         <Typography variant="h4">
 
@@ -105,12 +139,12 @@ export default function FirstRobotics() {
                                     marginTop: 100
                                 }}>
 
-                                    <img src="/images/firstRobotics/frcLogo.jpg" alt="FRC Logo" width="auto"
-                                         height="200"/>
-                                    <img src="/images/firstRobotics/ftcLogo.jpg" alt="FTC Logo" width="auto"
-                                         height="200"/>
-                                    <img src="/images/firstRobotics/fllLogo.png" alt="FLL Logo" width="auto"
-                                         height="200"/>
+                                    <img src="/images/firstRobotics/frcLogo.jpg" alt="FRC Logo" width="100%"
+                                         height="auto"/>
+                                    <img src="/images/firstRobotics/ftcLogo.jpg" alt="FTC Logo" width="100%"
+                                         height="auto"/>
+                                    <img src="/images/firstRobotics/fllLogo.png" alt="FLL Logo" width="100%"
+                                         height="auto"/>
 
 
                                 </div>
@@ -119,9 +153,9 @@ export default function FirstRobotics() {
 
 
                             <div style={{
-                                alignItems: "center",
+                                // alignItems: "center",
                                 width: "90%",
-                                height: 600,
+                                height: "auto",
                                 marginLeft: '5%',
                                 marginTop: 100
                             }}>
@@ -130,19 +164,19 @@ export default function FirstRobotics() {
 
                                     <div style={{
                                         display: 'flex',
-                                        alignItems: "center",
+                                        // alignItems: "center",
                                         width: "90%",
-                                        height: 600,
+                                        height: "auto",
                                         marginLeft: '5%',
-                                        marginTop: 100
+                                        marginTop: 10
                                     }}>
 
                                         <div style={{
-                                            alignItems: "center",
+                                            // alignItems: "center",
                                             width: "70%",
-                                            height: 600,
+                                            height: "auto",
                                             marginLeft: '0%',
-                                            marginTop: 100
+                                            marginTop: 0
                                         }}>
 
                                             <Typography variant="h3" sx={{marginBottom: 10}}>
@@ -163,9 +197,8 @@ export default function FirstRobotics() {
 
                                         </div>
 
-                                        <div style={{marginBottom: 200}}>
+                                        <div style={{marginBottom: 20}}   ref={FRCVidRef} sx={{width:"auto", height:"auto"}}>
                                             <YouTube
-
                                                 videoId={data.FRC.gameVideo}
                                                 opts={{
                                                     height: '550',
@@ -177,9 +210,13 @@ export default function FirstRobotics() {
                                                         loop: 0,
                                                         modestbranding: 1,
 
-                                                    },
-                                                }}/>
+                                                    },}}
+                                                onReady={onPlayerReady(data.FRC.gameVideo, FRCVidRef)}/>
                                         </div>
+
+                                        {!hasYTLoaded[data.FRC.gameVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                                                                    href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}>
+                                            YouTube Video</a> Has Not Loaded</p> }
 
                                     </div>
 
@@ -209,7 +246,7 @@ export default function FirstRobotics() {
                                         constructed in a similar way to FRC robots, where things are custom-machined.
                                     </Typography>
 
-                                    <div style={{marginLeft: '5%'}}>
+                                    <div style={{marginLeft: '5%'}} ref={FTCVidRef} sx={{width:"auto", height:"auto"}}>
                                         <YouTube
 
                                             videoId={data.FTC.gameVideo}
@@ -224,7 +261,8 @@ export default function FirstRobotics() {
                                                     modestbranding: 1,
 
                                                 },
-                                            }}/>
+                                            }}
+                                            onReady={onPlayerReady(data.FTC.gameVideo, FTCVidRef)}/>
                                     </div>
 
 
@@ -243,7 +281,7 @@ export default function FirstRobotics() {
                                         every year, but unlike them there is only a single robot on the field at a time.
                                     </Typography>
 
-                                    <div style={{marginLeft: '5%'}}>
+                                    <div style={{marginLeft: '5%'}} ref={FLLVidRef} sx={{width:"auto", height:"auto"}}>
                                         <YouTube
 
                                             videoId={data.FLL.gameVideo}
@@ -258,7 +296,8 @@ export default function FirstRobotics() {
                                                     modestbranding: 1,
 
                                                 },
-                                            }}/>
+                                            }}
+                                            onReady={onPlayerReady(data.FLL.gameVideo, FLLVidRef)}/>
                                     </div>
 
 
