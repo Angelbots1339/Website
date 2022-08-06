@@ -424,7 +424,7 @@ export default function Supporters() {
             {!isScreenBig &&
                 <div>
 
-                    <Paper sx={{width: '100%', height: 'auto'}}>
+                    <Paper sx={{width: '100%', height: 'auto', marginBottom:5}}>
 
                         <div style={{
                             display: "flex",
@@ -483,7 +483,7 @@ export default function Supporters() {
                             marginLeft: '2.5%',
                             marginTop: 0
                         }}>
-                            <img src="" alt="Carol Layng" width="auto" height="100"/>
+                            <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="100"/>
                             <Typography variant="h5" sx={{marginLeft: 5, marginRight: 5}}>
                                 Carol Layng
                             </Typography>
