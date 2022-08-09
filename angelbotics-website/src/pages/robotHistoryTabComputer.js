@@ -28,11 +28,14 @@ export default function RobotHistoryTabComputer(props) {
     const [hasYTLoaded, setYTLoaded] = useState({});
     const [YTLoadInterval, setYTLoadInterval] = useState({});
     const onPlayerReady = (id, ref) => {
-        YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+
+        if(!hasYTLoaded[id] && YTLoadInterval[id] == null) {
+            YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+        }
     }
     const delayedOnPlayerReady = (id, ref) => {
         if(!hasYTLoaded[id] && ref.current != null) {
-            let clientWidthBool = ref.current.clientWidth >= 5;
+            let clientWidthBool = ref.current.clientWidth >= 1;
             hasYTLoaded[id] = clientWidthBool;
             clearInterval(YTLoadInterval[id]);
             setForceRenderNum(forceRenderNum + 1);
@@ -298,11 +301,11 @@ export default function RobotHistoryTabComputer(props) {
 
                                 },
                             }}
-                            onReady={onPlayerReady(data.tabs[index].RobotReveal, robotRevealRef)}/>
+                            onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
 
 
-                        {!hasYTLoaded[data.tabs[index].RobotReveal] && <p>  <a rel="noreferrer noopener" target="_blank"
-                                                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].RobotReveal}>
+                        {!hasYTLoaded[data.tabs[index].RevealVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
                             YouTube Video</a> Has Not Loaded</p> }
 
                     </div>}
