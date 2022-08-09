@@ -80,7 +80,7 @@ export default function RobotHistoryTabMobile(props) {
                 marginTop: 20
             }}>
 
-                <Card variant='outlined'
+                {data.tabs[index].GameDescription && <Card variant='outlined'
                       sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 1, height: "auto", width: "90%"}}>
 
                     <div>
@@ -91,7 +91,7 @@ export default function RobotHistoryTabMobile(props) {
 
                         </Typography>
                     </div>
-                </Card>
+                </Card>}
 
             </div>
 
@@ -103,6 +103,47 @@ export default function RobotHistoryTabMobile(props) {
                 marginTop: 20
             }}>
 
+                <div style={{
+                    alignItems: "center",
+                    width: "95%",
+                    height: "auto",
+                    marginLeft: '2.5%',
+                    marginTop: 20
+                }}>
+
+                    {data.tabs[index].yearSummary && <Card variant='outlined'
+                          sx={{backgroundColor: '#ffd4d4', border: 1, borderWidth: 2, m: 1, height: "auto", width: "90%"}}>
+
+                        <div>
+                            <Typography variant='p' fontSize='1' width="90%" height='390' margin="10" padding="auto">
+
+                                {data.tabs[index].yearSummary}
+
+
+                            </Typography>
+                        </div>
+                    </Card>}
+
+                </div>
+
+
+                <div style={{
+                    alignItems: "center",
+                    alignSelf: "center",
+                    width: "auto",
+                    height: "auto",
+                    marginLeft: '0%',
+                    marginBottom: 10
+                }}>
+
+                {data.tabs[index].RobotName &&
+                    <Typography variant="h4" sx={{marginLeft: "20%"}}>
+
+                        {data.tabs[index].RobotName}
+
+                    </Typography>
+                }
+                </div>
 
                 {data.tabs[index].CadModelPath &&
                     <div sx={{margin: 10}}>
@@ -128,10 +169,12 @@ export default function RobotHistoryTabMobile(props) {
                     </div>
                 }
 
-                <div sx={{marginTop: 10, paddingTop: 10}}>
+
+
+                {data.tabs[index].RobotImagePath && <div sx={{marginTop: 10, paddingTop: 10}}>
                     <img src={data.tabs[index].RobotImagePath} height="auto" width="100%"
                          alt={data.tabs[index].year + " robot picture"} sx={{marginTop: 10}}/>
-                </div>
+                </div>}
 
 
             </div>

@@ -80,7 +80,13 @@ export default function History() {
                                         <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
                                         <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
                                         <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-
+                                        <Tab label="2012" {...a11yProps(9)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2011" {...a11yProps(10)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2010" {...a11yProps(11)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2009" {...a11yProps(12)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2008" {...a11yProps(13)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2007" {...a11yProps(14)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                        <Tab label="2004" {...a11yProps(15)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
 
 
                                     </Tabs>
@@ -91,7 +97,13 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '80%', height: 'auto', marginLeft: '5%', marginBottom: 10, alignItems:'center'}}>
+                            <Paper sx={{
+                                width: '80%',
+                                height: 'auto',
+                                marginLeft: '5%',
+                                marginBottom: 10,
+                                alignItems: 'center'
+                            }}>
 
                                 <div style={{
                                     alignItems: "center",
@@ -100,15 +112,23 @@ export default function History() {
                                     marginLeft: '0%'
                                 }}>
 
-                                <RobotHistoryTabComputer value={value} index={0}/>
-                                <RobotHistoryTabComputer value={value} index={1}/>
-                                <RobotHistoryTabComputer value={value} index={2}/>
-                                <RobotHistoryTabComputer value={value} index={3}/>
-                                <RobotHistoryTabComputer value={value} index={4}/>
-                                <RobotHistoryTabComputer value={value} index={5}/>
-                                <RobotHistoryTabComputer value={value} index={6}/>
-                                <RobotHistoryTabComputer value={value} index={7}/>
-                                <RobotHistoryTabComputer value={value} index={8}/>
+                                    <RobotHistoryTabComputer value={value} index={0}/>
+                                    <RobotHistoryTabComputer value={value} index={1}/>
+                                    <RobotHistoryTabComputer value={value} index={2}/>
+                                    <RobotHistoryTabComputer value={value} index={3}/>
+                                    <RobotHistoryTabComputer value={value} index={4}/>
+                                    <RobotHistoryTabComputer value={value} index={5}/>
+                                    <RobotHistoryTabComputer value={value} index={6}/>
+                                    <RobotHistoryTabComputer value={value} index={7}/>
+                                    <RobotHistoryTabComputer value={value} index={8}/>
+                                    <RobotHistoryTabComputer value={value} index={9}/>
+                                    <RobotHistoryTabComputer value={value} index={10}/>
+                                    <RobotHistoryTabComputer value={value} index={11}/>
+                                    <RobotHistoryTabComputer value={value} index={12}/>
+                                    <RobotHistoryTabComputer value={value} index={13}/>
+                                    <RobotHistoryTabComputer value={value} index={14}/>
+                                    <RobotHistoryTabComputer value={value} index={15}/>
+
 
                                 </div>
 
@@ -118,9 +138,6 @@ export default function History() {
                     </div>
                 </div>
             }
-
-
-
 
 
             {/*----------Small Screens----------*/}
@@ -163,8 +180,13 @@ export default function History() {
                                         <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
                                         <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
                                         <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-
-
+                                        <Tab label="2012" {...a11yProps(9)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2011" {...a11yProps(10)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2010" {...a11yProps(11)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2009" {...a11yProps(12)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2008" {...a11yProps(13)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2007" {...a11yProps(14)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        <Tab label="2004" {...a11yProps(15)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
 
                                     </Tabs>
 
@@ -174,7 +196,7 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '95%', height:'auto', marginLeft: '2.5%', marginBottom: 30}}>
+                            <Paper sx={{width: '95%', height: 'auto', marginLeft: '2.5%', marginBottom: 30}}>
 
 
                                 <RobotHistoryTabMobile value={value} index={0}/>
@@ -186,7 +208,13 @@ export default function History() {
                                 <RobotHistoryTabMobile value={value} index={6}/>
                                 <RobotHistoryTabMobile value={value} index={7}/>
                                 <RobotHistoryTabMobile value={value} index={8}/>
-
+                                <RobotHistoryTabMobile value={value} index={9}/>
+                                <RobotHistoryTabMobile value={value} index={10}/>
+                                <RobotHistoryTabMobile value={value} index={11}/>
+                                <RobotHistoryTabMobile value={value} index={12}/>
+                                <RobotHistoryTabMobile value={value} index={13}/>
+                                <RobotHistoryTabMobile value={value} index={14}/>
+                                <RobotHistoryTabMobile value={value} index={15}/>
 
 
                             </Paper>

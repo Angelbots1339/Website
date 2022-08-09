@@ -25,72 +25,41 @@ export default function RobotHistoryTabComputer(props) {
     const recapRef = new useRef(null);
 
 
-    const reveal2022Ref = new useRef(null);
-    const reveal2020Ref = new useRef(null);
-    const reveal2019Ref = new useRef(null);
-    const reveal2018Ref = new useRef(null);
-    const reveal2017Ref = new useRef(null);
-    const reveal2016Ref = new useRef(null);
-    const reveal2015Ref = new useRef(null);
-    const reveal2014Ref = new useRef(null);
-    const reveal2013Ref = new useRef(null);
-
-    const recap2022Ref = new useRef(null);
-    const recap2020Ref = new useRef(null);
-    const recap2019Ref = new useRef(null);
-    const recap2018Ref = new useRef(null);
-    const recap2017Ref = new useRef(null);
-    const recap2016Ref = new useRef(null);
-    const recap2015Ref = new useRef(null);
-    const recap2014Ref = new useRef(null);
-    const recap2013Ref = new useRef(null);
-
-    const gameReveal2022Ref = new useRef(null);
-    const gameReveal2020Ref = new useRef(null);
-    const gameReveal2019Ref = new useRef(null);
-    const gameReveal2018Ref = new useRef(null);
-    const gameReveal2017Ref = new useRef(null);
-    const gameReveal2016Ref = new useRef(null);
-    const gameReveal2015Ref = new useRef(null);
-    const gameReveal2014Ref = new useRef(null);
-    const gameReveal2013Ref = new useRef(null);
-    const gameReveal2012Ref = new useRef(null);
-    const gameReveal2011Ref = new useRef(null);
-    const gameReveal2010Ref = new useRef(null);
-    const gameReveal2009Ref = new useRef(null);
-    const gameReveal2008Ref = new useRef(null);
-    const gameReveal2007Ref = new useRef(null);
-    const gameReveal2004Ref = new useRef(null);
-
-
     const [hasYTLoaded, setYTLoaded] = useState({});
     const [YTLoadInterval, setYTLoadInterval] = useState({});
     const onPlayerReady = (id, ref) => {
-        YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+
+        if(!hasYTLoaded[id] && YTLoadInterval[id] == null) {
+            YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+        }
     }
     const delayedOnPlayerReady = (id, ref) => {
         if(!hasYTLoaded[id] && ref.current != null) {
-            let clientWidthBool = ref.current.clientWidth >= 5;
+            let clientWidthBool = ref.current.clientWidth >= 1;
             hasYTLoaded[id] = clientWidthBool;
             clearInterval(YTLoadInterval[id]);
             setForceRenderNum(forceRenderNum + 1);
         }}
 
 
-    // useEffect(() => {
-    //
-    //     hasYTLoaded[data.tabs[index].GameReveal] = false;
-    //     hasYTLoaded[data.tabs[index].RevealVideo] = false;
-    //     hasYTLoaded[data.tabs[index].RecapVideo] = false;
-    //
-    //     YTLoadInterval[data.tabs[index].GameReveal] = null;
-    //     YTLoadInterval[data.tabs[index].RevealVideo] = null;
-    //     YTLoadInterval[data.tabs[index].RecapVideo] = null;
-    //
-    //
-    //
-    // }, [hasYTLoaded, YTLoadInterval, data.tabs[index].GameReveal, data.tabs[index].RevealVideo, data.tabs[index].RecapVideo, forceRenderNum]);
+    const [useEffectHasRun, setUseEffectHasRun] = useState(false);
 
+    useEffect(() => {
+
+
+
+        if(!useEffectHasRun) {
+            hasYTLoaded[data.tabs[index].GameReveal] = false;
+            hasYTLoaded[data.tabs[index].RevealVideo] = false;
+            hasYTLoaded[data.tabs[index].RecapVideo] = false;
+
+            YTLoadInterval[data.tabs[index].GameReveal] = null;
+            YTLoadInterval[data.tabs[index].RevealVideo] = null;
+            YTLoadInterval[data.tabs[index].RecapVideo] = null;
+            setUseEffectHasRun(true);
+        }
+
+    }, [hasYTLoaded, YTLoadInterval, forceRenderNum]);
 
 
 
@@ -182,7 +151,10 @@ export default function RobotHistoryTabComputer(props) {
 
                 }
                 {data.tabs[index].GameReveal &&
-                    <div style={{marginTop: '0%'}}>
+                    <div style={{marginTop: '0%'}} ref={gameRevealRef}>
+                        <Typography variant='h4' sx={{m: 2, marginLeft:"30%"}} width="auto" height='auto'>
+                            Game Reveal
+                        </Typography>
                         <YouTube
 
                             videoId={data.tabs[index].GameReveal}
@@ -197,65 +169,11 @@ export default function RobotHistoryTabComputer(props) {
                                     modestbranding: 1,
 
                                 },
-                            }}/>
-
-
-                    </div>}
-
-            </div>
-
-
-            {data.tabs[index].CadModelPath &&
-                <div sx={{margin: 10}}>
-                    <Canvas frameloop="demand"
-                            style={{width: "80%", marginLeft: "10%", height: 400, backgroundColor: (79, 79, 79)}}>
-                        <Suspense fallback={<LoadingBar/>}>
-                            <ambientLight/>
-                            <pointLight position={[10, 10, 10]}/>
-                            {/*<DefaultCube position={[3, 0, 0]}/>*/}
-                            {/*<Monkey position={[0, 0, 0]}/>*/}
-                            <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
-                            <OrbitControls/>
-                            <Environment preset="sunset"/>
-                        </Suspense>
-                    </Canvas>
-
-                </div>
-            }
-
-
-            <div style={{
-                display: "flex",
-                alignItems: "center",
-                width: "95%",
-                height: "auto",
-                marginLeft: '2.5%',
-                marginTop: 20
-            }}>
-
-                {data.tabs[index].RobotImagePath &&
-                    <img src={data.tabs[index].RobotImagePath} height="390" width="auto"
-                         alt={data.tabs[index].year + " robot picture"}/>
-                }
-
-                {data.tabs[index].RevealVideo &&
-                    <div style={{marginLeft: 10}}>
-                        <YouTube
-
-                            videoId={data.tabs[index].RevealVideo}
-                            opts={{
-                                height: '390',
-                                width: '640',
-                                playerVars: {
-                                    // https://developers.google.com/youtube/player_parameters
-                                    autoplay: 0,
-                                    disablekb: 0,
-                                    loop: 0,
-                                    modestbranding: 1,
-
-                                },
-                            }}/>
-
+                            }}
+                            onReady={onPlayerReady(data.tabs[index].GameReveal, gameRevealRef)}/>
+                        {!hasYTLoaded[data.tabs[index].GameReveal] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}>
+                            YouTube Video</a> Has Not Loaded</p> }
 
                     </div>}
 
@@ -272,7 +190,11 @@ export default function RobotHistoryTabComputer(props) {
 
 
                 {data.tabs[index].RecapVideo &&
-                    <div style={{marginLeft: 10}}>
+                    <div style={{marginLeft: 10}} ref={recapRef}>
+                        <Typography variant='h4' sx={{m: 2, marginLeft:"30%"}} width="auto" height='auto'>
+                            Recap Video
+                        </Typography>
+
                         <YouTube
 
                             videoId={data.tabs[index].RecapVideo}
@@ -287,8 +209,12 @@ export default function RobotHistoryTabComputer(props) {
                                     modestbranding: 1,
 
                                 },
-                            }}/>
+                            }}
+                            onReady={onPlayerReady(data.tabs[index].RecapVideo, recapRef)}/>
 
+                        {!hasYTLoaded[data.tabs[index].RecapVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}>
+                            YouTube Video</a> Has Not Loaded</p> }
 
                     </div>}
 
@@ -311,6 +237,85 @@ export default function RobotHistoryTabComputer(props) {
 
 
             </div>
+
+            {data.tabs[index].RobotName &&
+                <Typography variant="h2" sx={{marginLeft: "30%", marginBottom:10}}>
+
+                    {data.tabs[index].RobotName}
+
+                </Typography>
+            }
+
+            {data.tabs[index].CadModelPath &&
+                <div sx={{margin: 10}}>
+                    <Canvas frameloop="demand"
+                            style={{width: "80%", marginLeft: "10%", height: 400, backgroundColor: (79, 79, 79)}}>
+                        <Suspense fallback={<LoadingBar/>}>
+                            <ambientLight/>
+                            <pointLight position={[10, 10, 10]}/>
+                            {/*<DefaultCube position={[3, 0, 0]}/>*/}
+                            {/*<Monkey position={[0, 0, 0]}/>*/}
+                            <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
+                            <OrbitControls/>
+                            <Environment preset="sunset"/>
+                        </Suspense>
+                    </Canvas>
+
+                </div>
+            }
+
+
+
+
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                width: "95%",
+                height: "auto",
+                marginLeft: '2.5%',
+                marginTop: 20
+            }}>
+
+                {data.tabs[index].RobotImagePath &&
+                    <img src={data.tabs[index].RobotImagePath} height="390" width="auto"
+                         alt={data.tabs[index].year + " robot picture"}/>
+                }
+
+                {data.tabs[index].RevealVideo &&
+                    <div style={{marginLeft: 10}} ref={robotRevealRef}>
+                        <Typography variant='h4' sx={{m: 2, marginLeft:"30%"}} width="auto" height='auto'>
+                            Robot Reveal
+                        </Typography>
+                        <YouTube
+
+                            videoId={data.tabs[index].RevealVideo}
+                            opts={{
+                                height: '390',
+                                width: '640',
+                                playerVars: {
+                                    // https://developers.google.com/youtube/player_parameters
+                                    autoplay: 0,
+                                    disablekb: 0,
+                                    loop: 0,
+                                    modestbranding: 1,
+
+                                },
+                            }}
+                            onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
+
+
+                        {!hasYTLoaded[data.tabs[index].RevealVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
+                            YouTube Video</a> Has Not Loaded</p> }
+
+                    </div>}
+
+
+
+
+            </div>
+
+
 
             {data.tabs[index].GithubCode &&
                 <a rel="noreferrer noopener" target="_blank"
