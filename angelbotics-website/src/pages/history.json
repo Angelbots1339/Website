@@ -16,7 +16,7 @@
     },
     {
       "year": "2020",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2020/2020Robot.jpg",
       "CadModelPath": "",
       "GameDescription": "In the game of 2020, Infinite Recharge, robots competed to score small yellow balls into goals. The low goal is worth 1 point, the high is worth 2, and a smaller goal inside the high shot is worth 3. In the endgame, robots climb their team's tilting bar, and if they can balance it with robots, they score extra points.",
       "GameName": "2020 Infinite Recharge",
@@ -68,7 +68,7 @@
     },
     {
       "year": "2016",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2016/2016RobotFlying.png",
       "CadModelPath": "",
       "GameDescription": "Each alliance in the 2016 game has a castle, and a row of defenses. These defences can be configured however the alliance decides. Robots launch boulders into the enemy castle, and after enough have been launched, the tower can be captured by all 3 attacking robots surrounding it, with an optional climb.",
       "GameName": "2016 FIRST Stronghold",
@@ -81,7 +81,7 @@
     },
     {
       "year": "2015",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2015/2015Robot.png",
       "CadModelPath": "",
       "GameDescription": "The 2015 game consists of stacking grey tote boxes, then recycling bins, and subsequently filling those bins with litter (foam noodles). These bins can only be stacked in specific areas. Any of the opposing alliance's litter that is not in a bin or the landfill at the center gives 4 points.",
       "GameName": "2015 Recycle Rush",
@@ -94,7 +94,7 @@
     },
     {
       "year": "2014",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2014/2014Robot.jpg",
       "CadModelPath": "",
       "GameDescription": "The main game piece of the 2014 game is a giant exercise ball. These can be scored in either a high goal above the driver station, or a low goal to either side. Assisting a teammate in scoring the ball nets more points, and throwing a ball over the truss in the center gives even more.",
       "GameName": "2014 Aerial Assist",
@@ -107,7 +107,7 @@
     },
     {
       "year": "2013",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2013/2013Robot.JPG",
       "CadModelPath": "",
       "GameDescription": "The 2013 game consists of robots shooting plastic disks into a series of goals. There are several above driver stations, and one at the top of each team's pyramid on the field. At the end of the game, robots climb their alliance's pyramid, the higher the bar reached the more points they receive.",
       "GameName": "2013 Ultimate Ascent",
@@ -120,7 +120,7 @@
     },
     {
       "year": "2012",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2012/2012Robot.jpg",
       "CadModelPath": "",
       "GameDescription": "",
       "GameName": "Rebound Rumble",
@@ -133,7 +133,7 @@
     },
     {
       "year": "2011",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2011/2011Robot.JPG",
       "CadModelPath": "",
       "GameDescription": "",
       "GameName": "Logomotion",
@@ -146,7 +146,7 @@
     },
     {
       "year": "2010",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2010/2010Robot.JPG",
       "CadModelPath": "",
       "GameDescription": "",
       "GameName": "Breakaway",
