@@ -119,29 +119,31 @@ export default function Supporters() {
                             </div>
                         </Paper>
 
-                        <Paper sx={{width: '50%', height: 'auto', marginLeft: 2}}>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: "center",
-                                width: "95%",
-                                height: 'auto',
-                                marginLeft: '2.5%',
-                                marginTop: 10,
-                                marginBottom: 10
-                            }}>
-                                <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="200"/>
+                        {/*<Paper sx={{width: '50%', height: 'auto', marginLeft: 2}}>*/}
+                        {/*    <div style={{*/}
+                        {/*        display: 'flex',*/}
+                        {/*        alignItems: "center",*/}
+                        {/*        width: "95%",*/}
+                        {/*        height: 'auto',*/}
+                        {/*        marginLeft: '2.5%',*/}
+                        {/*        marginTop: 10,*/}
+                        {/*        marginBottom: 10*/}
+                        {/*    }}>*/}
+                        {/*        <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="200"/>*/}
 
-                                <div>
-                                    <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
-                                        Carol Layng
-                                    </Typography>
-                                    <Typography variant="h6" sx={{marginLeft: 5}}>
-                                        Carol specializes in strategy, and contributes to scouting. She also is in charge of the
-                                        logistics for travel, ensuring that the team will be able to compete.
-                                    </Typography>
-                                </div>
-                            </div>
-                        </Paper>
+                        {/*        <div>*/}
+                        {/*            <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>*/}
+                        {/*                Carol Layng*/}
+                        {/*            </Typography>*/}
+                        {/*            <Typography variant="h6" sx={{marginLeft: 5}}>*/}
+                        {/*                Carol specializes in strategy, and contributes to scouting. She also is in charge of the*/}
+                        {/*                logistics for travel, ensuring that the team will be able to compete.*/}
+                        {/*            </Typography>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</Paper>*/}
+
+
                     </div>
 
                     <div style={{
@@ -474,25 +476,27 @@ export default function Supporters() {
                     </Paper>
 
 
-                    <Paper sx={{width: '100%', height: 300, marginTop: 2}}>
-                        <div style={{
-                            display: 'flex',
-                            alignItems: "center",
-                            width: "95%",
-                            height: 110,
-                            marginLeft: '2.5%',
-                            marginTop: 0
-                        }}>
-                            <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="100"/>
-                            <Typography variant="h5" sx={{marginLeft: 5, marginRight: 5}}>
-                                Carol Layng
-                            </Typography>
-                        </div>
-                        <Typography variant="h6" sx={{marginLeft: 1}}>
-                            Carol specializes in strategy, and contributes to scouting. She also is in charge of the
-                            logistics for travel, ensuring that the team will be able to compete.
-                        </Typography>
-                    </Paper>
+                    {/*<Paper sx={{width: '100%', height: 300, marginTop: 2}}>*/}
+                    {/*    <div style={{*/}
+                    {/*        display: 'flex',*/}
+                    {/*        alignItems: "center",*/}
+                    {/*        width: "95%",*/}
+                    {/*        height: 110,*/}
+                    {/*        marginLeft: '2.5%',*/}
+                    {/*        marginTop: 0*/}
+                    {/*    }}>*/}
+                    {/*        <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="100"/>*/}
+                    {/*        <Typography variant="h5" sx={{marginLeft: 5, marginRight: 5}}>*/}
+                    {/*            Carol Layng*/}
+                    {/*        </Typography>*/}
+                    {/*    </div>*/}
+                    {/*    <Typography variant="h6" sx={{marginLeft: 1}}>*/}
+                    {/*        Carol specializes in strategy, and contributes to scouting. She also is in charge of the*/}
+                    {/*        logistics for travel, ensuring that the team will be able to compete.*/}
+                    {/*    </Typography>*/}
+                    {/*</Paper>*/}
+
+
                     <Paper sx={{width: '100%', height: 300, marginTop: 2, marginBottom: 5}}>
                         <div style={{
                             display: 'flex',

@@ -17,6 +17,12 @@
       "level": 1,
       "logo": "/images/logos/DPSLogo.png",
       "website": "https://www.dpsk12.org/"
+    },
+    {
+      "name": "Raytheon Technologies",
+      "level": 1,
+      "logo": "/images/logos/RaytheonLogoLarge.png",
+      "website": "https://www.rtx.com/"
     }
   ],
 

@@ -52,7 +52,7 @@ function App() {
     useEffect(() => {
 
 
-        setScreenBig(window.innerWidth > 800);
+        setScreenBig(window.innerWidth > 1200);
         setCurrentPage(window.location.pathname);
 
     }, []);
@@ -117,7 +117,7 @@ function App() {
 
                     <Outlet/>
 
-                    <Paper sx={{width: '100%', height: 150, marginTop: 20}}>
+                    <Paper sx={{width: '100%', height: "auto", marginTop: 20}}>
 
 
                             <Grid container spacing={2} sx={{ width: '90%', marginLeft: '5%', marginRight: '5%' }}>
@@ -125,7 +125,7 @@ function App() {
                                 {
                                     sponsors3AndAbove.map((sponsor) =>
 
-                                        <Grid item xs={4} sx={{ mx: "auto", textAlign: "center", height:90 }} key={sponsor}>
+                                        <Grid item xs={4} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor}>
 
                                             <a rel="noreferrer noopener" target="_blank"
                                                href={sponsor.website}
