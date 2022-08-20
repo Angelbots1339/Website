@@ -214,7 +214,7 @@ export default function FirstRobotics() {
                                                 onReady={onPlayerReady(data.FRC.gameVideo, FRCVidRef)}/>
                                         </div>
 
-                                        {!hasYTLoaded[data.FRC.gameVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                        {!hasYTLoaded[data.FRC.gameVideo] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                     href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}>
                                             YouTube Video</a> Has Not Loaded</p> }
 
@@ -264,7 +264,7 @@ export default function FirstRobotics() {
                                             }}
                                             onReady={onPlayerReady(data.FTC.gameVideo, FTCVidRef)}/>
 
-                                        {!hasYTLoaded[data.FTC.gameVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                        {!hasYTLoaded[data.FTC.gameVideo] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                      href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}>
                                             YouTube Video</a> Has Not Loaded</p> }
                                     </div>
@@ -303,7 +303,7 @@ export default function FirstRobotics() {
                                             }}
                                             onReady={onPlayerReady(data.FLL.gameVideo, FLLVidRef)}/>
 
-                                        {!hasYTLoaded[data.FLL.gameVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                                        {!hasYTLoaded[data.FLL.gameVideo] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                      href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}>
                                             YouTube Video</a> Has Not Loaded</p> }
 

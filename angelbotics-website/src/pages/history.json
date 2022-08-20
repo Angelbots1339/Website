@@ -81,7 +81,7 @@
     },
     {
       "year": "2015",
-      "RobotImagePath": "/images/history/2015/2015Robot.png",
+      "RobotImagePath": "",
       "CadModelPath": "",
       "GameDescription": "The 2015 game consists of stacking grey tote boxes, then recycling bins, and subsequently filling those bins with litter (foam noodles). These bins can only be stacked in specific areas. Any of the opposing alliance's litter that is not in a bin or the landfill at the center gives 4 points.",
       "GameName": "2015 Recycle Rush",
@@ -146,7 +146,7 @@
     },
     {
       "year": "2010",
-      "RobotImagePath": "/images/history/2010/2010Robot.JPG",
+      "RobotImagePath": "",
       "CadModelPath": "",
       "GameDescription": "",
       "GameName": "Breakaway",
@@ -184,7 +184,7 @@
       "yearSummary": "With our newly optimistic attitude, we returned as Team BeatBot. Unfortunately our robot was overweight by almost 20 pounds, and we used the \"swiss cheese\" method to lighten up, which made our manipulator break. Won our first award, Xerox Creativity, for utilizing a rat trap as a chain tensioner."},
     {
       "year": "2007",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2007/2007Robot.JPG",
       "CadModelPath": "",
       "GameDescription": "",
       "GameName": "Rack 'n Roll",

@@ -1,24 +1,25 @@
 {
+  "mentors": [
 
-
-  "mentors": {
-
-    "noble": {
+    {
       "name": "Joel Noble",
-      "Description": "",
-      "imagePath": ""
+      "description": "Joel Noble is a founder, and has been the lead mentor and head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+      "imagePath": "/images/supporters/noble.JPG"
     },
-    "carol": {
-      "name": "Carol Layng",
-      "Description": "",
-      "imagePath": ""
-    },
-    "chad": {
+    {
       "name": "Chad B",
-      "Description": "",
+      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical, and helps brainstorm about the concept behind the code.",
+      "imagePath": "/images/supporters/mentor_chad.jpg"
+    }
+  ],
+
+  "template":
+
+  {
+      "name": "",
+      "description": "",
       "imagePath": ""
     }
-  }
 
 
 }

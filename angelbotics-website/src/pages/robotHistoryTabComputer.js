@@ -171,7 +171,7 @@ export default function RobotHistoryTabComputer(props) {
                                 },
                             }}
                             onReady={onPlayerReady(data.tabs[index].GameReveal, gameRevealRef)}/>
-                        {!hasYTLoaded[data.tabs[index].GameReveal] && <p>  <a rel="noreferrer noopener" target="_blank"
+                        {!hasYTLoaded[data.tabs[index].GameReveal] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}>
                             YouTube Video</a> Has Not Loaded</p> }
 
@@ -212,7 +212,7 @@ export default function RobotHistoryTabComputer(props) {
                             }}
                             onReady={onPlayerReady(data.tabs[index].RecapVideo, recapRef)}/>
 
-                        {!hasYTLoaded[data.tabs[index].RecapVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                        {!hasYTLoaded[data.tabs[index].RecapVideo] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}>
                             YouTube Video</a> Has Not Loaded</p> }
 
@@ -304,7 +304,7 @@ export default function RobotHistoryTabComputer(props) {
                             onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
 
 
-                        {!hasYTLoaded[data.tabs[index].RevealVideo] && <p>  <a rel="noreferrer noopener" target="_blank"
+                        {!hasYTLoaded[data.tabs[index].RevealVideo] && <p> If the <a rel="noreferrer noopener" target="_blank"
                                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
                             YouTube Video</a> Has Not Loaded</p> }
 
@@ -325,6 +325,12 @@ export default function RobotHistoryTabComputer(props) {
                          height="100"/>
                 </a>
             }
+            {!data.tabs[index].GithubCode &&
+                <div style={{height: "20px"}}>
+                </div>
+
+            }
+
 
         </div>
     );
