@@ -1,6 +1,6 @@
 import {Grid, Paper, Typography} from "@mui/material";
-import sponsorsJSON from "./sponsors.json";
 import {useEffect, useState} from "react";
+import supportersJSON from "./supporters.json";
 
 export default function Supporters() {
 
@@ -12,6 +12,8 @@ export default function Supporters() {
 
 
     const sponsorsJSON = require('./sponsors.json');
+    const supportersJSON = require('./supporters.json');
+
 
     const sponsorsLevel1 = sponsorsJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 1) return sponsor;
@@ -61,7 +63,7 @@ export default function Supporters() {
             {isScreenBig &&
                 <div>
 
-                    <Paper sx={{width: '100%', height: 'auto'}}>
+                    <Paper sx={{width: '100%', height: 'auto', marginBottom:5}}>
 
                         <div style={{
                             display: "flex",
@@ -72,138 +74,45 @@ export default function Supporters() {
                             paddingTop: 10,
                             paddingBottom: 10
                         }}>
-
-
                             <Typography variant="h1" sx={{marginLeft: '40%'}}>
-
                                 Mentors
-
                             </Typography>
-
                         </div>
-
                     </Paper>
 
+                        <Grid container spacing={2}
+                              sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
+                            {supportersJSON.mentors.map((mentor) =>
+                                <Grid item xs={6} sx={{
+                                    mx: "auto",
+                                    textAlign: "center",
+                                    height: "auto"
+                                }}
+                                      key={mentor.name}>
+                                    <Paper sx={{width: '100%', height: "100%"}}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: "center",
+                                            width: "95%",
+                                            height: 'auto',
+                                            marginLeft: '2.5%',
+                                            marginTop: 10,
+                                            marginBottom: 10
+                                        }}>
+                                            <img src={mentor.imagePath} alt={mentor.name} width="auto" height="200"/>
 
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        width: "95%",
-                        height: 'auto',
-                        marginLeft: '2.5%',
-                        marginTop: 30
-                    }}>
-
-                        <Paper sx={{width: '50%', height: 'auto'}}>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: "center",
-                                width: "95%",
-                                height: 'auto',
-                                marginLeft: '2.5%',
-                                marginTop: 10,
-                                marginBottom: 10
-                            }}>
-                                <img src="/images/supporters/noble.JPG" alt="Joel Noble" width="auto" height="200"/>
-
-                                <div>
-                                    <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 2}}>
-                                        Joel Noble
-                                    </Typography>
-                                    <Typography variant="h6" sx={{marginLeft: 5, mb: 10}}>
-                                        Joel Noble is a founder, and has been the lead mentor and head coach
-                                        since the team started in 2004. He plays a crucial role in keeping
-                                        Angelbotics operational, and is an amazing person.
-                                    </Typography>
-                                </div>
-                            </div>
-                        </Paper>
-
-                        {/*<Paper sx={{width: '50%', height: 'auto', marginLeft: 2}}>*/}
-                        {/*    <div style={{*/}
-                        {/*        display: 'flex',*/}
-                        {/*        alignItems: "center",*/}
-                        {/*        width: "95%",*/}
-                        {/*        height: 'auto',*/}
-                        {/*        marginLeft: '2.5%',*/}
-                        {/*        marginTop: 10,*/}
-                        {/*        marginBottom: 10*/}
-                        {/*    }}>*/}
-                        {/*        <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="200"/>*/}
-
-                        {/*        <div>*/}
-                        {/*            <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>*/}
-                        {/*                Carol Layng*/}
-                        {/*            </Typography>*/}
-                        {/*            <Typography variant="h6" sx={{marginLeft: 5}}>*/}
-                        {/*                Carol specializes in strategy, and contributes to scouting. She also is in charge of the*/}
-                        {/*                logistics for travel, ensuring that the team will be able to compete.*/}
-                        {/*            </Typography>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</Paper>*/}
-
-
-                    </div>
-
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        width: "95%",
-                        height: 'auto',
-                        marginLeft: '2.5%',
-                        marginTop: 30
-                    }}>
-
-                        <Paper sx={{width: '50%', height: 'auto'}}>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: "center",
-                                width: "95%",
-                                height: 'auto',
-                                marginLeft: '2.5%',
-                                marginTop: 10,
-                                marginBottom: 10
-                            }}>
-                                <img src="/images/supporters/mentor_chad.jpg" alt="Chad B" width="auto" height="200"/>
-
-                                <div>
-                                    <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>
-                                        Chad B
-                                    </Typography>
-                                    <Typography variant="h6" sx={{marginLeft: 5}}>
-                                        Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues
-                                        with the electrical, and helps brainstorm about the concept behind the code.
-                                    </Typography>
-                                </div>
-                            </div>
-                        </Paper>
-
-                        {/*                 Use this section for another mentor                      */}
-
-                        {/*<Paper sx={{width: '50%', height: 250, marginLeft: 2}}>*/}
-                        {/*    <div style={{*/}
-                        {/*        display: 'flex',*/}
-                        {/*        alignItems: "center",*/}
-                        {/*        width: "95%",*/}
-                        {/*        height: 250,*/}
-                        {/*        marginLeft: '2.5%',*/}
-                        {/*        marginTop: 0*/}
-                        {/*    }}>*/}
-                        {/*        <img src="/images/supporters/" alt="" width="auto" height="200"/>*/}
-
-                        {/*        <div>*/}
-                        {/*            <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 5}}>*/}
-
-
-                        {/*            </Typography>*/}
-                        {/*            <Typography variant="h6" sx={{marginLeft: 5}}>*/}
-
-                        {/*            </Typography>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</Paper>*/}
-                    </div>
+                                            <div>
+                                                <Typography variant="h4" sx={{marginLeft: '30%', marginBottom: 2}}>
+                                                    {mentor.name}
+                                                </Typography>
+                                                <Typography variant="h6" sx={{marginLeft: 5, mb: 10}}>
+                                                    {mentor.description}
+                                                </Typography>
+                                            </div>
+                                        </div>
+                                    </Paper>
+                                </Grid>)}
+                        </Grid>
 
                     <div style={{
                         alignItems: "center",
@@ -426,7 +335,7 @@ export default function Supporters() {
             {!isScreenBig &&
                 <div>
 
-                    <Paper sx={{width: '100%', height: 'auto', marginBottom:5}}>
+                    <Paper sx={{width: '100%', height: 'auto', marginBottom: 5}}>
 
                         <div style={{
                             display: "flex",

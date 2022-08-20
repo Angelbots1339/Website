@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import {Box, Paper, Typography} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
-import CuratorWidget from "./CuratorWidget";
-
+import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
+import homeJSON from "./home.json";
 
 export default function Home() {
 
@@ -103,13 +103,14 @@ export default function Home() {
                                     marginTop: 10
                                 }}>
 
-                                    <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="90%"
-                                         height="auto" style={{marginLeft:'2%'}}/>
+                                    <img src={homeJSON.info.robotImagePath} alt="Robot Picture" width="95%"
+                                         height="auto" style={{marginX: "auto"}}/>
 
                                 </div>
                             </Box>
 
                         </Paper>
+
 
                         <Paper sx={{width: '40%', height: 600, marginLeft: '5%'}}>
 
@@ -125,17 +126,10 @@ export default function Home() {
                                 }}>
 
                                     <Typography variant="h4">
-                                        Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization
-                                        affiliated with East High School Denver. Team 1339 Angelbotics was started
-                                        around 2004, and has been competing ever since. We are based in Denver,
-                                        Colorado,
-                                        right in the center of the city.
+                                        {homeJSON.info.teamDescription}
                                     </Typography>
-
                                 </div>
-
                             </Box>
-
                         </Paper>
 
 
@@ -151,16 +145,19 @@ export default function Home() {
                     }}>
 
 
-                        {/*<Paper sx={{width: '90%', height: 500, marginLeft: '5%'}}>*/}
+                        <Paper sx={{width: '100%', height: 500, marginLeft: '0%'}}>
 
-                        {/*    <Box display="flex" alignItems="center" justifyContent="center">*/}
+                            <div style={{
+                                alignItems: "center",
+                                width: "90%",
+                                height: "auto",
+                                marginLeft: '5%',
+                                marginTop: 25
+                            }}>
+                            <ReactEmbeddedGoogleCalendar publicUrl ={homeJSON.info.googleCalendarPublicLink} height = '450px' width = "100%"/>
+                            </div>
 
-                        {/*        <p>More Info Here</p>*/}
-
-                        {/*    </Box>*/}
-
-
-                        {/*</Paper>*/}
+                        </Paper>
 
 
                     </div>
@@ -214,11 +211,7 @@ export default function Home() {
                             }}>
 
                                 <Typography variant="h6">
-                                    Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization
-                                    affiliated with East High School Denver. Team 1339 Angelbotics was started
-                                    around 2004, and has been competing ever since. We are based in Denver,
-                                    Colorado,
-                                    right in the center of the city.
+                                    {homeJSON.info.teamDescription}
                                 </Typography>
 
                             </div>
@@ -242,7 +235,7 @@ export default function Home() {
                                 marginBottom: 15
                             }}>
 
-                                <img src="/images/history/2022/JazzyJudi.JPG" alt="Robot Picture" width="100%"
+                                <img src={homeJSON.info.robotImagePath} alt="Robot Picture" width="100%"
                                      height="auto"/>
 
                             </div>
@@ -251,6 +244,19 @@ export default function Home() {
 
                     </Paper>
 
+                    <Paper sx={{width: '100%', height: 500, marginLeft: '0%'}}>
+
+                        <div style={{
+                            alignItems: "center",
+                            width: "90%",
+                            height: "auto",
+                            marginLeft: '5%',
+                            marginTop: 25
+                        }}>
+                            <ReactEmbeddedGoogleCalendar publicUrl ={homeJSON.info.googleCalendarPublicLink} height = '450px' width = "100%"/>
+                        </div>
+
+                    </Paper>
 
                 </div>
 
