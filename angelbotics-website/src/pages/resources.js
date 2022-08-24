@@ -1,6 +1,8 @@
 import {useEffect, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
-import data from "./history.json";
+import {ReactEmbeddedGoogleCalendar} from "react-embedded-google-calendar";
+
+const resourcesJSON = require('./resources.json');
 
 
 export default function Resources() {
@@ -31,13 +33,13 @@ export default function Resources() {
                     display: "flex",
                     alignItems: "center",
                     width: "95%",
-                    height: 1500,
+                    height: 2000,
                     marginLeft: '2.5%',
                     marginTop: 100
                 }}>
 
 
-                    <Paper sx={{width: '100%', height: 1500}}>
+                    <Paper sx={{width: '100%', height: 2000}}>
 
 
                         <div style={{
@@ -199,7 +201,30 @@ export default function Resources() {
 
                         </div>
 
+                        <div style={{
+                            display: "flex",
+                            alignItems: "center",
+                            width: "95%",
+                            height: 600,
+                            marginLeft: '2.5%',
+                            marginTop: 0
+                        }}>
+                        <Card sx={{height: 550, width: "100%", m: 3}}>
 
+                            <div style={{
+                                alignItems: "center",
+                                width: "90%",
+                                height: "auto",
+                                marginLeft: '5%',
+                                marginTop: 20
+                            }}>
+
+
+                        <ReactEmbeddedGoogleCalendar publicUrl ={resourcesJSON.googleCalendarPublicLink} height = '500px' width = "100%"/>
+
+                            </div>
+                        </Card>
+                        </div>
                     </Paper>
 
 
@@ -212,9 +237,9 @@ export default function Resources() {
 
             {!isScreenBig &&
 
-                <div style={{display: "flex", alignItems: "center", width: "100", height: 2100}}>
+                <div style={{display: "flex", alignItems: "center", width: "100", height: "auto"}}>
 
-                    <Paper sx={{width: '100%', height: 2100}}>
+                    <Paper sx={{width: '100%', height: 2600}}>
 
 
                         <div style={{
@@ -356,8 +381,31 @@ export default function Resources() {
 
 
 
+                            <Card sx={{height: "auto", width: "100%", marginTop:5, marginBottom:5}}>
+                                <div style={{
+                                    alignItems: "center",
+                                    width: "90%",
+                                    height: "auto",
+                                    marginLeft: '5%',
+                                    marginTop: 20
+                                }}>
+                                    <a rel="noreferrer noopener" target="_blank"
+                                       href={"https://www.thebluealliance.com/team/1339"}>
+                                        <Typography variant='h5' sx={{mt:5}}>
+                                            Calendar
+                                        </Typography>
+                                    </a>
+                                        <ReactEmbeddedGoogleCalendar publicUrl ={resourcesJSON.googleCalendarPublicLink} height = '400px' width = "100%"/>
+                                </div>
+                            </Card>
+
+
+
+
 
                         </div>
+
+
                     </Paper>
 
                 </div>
