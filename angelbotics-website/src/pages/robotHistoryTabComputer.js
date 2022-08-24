@@ -9,7 +9,6 @@ import {useLoader} from "@react-three/fiber";
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
-import data from "./firstRobotics.json";
 
 
 export default function RobotHistoryTabComputer(props) {

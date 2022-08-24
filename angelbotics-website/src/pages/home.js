@@ -1,8 +1,6 @@
 import {useEffect, useState} from "react";
 import {Box, Paper, Typography} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
-import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
-import homeJSON from "./home.json";
 
 export default function Home() {
 
@@ -135,33 +133,6 @@ export default function Home() {
 
                     </div>
 
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        width: "95%",
-                        height: "auto",
-                        marginLeft: '2.5%',
-                        marginTop: 100
-                    }}>
-
-
-                        <Paper sx={{width: '100%', height: 500, marginLeft: '0%'}}>
-
-                            <div style={{
-                                alignItems: "center",
-                                width: "90%",
-                                height: "auto",
-                                marginLeft: '5%',
-                                marginTop: 25
-                            }}>
-                            <ReactEmbeddedGoogleCalendar publicUrl ={homeJSON.info.googleCalendarPublicLink} height = '450px' width = "100%"/>
-                            </div>
-
-                        </Paper>
-
-
-                    </div>
-
 
                 </div>
 
@@ -241,20 +212,6 @@ export default function Home() {
                             </div>
 
                         </Box>
-
-                    </Paper>
-
-                    <Paper sx={{width: '100%', height: 500, marginLeft: '0%'}}>
-
-                        <div style={{
-                            alignItems: "center",
-                            width: "90%",
-                            height: "auto",
-                            marginLeft: '5%',
-                            marginTop: 25
-                        }}>
-                            <ReactEmbeddedGoogleCalendar publicUrl ={homeJSON.info.googleCalendarPublicLink} height = '450px' width = "100%"/>
-                        </div>
 
                     </Paper>
 
