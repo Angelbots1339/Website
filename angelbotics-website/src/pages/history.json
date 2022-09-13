@@ -17,7 +17,8 @@
     {
       "year": "2020",
       "RobotImagePath": "/images/history/2020/2020Robot.jpg",
-      "CadModelPath": "",
+      "CadModelPath": "/images/history/2020/2020RobotDecimated.obj",
+      "CadMaterialPath": "/images/history/2020/2020RobotDecimated.mtl",
       "GameDescription": "In the game of 2020, Infinite Recharge, robots competed to score small yellow balls into goals. The low goal is worth 1 point, the high is worth 2, and a smaller goal inside the high shot is worth 3. In the endgame, robots climb their team's tilting bar, and if they can balance it with robots, they score extra points.",
       "GameName": "2020 Infinite Recharge",
       "RevealVideo": "",
