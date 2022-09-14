@@ -276,7 +276,7 @@ export default function RobotHistoryTabComputer(props) {
             }}>
 
                 {data.tabs[index].RobotImagePath &&
-                    <img src={data.tabs[index].RobotImagePath} height="auto" width="50%"
+                    <img src={data.tabs[index].RobotImagePath} height="auto" width={window.innerWidth <= 1500 ? "30%" : "50%"}
                          alt={data.tabs[index].year + " robot picture"}/>
                 }
 
