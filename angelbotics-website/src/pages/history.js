@@ -5,7 +5,10 @@ import React from "react";
 import RobotHistoryTabMobile from "./robotHistoryTabMobile";
 
 
+
 export default function History() {
+
+    const data = require('./history.json');
 
 
     const [value, setValue] = React.useState(0);
@@ -70,23 +73,27 @@ export default function History() {
                                         sx={{borderRight: 1, borderColor: 'divider', width: "100%"}}
                                     >
 
+                                        {data.tabs.map((year, index) =>
 
-                                        <Tab label="2022" {...a11yProps(0)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2020" {...a11yProps(1)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2019" {...a11yProps(2)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2018" {...a11yProps(3)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2017" {...a11yProps(4)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2016" {...a11yProps(5)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2012" {...a11yProps(9)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2011" {...a11yProps(10)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2010" {...a11yProps(11)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2009" {...a11yProps(12)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2008" {...a11yProps(13)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2007" {...a11yProps(14)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
-                                        <Tab label="2004" {...a11yProps(15)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                            <Tab label={year.year} {...a11yProps(index)} sx={{fontSize: 50, fontFamily: 'serif'}}/>
+
+                                        )}
+                                        {/*<Tab label="2022" {...a11yProps(0)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2020" {...a11yProps(1)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2019" {...a11yProps(2)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2018" {...a11yProps(3)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2017" {...a11yProps(4)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2016" {...a11yProps(5)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2015" {...a11yProps(6)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2014" {...a11yProps(7)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2013" {...a11yProps(8)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2012" {...a11yProps(9)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2011" {...a11yProps(10)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2010" {...a11yProps(11)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2009" {...a11yProps(12)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2008" {...a11yProps(13)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2007" {...a11yProps(14)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2004" {...a11yProps(15)} sx={{fontSize: 50, fontFamily: 'serif'}}/>*/}
 
 
                                     </Tabs>
@@ -112,22 +119,27 @@ export default function History() {
                                     marginLeft: '0%'
                                 }}>
 
-                                    <RobotHistoryTabComputer value={value} index={0}/>
-                                    <RobotHistoryTabComputer value={value} index={1}/>
-                                    <RobotHistoryTabComputer value={value} index={2}/>
-                                    <RobotHistoryTabComputer value={value} index={3}/>
-                                    <RobotHistoryTabComputer value={value} index={4}/>
-                                    <RobotHistoryTabComputer value={value} index={5}/>
-                                    <RobotHistoryTabComputer value={value} index={6}/>
-                                    <RobotHistoryTabComputer value={value} index={7}/>
-                                    <RobotHistoryTabComputer value={value} index={8}/>
-                                    <RobotHistoryTabComputer value={value} index={9}/>
-                                    <RobotHistoryTabComputer value={value} index={10}/>
-                                    <RobotHistoryTabComputer value={value} index={11}/>
-                                    <RobotHistoryTabComputer value={value} index={12}/>
-                                    <RobotHistoryTabComputer value={value} index={13}/>
-                                    <RobotHistoryTabComputer value={value} index={14}/>
-                                    <RobotHistoryTabComputer value={value} index={15}/>
+
+                                    {data.tabs.map((year, index) =>
+
+                                        <RobotHistoryTabComputer value={value} index={index}/>
+                                    )}
+                                    {/*<RobotHistoryTabComputer value={value} index={0}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={1}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={2}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={3}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={4}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={5}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={6}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={7}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={8}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={9}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={10}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={11}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={12}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={13}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={14}/>*/}
+                                    {/*<RobotHistoryTabComputer value={value} index={15}/>*/}
 
 
                                 </div>
@@ -171,22 +183,28 @@ export default function History() {
                                     >
 
 
-                                        <Tab label="2022" {...a11yProps(0)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2020" {...a11yProps(1)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2019" {...a11yProps(2)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2018" {...a11yProps(3)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2017" {...a11yProps(4)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2016" {...a11yProps(5)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2015" {...a11yProps(6)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2014" {...a11yProps(7)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2013" {...a11yProps(8)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2012" {...a11yProps(9)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2011" {...a11yProps(10)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2010" {...a11yProps(11)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2009" {...a11yProps(12)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2008" {...a11yProps(13)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2007" {...a11yProps(14)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
-                                        <Tab label="2004" {...a11yProps(15)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+                                        {data.tabs.map((year, index) =>
+
+                                            <Tab label={year.year} {...a11yProps(index)} sx={{fontSize: 30, fontFamily: 'serif'}}/>
+
+                                        )}
+
+                                        {/*<Tab label="2022" {...a11yProps(0)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2020" {...a11yProps(1)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2019" {...a11yProps(2)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2018" {...a11yProps(3)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2017" {...a11yProps(4)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2016" {...a11yProps(5)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2015" {...a11yProps(6)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2014" {...a11yProps(7)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2013" {...a11yProps(8)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2012" {...a11yProps(9)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2011" {...a11yProps(10)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2010" {...a11yProps(11)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2009" {...a11yProps(12)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2008" {...a11yProps(13)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2007" {...a11yProps(14)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
+                                        {/*<Tab label="2004" {...a11yProps(15)} sx={{fontSize: 30, fontFamily: 'serif'}}/>*/}
 
                                     </Tabs>
 
@@ -199,22 +217,29 @@ export default function History() {
                             <Paper sx={{width: '95%', height: 'auto', marginLeft: '2.5%', marginBottom: 30}}>
 
 
-                                <RobotHistoryTabMobile value={value} index={0}/>
-                                <RobotHistoryTabMobile value={value} index={1}/>
-                                <RobotHistoryTabMobile value={value} index={2}/>
-                                <RobotHistoryTabMobile value={value} index={3}/>
-                                <RobotHistoryTabMobile value={value} index={4}/>
-                                <RobotHistoryTabMobile value={value} index={5}/>
-                                <RobotHistoryTabMobile value={value} index={6}/>
-                                <RobotHistoryTabMobile value={value} index={7}/>
-                                <RobotHistoryTabMobile value={value} index={8}/>
-                                <RobotHistoryTabMobile value={value} index={9}/>
-                                <RobotHistoryTabMobile value={value} index={10}/>
-                                <RobotHistoryTabMobile value={value} index={11}/>
-                                <RobotHistoryTabMobile value={value} index={12}/>
-                                <RobotHistoryTabMobile value={value} index={13}/>
-                                <RobotHistoryTabMobile value={value} index={14}/>
-                                <RobotHistoryTabMobile value={value} index={15}/>
+                                {data.tabs.map((year, index) =>
+
+                                    <RobotHistoryTabMobile value={value} index={index}/>
+
+                                )}
+
+
+                                {/*<RobotHistoryTabMobile value={value} index={0}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={1}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={2}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={3}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={4}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={5}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={6}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={7}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={8}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={9}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={10}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={11}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={12}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={13}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={14}/>*/}
+                                {/*<RobotHistoryTabMobile value={value} index={15}/>*/}
 
 
                             </Paper>
