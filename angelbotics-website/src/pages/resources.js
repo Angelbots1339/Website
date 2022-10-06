@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
 import {ReactEmbeddedGoogleCalendar} from "react-embedded-google-calendar";
 
-const resourcesJSON = require('./resources.json');
+const resourcesJSON = require('./json/resources.json');
 
 
 export default function Resources() {

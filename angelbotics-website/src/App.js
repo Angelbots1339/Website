@@ -14,7 +14,7 @@ import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 import {Outlet} from "react-router";
 import {Link} from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
-import homeJSON from "./pages/home.json";
+import homeJSON from "./pages/json/home.json";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     const [drawerState, setDrawerState] = useState(false);
     const [currentPage, setCurrentPage] = useState("/scout/gameform");
 
-    const sponsorsJSON = require('./pages/sponsors.json');
+    const sponsorsJSON = require('./pages/json/sponsors.json');
 
     const sponsorsSlideshow = sponsorsJSON.Sponsors.map((sponsor) => {
 

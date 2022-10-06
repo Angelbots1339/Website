@@ -8,7 +8,7 @@ import RobotHistoryTabMobile from "./robotHistoryTabMobile";
 
 export default function History() {
 
-    const data = require('./history.json');
+    const data = require('./json/history.json');
 
 
     const [value, setValue] = React.useState(0);

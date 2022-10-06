@@ -1,7 +1,7 @@
 import {Box, Button, Card, Typography} from "@mui/material";
 import PropTypes from 'prop-types';
 import YouTube from "react-youtube";
-import data from "./history.json";
+import data from "./json/history.json";
 import {Canvas, useLoader} from "@react-three/fiber";
 import {Suspense, useRef} from "react";
 import {Environment, Html, OrbitControls} from "@react-three/drei";
@@ -17,7 +17,7 @@ export default function RobotHistoryTabMobile(props) {
 
     const {children, value, index, ...other} = props;
 
-    const data = require('./history.json');
+    const data = require('./json/history.json');
 
 
     function CadModel(props) {

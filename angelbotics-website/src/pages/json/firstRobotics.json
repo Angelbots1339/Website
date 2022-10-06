@@ -1,0 +1,22 @@
+{
+
+  "FRC": {
+
+    "gameVideo": "LgniEjI9cCM",
+    "generalDescription": "FRC is the game that we participate in. Similar to the other two competitions, there is a new game concept each year, and they are wildly unique. The game gets released in early January, and we have 8-9 weeks to build a fully-functioning robot. The robots in FRC are generally big, heavy, and fast-moving. Robots are made from many different materials, like Aluminum and Polycarbonate, and parts are often custom-machined, 3D printed, or bought from a vendor."
+
+  },
+  "FTC":{
+
+    "gameVideo": "I6lX12idAf8",
+    "generalDescription": "In FTC, robots are generally much smaller, and much more compact. The idea is similar to FRC where there is a different game every year. The robots are also constructed in a similar way to FRC robots, where things are custom-machined."
+
+  },
+  "FLL": {
+
+    "gameVideo": "onsI9ke2Vho",
+    "generalDescription": "In FLL, robots are made of Legos, and they have to complete specific challenges throughout the game field. Similar to FTC and FRC, there is a different game every year, but unlike them there is only a single robot on the field at a time."
+
+  }
+
+}
