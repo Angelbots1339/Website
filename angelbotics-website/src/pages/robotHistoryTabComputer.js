@@ -67,7 +67,7 @@ export default function RobotHistoryTabComputer(props) {
 
     const {children, value, index, ...other} = props;
 
-    const data = require('./history.json');
+    const data = require('./json/history.json');
 
 
     THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());

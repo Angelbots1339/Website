@@ -1,6 +1,6 @@
 import {Grid, Paper, Typography} from "@mui/material";
 import {useEffect, useState} from "react";
-import supportersJSON from "./supporters.json";
+import supportersJSON from "./json/supporters.json";
 
 export default function Supporters() {
 
@@ -11,8 +11,8 @@ export default function Supporters() {
     }, []);
 
 
-    const sponsorsJSON = require('./sponsors.json');
-    const supportersJSON = require('./supporters.json');
+    const sponsorsJSON = require('./json/sponsors.json');
+    const supportersJSON = require('./json/supporters.json');
 
 
     const sponsorsLevel1 = sponsorsJSON.Sponsors.map((sponsor) => {

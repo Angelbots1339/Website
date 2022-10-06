@@ -11,7 +11,7 @@ export default function Home() {
     // This code can be used for variable size on mobile vs desktop
 
 
-    const homeJSON = require('./home.json');
+    const homeJSON = require('./json/home.json');
 
     useEffect(() => {
 

@@ -1,7 +1,7 @@
 import {useEffect, useRef, useState} from "react";
 import {Card, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
-import data from "./firstRobotics.json";
+import data from "./json/firstRobotics.json";
 
 export default function FirstRobotics() {
 
@@ -10,7 +10,7 @@ export default function FirstRobotics() {
 
     const [forceRenderNum, setForceRenderNum] = useState({});
 
-    const data = require('./firstRobotics.json');
+    const data = require('./json/firstRobotics.json');
 
     // const videosArray = ["Placeholder", data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo] // Skips the first index for some reason, so I added placeholder
 
@@ -184,15 +184,7 @@ export default function FirstRobotics() {
                                             </Typography>
 
                                             <Typography variant="h5" sx={{marginRight: 5}}>
-                                                FRC is the game that we participate in. Similar to the other two
-                                                competitions, there is a new game concept each year, and they are wildly
-                                                unique. The game gets released in early January, and we have 8-9 weeks
-                                                to build a fully-functioning robot. The robots in FRC are generally big,
-                                                heavy, and fast-moving. Robots are made from many different materials,
-                                                like
-                                                Aluminum and Polycarbonate, and parts are often custom-machined, 3D
-                                                printed,
-                                                or bought from a vendor.
+                                                {data.FRC.generalDescription}
                                             </Typography>
 
                                         </div>
@@ -241,9 +233,7 @@ export default function FirstRobotics() {
                                     </Typography>
 
                                     <Typography variant="h5" sx={{marginRight: 5, marginBottom: 2, marginLeft: "5%"}}>
-                                        In FTC, robots are generally much smaller, and much more compact. The idea is
-                                        similar to FRC where there is a different game every year. The robots are also
-                                        constructed in a similar way to FRC robots, where things are custom-machined.
+                                        {data.FTC.generalDescription}
                                     </Typography>
 
                                     <div style={{marginLeft: '5%'}} ref={FTCVidRef} sx={{width:"auto", height:"auto"}}>
@@ -280,9 +270,7 @@ export default function FirstRobotics() {
                                     </Typography>
 
                                     <Typography variant="h5" sx={{marginRight: 5, marginBottom: 2, marginLeft: "5%"}}>
-                                        In FLL, robots are made of Legos, and they have to complete specific challenges
-                                        throughout the game field. Similar to FTC and FRC, there is a different game
-                                        every year, but unlike them there is only a single robot on the field at a time.
+                                        {data.FLL.generalDescription}
                                     </Typography>
 
                                     <div style={{marginLeft: '5%'}} ref={FLLVidRef} sx={{width:"auto", height:"auto"}}>
