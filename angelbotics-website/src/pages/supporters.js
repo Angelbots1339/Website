@@ -11,29 +11,28 @@ export default function Supporters() {
     }, []);
 
 
-    const sponsorsJSON = require('./json/sponsors.json');
     const supportersJSON = require('./json/supporters.json');
 
 
-    const sponsorsLevel1 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel1 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 1) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel2 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel2 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 2) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel3 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel3 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 3) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel4 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel4 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 4) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel5 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel5 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 5) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel6 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel6 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 6) return sponsor;
     }).filter(Boolean);
-    const sponsorsLevel7 = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsLevel7 = supportersJSON.Sponsors.map((sponsor) => {
         if (sponsor.level === 7) return sponsor;
     }).filter(Boolean);
 
@@ -159,7 +158,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -185,7 +184,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -211,7 +210,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -238,7 +237,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -264,7 +263,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -289,7 +288,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -314,7 +313,7 @@ export default function Supporters() {
                                                    href={sponsor.website}
                                                    style={{color: '#000000'}}>
                                                     <img src={sponsor.logo} width="auto"
-                                                         height={getSponsorHeight(sponsor.level)}/>
+                                                         height={getSponsorHeight(sponsor.level)} alt={sponsor.name}/>
                                                 </a>
                                             </Grid>)}
                                     </Grid>
@@ -385,27 +384,6 @@ export default function Supporters() {
                     </Paper>
 
 
-                    {/*<Paper sx={{width: '100%', height: 300, marginTop: 2}}>*/}
-                    {/*    <div style={{*/}
-                    {/*        display: 'flex',*/}
-                    {/*        alignItems: "center",*/}
-                    {/*        width: "95%",*/}
-                    {/*        height: 110,*/}
-                    {/*        marginLeft: '2.5%',*/}
-                    {/*        marginTop: 0*/}
-                    {/*    }}>*/}
-                    {/*        <img src="/images/supporters/carol_placeholder.jpg" alt="Carol Layng" width="auto" height="100"/>*/}
-                    {/*        <Typography variant="h5" sx={{marginLeft: 5, marginRight: 5}}>*/}
-                    {/*            Carol Layng*/}
-                    {/*        </Typography>*/}
-                    {/*    </div>*/}
-                    {/*    <Typography variant="h6" sx={{marginLeft: 1}}>*/}
-                    {/*        Carol specializes in strategy, and contributes to scouting. She also is in charge of the*/}
-                    {/*        logistics for travel, ensuring that the team will be able to compete.*/}
-                    {/*    </Typography>*/}
-                    {/*</Paper>*/}
-
-
                     <Paper sx={{width: '100%', height: 300, marginTop: 2, marginBottom: 5}}>
                         <div style={{
                             display: 'flex',
@@ -450,7 +428,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -471,7 +449,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -492,7 +470,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -514,7 +492,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -535,7 +513,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -556,7 +534,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>
@@ -577,7 +555,7 @@ export default function Supporters() {
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
                                             <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
-                                                 height={"auto"}/>
+                                                 height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
                             </Grid>

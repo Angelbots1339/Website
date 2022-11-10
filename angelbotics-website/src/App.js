@@ -14,7 +14,6 @@ import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 import {Outlet} from "react-router";
 import {Link} from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
-import homeJSON from "./pages/json/home.json";
 
 
 function App() {
@@ -22,21 +21,17 @@ function App() {
     const [drawerState, setDrawerState] = useState(false);
     const [currentPage, setCurrentPage] = useState("/scout/gameform");
 
-    const sponsorsJSON = require('./pages/json/sponsors.json');
+    const supportersJSON = require('./pages/json/supporters.json');
 
-    const sponsorsSlideshow = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsSlideshow = supportersJSON.Sponsors.map((sponsor) => {
 
         if(sponsor.level <= 3) return {"url":sponsor.logo};
 
-        return;
-
     }).filter(Boolean);
 
-    const sponsors3AndAbove = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsors3AndAbove = supportersJSON.Sponsors.map((sponsor) => {
 
         if(sponsor.level <= 3) return sponsor;
-
-        return;
 
     }).filter(Boolean);
 
@@ -130,7 +125,7 @@ function App() {
                                             <a rel="noreferrer noopener" target="_blank"
                                                href={sponsor.website}
                                                style={{color: '#000000'}}>
-                                                <img src={sponsor.logo} width="auto" height={85}/>
+                                                <img src={sponsor.logo} width="auto" height={85} alt={sponsor.name}/>
                                             </a>
 
                                         </Grid>
@@ -170,7 +165,7 @@ function App() {
                         </Button>
 
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src="/Logo.svg" width="80" height="80"/>
+                                <img src="/Logo.svg" width="80" height="80"  alt={"Angelbotics Logo"}/>
                             </Button>
 
                         </Toolbar>
@@ -189,7 +184,7 @@ function App() {
                             <ListItem sx={{backgroundColor:'#ab0000'}}>
 
                                 <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                    <img src="/Logo.svg" width="80" height="80"/>
+                                    <img src="/Logo.svg" width="80" height="80" alt={"Angelbotics Logo"}/>
                                 </Button>
 
                             </ListItem>
@@ -245,8 +240,8 @@ function App() {
                                 autoPlay={true}
                                 autoPlayDelay={4}
                                 bgColor={"#000000"}
-                                onClick={(idx, event) => {
-                                    window.open(sponsorsJSON.Sponsors[idx].website);
+                                onClick={(idx) => {
+                                    window.open(supportersJSON.Sponsors[idx].website);
                                 }}
                             />
 
