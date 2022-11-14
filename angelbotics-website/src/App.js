@@ -16,6 +16,7 @@ import {Link} from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
 
 
+
 function App() {
 
     const [drawerState, setDrawerState] = useState(false);
@@ -43,9 +44,7 @@ function App() {
 
     const [isScreenBig, setScreenBig] = useState(false);
 
-
     useEffect(() => {
-
 
         setScreenBig(window.innerWidth > 1200);
         setCurrentPage(window.location.pathname);
@@ -70,8 +69,7 @@ function App() {
 
                         <Toolbar>
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src='Logo.svg' alt="Angelbotics Logo" height="100" width="100"
-                                     sx={{paddingRight: 100}}/>
+                                <img src='Logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
                             </Button>
 
 
@@ -114,13 +112,11 @@ function App() {
 
                     <Paper sx={{width: '100%', height: "auto", marginTop: 20}}>
 
-
                             <Grid container spacing={2} sx={{ width: '90%', marginLeft: '5%', marginRight: '5%' }}>
 
                                 {
                                     sponsors3AndAbove.map((sponsor) =>
-
-                                        <Grid item xs={4} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor}>
+                                        <Grid item xs={12} sm={6} md={4} lg={3} xl={3} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor}>
 
                                             <a rel="noreferrer noopener" target="_blank"
                                                href={sponsor.website}
@@ -129,14 +125,9 @@ function App() {
                                             </a>
 
                                         </Grid>
-                                    )
-                                }
-
-
+                                    )}
 
                             </Grid>
-
-
 
                     </Paper>
 
@@ -180,7 +171,7 @@ function App() {
                         onClose={() => setDrawerState(false)}
                     >
 
-                        <List sx={{marginX: '20', backgroundColor:'#ffd4d4', height:"100%"}}>
+                        <List sx={{marginX: '20', backgroundColor:'#ffd4d4', height:"100%", paddingTop:0}}>
                             <ListItem sx={{backgroundColor:'#ab0000'}}>
 
                                 <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
@@ -190,27 +181,27 @@ function App() {
                             </ListItem>
                             <ListItem>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/'}>
-                                    <Typography variant={"h4"} sx={{m: 1}}>Home</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Home</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/history" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/history'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>History</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>History</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/firstRobotics" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/firstRobotics'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>FIRST Robotics</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>FIRST Robotics</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/supporters" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/supporters'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>Supporters</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Supporters</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/resources" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>Resources</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                                 </ListItemButton>
                             </ListItem>
 

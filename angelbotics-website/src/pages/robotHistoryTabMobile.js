@@ -1,7 +1,5 @@
-import {Box, Button, Card, Typography} from "@mui/material";
+import {Box, Card, Typography} from "@mui/material";
 import PropTypes from 'prop-types';
-import YouTube from "react-youtube";
-import data from "./json/history.json";
 import {Canvas, useLoader} from "@react-three/fiber";
 import {Suspense, useRef} from "react";
 import {Environment, Html, OrbitControls} from "@react-three/drei";
@@ -20,7 +18,7 @@ export default function RobotHistoryTabMobile(props) {
     const data = require('./json/history.json');
 
 
-    function CadModel(props) {
+    function CadModel() {
 
         // This reference gives us direct access to the THREE.Mesh object
         const ref = useRef()
@@ -46,7 +44,7 @@ export default function RobotHistoryTabMobile(props) {
             object={obj}
             ref={ref}
         />;
-    };
+    }
 
 
     return (
@@ -146,7 +144,7 @@ export default function RobotHistoryTabMobile(props) {
                 </div>
 
                 {data.tabs[index].CadModelPath &&
-                    <div sx={{margin: 10}}>
+                    <div>
                         <Canvas frameloop="demand"
                                 style={{
                                     width: "80%",
@@ -171,9 +169,9 @@ export default function RobotHistoryTabMobile(props) {
 
 
 
-                {data.tabs[index].RobotImagePath && <div sx={{marginTop: 10, paddingTop: 10}}>
+                {data.tabs[index].RobotImagePath && <div>
                     <img src={data.tabs[index].RobotImagePath} height="auto" width="100%"
-                         alt={data.tabs[index].year + " robot picture"} sx={{marginTop: 10}}/>
+                         alt={data.tabs[index].year + " robot picture"}/>
                 </div>}
 
 

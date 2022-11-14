@@ -8,7 +8,7 @@
     },
     {
       "name": "Chad B",
-      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical, and helps troubleshoot the code.",
+      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical and troubleshoot as well as brainstorm the code.",
       "imagePath": "/images/supporters/mentor_chad.jpg"
     }
   ],
@@ -49,6 +49,18 @@
       "level": 1,
       "logo": "/images/logos/Medtronic.png",
       "website": "https://www.medtronic.com/us-en/index.html"
+    },
+    {
+      "name": "Gene Haas Foundation",
+      "level": 1,
+      "logo": "/images/logos/GeneHaasLogo.png",
+      "website": "https://ghaasfoundation.org/"
+    },
+    {
+      "name": "Rev Robotics",
+      "level": 1,
+      "logo": "/images/logos/REVLogo.jpeg",
+      "website": "https://www.revrobotics.com/"
     }
 
   ],
