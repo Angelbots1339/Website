@@ -25,8 +25,6 @@ ReactDOM.render(
                     <Route path="firstRobotics" element={<FirstRobotics/>}/>
                     <Route path="resources" element={<Resources/>}/>
                     <Route path="supporters" element={<Supporters/>}/>
-
-
                 </Route>
             </Routes>
         </BrowserRouter>

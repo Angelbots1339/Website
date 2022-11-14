@@ -14,7 +14,7 @@ import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 import {Outlet} from "react-router";
 import {Link} from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
-import homeJSON from "./pages/json/home.json";
+
 
 
 function App() {
@@ -22,21 +22,17 @@ function App() {
     const [drawerState, setDrawerState] = useState(false);
     const [currentPage, setCurrentPage] = useState("/scout/gameform");
 
-    const sponsorsJSON = require('./pages/json/sponsors.json');
+    const supportersJSON = require('./pages/json/supporters.json');
 
-    const sponsorsSlideshow = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsorsSlideshow = supportersJSON.Sponsors.map((sponsor) => {
 
         if(sponsor.level <= 3) return {"url":sponsor.logo};
 
-        return;
-
     }).filter(Boolean);
 
-    const sponsors3AndAbove = sponsorsJSON.Sponsors.map((sponsor) => {
+    const sponsors3AndAbove = supportersJSON.Sponsors.map((sponsor) => {
 
         if(sponsor.level <= 3) return sponsor;
-
-        return;
 
     }).filter(Boolean);
 
@@ -48,9 +44,7 @@ function App() {
 
     const [isScreenBig, setScreenBig] = useState(false);
 
-
     useEffect(() => {
-
 
         setScreenBig(window.innerWidth > 1200);
         setCurrentPage(window.location.pathname);
@@ -75,8 +69,7 @@ function App() {
 
                         <Toolbar>
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src='Logo.svg' alt="Angelbotics Logo" height="100" width="100"
-                                     sx={{paddingRight: 100}}/>
+                                <img src='Logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
                             </Button>
 
 
@@ -119,29 +112,24 @@ function App() {
 
                     <Paper sx={{width: '100%', height: "auto", marginTop: 20}}>
 
-
                             <Grid container spacing={2} sx={{ width: '90%', marginLeft: '5%', marginRight: '5%' }}>
 
                                 {
                                     sponsors3AndAbove.map((sponsor) =>
-
-                                        <Grid item xs={4} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor}>
+                                        <Grid item xs={12} sm={6} md={4} lg={3} xl={3} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor.name}>
 
                                             <a rel="noreferrer noopener" target="_blank"
                                                href={sponsor.website}
-                                               style={{color: '#000000'}}>
-                                                <img src={sponsor.logo} width="auto" height={85}/>
+                                               style={{color: '#000000'}}
+                                               key={sponsor.name}
+                                            >
+                                                <img src={sponsor.logo} width="auto" height={85} alt={sponsor.name}/>
                                             </a>
 
                                         </Grid>
-                                    )
-                                }
-
-
+                                    )}
 
                             </Grid>
-
-
 
                     </Paper>
 
@@ -170,7 +158,7 @@ function App() {
                         </Button>
 
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src="/Logo.svg" width="80" height="80"/>
+                                <img src="/Logo.svg" width="80" height="80"  alt={"Angelbotics Logo"}/>
                             </Button>
 
                         </Toolbar>
@@ -185,37 +173,37 @@ function App() {
                         onClose={() => setDrawerState(false)}
                     >
 
-                        <List sx={{marginX: '20', backgroundColor:'#ffd4d4', height:"100%"}}>
+                        <List sx={{marginX: '20', backgroundColor:'#ffd4d4', height:"100%", paddingTop:0}}>
                             <ListItem sx={{backgroundColor:'#ab0000'}}>
 
                                 <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                    <img src="/Logo.svg" width="80" height="80"/>
+                                    <img src="/Logo.svg" width="80" height="80" alt={"Angelbotics Logo"}/>
                                 </Button>
 
                             </ListItem>
                             <ListItem>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/'}>
-                                    <Typography variant={"h4"} sx={{m: 1}}>Home</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Home</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/history" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/history'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>History</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>History</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/firstRobotics" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/firstRobotics'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>FIRST Robotics</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>FIRST Robotics</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/supporters" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/supporters'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>Supporters</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Supporters</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem sx={{backgroundColor: currentPage === "/resources" ? drawerHighlightColor : ''}}>
                                 <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
-                                    <Typography variant={"h5"} sx={{m: 1}}>Resources</Typography>
+                                    <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                                 </ListItemButton>
                             </ListItem>
 
@@ -245,8 +233,8 @@ function App() {
                                 autoPlay={true}
                                 autoPlayDelay={4}
                                 bgColor={"#000000"}
-                                onClick={(idx, event) => {
-                                    window.open(sponsorsJSON.Sponsors[idx].website);
+                                onClick={(idx) => {
+                                    window.open(supportersJSON.Sponsors[idx].website);
                                 }}
                             />
 

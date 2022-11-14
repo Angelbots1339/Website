@@ -1,6 +1,59 @@
 {
 
-  "googleCalendarPublicLink": "https://calendar.google.com/calendar/embed?src=angelbots1339%40gmail.com&ctz=America%2FDenver"
+  "contactUs": {
 
+    "text": "You can reach us any time by emailing angelbots1339@gmail.com, or by reaching out on social media! Email is by far the better method of communication for our team however.",
+    "email": "angelbots1339@gmail.com",
+    "socialMedia":[
+      {
+        "name": "Instagram",
+        "imagePath": "/images/resources/instagramLogo.png",
+        "link": "https://www.instagram.com/angelbots1339/"
+      },
+      {
+        "name": "Youtube",
+        "imagePath": "/images/resources/YouTubeLogo.png",
+        "link": "https://www.youtube.com/channel/UCnSzQ-8Qmtml3HG_GehLN4g"
+      }
+    ]
+
+  },
+
+  "googleCalendarPublicLink": "https://calendar.google.com/calendar/embed?src=angelbots1339%40gmail.com&ctz=America%2FDenver",
+
+  "resourceCards": [
+    {
+      "name": "Github",
+      "description": "We make all of our code publicly visible on GitHub. Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
+      "imagePath": "/images/resources/GitHub_Logo.png",
+      "url": "https://github.com/Angelbots1339"
+    },
+    {
+      "name": "The Open Alliance",
+      "description": "Angelbotics is a member of the Open Alliance, which is a group of teams that have agreed to share all information about their robot, and essentially make it open source. The goal of this group is to create an inclusive environment where teams can learn from each other in order to make everyone's robot better.",
+      "imagePath": "/images/resources/OpenAlliance.png",
+      "url": "https://www.theopenalliance.com/"
+    },
+    {
+      "name": "The Blue Alliance",
+      "description": "The Blue Alliance is a website that gives you access a data for FIRST. You can find information including the dates of competitions, the match schedule, and recent team rankings, alongside statistics and other information about individual teams and matches.",
+      "imagePath": "/images/resources/TBALogo.jpg",
+      "url": "https://www.thebluealliance.com/teams"
+    },
+    {
+      "name": "Chief Delphi Forums",
+      "description": "Chief Delphi functions as the main forum for all things FIRST related. News from FIRST themselves and many other major contributors is usually posted on Chief Delphi. It's also a place for teams to find solutions for their problems, post questions if needed, and participate in discussions surrounding all things FIRST.",
+      "imagePath": "/images/resources/ChiefDelphiLogo.png",
+      "url": "https://www.chiefdelphi.com/"
+    }
+  ],
+
+  "template":
+  {
+    "name": "",
+    "description": "",
+    "imagePath": "",
+    "url": ""
+  }
 
 }

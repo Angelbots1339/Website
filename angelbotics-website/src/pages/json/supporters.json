@@ -8,12 +8,71 @@
     },
     {
       "name": "Chad B",
-      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical, and helps brainstorm about the concept behind the code.",
+      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical and troubleshoot as well as brainstorm the code.",
       "imagePath": "/images/supporters/mentor_chad.jpg"
     }
   ],
 
-  "template":
+  "Sponsors": [
+    {
+      "name": "The Wizard's Chest",
+      "level": 1,
+      "logo": "/images/logos/wizardschest.jpg",
+      "website": "https://www.wizardschest.com/"
+    },
+    {
+      "name": "Ball Aerospace",
+      "level": 1,
+      "logo": "/images/logos/Ball-Aerospace.jpeg",
+      "website": "https://www.ball.com/aerospace"
+    },
+    {
+      "name": "Denver Public Schools",
+      "level": 1,
+      "logo": "/images/logos/DPSLogo.png",
+      "website": "https://www.dpsk12.org/"
+    },
+    {
+      "name": "Raytheon Technologies",
+      "level": 1,
+      "logo": "/images/logos/RaytheonLogoLarge.png",
+      "website": "https://www.rtx.com/"
+    },
+    {
+      "name": "Lockheed Martin",
+      "level": 1,
+      "logo": "/images/logos/LockheedMartin.jpg",
+      "website": "https://www.lockheedmartin.com/en-us/index.html"
+    },
+    {
+      "name": "Medtronic",
+      "level": 1,
+      "logo": "/images/logos/Medtronic.png",
+      "website": "https://www.medtronic.com/us-en/index.html"
+    },
+    {
+      "name": "Gene Haas Foundation",
+      "level": 1,
+      "logo": "/images/logos/GeneHaasLogo.png",
+      "website": "https://ghaasfoundation.org/"
+    },
+    {
+      "name": "Rev Robotics",
+      "level": 1,
+      "logo": "/images/logos/REVLogo.jpeg",
+      "website": "https://www.revrobotics.com/"
+    }
+
+  ],
+
+  "Sponsor Template": {
+    "name": "",
+    "level": 1,
+    "logo": "",
+    "website": ""
+  },
+
+  "Mentor Template":
 
   {
       "name": "",
