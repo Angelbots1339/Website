@@ -79,10 +79,12 @@ export default function Resources() {
                                               justifyContent="space-evenly"
                                               alignItems="center"
                                               spacing={1}
-                                              sx={{width:"100%", height:"100%"}}>
+                                              sx={{width:"100%", height:"100%"}}
+                                              key={"Contact Us"}
+                                        >
 
                                         {resourcesJSON.contactUs.socialMedia.map((app) =>
-                                            <Grid item xs={4} >
+                                            <Grid item xs={4} key={app.name}>
                                                 <a rel="noreferrer noopener" target="_blank"
                                                    href={app.link}>
                                                     <img src={app.imagePath} alt={"Angelbotics " + app.name} width="100%"
@@ -99,7 +101,7 @@ export default function Resources() {
 
                                 {resourcesJSON.resourceCards.map((card) =>
 
-                                        <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
+                                        <Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={card.name}>
                                             <Card sx={{height: 600, width: "100%"}}>
 
                                                 <div style={{

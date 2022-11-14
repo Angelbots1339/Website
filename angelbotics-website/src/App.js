@@ -116,11 +116,13 @@ function App() {
 
                                 {
                                     sponsors3AndAbove.map((sponsor) =>
-                                        <Grid item xs={12} sm={6} md={4} lg={3} xl={3} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor}>
+                                        <Grid item xs={12} sm={6} md={4} lg={3} xl={3} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor.name}>
 
                                             <a rel="noreferrer noopener" target="_blank"
                                                href={sponsor.website}
-                                               style={{color: '#000000'}}>
+                                               style={{color: '#000000'}}
+                                               key={sponsor.name}
+                                            >
                                                 <img src={sponsor.logo} width="auto" height={85} alt={sponsor.name}/>
                                             </a>
 

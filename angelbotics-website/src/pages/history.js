@@ -74,7 +74,9 @@ export default function History() {
                                         {data.tabs.map((year, index) =>
 
                                             <Tab label={year.year} {...a11yProps(index)}
-                                                 sx={{fontSize: 50, fontFamily: 'serif'}}/>
+                                                 sx={{fontSize: 50, fontFamily: 'serif'}}
+                                                 key={year.year}
+                                            />
                                         )}
 
 
