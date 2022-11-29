@@ -25,14 +25,14 @@ export default function Resources() {
                 }}>
 
 
-                    <Paper sx={{width: '100%', height: "100%"}}>
+                    <Paper sx={{width: '100%', height: "100%", boxShadow:5}}>
 
 
                         <div style={{
                             display: "flex",
                             alignItems: "center",
                             width: "95%",
-                            height: "auto",
+                            height: "100%",
                             marginLeft: '2.5%',
                             marginTop: 0
                         }}>
@@ -42,10 +42,10 @@ export default function Resources() {
                                   justifyContent="space-evenly"
                                   alignItems="center"
                                   spacing={2}
-                                  sx={{width:"95%", height:"auto", ml:"2.5%"}}
+                                  sx={{width:"95%", height:"100%", ml:"2.5%", mt:5}}
                             >
                                 <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
-                                <Card sx={{height: 600, width: "100%"}}>
+                                <Card sx={{height: 650, width: "100%", boxShadow:2}}>
 
                                     <div style={{
                                         alignItems: "center",
@@ -102,7 +102,7 @@ export default function Resources() {
                                 {resourcesJSON.resourceCards.map((card) =>
 
                                         <Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={card.name}>
-                                            <Card sx={{height: 600, width: "100%"}}>
+                                            <Card sx={{height: 650, width: "100%", boxShadow:2}}>
 
                                                 <div style={{
                                                     alignItems: "center",
@@ -163,7 +163,7 @@ export default function Resources() {
                             marginLeft: '2.5%',
                             marginTop: 0
                         }}>
-                        <Card sx={{height: 550, width: "100%", m: 3}}>
+                        <Card sx={{height: 550, width: "100%", m: 3, boxShadow:2}}>
 
                             <div style={{
                                 alignItems: "center",

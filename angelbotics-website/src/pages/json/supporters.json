@@ -28,37 +28,37 @@
     },
     {
       "name": "Denver Public Schools",
-      "level": 1,
+      "level": 3,
       "logo": "/images/logos/DPSLogo.png",
       "website": "https://www.dpsk12.org/"
     },
     {
       "name": "Raytheon Technologies",
-      "level": 1,
+      "level": 3,
       "logo": "/images/logos/RaytheonLogoLarge.png",
       "website": "https://www.rtx.com/"
     },
     {
       "name": "Lockheed Martin",
-      "level": 1,
+      "level": 3,
       "logo": "/images/logos/LockheedMartin.jpg",
       "website": "https://www.lockheedmartin.com/en-us/index.html"
     },
     {
       "name": "Medtronic",
-      "level": 1,
+      "level": 6,
       "logo": "/images/logos/Medtronic.png",
       "website": "https://www.medtronic.com/us-en/index.html"
     },
     {
       "name": "Gene Haas Foundation",
-      "level": 1,
+      "level": 6,
       "logo": "/images/logos/GeneHaasLogo.png",
       "website": "https://ghaasfoundation.org/"
     },
     {
       "name": "Rev Robotics",
-      "level": 1,
+      "level": 6,
       "logo": "/images/logos/REVLogo.jpeg",
       "website": "https://www.revrobotics.com/"
     }

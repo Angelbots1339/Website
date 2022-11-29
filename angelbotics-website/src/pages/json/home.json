@@ -8,18 +8,26 @@
     {"url":"/images/home/2022DenverCheeringTeam.JPG"},
     {"url":"/images/home/2022OC_TeamPic.JPG"},
     {"url":"/images/home/2022KCMTDriveTeam2.JPG"},
-    {"url":"/images/home/2022KCMTPluggingInBattery.JPG"},
-    {"url":"/images/home/2022OC_TeamPic.JPG"}
-
-
+    {"url":"/images/home/2022KCMTPluggingInBattery.JPG"}
 
   ],
-  "info": {
-    "teamDescription": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
-    "robotImagePath": "/images/history/2022/JazzyJudi.JPG"
 
-
-  }
+  "entries": [
+    {
+      "name": "Robot Picture",
+      "title": "",
+      "imagePath": "/images/history/2022/JazzyJudi.JPG",
+      "text": "",
+      "gridSpaces": "6"
+    },
+    {
+      "name": "Team Description",
+      "title": "About 1339",
+      "imagePath": "",
+      "text": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
+      "gridSpaces": "6"
+    }
+  ]
 
 
 }
