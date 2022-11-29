@@ -1,5 +1,5 @@
 import {
-    AppBar, Box,
+    AppBar,
     Button,
     ButtonGroup,
     Drawer, Grid,
@@ -13,7 +13,6 @@ import {useEffect, useState} from "react";
 import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 import {Outlet} from "react-router";
 import {Link} from "react-router-dom";
-import SimpleImageSlider from "react-simple-image-slider";
 
 
 
@@ -23,12 +22,6 @@ function App() {
     const [currentPage, setCurrentPage] = useState("/scout/gameform");
 
     const supportersJSON = require('./pages/json/supporters.json');
-
-    const sponsorsSlideshow = supportersJSON.Sponsors.map((sponsor) => {
-
-        if(sponsor.level <= 3) return {"url":sponsor.logo};
-
-    }).filter(Boolean);
 
     const sponsors3AndAbove = supportersJSON.Sponsors.map((sponsor) => {
 
@@ -218,29 +211,26 @@ function App() {
                     <Outlet/>
 
 
-                    <Paper sx={{width: '100%', height: 150, marginTop: 20}}>
+                    <Paper sx={{width: '100%', height: "auto", marginTop: 20}}>
 
+                            <Grid container spacing={2} sx={{ width: '90%', marginLeft: '5%', marginRight: '5%' }}>
 
-                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 5}}>
+                                {
+                                    sponsors3AndAbove.map((sponsor) =>
+                                        <Grid item xs={6} sm={6} md={4} lg={3} xl={3} sx={{ mx: "auto", textAlign: "center", height:"auto" }} key={sponsor.name}>
 
-                            <SimpleImageSlider
-                                width="60%"
-                                height={100}
-                                images={sponsorsSlideshow}
-                                showBullets={false}
-                                showNavs={false}
-                                loop={true}
-                                autoPlay={true}
-                                autoPlayDelay={4}
-                                bgColor={"#000000"}
-                                onClick={(idx) => {
-                                    window.open(supportersJSON.Sponsors[idx].website);
-                                }}
-                            />
+                                            <a rel="noreferrer noopener" target="_blank"
+                                               href={sponsor.website}
+                                               style={{color: '#000000'}}
+                                               key={sponsor.name}
+                                            >
+                                                <img src={sponsor.logo} width="auto" height={65} alt={sponsor.name}/>
+                                            </a>
 
+                                        </Grid>
+                                    )}
 
-                        </Box>
-
+                            </Grid>
 
                     </Paper>
 

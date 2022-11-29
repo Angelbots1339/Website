@@ -1,9 +1,8 @@
 import {useEffect, useState} from "react";
-import {Box, Paper, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
 
 export default function Home() {
-
 
 
     const [isScreenBig, setScreenBig] = useState(false);
@@ -49,14 +48,12 @@ export default function Home() {
                         alignItems: "center",
                         width: "100%",
                         height: "auto",
-                        marginLeft: '0%',
-                        marginTop: 0
                     }}>
 
+                        <Paper
+                            sx={{width: '100%', height: slideshowHeight(), backgroundColor: "#ffffff", boxShadow: 5}}>
 
-                        <Paper sx={{width: '100%', height: slideshowHeight(), backgroundColor: "#ffffff"}}>
-
-                            <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
+                            <Box display="flex" alignItems="center" justifyContent="center">
 
                                 <SimpleImageSlider
                                     width="70%"
@@ -69,71 +66,50 @@ export default function Home() {
                                     autoPlayDelay={6}
                                     bgColor={"#000000"}
                                 />
-
                             </Box>
-
-
                         </Paper>
-
-
                     </div>
 
 
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        width: "95%",
-                        height: "auto",
-                        marginLeft: '2.5%',
-                        marginTop: 100
-                    }}>
+                    <Grid container spacing={5} sx={{width: "95%", height:"auto", ml: "1.25%", mt: 5}}>
+                        {homeJSON.entries.map((entry) =>
+                            <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
+                                  key={entry.name}>
+                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center"}}>
+                                    <Grid container spacing={5} sx={{width: "95%", ml: "1.25%", mt: 10}}>
+
+                                        {entry.title &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " title"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h3" sx={{width: "100%"}} align="center">
+                                                    {entry.title}
+                                                </Typography>
+                                            </Grid>
+                                        }
 
 
-                        <Paper sx={{width: '55%', height: 600}}>
+                                        {entry.text &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " text"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h4" sx={{width: "100%"}} align="center">
+                                                    {entry.text}
+                                                </Typography>
+                                            </Grid>
+                                        }
 
-                            <Box display="flex" alignItems="center" justifyContent="center">
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    width: "90%",
-                                    height: "auto",
-                                    marginLeft: '5%',
-                                    marginTop: 10
-                                }}>
+                                        {entry.imagePath &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " picture"} sx={{justifyContent: "center"}}>
+                                                <img src={entry.imagePath} alt={entry.name} width="95%"
+                                                     height="auto" style={{borderRadius:15}}/>
+                                            </Grid>
+                                        }
 
-                                    <img src={homeJSON.info.robotImagePath} alt="Robot Picture" width="95%"
-                                         height="auto" style={{marginX: "auto"}}/>
-
-                                </div>
-                            </Box>
-
-                        </Paper>
-
-
-                        <Paper sx={{width: '40%', height: 600, marginLeft: '5%'}}>
-
-                            <Box display="flex" alignItems="center" justifyContent="center">
-
-                                <div style={{
-                                    alignItems: "center",
-                                    width: "90%",
-                                    height: "auto",
-                                    marginLeft: '5%',
-                                    marginRight: '5%',
-                                    marginTop: 50
-                                }}>
-
-                                    <Typography variant="h4">
-                                        {homeJSON.info.teamDescription}
-                                    </Typography>
-                                </div>
-                            </Box>
-                        </Paper>
-
-
-                    </div>
-
-
+                                    </Grid>
+                                </Paper>
+                            </Grid>
+                        )}
+                    </Grid>
                 </div>
 
             }
@@ -144,11 +120,8 @@ export default function Home() {
             {!isScreenBig &&
 
                 <div style={{alignItems: "center", width: "100", height: "auto"}}>
-
-
                     <Paper sx={{width: '100%', height: slideshowHeightMobile(), backgroundColor: "#ffffff"}}>
-
-                        <Box display="flex" alignItems="center" justifyContent="center" sx={{marginTop: 0}}>
+                        <Box display="flex" alignItems="center" justifyContent="center">
 
                             <SimpleImageSlider
                                 width="100%"
@@ -161,59 +134,52 @@ export default function Home() {
                                 autoPlayDelay={6}
                                 bgColor={"#000000"}
                             />
-
                         </Box>
-
-
                     </Paper>
 
-                    <Paper sx={{width: '100%', height: 'auto', marginTop: 3}}>
+                    <Box sx={{ml:-5}}>
+                    <Grid container spacing={5} sx={{width: "95%", height:"auto", ml: "2.5%", mt: 1}}>
+                        {homeJSON.entries.map((entry) =>
+                            <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
+                                  key={entry.name}>
+                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center"}}>
+                                    <Grid container spacing={5} sx={{width: "100%", ml: "0%", mt: 1}}>
 
-                        <Box display="flex" alignItems="center" justifyContent="center">
-
-                            <div style={{
-                                alignItems: "center",
-                                width: "90%",
-                                height: "auto",
-                                marginLeft: '5%',
-                                marginRight: '5%',
-                                marginTop: 15,
-                                marginBottom: 15
-                            }}>
-
-                                <Typography variant="h6">
-                                    {homeJSON.info.teamDescription}
-                                </Typography>
-
-                            </div>
-
-                        </Box>
-
-                    </Paper>
+                                        {entry.title &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " title"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h4" sx={{width: "100%", ml:"-5%"}} align="center">
+                                                    {entry.title}
+                                                </Typography>
+                                            </Grid>
+                                        }
 
 
-                    <Paper sx={{width: '100%', height: 'auto', marginTop: 3}}>
+                                        {entry.text &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " text"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h6" sx={{width: "100%", ml:"-5%"}} align="center">
+                                                    {entry.text}
+                                                </Typography>
+                                            </Grid>
+                                        }
 
-                        <Box display="flex" alignItems="center" justifyContent="center">
+                                        {entry.imagePath &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " picture"} sx={{justifyContent: "center"}}>
+                                                <Box sx={{ml:-3}}>
+                                                <img src={entry.imagePath} alt={entry.name} width="95%" style={{marginLeft:"2.5%", borderRadius:15}}
+                                                     height="auto"/>
+                                                </Box>
+                                            </Grid>
+                                        }
 
-                            <div style={{
-                                alignItems: "center",
-                                width: "90%",
-                                height: "auto",
-                                marginLeft: '5%',
-                                marginRight: '5%',
-                                marginTop: 15,
-                                marginBottom: 15
-                            }}>
-
-                                <img src={homeJSON.info.robotImagePath} alt="Robot Picture" width="100%"
-                                     height="auto"/>
-
-                            </div>
-
-                        </Box>
-
-                    </Paper>
+                                    </Grid>
+                                </Paper>
+                            </Grid>
+                        )}
+                    </Grid>
+                    </Box>
 
                 </div>
 

@@ -6,7 +6,7 @@ export default function Supporters() {
     const [isScreenBig, setScreenBig] = useState(false);
 
     useEffect(() => {
-        setScreenBig(window.innerWidth > 1200);
+        setScreenBig(window.innerWidth > 800);
     }, []);
 
 
@@ -45,20 +45,11 @@ export default function Supporters() {
         if (level === 7) return 70;
     }
 
-    function getSponsorWidthMobile(level) {
-        if (level === 1) return 300;
-        if (level === 2) return 300;
-        if (level === 3) return 200;
-        if (level === 4) return 150;
-        if (level === 5) return 150;
-        if (level === 6) return 100;
-        if (level === 7) return 100;
-    }
 
     return (
         <div>
 
-            <Paper sx={{width: '100%', height: 'auto', marginBottom:5}}>
+            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5}}>
 
                 <div style={{
                     display: "flex",
@@ -85,7 +76,7 @@ export default function Supporters() {
                         height: "auto"
                     }}
                           key={mentor.name}>
-                        <Paper sx={{width: '100%', height: "100%"}}>
+                        <Paper sx={{width: '100%', height: "100%", boxShadow:5}}>
                             <div style={{
                                 display: 'flex',
                                 alignItems: "center",
@@ -139,7 +130,7 @@ export default function Supporters() {
                         marginTop: 50
                     }}>
 
-                        <Paper sx={{width: '100%', height: "auto"}}>
+                        <Paper sx={{width: '100%', height: "auto", boxShadow:5}}>
 
                             <div style={{
                                 display: "flex",
@@ -386,7 +377,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -407,7 +398,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -423,12 +414,12 @@ export default function Supporters() {
                         }}>
                             <Grid container spacing={2} sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
                                 {sponsorsLevel3.map((sponsor) =>
-                                    <Grid item xs={8} sx={{mx: "auto", textAlign: "center", height: "auto"}}
+                                    <Grid item xs={6} sx={{mx: "auto", textAlign: "center", height: "auto"}}
                                           key={sponsor.name + "_mobile"}>
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -450,7 +441,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -471,7 +462,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -492,7 +483,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}
@@ -513,7 +504,7 @@ export default function Supporters() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={sponsor.website}
                                            style={{color: '#000000'}}>
-                                            <img src={sponsor.logo} width={getSponsorWidthMobile(sponsor.level)}
+                                            <img src={sponsor.logo} width={"100%"}
                                                  height={"auto"} alt={sponsor.name}/>
                                         </a>
                                     </Grid>)}

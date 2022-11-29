@@ -13,7 +13,8 @@ const mainTheme = createTheme({
             main: '#ffffff',
         },
         background: {
-            default: '#ffd4d4',
+            // default: '#ffd4d4',
+            default: '#ffe9e9',
         },
     },
 });

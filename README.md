@@ -1,6 +1,11 @@
 # Angelbotics FRC Team 1339's Website
 
-[Angelbotics.org](https://angelbotics.org)
+[angelbotics.org](https://angelbotics.org)
+
+# General Information
+The `published` branch will automatically deploy to the production site. `master` is meant as the development branch,
+and from there pull requests are made into `published`. The `TestWebsite` fork will deploy automatically to
+[test.angelbotics.org](https://test.angelbotics.org) when any change is made to its `master` branch. 
 
 The vast majority of content on the website is procedurally generated from JSON. This is to make it easier for people
 with little programming knowledge to update the website because JSON is relatively simple.
@@ -100,21 +105,55 @@ the model for the website:
 - Array of objects, each with a `url` key. This is the path to an image that will be added to the slideshow on the home
   page. The order of the objects determines the order of the slideshow.
 
-### Info
+### Entries
 
-- The data that is displayed onto the website. This section is not procedural, and to add a new box or image you must
-  add the code for it in [home.js](./angelbotics-website/src/pages/home.js), than reference the new data you wrote in
-  the json file. You are however able to update the keys that are already there.
+Each entry is displayed on its own card on the site. This is procedural, so you can create new ones.
+
+- `name:` Name of the entry.
+- `title:` Title displayed at the top of the entry card.
+- `imagePath:` If there is an image, put the path here. Leave empty `""` if there is no image.
+- `text:` The main text for the entry. Leave empty `""` for no text.
+- `gridSpaces:` The amount of spaces horizontally this entry takes up when the device width is large. It will be 12 otherwise, which is the max.
+
 
 # FirstRobotics.json
 
 This section is not procedurally generated, so any new keys added will not show on the site. You are still able to
 update the information on the original keys however.
 
+- `firstWebsite:` The home page for FIRST.
+- `firstDescription:` A general description of FIRST as an organization.
+
+### For Each Game
+
 - `gameVideo:` Most recent game reveal video for that competition. This will be a YouTube video ID, which can be found
   in the video's url or under developer information.
-- `generalDescription:` A general description of the competition in relation to the other FRC divisions. 
-
+- `generalDescription:` A general description of the competition in relation to the other FRC divisions.
 
 # Resources.json
+
+### Contact Us
+
+- `text:` The text that is displayed on this card.
+- `email:` The main contact email for Angelbotics.
+
+##### `Social Media[]`
+
+This is an array of the social media platforms that are to be displayed.
+
+- `name:` Name of the social media platform for this entry.
+- `imagePath:` The path to a logo for the platform.
+- `link:` A link to the team's account on that platform.
+
+
+### Calendar
+
+- `googleCalendarPublicLink:` The link to the public google calendar
+
+### Resource Cards
+
+- `name:` Name of the resource card.
+- `description:` The text that is displayed on the resource card.
+- `imagePath:` The path to the image, usually a logo, for the card.
+- `url:` Most resources have an external link of some sort, and that goes here.
 
