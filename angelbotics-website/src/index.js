@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -13,6 +13,14 @@ import History from "./pages/history";
 import Resources from "./pages/resources";
 import Supporters from "./pages/supporters";
 
+const redirectsJSON = require("./pages/json/redirects.json");
+
+const ExternalRedirect = (link) => {
+    useEffect(() => {
+        window.location.href = link.link;
+    })
+    return <h1>Redirecting...</h1>
+};
 
 ReactDOM.render(
     <ThemeProvider theme={mainTheme}>
@@ -25,6 +33,13 @@ ReactDOM.render(
                     <Route path="firstRobotics" element={<FirstRobotics/>}/>
                     <Route path="resources" element={<Resources/>}/>
                     <Route path="supporters" element={<Supporters/>}/>
+                    {redirectsJSON.redirects.map((json, idx) => {
+                        return <Route
+                            path={json.path}
+                            key={idx}
+                            element={<ExternalRedirect link={json.link}/>}
+                        />
+                    })}
                 </Route>
             </Routes>
         </BrowserRouter>
@@ -37,3 +52,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

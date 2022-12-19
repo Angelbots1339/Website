@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    {
+      "link": "https://trello.com/w/angelbotics/home",
+      "path": "trello"
+    },
+    {
+      "link": "https://www.thebluealliance.com/team/1339",
+      "path": "thebluealliance"
+    }
+  ]
+
+}
