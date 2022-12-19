@@ -157,3 +157,11 @@ This is an array of the social media platforms that are to be displayed.
 - `imagePath:` The path to the image, usually a logo, for the card.
 - `url:` Most resources have an external link of some sort, and that goes here.
 
+# Redirects.json
+
+This file is used to create easy external redirects. For example, if you wanted to redirect anyone that went to 
+`angelbotics.org/example` to `https://example.com`.
+
+- `link:` Link to where you want the user to be redirected, ensure that it is a valid url (includes `https://`).
+- `path:` Path at which you want the redirect to occur. Ex: `example` means that the user would be redirected to the 
+provided link if they go to `angelbotics.org/example`.

@@ -24,11 +24,8 @@ function App() {
     const supportersJSON = require('./pages/json/supporters.json');
 
     const sponsors3AndAbove = supportersJSON.Sponsors.map((sponsor) => {
-
         if(sponsor.level <= 3) return sponsor;
-
     }).filter(Boolean);
-
 
     const drawerHighlightColor = "#fcaeae";
 
@@ -38,7 +35,6 @@ function App() {
     const [isScreenBig, setScreenBig] = useState(false);
 
     useEffect(() => {
-
         setScreenBig(window.innerWidth > 1200);
         setCurrentPage(window.location.pathname);
 
