@@ -1,12 +1,84 @@
 {
   "redirects": [
     {
-      "link": "https://trello.com/w/angelbotics/home",
+      "link": "https://drive.google.com/drive/folders/1vbIpwIWFldwxIB6FIBEXRdM12k1UYjmy?usp=share_link",
+      "path": "openalliance"
+    },
+    {
+      "link": "https://calendar.google.com/calendar/embed?src=angelbots1339%40gmail.com&ctz=America%2FDenver",
+      "path": "calendar"
+    },
+    {
+      "link": "https://discord.gg/jq82zffWEu",
+      "path": "discord"
+    },
+    {
+      "link": "https://drive.google.com/a/angelbotics.org",
+      "path": "drive"
+    },
+    {
+      "link": "https://mail.google.com/a/angelbotics.org",
+      "path": "email"
+    },
+    {
+      "link": "https://github.com/Angelbots1339",
+      "path": "github"
+    },
+    {
+      "link": "https://docs.google.com/document/d/e/2PACX-1vTH2Ljwn_u9esjQyOfq46RwCApXOx3KfryhsFsemJ03KGtNrFOCcKrVlU1fsawLvIv4Owl8LKokQi1i/pub",
+      "path": "mentalhealth"
+    },
+    {
+      "link": "https://cad.onshape.com/documents/095a5aa3430351d0cf7b70f2/w/fdf49a0119372b7aca0d0bc3/e/6e6a0c0aedd2c028d98ddae0",
+      "path": "onshape"
+    },
+    {
+      "link": "https://angelbotics-scouting.netlify.app/",
+      "path": "scout"
+    },
+    {
+      "link": "https://trello.com/w/angelbotics",
       "path": "trello"
+    },
+    {
+      "link": "https://www.facebook.com/angelbotics",
+      "path": "facebook"
+    },
+    {
+      "link": "https://imgur.com/user/angelbotics",
+      "path": "imgur"
+    },
+    {
+      "link": "https://www.instagram.com/angelbots1339/",
+      "path": "instagram"
+    },
+    {
+      "link": "https://www.linkedin.com/company/angelbotics/",
+      "path": "linkedin"
+    },
+    {
+      "link": "https://www.reddit.com/user/angelbotics",
+      "path": "reddit"
+    },
+    {
+      "link": "https://www.snapchat.com/add/angelbotics",
+      "path": "snapchat"
     },
     {
       "link": "https://www.thebluealliance.com/team/1339",
       "path": "thebluealliance"
+    },
+    {
+      "link": "https://www.tiktok.com/@angelbotics",
+      "path": "tiktok"
+    },
+    {
+      "link": "https://twitter.com/angelbots1339",
+      "path": "twitter"
+    },
+    {
+      "link": "https://www.youtube.com/@Angelbotics",
+      "path": "youtube"
     }
   ]
 
