@@ -15,53 +15,128 @@
 
   "Sponsors": [
     {
-      "name": "The Wizard's Chest",
+      "name": "Chevron",
       "level": 1,
-      "logo": "/images/logos/wizardschest.jpg",
+      "logo": "/images/logos/1/Chevron_Logo.svg",
+      "website": "https://www.chevron.com/"
+    },
+
+
+
+
+    {
+      "name": "Lockheed Martin",
+      "level": 2,
+      "logo": "/images/logos/2/LockheedMartin.jpg",
+      "website": "https://www.lockheedmartin.com/en-us/index.html"
+    },
+    {
+      "name": "Medtronic",
+      "level": 2,
+      "logo": "/images/logos/2/Medtronic.png",
+      "website": "https://www.medtronic.com/us-en/index.html"
+    },
+    {
+      "name": "Rev Robotics",
+      "level": 2,
+      "logo": "/images/logos/2/TeamRev.png",
+      "website": "https://www.revrobotics.com/"
+    },
+
+
+
+
+    {
+      "name": "The Wizard's Chest",
+      "level": 3,
+      "logo": "/images/logos/3/wizardschest.jpg",
       "website": "https://www.wizardschest.com/"
     },
     {
       "name": "Ball Aerospace",
-      "level": 1,
-      "logo": "/images/logos/Ball-Aerospace.jpeg",
+      "level": 3,
+      "logo": "/images/logos/3/Ball-Aerospace.jpeg",
       "website": "https://www.ball.com/aerospace"
     },
     {
       "name": "Denver Public Schools",
       "level": 3,
-      "logo": "/images/logos/DPSLogo.png",
+      "logo": "/images/logos/3/DPSLogo.png",
       "website": "https://www.dpsk12.org/"
+    },
+    {
+      "name": "Comcast",
+      "level": 3,
+      "logo": "/images/logos/3/Comcast.png",
+      "website": "https://corporate.comcast.com/"
     },
     {
       "name": "Raytheon Technologies",
       "level": 3,
-      "logo": "/images/logos/RaytheonLogoLarge.png",
+      "logo": "/images/logos/3/RaytheonLogoLarge.png",
       "website": "https://www.rtx.com/"
     },
     {
-      "name": "Lockheed Martin",
-      "level": 3,
-      "logo": "/images/logos/LockheedMartin.jpg",
-      "website": "https://www.lockheedmartin.com/en-us/index.html"
-    },
-    {
-      "name": "Medtronic",
-      "level": 6,
-      "logo": "/images/logos/Medtronic.png",
-      "website": "https://www.medtronic.com/us-en/index.html"
-    },
-    {
       "name": "Gene Haas Foundation",
-      "level": 6,
-      "logo": "/images/logos/GeneHaasLogo.png",
+      "level": 3,
+      "logo": "/images/logos/3/GeneHaasLogo.png",
       "website": "https://ghaasfoundation.org/"
     },
     {
-      "name": "Rev Robotics",
-      "level": 6,
-      "logo": "/images/logos/REVLogo.jpeg",
-      "website": "https://www.revrobotics.com/"
+      "name": "East Friends and Family",
+      "level": 3,
+      "logo": "/images/logos/3/EAFAF.png",
+      "website": "https://eastangelfriends.org/"
+    },
+
+
+
+    {
+      "name": "East High School",
+      "level": 4,
+      "logo": "/images/logos/4/East.png",
+      "website": "https://east.dpsk12.org/"
+    },
+    {
+      "name": "United Launch Alliance",
+      "level": 4,
+      "logo": "/images/logos/4/ULA_Logo.png",
+      "website": "https://www.ulalaunch.com/"
+    },
+    {
+      "name": "Plasticare",
+      "level": 4,
+      "logo": "/images/logos/4/plasticare.png",
+      "website": "https://www.plasticareinc.com/"
+    },
+    {
+      "name": "Intuitive Foundation",
+      "level": 4,
+      "logo": "/images/logos/4/IntuitiveFoundation.png",
+      "website": "https://www.intuitive-foundation.org/"
+    },
+    {
+      "name": "Scenic Mercenary Studio",
+      "level": 4,
+      "logo": "/images/logos/4/ScenicMercenaryStudio.png",
+      "website": "https://www.scenicmercenary.com/"
+    },
+    {
+      "name": "Hallmoore",
+      "level": 4,
+      "logo": "/images/logos/4/hallmoore.webp",
+      "website": "https://hallmoore.com/home"
+    },
+
+
+
+    {
+      "name": "Actuonix",
+      "level": 5,
+      "logo": "/images/logos/5/Actuonix.png",
+      "website": "https://www.actuonix.com/"
     }
+
 
   ],
 
