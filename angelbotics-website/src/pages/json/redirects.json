@@ -1,6 +1,10 @@
 {
   "redirects": [
     {
+      "link": "https://asciinema.org/~Angelbotics",
+      "path": "asciinema"
+    },
+    {
       "link": "https://calendar.google.com/calendar/embed?src=angelbots1339%40gmail.com&ctz=America%2FDenver",
       "path": "calendar"
     },
@@ -39,6 +43,10 @@
     {
       "link": "https://docs.google.com/document/d/e/2PACX-1vR3xoBy49IhEIUgBcEIfzk8tI7cM1uY9CFJpxiCAo5Gaho0btDJF4sDDD7wGtssdCScGOW31FzlEND1/pub",
       "path": "lostcard"
+    },
+    {
+      "link": "https://youtu.be/xvFZjo5PgG0",
+      "path": "lostcarb"
     },
     {
       "link": "https://www.signupgenius.com/go/10C0C4EA9AD2BA4FE3-robotics1",
@@ -103,6 +111,10 @@
     {
       "link": "https://twitter.com/angelbots1339",
       "path": "twitter"
+    },
+    {
+      "link": "https://www.venmo.com/jeff-kieft-angelbotics",
+      "path": "venmo"
     },
     {
       "link": "https://www.youtube.com/@Angelbotics",
