@@ -9,6 +9,10 @@
       "path": "calendar"
     },
     {
+      "link": "https://www.google.com",
+      "path": "google"
+    },
+    {
       "link": "https://discord.gg/jq82zffWEu",
       "path": "discord"
     },
