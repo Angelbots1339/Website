@@ -97,7 +97,7 @@
       "path": "remindstudents"
     },
     {
-      "link": "https://angelbotics-scouting.netlify.app/",
+      "link": "https://client-open-scout.vercel.app/dashboard/scouting",
       "path": "scout"
     },
     {
