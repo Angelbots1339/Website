@@ -61,6 +61,10 @@
       "path": "meals"
     },
     {
+      "link": "https://photos.app.goo.gl/yCt8mdhCaHFuTrju7"
+      "path": "media"
+    },
+    {
       "link": "https://docs.google.com/document/d/e/2PACX-1vTH2Ljwn_u9esjQyOfq46RwCApXOx3KfryhsFsemJ03KGtNrFOCcKrVlU1fsawLvIv4Owl8LKokQi1i/pub",
       "path": "mentalhealth"
     },
@@ -95,6 +99,10 @@
     {
       "link": "https://angelbotics-scouting.netlify.app/",
       "path": "scout"
+    },
+    {
+      "link": "https://photos.app.goo.gl/noYLGFoirD4K9HX27"
+      "path": "scoutphotos"
     },
     {
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSfiA-MgmqdnRib02edBKfiVQ2dq_dSiLmQQ2qA5rw4qrvwKGw/viewform?usp=sf_link",
