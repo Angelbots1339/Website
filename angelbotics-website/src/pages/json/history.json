@@ -1,6 +1,20 @@
 {
   "tabs": [
     {
+      "year": "2023",
+      "RobotImagePath": "/images/history/2023/2023ColoradoZoom.jpg",
+      "CadModelPath": "",
+      "CadMaterialPath": "",
+      "GameDescription": "In the 2023 game Charged Up, robots compete to place cubes and cones into their alliance's grid. There are top and mid levels with game piece specific nodes, and the bottom most is a hybrid. During the Endgame, robots can drive onto and balance the Charging Station.",
+      "GameName": "2023 Charged Up",
+      "RevealVideo": "jDU_sy5GyWI",
+      "GameReveal": "0zpflsYc4PA",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2023CompetitionSeason",
+      "RobotName": "Heart Of Chrome",
+      "yearSummary": ""
+    },
+    {
       "year": "2022",
       "RobotImagePath": "/images/history/2022/JazzyJudi.JPG",
       "CadModelPath": "/images/history/2022/2022CAD.obj",
