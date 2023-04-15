@@ -2,13 +2,14 @@
 
   "imageCarousel": [
 
-    {"url":"/images/home/2022DenverDriveTeamPhoto.JPG"},
-    {"url":"/images/home/2022RobotHanging.JPG"},
-    {"url":"/images/home/2022DenverTeamPicture.JPG"},
-    {"url":"/images/home/2022DenverCheeringTeam.JPG"},
-    {"url":"/images/home/2022OC_TeamPic.JPG"},
-    {"url":"/images/home/2022KCMTDriveTeam2.JPG"},
-    {"url":"/images/home/2022KCMTPluggingInBattery.JPG"}
+    {"url":"/images/home/2023StLouisDriveStationBack.jpg"},
+    {"url":"/images/home/2023ColoradoZoom.jpg"},
+    {"url":"/images/home/2023ColoradoTeamPic.JPG"},
+    {"url":"/images/home/2023TulsaDriveStation.jpg"},
+    {"url":"/images/home/2023StLouisRobotBalance.jpg"},
+    {"url":"/images/home/2023ColoradoAlliancePic.jpg"},
+    {"url":"/images/home/2023ColoradoRobotSetup.jpg"},
+    {"url":"/images/home/2023StLouisDriveStation.jpg"}
 
   ],
 
@@ -16,7 +17,7 @@
     {
       "name": "Robot Picture",
       "title": "",
-      "imagePath": "/images/history/2022/JazzyJudi.JPG",
+      "imagePath": "/images/history/2023/2023ColoradoZoom.jpg",
       "text": "",
       "gridSpaces": "6"
     },

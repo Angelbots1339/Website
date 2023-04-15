@@ -40,78 +40,6 @@ export default function Supporters() {
 
     return (
         <div>
-
-            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5}}>
-
-                <div style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "95%",
-                    height: 'auto',
-                    marginLeft: '2.5%',
-                    paddingTop: 10,
-                    paddingBottom: 10
-                }}>
-                    <Typography variant="h3">
-                        Mentors
-                    </Typography>
-                </div>
-            </Paper>
-
-            <Grid container spacing={2}
-                  sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
-                {supportersJSON.mentors.map((mentor) =>
-                    <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{
-                        mx: "auto",
-                        textAlign: "center",
-                        height: "auto"
-                    }}
-                          key={mentor.name}>
-                        <Paper sx={{width: '100%', height: "100%", boxShadow:5}}>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: "center",
-                                width: "95%",
-                                height: 'auto',
-                                marginLeft: '2.5%',
-                                marginTop: 10,
-                                marginBottom: 2
-                            }}>
-                                <Grid container spacing={2}
-                                      sx={{width: '95%', marginLeft: '2.5%', marginRight: '2.5%'}}>
-                                    <Grid item xs={12} sm={12} md={12} lg={5} xl={5} sx={{
-                                        mx: "auto",
-                                        textAlign: "center",
-                                        height: "auto"
-                                    }}
-                                          key={mentor.name + " inner"}>
-                                        <img src={mentor.imagePath} alt={mentor.name} width="auto" height="200" style={{borderRadius:15, marginTop:10}}/>
-                                    </Grid>
-
-                                    <Grid item xs={12} sm={12} md={12} lg={7} xl={7} sx={{
-                                        mx: "auto",
-                                        textAlign: "center",
-                                        height: "auto"
-                                    }}
-                                          key={mentor.name}>
-                                        <div>
-                                            <Typography variant="h4" sx={{ mb: 2, mt:2}}>
-                                                {mentor.name}
-                                            </Typography>
-                                            <Typography variant="h6" sx={{ mb: 10}}>
-                                                {mentor.description}
-                                            </Typography>
-                                        </div>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                        </Paper>
-                    </Grid>)}
-            </Grid>
-
-
-
             {isScreenBig &&
                 <div>
                     <div style={{
@@ -414,6 +342,77 @@ export default function Supporters() {
 
                 </div>
             }
+
+
+            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5}}>
+
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "95%",
+                    height: 'auto',
+                    marginLeft: '2.5%',
+                    paddingTop: 10,
+                    paddingBottom: 10
+                }}>
+                    <Typography variant="h3">
+                        Mentors
+                    </Typography>
+                </div>
+            </Paper>
+
+            <Grid container spacing={2}
+                  sx={{width: '90%', marginLeft: '5%', marginRight: '5%'}}>
+                {supportersJSON.mentors.map((mentor) =>
+                    <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{
+                        mx: "auto",
+                        textAlign: "center",
+                        height: "auto"
+                    }}
+                          key={mentor.name}>
+                        <Paper sx={{width: '100%', height: "100%", boxShadow:5}}>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: "center",
+                                width: "95%",
+                                height: 'auto',
+                                marginLeft: '2.5%',
+                                marginTop: 10,
+                                marginBottom: 2
+                            }}>
+                                <Grid container spacing={2}
+                                      sx={{width: '95%', marginLeft: '2.5%', marginRight: '2.5%'}}>
+                                    <Grid item xs={12} sm={12} md={12} lg={5} xl={5} sx={{
+                                        mx: "auto",
+                                        textAlign: "center",
+                                        height: "auto"
+                                    }}
+                                          key={mentor.name + " inner"}>
+                                        <img src={mentor.imagePath} alt={mentor.name} width="auto" height="200" style={{borderRadius:15, marginTop:10}}/>
+                                    </Grid>
+
+                                    <Grid item xs={12} sm={12} md={12} lg={7} xl={7} sx={{
+                                        mx: "auto",
+                                        textAlign: "center",
+                                        height: "auto"
+                                    }}
+                                          key={mentor.name}>
+                                        <div>
+                                            <Typography variant="h4" sx={{ mb: 2, mt:2}}>
+                                                {mentor.name}
+                                            </Typography>
+                                            <Typography variant="h6" sx={{ mb: 10}}>
+                                                {mentor.description}
+                                            </Typography>
+                                        </div>
+                                    </Grid>
+                                </Grid>
+                            </div>
+                        </Paper>
+                    </Grid>)}
+            </Grid>
+
 
 
         </div>
