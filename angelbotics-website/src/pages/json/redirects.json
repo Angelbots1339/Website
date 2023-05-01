@@ -9,6 +9,14 @@
       "path": "calendar"
     },
     {
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSf7w-7n1AymzYP-c2kAxAOx3Czh3DWoYRmy4rzdZLuU0iSu5Q/viewform?usp=sf_link",
+      "path": "concerttee"
+    },
+    {
+      "link": "https://www.google.com",
+      "path": "google"
+    },
+    {
       "link": "https://discord.gg/jq82zffWEu",
       "path": "discord"
     },
@@ -53,6 +61,10 @@
       "path": "meals"
     },
     {
+      "link": "https://photos.app.goo.gl/yCt8mdhCaHFuTrju7",
+      "path": "media"
+    },
+    {
       "link": "https://docs.google.com/document/d/e/2PACX-1vTH2Ljwn_u9esjQyOfq46RwCApXOx3KfryhsFsemJ03KGtNrFOCcKrVlU1fsawLvIv4Owl8LKokQi1i/pub",
       "path": "mentalhealth"
     },
@@ -65,8 +77,16 @@
       "path": "openalliance"
     },
     {
+      "link": "https://paypal.me/angelbotics",
+      "path": "paypal"
+    },
+    {
       "link": "https://angelbotics.1password.com/teamjoin/invitation/ECBUIGQE6VFMHFEYOWZN7MQ27Q",
       "path": "password"
+    },
+    {
+      "link": "https://forms.gle/gbFtVEA3rJWQ431g9",
+      "path": "pitscout"
     },
     {
       "link": "https://www.reddit.com/user/angelbotics",
@@ -85,8 +105,16 @@
       "path": "remindstudents"
     },
     {
-      "link": "https://angelbotics-scouting.netlify.app/",
+      "link": "https://client-open-scout.vercel.app/dashboard/scouting",
       "path": "scout"
+    },
+    {
+      "link": "https://forms.gle/2TAGcugLU4yxzW7A9",
+      "path": "scoutphotos"
+    },
+    {
+      "link": "https://docs.google.com/spreadsheets/d/1Nh5WaCIFRFRetq95zr0t0OBtd3pgd-lmGCS-F69bovA",
+      "path": "scoutschedule"
     },
     {
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSfiA-MgmqdnRib02edBKfiVQ2dq_dSiLmQQ2qA5rw4qrvwKGw/viewform?usp=sf_link",
@@ -117,7 +145,7 @@
       "path": "twitter"
     },
     {
-      "link": "https://www.venmo.com/jeff-kieft-angelbotics",
+      "link": "https://www.venmo.com/angelbotics",
       "path": "venmo"
     },
     {
