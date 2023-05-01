@@ -2,7 +2,7 @@
   "tabs": [
     {
       "year": "2023",
-      "RobotImagePath": "/images/history/2023/2023ColoradoZoom.jpg",
+      "RobotImagePath": "/images/history/2023/2023Worlds.JPG",
       "CadModelPath": "",
       "CadMaterialPath": "",
       "GameDescription": "In the 2023 game Charged Up, robots compete to place cubes and cones into their alliance's grid. There are top and mid levels with game piece specific nodes, and the bottom most is a hybrid. During the Endgame, robots can drive onto and balance the Charging Station.",
@@ -12,7 +12,7 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2023CompetitionSeason",
       "RobotName": "Heart Of Chrome",
-      "yearSummary": ""
+      "yearSummary": "We went to St Louis for our first regional and had some issues, that were resolved when we won the Colorado Regional for a second year in a row, then sent a new driveteam to the Green County Regional to gain experience. Later, we ended up in the Johnson Division at Worlds, and made it to the finals as a first pick."
     },
     {
       "year": "2022",

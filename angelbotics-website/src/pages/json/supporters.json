@@ -3,15 +3,68 @@
 
     {
       "name": "Joel Noble",
-      "description": "Joel Noble is a founder, and has been the lead mentor and head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+      "description": "Joel Noble is a founder, and has been the lead mentor/head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
       "imagePath": "/images/supporters/noble.JPG"
     },
     {
-      "name": "Chad B",
-      "description": "Chad mentors our Programming and Electrical sub-teams. He helps diagnose issues with the electrical and troubleshoot as well as brainstorm the code.",
+      "name": "Chad Bartel",
+      "description": "Chad works at ULA and has been with the team since 2011. He helps diagnose issues, troubleshoot, and advise both Programming and Electrical.",
       "imagePath": "/images/supporters/mentor_chad.jpg"
+    },
+    {
+      "name": "Arturo Earle",
+      "description": "Arturo works in cyber security but has more fun mentoring the team on various tasks and helping our with infrastructure.",
+      "imagePath": "/images/supporters/Arturo_Earle.jpg"
+    },
+    {
+      "name": "Jeff Kieft",
+      "description": "Jeff is a biophysicist and professor. He is the treasurer and board member on the nonprofit, offers general team support, and helps manage scouting at competitions.",
+      "imagePath": "/images/supporters/Jeffrey_Kieft.jpg"
+    },
+    {
+      "name": "Garrett Calkins",
+      "description": "Garrett is an engineer at Intertech Plastics, and has mentored our team since 2022. He helps us with Manufacturing, Design, and Strategy.",
+      "imagePath": "/images/supporters/Garrett_Calkins.jpg"
+    },
+    {
+      "name": "Critter Thompson",
+      "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
+      "imagePath": "/images/supporters/Critter_Thompson.jpg"
+    },
+    {
+      "name": "Craig Dorroh",
+      "description": "Craig has driven our trailer to all 4 competitions in 2023, and has helped the team during each one of them.",
+      "imagePath": "/images/supporters/Craig_Dorroh.jpg"
+    },
+    {
+      "name": "Nathan Baldwin",
+      "description": "Nathan Baldwin is a test engineer at Medtronic. This is his first year as a mentor so he has been helping the team where needed.",
+      "imagePath": "/images/supporters/Nathan.jpg"
+    },
+    {
+      "name": "Wes Naake",
+      "description": "Wes is an alumn mentor from the class of '22. He helps with mechanical and manufacturing by assisting students while they build and maintain different parts on the robot.",
+      "imagePath": "/images/supporters/Wes_Naake.jpg"
+    },
+    {
+      "name": "Rose Bandrowski",
+      "description": "Rose works for the Colorado Department of Transportation, and is a FIRST Alumni of team 4915. They started mentoring this season and help organize, motivate, and support the team.",
+      "imagePath": "/images/supporters/Rose_Bandrowski.jpg"
     }
   ],
+
+  "Mentor Template":
+
+  {
+    "name": "",
+    "description": "",
+    "imagePath": "/images/supporters/"
+  },
+
+
+
+
+
 
   "Sponsors": [
     {
@@ -145,15 +198,8 @@
     "level": 1,
     "logo": "",
     "website": ""
-  },
+  }
 
-  "Mentor Template":
-
-  {
-      "name": "",
-      "description": "",
-      "imagePath": ""
-    }
 
 
 }
