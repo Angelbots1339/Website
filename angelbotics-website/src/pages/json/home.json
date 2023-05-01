@@ -4,11 +4,12 @@
 
     {"url":"/images/home/2023StLouisDriveStationBack.jpg"},
     {"url":"/images/home/2023ColoradoZoom.jpg"},
-    {"url":"/images/home/2023ColoradoTeamPic.JPG"},
-    {"url":"/images/home/2023TulsaDriveStation.jpg"},
-    {"url":"/images/home/2023StLouisRobotBalance.jpg"},
-    {"url":"/images/home/2023ColoradoAlliancePic.jpg"},
+    {"url":"/images/home/2023WorldsTeamPic.jpg"},
     {"url":"/images/home/2023ColoradoRobotSetup.jpg"},
+    {"url":"/images/home/2023ColoradoAlliancePic.jpg"},
+    {"url":"/images/home/2023ColoradoTeamPic.JPG"},
+    {"url":"/images/home/2023StLouisRobotBalance.jpg"},
+    {"url":"/images/home/2023TulsaDriveStation.jpg"},
     {"url":"/images/home/2023StLouisDriveStation.jpg"}
 
   ],
@@ -17,7 +18,7 @@
     {
       "name": "Robot Picture",
       "title": "",
-      "imagePath": "/images/history/2023/2023ColoradoZoom.jpg",
+      "imagePath": "/images/history/2023/2023Worlds.JPG",
       "text": "",
       "gridSpaces": "6"
     },
