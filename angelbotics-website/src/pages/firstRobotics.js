@@ -61,16 +61,15 @@ export default function FirstRobotics() {
                 marginTop: 50
             }}>
 
-                <Paper sx={{width: "100%", height: "auto", boxShadow: 5, justifyContent: "center"}}>
-
                     <Grid container spacing={2} sx={{width: "98%", height: "auto", ml: "0%", mr: "0%", mt: 1, mb: 2}}>
 
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Card sx={{
+                            <Paper sx={{
                                 width: "100%",
                                 height: "auto",
                                 justifyContent: "center",
-                                boxShadow: 5
+                                boxShadow: 5,
+                                borderRadius: 5,
                             }}>
                                 <Grid container spacing={2} sx={{m: 2}}>
                                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -90,22 +89,24 @@ export default function FirstRobotics() {
                                                 width: "95%",
                                                 height: "auto",
                                                 marginLeft: '2.5%',
+                                                borderRadius: 5,
                                                 marginTop: 0
                                             }}>
-                                            <Typography variant="h5" sx={{mr: 5}}>
+                                            <Typography variant="h6" sx={{mr: 5}}>
                                                 {data.firstDescription}
                                             </Typography>
                                         </div>
                                     </Grid>
                                 </Grid>
-                            </Card>
+                            </Paper>
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Card sx={{
+                            <Paper sx={{
                                 width: "100%",
                                 height: "auto",
                                 justifyContent: "center",
+                                borderRadius: 5,
                                 boxShadow: 5
                             }}>
 
@@ -117,7 +118,7 @@ export default function FirstRobotics() {
                                         <a rel="noreferrer noopener" target="_blank"
                                            href={data.FRC.website}>
                                             <img src={data.FRC.logo} alt="FRC Logo" width="80%"
-                                                 height="auto" style={{marginBottom: 10, marginRight: 5}}/>
+                                                 height="auto" style={{marginBottom: 10, marginRight: 0, marginLeft:5}}/>
                                         </a>
 
                                         <Typography variant="h6" sx={{mr: 3, ml: 5}}>
@@ -154,11 +155,11 @@ export default function FirstRobotics() {
                                                 YouTube Video</a> Has Not Loaded</p>}
                                     </Grid>
                                 </Grid>
-                            </Card>
+                            </Paper>
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Card sx={{width: "100%", height: "100%", boxShadow: 5}}>
+                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
 
                                 <a rel="noreferrer noopener" target="_blank"
                                    href={data.FTC.website}>
@@ -196,12 +197,12 @@ export default function FirstRobotics() {
                                 </div>
 
 
-                            </Card>
+                            </Paper>
                         </Grid>
 
 
                         <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Card sx={{width: "100%", height: "100%", boxShadow: 5}}>
+                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
 
                                 <a rel="noreferrer noopener" target="_blank"
                                    href={data.FLL.website}>
@@ -238,11 +239,12 @@ export default function FirstRobotics() {
                                             YouTube Video</a> Has Not Loaded</p>}
 
                                 </div>
-                            </Card>
+                            </Paper>
                         </Grid>
 
                         {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Card sx={{width: "100%", height: "100%", boxShadow: 5}}>                                <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
+                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5}}>
+                                <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                                     {data.FRC.gameVideo && <a rel="noreferrer noopener" target="_blank"
                                                                        href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}
                                     >{"FRC Game Video"}</a>}
@@ -257,10 +259,9 @@ export default function FirstRobotics() {
                                                                        href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}
                                     >{"FLL Game Video"}</a>}
                                 </Typography>
-                            </Card>
+                            </Paper>
                         </Grid>}
                     </Grid>
-                </Paper>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {Box, Grid, Paper, Typography} from "@mui/material";
+import {Box, Button, Grid, Paper, Typography} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
 
 export default function Home() {
@@ -75,8 +75,8 @@ export default function Home() {
                         {homeJSON.entries.map((entry) =>
                             <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
                                   key={entry.name}>
-                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center"}}>
-                                    <Grid container spacing={5} sx={{width: "95%", ml: "1.25%", mt: 10}}>
+                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center", borderRadius: 5}}>
+                                    <Grid container spacing={5} sx={{width: "95%", ml: entry.gridSpaces > 6 ? "1.25%" : "0%", mt: 10}}>
 
                                         {entry.title &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
@@ -88,11 +88,11 @@ export default function Home() {
                                         }
 
 
-                                        {entry.text &&
+                                        {entry.topText &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
-                                                  key={entry.name + " text"} sx={{justifyContent: "center"}}>
-                                                <Typography variant="h4" sx={{width: "100%"}} align="center">
-                                                    {entry.text}
+                                                  key={entry.name + " top text"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h6" sx={{width: "100%", ml:"0%"}} align="center">
+                                                    {entry.topText}
                                                 </Typography>
                                             </Grid>
                                         }
@@ -100,8 +100,26 @@ export default function Home() {
                                         {entry.imagePath &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
                                                   key={entry.name + " picture"} sx={{justifyContent: "center"}}>
-                                                <img src={entry.imagePath} alt={entry.name} width="95%"
-                                                     height="auto" style={{borderRadius:15}}/>
+                                                <img src={entry.imagePath} alt={entry.name} width="100%"
+                                                     height="auto" style={{borderRadius:15, marginLeft: entry.gridSpaces <= 3 ? "-4%" : "0%"}}/>
+                                            </Grid>
+                                        }
+
+                                        {entry.bottomText &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " bottom text"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h6" sx={{width: "100%", ml:"0%"}} align="center">
+                                                    {entry.bottomText}
+                                                </Typography>
+                                            </Grid>
+                                        }
+
+                                        {entry.learnMoreText &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " Learn More Button"} sx={{justifyContent: "center"}}>
+                                                <Button variant="outlined" size={"large"} href={entry.learnMoreLink} sx={{width: "50%", maxWidth: 300, ml:"25%"}} align="center">
+                                                    {entry.learnMoreText}
+                                                </Button>
                                             </Grid>
                                         }
 
@@ -142,8 +160,8 @@ export default function Home() {
                         {homeJSON.entries.map((entry) =>
                             <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
                                   key={entry.name}>
-                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center"}}>
-                                    <Grid container spacing={5} sx={{width: "100%", ml: "0%", mt: 1}}>
+                                <Paper sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center", borderRadius: 5}}>
+                                    <Grid container spacing={5} sx={{width: "90%", ml: "3.75%", mt: 1, mb:2}}>
 
                                         {entry.title &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
@@ -155,11 +173,11 @@ export default function Home() {
                                         }
 
 
-                                        {entry.text &&
+                                        {entry.topText &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
-                                                  key={entry.name + " text"} sx={{justifyContent: "center"}}>
+                                                  key={entry.name + " top text"} sx={{justifyContent: "center"}}>
                                                 <Typography variant="h6" sx={{width: "100%", ml:"-5%"}} align="center">
-                                                    {entry.text}
+                                                    {entry.topText}
                                                 </Typography>
                                             </Grid>
                                         }
@@ -171,6 +189,24 @@ export default function Home() {
                                                 <img src={entry.imagePath} alt={entry.name} width="95%" style={{marginLeft:"2.5%", borderRadius:15}}
                                                      height="auto"/>
                                                 </Box>
+                                            </Grid>
+                                        }
+
+                                        {entry.bottomText &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " bottom text"} sx={{justifyContent: "center"}}>
+                                                <Typography variant="h6" sx={{width: "100%", ml:"-5%"}} align="center">
+                                                    {entry.bottomText}
+                                                </Typography>
+                                            </Grid>
+                                        }
+
+                                        {entry.learnMoreText &&
+                                            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                  key={entry.name + " Learn More Button"} sx={{justifyContent: "center"}}>
+                                                <Button variant="outlined" size={"large"} href={entry.learnMoreLink} sx={{width: "75%", maxWidth: 300, ml:"15%"}} align="center">
+                                                    {entry.learnMoreText}
+                                                </Button>
                                             </Grid>
                                         }
 
