@@ -48,7 +48,7 @@
     {
       "name": "Team Pic",
       "title": "",
-      "imagePath": "/images/home/2023ColoradoTeamPic.jpg",
+      "imagePath": "/images/home/2023ColoradoTeamPic.JPG",
       "topText": "",
       "bottomText": "",
       "gridSpaces": "8",
@@ -108,7 +108,7 @@
     {
       "name": "Imagery",
       "title": "Imagery",
-      "imagePath": "/images/home/subteams/KissLogoWhite.png",
+      "imagePath": "/images/home/subteams/KISSLogoWhite.png",
       "topText": "",
       "bottomText": "",
       "gridSpaces": "4",
