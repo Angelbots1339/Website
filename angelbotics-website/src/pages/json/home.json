@@ -4,30 +4,116 @@
 
     {"url":"/images/home/2023StLouisDriveStationBack.jpg"},
     {"url":"/images/home/2023ColoradoZoom.jpg"},
-    {"url":"/images/home/2023WorldsTeamPic.jpg"},
+    {"url":"/images/home/2023ColoradoTeamPic.JPG"},
     {"url":"/images/home/2023ColoradoRobotSetup.jpg"},
     {"url":"/images/home/2023ColoradoAlliancePic.jpg"},
-    {"url":"/images/home/2023ColoradoTeamPic.JPG"},
     {"url":"/images/home/2023StLouisRobotBalance.jpg"},
     {"url":"/images/home/2023TulsaDriveStation.jpg"},
+    {"url":"/images/home/subteams/2023WorkingOnStructure.jpg"},
     {"url":"/images/home/2023StLouisDriveStation.jpg"}
 
   ],
 
   "entries": [
     {
+      "name": "Overall",
+      "title": "About 1339",
+      "imagePath": "/images/home/2023StLouisPit.jpg",
+      "topText": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
+      "bottomText": "",
+      "gridSpaces": "7",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
       "name": "Robot Picture",
-      "title": "",
+      "title": "Heart Of Chrome",
       "imagePath": "/images/history/2023/2023Worlds.JPG",
-      "text": "",
-      "gridSpaces": "6"
+      "topText": "",
+      "bottomText": "Heart of Chrome is our robot for the 2022-2023 season. Students fully constructed the robot in a matter of weeks, and continued with small improvements throughout the season. With it, we placed 1st at the Colorado Regional and subsequently won the event for a second year in a row.",
+      "gridSpaces": "5",
+      "learnMoreText": "Learn More",
+      "learnMoreLink": "/history"
     },
     {
       "name": "Team Description",
-      "title": "About 1339",
+      "title": "Our Team",
       "imagePath": "",
-      "text": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
-      "gridSpaces": "6"
+      "topText": "",
+      "bottomText": "Angelbotics consists of about 30-40 high school students, usually from East High School. We are a mostly student-led team, but we still have supportive mentors to help us along the way.",
+      "gridSpaces": "4",
+      "learnMoreText": "See Our Mentors",
+      "learnMoreLink": "/supporters"
+    },
+    {
+      "name": "Team Pic",
+      "title": "",
+      "imagePath": "/images/home/2023ColoradoTeamPic.jpg",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "8",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "Team Skills",
+      "title": "Skills",
+      "imagePath": "",
+      "topText": "Students learn every step to design and build a fully-functioning robot. They learn how to use CAD software to design the robot in 3D, and then machine out those parts with cnc routers, mills, and other assorted tools. After construction, students wire the robot, and then work on programming the robot to be functional. Throughout the robot construction, a group of students are also working on the imagery aspect of our team, making graphics, bumpers, and other cosmetics to put on the robot and decorate our pit. ",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "CAD",
+      "title": "CAD",
+      "imagePath": "/images/home/subteams/2023Cad.png",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "Mechanical",
+      "title": "Mechanical",
+      "imagePath": "/images/home/subteams/2023HeatherMilling.jpg",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "Electrical",
+      "title": "Electrical",
+      "imagePath": "/images/home/subteams/2023WiringWork.jpg",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "Programming",
+      "title": "Programming",
+      "imagePath": "/images/home/subteams/2022Programming.jpeg",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
+    },
+    {
+      "name": "Imagery",
+      "title": "Imagery",
+      "imagePath": "/images/home/subteams/KissLogoWhite.png",
+      "topText": "",
+      "bottomText": "",
+      "gridSpaces": "4",
+      "learnMoreText": "",
+      "learnMoreLink": ""
     }
   ]
 
