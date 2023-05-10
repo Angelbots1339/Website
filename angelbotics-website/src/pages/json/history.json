@@ -3,8 +3,8 @@
     {
       "year": "2023",
       "RobotImagePath": "/images/history/2023/2023Worlds.JPG",
-      "CadModelPath": "",
-      "CadMaterialPath": "",
+      "CadModelPath": "/images/history/2023/2023CAD.obj",
+      "CadMaterialPath": "/images/history/2023/2023CAD.mtl",
       "GameDescription": "In the 2023 game Charged Up, robots compete to place cubes and cones into their alliance's grid. There are top and mid levels with game piece specific nodes, and the bottom most is a hybrid. During the Endgame, robots can drive onto and balance the Charging Station.",
       "GameName": "2023 Charged Up",
       "RevealVideo": "jDU_sy5GyWI",
