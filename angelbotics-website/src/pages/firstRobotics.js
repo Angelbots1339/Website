@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from "react";
-import {Card, Grid, Paper, Typography} from "@mui/material";
+import { Grid, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
 
 export default function FirstRobotics() {
@@ -164,7 +164,7 @@ export default function FirstRobotics() {
                                 <a rel="noreferrer noopener" target="_blank"
                                    href={data.FTC.website}>
                                     <img src={data.FTC.logo} alt="FTC Logo" width="60%"
-                                         height="auto" style={{margin: 20}}/>
+                                         height="auto" style={{margin: 20, width:"60"}}/>
                                 </a>
 
                                 <Typography variant="h6"

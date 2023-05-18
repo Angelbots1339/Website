@@ -100,7 +100,7 @@ export default function Home() {
                                         {entry.imagePath &&
                                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
                                                   key={entry.name + " picture"} sx={{justifyContent: "center"}}>
-                                                <img src={entry.imagePath} alt={entry.name} width="100%"
+                                                <img src={entry.imagePath} alt={entry.name} width="100%" loading="lazy"
                                                      height="auto" style={{borderRadius:15, marginLeft: entry.gridSpaces <= 3 ? "-4%" : "0%"}}/>
                                             </Grid>
                                         }
@@ -187,7 +187,7 @@ export default function Home() {
                                                   key={entry.name + " picture"} sx={{justifyContent: "center"}}>
                                                 <Box sx={{ml:-3}}>
                                                 <img src={entry.imagePath} alt={entry.name} width="95%" style={{marginLeft:"2.5%", borderRadius:15}}
-                                                     height="auto"/>
+                                                     height="auto" loading="lazy"/>
                                                 </Box>
                                             </Grid>
                                         }
