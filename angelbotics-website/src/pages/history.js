@@ -1,7 +1,8 @@
-import {useEffect, useState} from "react";
+import {Suspense, useEffect, useState} from "react";
 import {Box, Grid, Paper, Tab, Tabs} from "@mui/material";
-import RobotHistoryTabComputer from "./robotHistoryTabComputer";
 import React from "react";
+
+const RobotHistoryTabComputer = React.lazy(() => import("./robotHistoryTabComputer"));
 
 
 export default function History() {
@@ -28,6 +29,7 @@ export default function History() {
     //
     const [isScreenBig, setScreenBig] = useState(false);
 
+const fallback = <div style={{width:"100%", height:100, textAlign: "center", paddingTop:20}}>Loading...</div>;
 
     useEffect(() => {
 
@@ -50,7 +52,14 @@ export default function History() {
                         <Grid container spacing={1} sx={{width: "95%", m: "2.5%"}}>
 
                             <Grid item xs={12} sm={2} md={2} lg={2} xl={2}>
-                                <Paper sx={{width: '100%', height: "100%", marginBottom: 0, boxShadow: 5, mt:"12.5%", borderRadius:5}}>
+                                <Paper sx={{
+                                    width: '100%',
+                                    height: "100%",
+                                    marginBottom: 0,
+                                    boxShadow: 5,
+                                    mt: "12.5%",
+                                    borderRadius: 5
+                                }}>
                                     <Box
                                         sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: "100%"}}
                                     >
@@ -84,7 +93,7 @@ export default function History() {
                                     marginBottom: 0,
                                     alignItems: 'center',
                                     boxShadow: 5,
-                                    borderRadius:5
+                                    borderRadius: 5
                                 }}>
 
                                     <div style={{
@@ -94,10 +103,11 @@ export default function History() {
                                     }}>
 
 
-                                        {data.tabs.map((year, index) =>
-
-                                            <RobotHistoryTabComputer value={value} index={index}/>
-                                        )}
+                                        <Suspense fallback={fallback}>
+                                            {data.tabs.map((year, index) =>
+                                                <RobotHistoryTabComputer value={value} index={index}/>
+                                            )}
+                                        </Suspense>
 
 
                                     </div>
@@ -128,7 +138,7 @@ export default function History() {
                         }}>
 
 
-                            <Paper sx={{width: '100%', height: "auto", marginBottom: 5, borderRadius:5}}>
+                            <Paper sx={{width: '100%', height: "auto", marginBottom: 5, borderRadius: 5}}>
 
                                 <Box
                                     sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 60}}
@@ -156,13 +166,20 @@ export default function History() {
                             </Paper>
 
 
-                            <Paper sx={{width: '95%', height: 'auto', marginLeft: '2.5%', marginBottom: 30, borderRadius:5}}>
+                            <Paper sx={{
+                                width: '95%',
+                                height: 'auto',
+                                marginLeft: '2.5%',
+                                marginBottom: 30,
+                                borderRadius: 5
+                            }}>
 
+                                <Suspense fallback={fallback}>
 
-                                {data.tabs.map((year, index) =>
-
-                                    <RobotHistoryTabComputer value={value} index={index}/>
-                                )}
+                                    {data.tabs.map((year, index) =>
+                                        <RobotHistoryTabComputer value={value} index={index}/>
+                                    )}
+                                </Suspense>
 
 
                             </Paper>

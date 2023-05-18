@@ -1,6 +1,6 @@
 {
-  "short_name": "Angelbotics Website",
-  "name": "Angelbotics Team 1339 Website",
+  "short_name": "Angelbotics 1339",
+  "name": "Angelbotics FRC Team 1339",
   "icons": [
     {
       "src": "favicon.ico",
@@ -15,6 +15,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#ffe9e9"
 }

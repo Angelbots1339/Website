@@ -58,7 +58,7 @@ function App() {
 
                         <Toolbar>
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src='Logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
+                                <img src='logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
                             </Button>
 
 
@@ -139,6 +139,7 @@ function App() {
 
                         <Toolbar>
                         <Button size={"small"} variant={"contained"} sx={{cursor: 'pointer', width: 10, m: 2, marginRight:"auto"}}
+                                aria-label="Open Navigation"
                                 onClick={() => {
                                     setDrawerState(!drawerState);
                                     setCurrentPage(window.location.pathname);

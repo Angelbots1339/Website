@@ -84,7 +84,7 @@
     },
     {
       "year": "2016",
-      "RobotImagePath": "/images/history/2016/2016RobotFlying.png",
+      "RobotImagePath": "/images/history/2016/2016RobotFlying.jpg",
       "CadModelPath": "",
       "GameDescription": "Each alliance in the 2016 game has a castle, and a row of defenses. These defences can be configured however the alliance decides. Robots launch boulders into the enemy castle, and after enough have been launched, the tower can be captured by all 3 attacking robots surrounding it, with an optional climb.",
       "GameName": "2016 FIRST Stronghold",
