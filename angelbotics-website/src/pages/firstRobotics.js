@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from "react";
-import { Grid, Paper, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography} from "@mui/material";
 import YouTube from "react-youtube";
 
 export default function FirstRobotics() {
@@ -61,110 +61,108 @@ export default function FirstRobotics() {
                 marginTop: 50
             }}>
 
-                    <Grid container spacing={2} sx={{width: "98%", height: "auto", ml: "0%", mr: "0%", mt: 1, mb: 2}}>
+                <Grid container spacing={2} sx={{width: "98%", height: "auto", ml: "0%", mr: "0%", mt: 1, mb: 2}}>
 
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Paper sx={{
-                                width: "100%",
-                                height: "auto",
-                                justifyContent: "center",
-                                boxShadow: 5,
-                                borderRadius: 5,
-                            }}>
-                                <Grid container spacing={2} sx={{m: 2}}>
-                                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                                        <a rel="noreferrer noopener" target="_blank"
-                                           href={data.firstWebsite}>
-                                            <img src="/images/firstRobotics/firstLogoHorizontal.png"
-                                                 alt="First Robotics Logo"
-                                                 width="90%" height="auto"
-                                                 style={{padding: 10, alignSelf: "center"}}/>
-                                        </a>
-                                    </Grid>
-
-                                    <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-                                        <div
-                                            style={{
-                                                // alignItems: "center",
-                                                width: "95%",
-                                                height: "auto",
-                                                marginLeft: '2.5%',
-                                                borderRadius: 5,
-                                                marginTop: 0
-                                            }}>
-                                            <Typography variant="h6" sx={{mr: 5}}>
-                                                {data.firstDescription}
-                                            </Typography>
-                                        </div>
-                                    </Grid>
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Paper sx={{
+                            width: "100%",
+                            height: "auto",
+                            justifyContent: "center",
+                            boxShadow: 5,
+                            borderRadius: 5,
+                        }}>
+                            <Grid container spacing={2} sx={{m: 2, p: 5}}>
+                                <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                                    <a rel="noreferrer noopener" target="_blank"
+                                       href={data.firstWebsite}>
+                                        <img src="/images/firstRobotics/firstLogoHorizontal.png"
+                                             alt="First Robotics Logo"
+                                             width="90%" height="auto"
+                                             style={{padding: 10, alignSelf: "center"}}/>
+                                    </a>
                                 </Grid>
-                            </Paper>
-                        </Grid>
 
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Paper sx={{
-                                width: "100%",
-                                height: "auto",
-                                justifyContent: "center",
-                                borderRadius: 5,
-                                boxShadow: 5
-                            }}>
-
-                                <Grid container spacing={2}>
-
-
-                                    <Grid item xs={12} sm={12} md={12} lg={5} xl={5}>
-
-                                        <a rel="noreferrer noopener" target="_blank"
-                                           href={data.FRC.website}>
-                                            <img src={data.FRC.logo} alt="FRC Logo" width="80%"
-                                                 height="auto" style={{marginBottom: 10, marginRight: 0, marginLeft:5}}/>
-                                        </a>
-
-                                        <Typography variant="h6" sx={{mr: 3, ml: 5}}>
-                                            {data.FRC.generalDescription}
+                                <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
+                                    <div
+                                        style={{
+                                            // alignItems: "center",
+                                            width: "95%",
+                                            height: "auto",
+                                            marginLeft: '2.5%',
+                                            borderRadius: 5,
+                                            marginTop: 0
+                                        }}>
+                                        <Typography variant="h6" sx={{mr: 5}}>
+                                            {data.firstDescription}
                                         </Typography>
-
-                                    </Grid>
-
-
-                                    <Grid item xs={12} sm={12} md={12} lg={7} xl={7}>
-
-                                        <div style={{marginBottom: 20, marginTop: 20, marginLeft: "2.5%"}}
-                                             ref={FRCVidRef}>
-                                            <YouTube
-                                                videoId={data.FRC.gameVideo}
-                                                opts={{
-                                                    height: isScreenBig ? '450' : '200',
-                                                    width: '95%',
-                                                    playerVars: {
-                                                        // https://developers.google.com/youtube/player_parameters
-                                                        autoplay: 0,
-                                                        disablekb: 0,
-                                                        loop: 0,
-                                                        modestbranding: 1,
-
-                                                    },
-                                                }}
-                                                onReady={onPlayerReady(data.FRC.gameVideo, FRCVidRef)}/>
-                                        </div>
-
-                                        {!hasYTLoaded[data.FRC.gameVideo] &&
-                                            <p> If the <a rel="noreferrer noopener" target="_blank"
-                                                          href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}>
-                                                YouTube Video</a> Has Not Loaded</p>}
-                                    </Grid>
+                                    </div>
                                 </Grid>
-                            </Paper>
-                        </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
 
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Paper sx={{
+                            width: "100%",
+                            height: "auto",
+                            justifyContent: "center",
+                            borderRadius: 5,
+                            boxShadow: 5
+                        }}>
 
+                            <Grid container spacing={2} sx={{p: 10}}>
+                                <Grid item xs={12} sm={12} md={12} lg={5} xl={5}>
+
+                                    <a rel="noreferrer noopener" target="_blank"
+                                       href={data.FRC.website}>
+                                        <img src={data.FRC.logo} alt="FRC Logo" width="80%"
+                                             height="auto" style={{marginBottom: 10, marginRight: 0, marginLeft: 5}}/>
+                                    </a>
+
+                                    <Typography variant="h6" sx={{mr: 3, ml: 5}}>
+                                        {data.FRC.generalDescription}
+                                    </Typography>
+
+                                </Grid>
+
+
+                                <Grid item xs={12} sm={12} md={12} lg={7} xl={7}>
+
+                                    <div style={{marginBottom: 20, marginTop: 20, marginLeft: "2.5%"}}
+                                         ref={FRCVidRef}>
+                                        <YouTube
+                                            videoId={data.FRC.gameVideo}
+                                            opts={{
+                                                height: isScreenBig ? '450' : '200',
+                                                width: '95%',
+                                                playerVars: {
+                                                    // https://developers.google.com/youtube/player_parameters
+                                                    autoplay: 0,
+                                                    disablekb: 0,
+                                                    loop: 0,
+                                                    modestbranding: 1,
+
+                                                },
+                                            }}
+                                            onReady={onPlayerReady(data.FRC.gameVideo, FRCVidRef)}/>
+                                    </div>
+
+                                    {!hasYTLoaded[data.FRC.gameVideo] &&
+                                        <p> If the <a rel="noreferrer noopener" target="_blank"
+                                                      href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}>
+                                            YouTube Video</a> Has Not Loaded</p>}
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
+
+                    <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
+                            <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
                                    href={data.FTC.website}>
                                     <img src={data.FTC.logo} alt="FTC Logo" width="60%"
-                                         height="auto" style={{margin: 20, width:"60"}}/>
+                                         height="auto" style={{margin: 20, width: "60"}}/>
                                 </a>
 
                                 <Typography variant="h6"
@@ -195,15 +193,15 @@ export default function FirstRobotics() {
                                                       href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}>
                                             YouTube Video</a> Has Not Loaded</p>}
                                 </div>
+                            </Box>
+
+                        </Paper>
+                    </Grid>
 
 
-                            </Paper>
-                        </Grid>
-
-
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
-
+                    <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
+                            <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
                                    href={data.FLL.website}>
                                     <img src={data.FLL.logo} alt="FLL Logo" width="60%"
@@ -239,29 +237,30 @@ export default function FirstRobotics() {
                                             YouTube Video</a> Has Not Loaded</p>}
 
                                 </div>
-                            </Paper>
-                        </Grid>
-
-                        {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                            <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5}}>
-                                <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
-                                    {data.FRC.gameVideo && <a rel="noreferrer noopener" target="_blank"
-                                                                       href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}
-                                    >{"FRC Game Video"}</a>}
-                                </Typography>
-                                <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
-                                    {data.FTC.gameVideo && <a rel="noreferrer noopener" target="_blank"
-                                                                        href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}
-                                    >{"FTC Game Video"}</a>}
-                                </Typography>
-                                <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
-                                    {data.FLL.gameVideo && <a rel="noreferrer noopener" target="_blank"
-                                                                       href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}
-                                    >{"FLL Game Video"}</a>}
-                                </Typography>
-                            </Paper>
-                        </Grid>}
+                            </Box>
+                        </Paper>
                     </Grid>
+
+                    {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5}}>
+                            <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
+                                {data.FRC.gameVideo && <a rel="noreferrer noopener" target="_blank"
+                                                          href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}
+                                >{"FRC Game Video"}</a>}
+                            </Typography>
+                            <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
+                                {data.FTC.gameVideo && <a rel="noreferrer noopener" target="_blank"
+                                                          href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}
+                                >{"FTC Game Video"}</a>}
+                            </Typography>
+                            <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
+                                {data.FLL.gameVideo && <a rel="noreferrer noopener" target="_blank"
+                                                          href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}
+                                >{"FLL Game Video"}</a>}
+                            </Typography>
+                        </Paper>
+                    </Grid>}
+                </Grid>
             </div>
         </div>
     );

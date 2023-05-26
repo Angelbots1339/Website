@@ -11,7 +11,7 @@ import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
 
 
-export default function RobotHistoryTabComputer(props) {
+export default function RobotHistoryTab(props) {
 
     function LoadingBar() {
         return <Html center>Loading...</Html>
@@ -31,13 +31,18 @@ export default function RobotHistoryTabComputer(props) {
     const onPlayerReady = (id, ref) => {
 
         if (!hasYTLoaded[id] && YTLoadInterval[id] == null) {
-            YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+
+            let newArr = YTLoadInterval;
+            newArr[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+            setYTLoadInterval(newArr);
         }
     }
     const delayedOnPlayerReady = (id, ref) => {
         if (!hasYTLoaded[id] && ref.current != null) {
             let clientWidthBool = ref.current.clientWidth >= 1;
-            hasYTLoaded[id] = clientWidthBool;
+            let newArr = hasYTLoaded;
+            newArr[id] = clientWidthBool;
+            setYTLoaded(newArr);
             clearInterval(YTLoadInterval[id]);
             setForceRenderNum(forceRenderNum + 1);
         }
@@ -293,7 +298,6 @@ export default function RobotHistoryTabComputer(props) {
                                 }}
                                 onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
 
-
                             {!hasYTLoaded[data.tabs[index].RevealVideo] &&
                                 <p> If the <a rel="noreferrer noopener" target="_blank"
                                               href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
@@ -342,7 +346,7 @@ export default function RobotHistoryTabComputer(props) {
 }
 
 
-RobotHistoryTabComputer.propTypes = {
+RobotHistoryTab.propTypes = {
     children: PropTypes.node,
     index: PropTypes.number.isRequired,
     value: PropTypes.number.isRequired,
