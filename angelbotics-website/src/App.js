@@ -57,7 +57,7 @@ function App() {
 
                         <Toolbar sx={{display:{xs: 'none', sm:'none', md:'block'}}}>
                             <Button sx={{cursor: 'default'}} component={Link} to={'/'}>
-                                <img src='logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
+                                <img src='/Logo.svg' alt="Angelbotics Logo" height="100" width="100"/>
                             </Button>
 
 
