@@ -6,7 +6,7 @@
   "FRC": {
 
     "gameVideo": "0zpflsYc4PA",
-    "generalDescription": "FRC is the game that we participate in. Similar to the other two competitions, there is a new game concept each year, and they are wildly unique. The game gets released in early January, and we have 8-9 weeks to build a fully-functioning robot. The robots in FRC are generally big, heavy, and fast-moving. Robots are made from many different materials, like Aluminum and Polycarbonate, and parts are often custom-machined, 3D printed, or bought from a vendor.",
+    "generalDescription": "FRC is the game that we participate in. Similar to the other two competitions, there is a new game concept each year, and they are wildly unique. The game gets released in early January, and we have about 6-8 weeks to build a fully-functioning robot before our first competition. The robots in FRC are generally big, heavy, and fast. There are 6 robots on the field at a time, 3 on each team. Robots are made from many different materials, like aluminum and polycarbonate, and parts are often custom-machined, 3D printed, or bought from a vendor.",
     "logo": "/images/firstRobotics/frcLogo.jpg",
     "website": "https://www.firstinspires.org/robotics/frc"
 
@@ -14,7 +14,7 @@
   "FTC":{
 
     "gameVideo": "HsitvZ0JaDc",
-    "generalDescription": "In FTC, robots are generally much smaller, and much more compact. The idea is similar to FRC where there is a different game every year. The robots are also constructed in a similar way to FRC robots, where things are custom-machined.",
+    "generalDescription": "In FTC, the field is much smaller, and consequently robots are much smaller. There are 2 robots on each team, and there is a new game each year. FTC robots are constructed in a similar way to FRC robots, just with different components on a smaller scale.",
     "logo": "/images/firstRobotics/ftcLogo.jpg",
     "website": "https://www.firstinspires.org/robotics/ftc"
 
@@ -23,7 +23,7 @@
   "FLL": {
 
     "gameVideo": "okR1AMFNV3Q",
-    "generalDescription": "In FLL, robots are made of Legos, and they have to complete specific challenges throughout the game field. Similar to FTC and FRC, there is a different game every year, but unlike them there is only a single robot on the field at a time.",
+    "generalDescription": "FLL robots are designed to complete specific challenges throughout the game field, but unlike FRC and FTC, there is only one robot on the field at a time. Robots are constructed from legos, and are generally smaller than FTC bots.",
     "logo": "/images/firstRobotics/fllLogo.png",
     "website": "https://www.firstinspires.org/robotics/fll"
 
