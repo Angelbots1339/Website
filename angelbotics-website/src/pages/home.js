@@ -95,7 +95,7 @@ export default function Home() {
                                             {entry.topText &&
                                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
                                                       key={entry.name + " top text"} sx={{justifyContent: "center"}}>
-                                                    <Typography variant="h6" sx={{width: "100%", ml: "0%"}} align="center">
+                                                    <Typography variant="subtitle1" sx={{width: "100%", ml: "0%"}} align="center">
                                                         {entry.topText}
                                                     </Typography>
                                                 </Grid>
@@ -113,7 +113,7 @@ export default function Home() {
                                             {entry.bottomText &&
                                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
                                                       key={entry.name + " bottom text"} sx={{justifyContent: "center"}}>
-                                                    <Typography variant="h6" sx={{width: "100%", ml: "0%"}} align="center">
+                                                    <Typography variant="subtitle1" sx={{width: "100%", ml: "0%"}} align="center">
                                                         {entry.bottomText}
                                                     </Typography>
                                                 </Grid>

@@ -17,6 +17,15 @@ const mainTheme = createTheme({
             default: '#ffe9e9',
         },
     },
+    typography: {
+        h3: {
+            fontFamily: 'Righteous',
+        },
+        subtitle1: {
+            fontSize: 20,
+        },
+        fontFamily: 'Barlow',
+    },
 });
 
 export {mainTheme};
