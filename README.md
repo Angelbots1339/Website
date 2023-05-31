@@ -7,6 +7,14 @@ The `published` branch will automatically deploy to the production site. `master
 and from there pull requests are made into `published`. The `TestWebsite` fork will deploy automatically to
 [test.angelbotics.org](https://test.angelbotics.org) when any change is made to its `master` branch. 
 
+### Testing The Site
+To test the site, first ensure that you have Node.js installed on your device. Afterwards, navigate to the root directory
+(`/angelbotics-website`) in any terminal or similar command line, and run `npm install` to install all the needed
+libraries. Once that finishes fully, simply run `npm start` in the same directory. This will start a webserver that
+allows you to view the site by going to https://localhost:3000 in any web browser.
+
+
+### Procedural Generation
 The vast majority of content on the website is procedurally generated from JSON. This is to make it easier for people
 with little programming knowledge to update the website because JSON is relatively simple.
 
@@ -20,7 +28,7 @@ Using the mentors section of [`supporters.json`](./angelbotics-website/src/pages
     "mentors": [
     {
         "name": "Joel Noble",
-        "description": "Joel Noble is a founder, and has been the lead mentor and head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+        "description": "Joel Noble founded the team in 2004...",
         "imagePath": "/images/supporters/noble.JPG"
     },
     ]
@@ -30,7 +38,7 @@ To add a new mentor that gets displayed after Noble:
     "mentors": [
     {
         "name": "Joel Noble",
-        "description": "Joel Noble is a founder, and has been the lead mentor and head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+        "description": "Joel Noble founded the team in 2004...",
         "imagePath": "/images/supporters/noble.JPG"
     },
     {
@@ -40,6 +48,15 @@ To add a new mentor that gets displayed after Noble:
     }
     ]
 
+The rest of this README will go into more detail about each section of the website's JSON. As general advice for 
+adding content to the website, follow the format of the existing content, such as length and style. 
+
+As a warning, the sizing of images can get weird. You should always test when adding any new images. The majority of the
+time, external image cropping can be used to fix formatting issues. If the image is too wide, you can crop the sides, 
+etc. Always keep a backup image. You can just crop, test, crop, test until it works.
+
+For testing on multiple screen sizes, Many browsers have built-in dev tools for screen sizes like this, such as Google 
+Chrome and Firefox. They allow you to test mobile devices with varying size from a computer.
 # History.json
 
 The history section is composed of a single tab for each year. The history tabs will be displayed in the order of the
@@ -49,22 +66,30 @@ before committing. For all entries, leave them with blank quotes `"` if that dat
 For Video IDs: The id of the YouTube video is used to find the video. This can be found in the url of a given video, or
 through developer tools.
 
-For Cad Models: The file must be in a .obj format. It is highly recommended to use Blender with the model. To process
-the model for the website:
+For Cad Models: The file must be in a .obj format. It is highly recommended to use Blender or similar software with the 
+model. Most of the time, straight out of cad the model has a massive file size, which doesn't work for websites. 
+To optimize the model for the website using Blender:
 
-1. Export the model as a .stl from the CAD Software.
-2. `File > Import` to import this model into Blender.
-3. Go through and delete small objects like screws or nuts, or objects that are hidden inside of others. To delete,
-   select an object and hit x. To make it easier, hide big objects you definitely won't delete by selecting them and
-   hitting h. Press alt-h to unhide all objects.
-4. Apply a `Decimate` modifier, and ensure it is set to `Collapse`. From there, you can slide the ratio down to around
+1. Install the latest version of Blender from [here](https://www.blender.org/download/).
+2Export the model as a .stl or any compatible format from the CAD Software.
+3. `File > Import` to import this model into Blender.
+4. It is a good idea to be familiar with viewport movement in Blender. It will be similar to cad software, however 
+   it uses `middle-click` and `shift-middle-click` for the majority of navigation. Selecting an object with the mouse,  
+   you can press `h` to hide it, and `alt-h` to unhide all objects. To delete an object, you can press `x`.
+5. Go through and delete small objects like screws or nuts, or objects that are hidden inside of others. Hiding larger
+   objects will help with finding the smaller ones.
+6. This is somewhat optional, but if you have the experience or motivation, apply a basic texture to the robot. The
+   website rendering looks different than inside Blender, so make sure to test. 
+7. Apply a `Decimate` modifier, and ensure it is set to `Collapse`. From there, you can slide the ratio down to around
    0.2, or until the mesh is simplified enough but detail is preserved to an acceptable level. Apply this modifier when
-   you are happy.
-5. This is somewhat optional, but if you have the experience or motivation, apply a basic texture to the robot. The
-   website rendering looks different than inside Blender, so make sure to test.
-6. `File > Export` to export as an obj. Find the file and ensure there is an accompanying .mtl file (this specifies the
-   material of the object).
-7. Move the files into the correct directory, name them, and then set those paths in the json.
+   you are happy. Note, this can have some weird effects on the mesh, so make sure you have deleted or textured 
+   everything you wish to beforehand, because this will make it harder. This modifier will also make the mesh look very
+   strange, especially the geometry itself, but most people are unlikely to notice, and it honestly doesn't matter. 
+   Reducing file size is just so important.
+8. `File > Export` to export as an obj when you are happy with it. Remember, you can just tweak and export repeatedly if
+   you want to, just replacing the previous file, to test on the site fast. Find the file and ensure there is an 
+   accompanying .mtl file (this specifies the material of the object).
+9. Move the files into the correct directory, name them, and then set those paths in the json.
 
 - `Year:` The year for that specific tab.
 - `RobotImagePath:` The path to an image of the robot. For the most part aspect ratio doesn't matter.
@@ -92,6 +117,13 @@ the model for the website:
 
 ### Sponsors
 
+The images for sponsors can get weird with formatting. Make sure to test on a variety of screen sizes. Screens below 
+a width of 600 pixels should always be fine, and so the most important size to test is 601 pixels width. If the sponsors 
+are poking off 
+the right side of the site or overlapping with others, you can increase their height or decrease their width. One method 
+is to put the image into google docs or similar software with a white background, and then take a screenshot and crop, 
+in order to increase the height. 
+
 - `name:` The name of the sponsor
 - `level:` There are different tiers of sponsors for our team depending on donations. This is the level.
 - `logo:` This is the path to a logo for the sponsor. The logos should be horizontal, and there should be a substantial
@@ -101,6 +133,11 @@ the model for the website:
 # Home.json
 
 ### Image Carousel
+
+The images in the carousel can have weird formatting. Make sure you test a variety of screen sizes. It is common that as
+the screen size changes, the image crops weirdly, and the content isn't centered or positioned correctly. To fix this, 
+crop the images so that the content gets centered. If it is too far to the bottom of the carousel for example, you can 
+crop the top down. 
 
 - Array of objects, each with a `url` key. This is the path to an image that will be added to the slideshow on the home
   page. The order of the objects determines the order of the slideshow.
