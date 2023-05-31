@@ -120,7 +120,7 @@
     {
       "name": "Comcast",
       "level": 3,
-      "logo": "/images/logos/3/Comcast.png",
+      "logo": "/images/logos/3/ComcastTall.png",
       "website": "https://corporate.comcast.com/"
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "East Friends and Family",
       "level": 3,
-      "logo": "/images/logos/3/EAFAF.png",
+      "logo": "/images/logos/3/EAFAFTall.png",
       "website": "https://eastangelfriends.org/"
     },
 
@@ -159,7 +159,7 @@
     {
       "name": "Plasticare",
       "level": 4,
-      "logo": "/images/logos/4/plasticare.png",
+      "logo": "/images/logos/4/plasticareTall.png",
       "website": "https://www.plasticareinc.com/"
     },
     {

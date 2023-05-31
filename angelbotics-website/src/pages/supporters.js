@@ -1,4 +1,4 @@
-import {Grid, Paper, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography} from "@mui/material";
 import {useEffect, useState} from "react";
 
 export default function Supporters() {
@@ -40,7 +40,7 @@ export default function Supporters() {
 
     return (
         <div>
-            {isScreenBig &&
+            <Box sx={{display:{xs:"none", sm:"block", md:"block"}}}>
                 <div>
                     <div style={{
                         alignItems: "center",
@@ -216,13 +216,13 @@ export default function Supporters() {
 
                     </div>
 
-                </div>}
+                </div>
+            </Box>
 
 
             {/*-----------------SMALL SCREEN-------------------------*/}
 
-
-            {!isScreenBig &&
+            <Box sx={{display:{xs:"block", sm:"none", md:"none"}}}>
                 <div>
                     <Paper sx={{width: '100%', height: "auto", marginTop:10}}>
                         <Typography variant="h3" sx={{marginLeft: "15%"}}>
@@ -341,10 +341,11 @@ export default function Supporters() {
 
 
                 </div>
-            }
+
+            </Box>
 
 
-            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5, mt:5}}>
+            <Paper sx={{width: '95%', height: 'auto', marginBottom:5, boxShadow:5, mt:5, ml:"2.5%"}}>
 
                 <div style={{
                     display: "flex",
