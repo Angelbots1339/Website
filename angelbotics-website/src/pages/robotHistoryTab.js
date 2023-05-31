@@ -135,7 +135,7 @@ export default function RobotHistoryTab(props) {
 
                 {data.tabs[index].GameName &&
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <Typography variant={isScreenBig ? "h3" : "h4"} sx={{marginLeft: isScreenBig ? "20%" : "10%"}}>
+                        <Typography variant={"h3"} sx={{marginLeft: isScreenBig ? "20%" : "10%"}}>
 
                             {data.tabs[index].GameName}
 

@@ -225,7 +225,7 @@ export default function Supporters() {
             {!isScreenBig &&
                 <div>
                     <Paper sx={{width: '100%', height: "auto", marginTop:10}}>
-                        <Typography variant="h2" sx={{marginLeft: "15%"}}>
+                        <Typography variant="h3" sx={{marginLeft: "15%"}}>
                             Sponsors
                         </Typography>
 
@@ -344,7 +344,7 @@ export default function Supporters() {
             }
 
 
-            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5}}>
+            <Paper sx={{width: '100%', height: 'auto', marginBottom:5, boxShadow:5, mt:5}}>
 
                 <div style={{
                     display: "flex",

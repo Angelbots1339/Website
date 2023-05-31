@@ -191,7 +191,7 @@ export default function Home() {
                                                 {entry.title &&
                                                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
                                                           key={entry.name + " title"} sx={{justifyContent: "center"}}>
-                                                        <Typography variant="h4" sx={{width: "100%", ml: "-5%"}} align="center">
+                                                        <Typography variant="h3" sx={{width: "100%", ml: "-5%"}} align="center">
                                                             {entry.title}
                                                         </Typography>
                                                     </Grid>
