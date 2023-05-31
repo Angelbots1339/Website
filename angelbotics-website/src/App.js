@@ -64,27 +64,27 @@ function App() {
 
                             <ButtonGroup sx={{alignSelf: 'center', m: 2}}>
                                 <Button sx={{cursor: 'pointer'}} variant="contained" component={Link} to={'/'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>Home</Typography>
+                                    <Typography variant={"subtitle2"} sx={{m: 1}}>Home</Typography>
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'history'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>History</Typography>
+                                    <Typography variant={"subtitle2"} sx={{m: 1}}>History</Typography>
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'firstRobotics'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>FIRST Robotics</Typography>
+                                    <Typography variant={"subtitle2"} sx={{m: 1}}>FIRST Robotics</Typography>
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'supporters'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>Supporters</Typography>
+                                    <Typography variant={"subtitle2"} sx={{m: 1}}>Supporters</Typography>
                                 </Button>
 
                                 <Button sx={{cursor: 'pointer'}} component={Link} variant="contained"
                                         to={'resources'}>
-                                    <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
+                                    <Typography variant={"subtitle2"} sx={{m: 1}}>Resources</Typography>
                                 </Button>
                             </ButtonGroup>
                         </Toolbar>

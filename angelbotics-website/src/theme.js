@@ -22,7 +22,10 @@ const mainTheme = createTheme({
             fontFamily: 'Righteous',
         },
         subtitle1: {
-            fontSize: 20,
+            fontSize: 25,
+        },
+        subtitle2: {
+            fontSize: 18.6,
         },
         fontFamily: 'Barlow',
     },
