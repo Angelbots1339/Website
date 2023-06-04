@@ -1,4 +1,4 @@
-import {Box, Card, Grid, Typography} from "@mui/material";
+import {Box, Card, CircularProgress, Grid, Typography} from "@mui/material";
 import PropTypes from 'prop-types';
 import YouTube from "react-youtube";
 import {Canvas} from "@react-three/fiber";
@@ -14,7 +14,9 @@ import {DDSLoader} from "three-stdlib";
 export default function RobotHistoryTab(props) {
 
     function LoadingBar() {
-        return <Html center>Loading...</Html>
+        return <Html center>
+            <CircularProgress color={"primary"}/>
+        </Html>
     }
 
     const [isScreenBig, setScreenBig] = useState(false);
@@ -143,7 +145,6 @@ export default function RobotHistoryTab(props) {
                     </Grid>
                 }
 
-
                 {data.tabs[index].GameDescription &&
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
                         <HistoryCard>
@@ -257,11 +258,8 @@ export default function RobotHistoryTab(props) {
                                 <Suspense fallback={<LoadingBar/>}>
                                     <ambientLight/>
                                     <pointLight position={[10, 10, 10]}/>
-                                    {/*<DefaultCube position={[3, 0, 0]}/>*/}
-                                    {/*<Monkey position={[0, 0, 0]}/>*/}
                                     <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
                                     <OrbitControls/>
-                                    <Environment preset="sunset"/>
                                 </Suspense>
                             </Canvas>
                         </div>
