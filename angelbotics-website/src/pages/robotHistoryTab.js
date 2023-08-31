@@ -1,4 +1,4 @@
-import {Box, Card, CircularProgress, Grid, Typography} from "@mui/material";
+import {Box, Card, CircularProgress, Grid, Typography, useMediaQuery} from "@mui/material";
 import PropTypes from 'prop-types';
 import YouTube from "react-youtube";
 import {Canvas} from "@react-three/fiber";
@@ -9,9 +9,12 @@ import {useLoader} from "@react-three/fiber";
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
+import {mainTheme} from "../theme";
 
 
 export default function RobotHistoryTab(props) {
+
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
     function LoadingBar() {
         return <Html center>
@@ -28,47 +31,47 @@ export default function RobotHistoryTab(props) {
     const recapRef = new useRef(null);
 
 
-    const [hasYTLoaded, setYTLoaded] = useState({});
-    const [YTLoadInterval, setYTLoadInterval] = useState({});
+    // const [hasYTLoaded, setYTLoaded] = useState({});
+    // const [YTLoadInterval, setYTLoadInterval] = useState({});
     const onPlayerReady = (id, ref) => {
 
-        if (!hasYTLoaded[id] && YTLoadInterval[id] == null) {
-
-            let newArr = YTLoadInterval;
-            newArr[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
-            setYTLoadInterval(newArr);
-        }
+        // if (!hasYTLoaded[id] && YTLoadInterval[id] == null) {
+        //
+        //     let newArr = YTLoadInterval;
+        //     newArr[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+        //     setYTLoadInterval(newArr);
+        // }
     }
-    const delayedOnPlayerReady = (id, ref) => {
-        if (!hasYTLoaded[id] && ref.current != null) {
-            let clientWidthBool = ref.current.clientWidth >= 1;
-            let newArr = hasYTLoaded;
-            newArr[id] = clientWidthBool;
-            setYTLoaded(newArr);
-            clearInterval(YTLoadInterval[id]);
-            setForceRenderNum(forceRenderNum + 1);
-        }
-    }
+    // const delayedOnPlayerReady = (id, ref) => {
+    //     if (!hasYTLoaded[id] && ref.current != null) {
+    //         let clientWidthBool = ref.current.clientWidth >= 1;
+    //         let newArr = hasYTLoaded;
+    //         newArr[id] = clientWidthBool;
+    //         setYTLoaded(newArr);
+    //         clearInterval(YTLoadInterval[id]);
+    //         setForceRenderNum(forceRenderNum + 1);
+    //     }
+    // }
 
 
-    const [useEffectHasRun, setUseEffectHasRun] = useState(false);
-
-    useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-        if (!useEffectHasRun) {
-            hasYTLoaded[data.tabs[index].GameReveal] = false;
-            hasYTLoaded[data.tabs[index].RevealVideo] = false;
-            hasYTLoaded[data.tabs[index].RecapVideo] = false;
-
-            YTLoadInterval[data.tabs[index].GameReveal] = null;
-            YTLoadInterval[data.tabs[index].RevealVideo] = null;
-            YTLoadInterval[data.tabs[index].RecapVideo] = null;
-            setUseEffectHasRun(true);
-        }
-
-    }, [hasYTLoaded, YTLoadInterval, forceRenderNum]);
+    // const [useEffectHasRun, setUseEffectHasRun] = useState(false);
+    //
+    // useEffect(() => {
+    //
+    //     setScreenBig(window.innerWidth > 1200);
+    //
+    //     if (!useEffectHasRun) {
+    //         hasYTLoaded[data.tabs[index].GameReveal] = false;
+    //         hasYTLoaded[data.tabs[index].RevealVideo] = false;
+    //         hasYTLoaded[data.tabs[index].RecapVideo] = false;
+    //
+    //         YTLoadInterval[data.tabs[index].GameReveal] = null;
+    //         YTLoadInterval[data.tabs[index].RevealVideo] = null;
+    //         YTLoadInterval[data.tabs[index].RecapVideo] = null;
+    //         setUseEffectHasRun(true);
+    //     }
+    //
+    // }, [hasYTLoaded, YTLoadInterval, forceRenderNum]);
 
     const {children, value, index, ...other} = props;
 
@@ -165,7 +168,7 @@ export default function RobotHistoryTab(props) {
 
                                 videoId={data.tabs[index].GameReveal}
                                 opts={{
-                                    height: isScreenBig ? '400' : '200',
+                                    height: bigScreen ? '400' : '200',
                                     width: '90%',
                                     playerVars: {
                                         // https://developers.google.com/youtube/player_parameters
@@ -177,10 +180,10 @@ export default function RobotHistoryTab(props) {
                                     },
                                 }}
                                 onReady={onPlayerReady(data.tabs[index].GameReveal, gameRevealRef)}/>
-                            {!hasYTLoaded[data.tabs[index].GameReveal] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}>
-                                    YouTube Video</a> Has Not Loaded</p>}
+                            {/*{!hasYTLoaded[data.tabs[index].GameReveal] &&*/}
+                            {/*    <p> If the <a rel="noreferrer noopener" target="_blank"*/}
+                            {/*                  href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}>*/}
+                            {/*        YouTube Video</a> Has Not Loaded</p>}*/}
 
                         </div>
                     </Grid>
@@ -199,7 +202,7 @@ export default function RobotHistoryTab(props) {
 
                                 videoId={data.tabs[index].RecapVideo}
                                 opts={{
-                                    height: isScreenBig ? '400' : '200',
+                                    height: bigScreen ? '400' : '200',
                                     width: '100%',
                                     playerVars: {
                                         // https://developers.google.com/youtube/player_parameters
@@ -212,10 +215,10 @@ export default function RobotHistoryTab(props) {
                                 }}
                                 onReady={onPlayerReady(data.tabs[index].RecapVideo, recapRef)}/>
 
-                            {!hasYTLoaded[data.tabs[index].RecapVideo] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}>
-                                    YouTube Video</a> Has Not Loaded</p>}
+                            {/*{!hasYTLoaded[data.tabs[index].RecapVideo] &&*/}
+                            {/*    <p> If the <a rel="noreferrer noopener" target="_blank"*/}
+                            {/*                  href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}>*/}
+                            {/*        YouTube Video</a> Has Not Loaded</p>}*/}
 
                         </div>
                     </Grid>
@@ -283,7 +286,7 @@ export default function RobotHistoryTab(props) {
 
                                 videoId={data.tabs[index].RevealVideo}
                                 opts={{
-                                    height: isScreenBig ? '400' : '200',
+                                    height: bigScreen ? '400' : '200',
                                     width: '100%',
                                     playerVars: {
                                         // https://developers.google.com/youtube/player_parameters
@@ -296,10 +299,10 @@ export default function RobotHistoryTab(props) {
                                 }}
                                 onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
 
-                            {!hasYTLoaded[data.tabs[index].RevealVideo] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
-                                    YouTube Video</a> Has Not Loaded</p>}
+                            {/*{!hasYTLoaded[data.tabs[index].RevealVideo] &&*/}
+                            {/*    <p> If the <a rel="noreferrer noopener" target="_blank"*/}
+                            {/*                  href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>*/}
+                            {/*        YouTube Video</a> Has Not Loaded</p>}*/}
 
                         </div>
                     </Grid>

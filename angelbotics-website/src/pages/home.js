@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
-import {Box, Button, Grid, Paper, Typography} from "@mui/material";
+import {Box, Button, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
 import homeJSON from "./json/home.json";
-
+import { motion } from "framer-motion"
+import {mainTheme} from "../theme";
 export default function Home() {
 
 
@@ -12,6 +13,8 @@ export default function Home() {
 
 
     const homeJSON = require('./json/home.json');
+
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
     useEffect(() => {
 
@@ -51,7 +54,6 @@ export default function Home() {
                             width: "100%",
                             height: "auto",
                         }}>
-
                             <Paper
                                 sx={{width: '100%', height: "auto", backgroundColor: "#ffffff", boxShadow: 5}}>
 
@@ -77,6 +79,12 @@ export default function Home() {
                             {homeJSON.entries.map((entry) =>
                                 <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
                                       key={entry.name}>
+                                    <motion.div
+                                        style={{height: "100%"}}
+                                        initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                        whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                        viewport={{margin: "100px", once: !bigScreen}}
+                                    >
                                     <Paper
                                         sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center", borderRadius: 5}}>
                                         <Grid container spacing={5}
@@ -131,6 +139,7 @@ export default function Home() {
 
                                         </Grid>
                                     </Paper>
+                                </motion.div>
                                 </Grid>
                             )}
                         </Grid>

@@ -1,11 +1,15 @@
-import {Card, Grid, IconButton, Paper, Typography} from "@mui/material";
+import {Card, Grid, IconButton, Paper, Typography, useMediaQuery} from "@mui/material";
 import {ReactEmbeddedGoogleCalendar} from "react-embedded-google-calendar";
 import {Outbound, Email} from '@mui/icons-material';
+import {motion} from "framer-motion"
+import {mainTheme} from "../theme";
 
 const resourcesJSON = require('./json/resources.json');
 
 
 export default function Resources() {
+
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
 
     return (
@@ -25,7 +29,7 @@ export default function Resources() {
                 }}>
 
 
-                    <Paper sx={{width: '100%', height: "100%", boxShadow:5}}>
+                    <Paper sx={{width: '100%', height: "100%", boxShadow:5, borderRadius:5}}>
 
 
                         <div style={{
@@ -45,7 +49,13 @@ export default function Resources() {
                                   sx={{width:"95%", height:"100%", ml:"2.5%", mt:5}}
                             >
                                 <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
-                                <Card sx={{height: 650, width: "100%", boxShadow:2}}>
+                                    <motion.div
+                                        style={{height: "100%"}}
+                                        initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                        whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                        viewport={{margin: "100px", once: !bigScreen}}
+                                    >
+                                <Card sx={{height: 650, width: "100%", boxShadow:2, borderRadius:5}}>
 
                                     <div style={{
                                         alignItems: "center",
@@ -97,12 +107,19 @@ export default function Resources() {
 
                                     </div>
                                 </Card>
+                                    </motion.div>
                                 </Grid>
 
                                 {resourcesJSON.resourceCards.map((card) =>
 
                                         <Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={card.name}>
-                                            <Card sx={{height: 650, width: "100%", boxShadow:2}}>
+                                            <motion.div
+                                                style={{height: "100%"}}
+                                                initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                                whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                                viewport={{margin: "100px", once: !bigScreen}}
+                                            >
+                                            <Card sx={{height: 650, width: "100%", boxShadow:2, borderRadius:5}}>
 
                                                 <div style={{
                                                     alignItems: "center",
@@ -139,6 +156,7 @@ export default function Resources() {
                                                     </a>
                                                 </div>
                                             </Card>
+                                            </motion.div>
                                         </Grid>
 
 
@@ -158,12 +176,18 @@ export default function Resources() {
                         <div style={{
                             display: "flex",
                             alignItems: "center",
-                            width: "95%",
+                            width: "90%",
                             height: 600,
                             marginLeft: '2.5%',
                             marginTop: 0
                         }}>
-                        <Card sx={{height: 550, width: "100%", m: 3, boxShadow:2}}>
+                            <motion.div
+                                style={{height: "100%", width:"100%"}}
+                                initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                viewport={{margin: "100px", once: !bigScreen}}
+                            >
+                        <Card sx={{height: 550, width: "100%", m: 3, boxShadow:2, borderRadius:5}}>
 
                             <div style={{
                                 alignItems: "center",
@@ -178,6 +202,7 @@ export default function Resources() {
 
                             </div>
                         </Card>
+                            </motion.div>
                         </div>
                     </Paper>
 

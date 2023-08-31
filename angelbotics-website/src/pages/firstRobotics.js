@@ -1,11 +1,15 @@
 import {useEffect, useRef, useState} from "react";
-import {Box, Grid, Paper, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import YouTube from "react-youtube";
+import {mainTheme} from "../theme";
+import { motion } from "framer-motion"
 
 export default function FirstRobotics() {
     // This code can be used for variable size on mobile vs desktop
 
     const [forceRenderNum, setForceRenderNum] = useState({});
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
+
 
     const data = require('./json/firstRobotics.json');
 
@@ -55,7 +59,7 @@ export default function FirstRobotics() {
             <div style={{
                 display: "flex",
                 alignItems: "center",
-                width: "95%",
+                width: "90%",
                 height: "auto",
                 marginLeft: '2.5%',
                 marginTop: 50
@@ -64,6 +68,12 @@ export default function FirstRobotics() {
                 <Grid container spacing={2} sx={{width: "98%", height: "auto", ml: "0%", mr: "0%", mt: 1, mb: 2}}>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{
                             width: "100%",
                             height: "auto",
@@ -99,9 +109,16 @@ export default function FirstRobotics() {
                                 </Grid>
                             </Grid>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{
                             width: "100%",
                             height: "auto",
@@ -110,7 +127,7 @@ export default function FirstRobotics() {
                             boxShadow: 5
                         }}>
 
-                            <Grid container spacing={2} sx={{p: 10}}>
+                            <Grid container spacing={2} sx={{p: 2}}>
                                 <Grid item xs={12} sm={12} md={12} lg={5} xl={5}>
 
                                     <a rel="noreferrer noopener" target="_blank"
@@ -154,9 +171,16 @@ export default function FirstRobotics() {
                                 </Grid>
                             </Grid>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
                             <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
@@ -196,10 +220,17 @@ export default function FirstRobotics() {
                             </Box>
 
                         </Paper>
+                        </motion.div>
                     </Grid>
 
 
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
                             <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
@@ -239,9 +270,16 @@ export default function FirstRobotics() {
                                 </div>
                             </Box>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5}}>
                             <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                                 {data.FRC.gameVideo && <a rel="noreferrer noopener" target="_blank"
@@ -259,6 +297,7 @@ export default function FirstRobotics() {
                                 >{"FLL Game Video"}</a>}
                             </Typography>
                         </Paper>
+                        </motion.div>
                     </Grid>}
                 </Grid>
             </div>
