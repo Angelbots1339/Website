@@ -1,6 +1,7 @@
 import {Suspense, useEffect, useState} from "react";
-import {Box, CircularProgress, Grid, Paper, Stack, Tab, Tabs, Typography} from "@mui/material";
+import {Box, CircularProgress, Grid, Paper, Stack, Tab, Tabs, Typography, useMediaQuery} from "@mui/material";
 import React from "react";
+import {mainTheme} from "../theme";
 
 const RobotHistoryTabComputer = React.lazy(() => import("./robotHistoryTab"));
 
@@ -28,6 +29,8 @@ export default function History() {
     //
     //
     const [isScreenBig, setScreenBig] = useState(false);
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
+
 
 
 

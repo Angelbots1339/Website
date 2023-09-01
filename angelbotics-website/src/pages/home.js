@@ -1,26 +1,18 @@
-import {useEffect, useState} from "react";
-import {Box, Button, Grid, Paper, Typography} from "@mui/material";
+import { useState} from "react";
+import {Box, Button, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
-import homeJSON from "./json/home.json";
-
+import { motion } from "framer-motion"
+import {mainTheme} from "../theme";
 export default function Home() {
 
 
-    const [isScreenBig, setScreenBig] = useState(false);
     const [screenWidth, setScreenWidth] = useState(0);
     // This code can be used for variable size on mobile vs desktop
 
 
     const homeJSON = require('./json/home.json');
 
-    useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-        setScreenWidth(window.innerWidth);
-
-
-    }, []);
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
 
     function slideshowHeight() {
@@ -51,7 +43,6 @@ export default function Home() {
                             width: "100%",
                             height: "auto",
                         }}>
-
                             <Paper
                                 sx={{width: '100%', height: "auto", backgroundColor: "#ffffff", boxShadow: 5}}>
 
@@ -77,6 +68,12 @@ export default function Home() {
                             {homeJSON.entries.map((entry) =>
                                 <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
                                       key={entry.name}>
+                                    <motion.div
+                                        style={{height: "100%"}}
+                                        initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                        whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                        viewport={{margin: "100px", once: !bigScreen}}
+                                    >
                                     <Paper
                                         sx={{width: '100%', height: "100%", boxShadow: 5, justifyContent: "center", borderRadius: 5}}>
                                         <Grid container spacing={5}
@@ -131,6 +128,7 @@ export default function Home() {
 
                                         </Grid>
                                     </Paper>
+                                </motion.div>
                                 </Grid>
                             )}
                         </Grid>
@@ -174,7 +172,7 @@ export default function Home() {
                             </Box>
                         </Paper>
 
-                        <Box sx={{ml: -5}}>
+                        <Box sx={{ml: -5, overflow: "hidden"}}>
                             <Grid container spacing={5} sx={{width: "95%", height: "auto", ml: "2.5%", mt: 1}}>
                                 {homeJSON.entries.map((entry) =>
                                     <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
@@ -186,7 +184,7 @@ export default function Home() {
                                             justifyContent: "center",
                                             borderRadius: 5
                                         }}>
-                                            <Grid container spacing={5} sx={{width: "90%", ml: "3.75%", mt: 1, mb: 2}}>
+                                            <Grid container spacing={5} sx={{width: "90%", ml: "0%", mt: 1, mb: 2}}>
 
                                                 {entry.title &&
                                                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}

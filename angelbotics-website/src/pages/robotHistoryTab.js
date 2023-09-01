@@ -1,17 +1,20 @@
-import {Box, Card, CircularProgress, Grid, Typography} from "@mui/material";
+import {Box, Card, CircularProgress, Grid, Typography, useMediaQuery} from "@mui/material";
 import PropTypes from 'prop-types';
-import YouTube from "react-youtube";
 import {Canvas} from "@react-three/fiber";
-import {Environment, Html, OrbitControls} from "@react-three/drei";
+import { Html, OrbitControls} from "@react-three/drei";
 import {Suspense, useEffect, useRef, useState} from "react";
 import * as THREE from "three";
 import {useLoader} from "@react-three/fiber";
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
+import {mainTheme} from "../theme";
+import {motion} from "framer-motion"
 
 
 export default function RobotHistoryTab(props) {
+
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
     function LoadingBar() {
         return <Html center>
@@ -21,54 +24,57 @@ export default function RobotHistoryTab(props) {
 
     const [isScreenBig, setScreenBig] = useState(false);
 
-    const [forceRenderNum, setForceRenderNum] = useState({});
-
-    const robotRevealRef = new useRef(null);
-    const gameRevealRef = new useRef(null);
-    const recapRef = new useRef(null);
-
-
-    const [hasYTLoaded, setYTLoaded] = useState({});
-    const [YTLoadInterval, setYTLoadInterval] = useState({});
-    const onPlayerReady = (id, ref) => {
-
-        if (!hasYTLoaded[id] && YTLoadInterval[id] == null) {
-
-            let newArr = YTLoadInterval;
-            newArr[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
-            setYTLoadInterval(newArr);
-        }
-    }
-    const delayedOnPlayerReady = (id, ref) => {
-        if (!hasYTLoaded[id] && ref.current != null) {
-            let clientWidthBool = ref.current.clientWidth >= 1;
-            let newArr = hasYTLoaded;
-            newArr[id] = clientWidthBool;
-            setYTLoaded(newArr);
-            clearInterval(YTLoadInterval[id]);
-            setForceRenderNum(forceRenderNum + 1);
-        }
-    }
+    // const [forceRenderNum, setForceRenderNum] = useState({});
+    //
+    // const robotRevealRef = new useRef(null);
+    // const gameRevealRef = new useRef(null);
+    // const recapRef = new useRef(null);
 
 
-    const [useEffectHasRun, setUseEffectHasRun] = useState(false);
+    // const [hasYTLoaded, setYTLoaded] = useState({});
+    // const [YTLoadInterval, setYTLoadInterval] = useState({});
+    // const onPlayerReady = (id, ref) => {
+    //
+    //     // if (!hasYTLoaded[id] && YTLoadInterval[id] == null) {
+    //     //
+    //     //     let newArr = YTLoadInterval;
+    //     //     newArr[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+    //     //     setYTLoadInterval(newArr);
+    //     // }
+    // }
+    // const delayedOnPlayerReady = (id, ref) => {
+    //     if (!hasYTLoaded[id] && ref.current != null) {
+    //         let clientWidthBool = ref.current.clientWidth >= 1;
+    //         let newArr = hasYTLoaded;
+    //         newArr[id] = clientWidthBool;
+    //         setYTLoaded(newArr);
+    //         clearInterval(YTLoadInterval[id]);
+    //         setForceRenderNum(forceRenderNum + 1);
+    //     }
+    // }
+
 
     useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-        if (!useEffectHasRun) {
-            hasYTLoaded[data.tabs[index].GameReveal] = false;
-            hasYTLoaded[data.tabs[index].RevealVideo] = false;
-            hasYTLoaded[data.tabs[index].RecapVideo] = false;
-
-            YTLoadInterval[data.tabs[index].GameReveal] = null;
-            YTLoadInterval[data.tabs[index].RevealVideo] = null;
-            YTLoadInterval[data.tabs[index].RecapVideo] = null;
-            setUseEffectHasRun(true);
-        }
-
-    }, [hasYTLoaded, YTLoadInterval, forceRenderNum]);
+            setScreenBig(window.innerWidth > 1200);
+    })
+    // const [useEffectHasRun, setUseEffectHasRun] = useState(false);
+    //
+    // useEffect(() => {
+    //
+    //     setScreenBig(window.innerWidth > 1200);
+    //
+    //     if (!useEffectHasRun) {
+    //         hasYTLoaded[data.tabs[index].GameReveal] = false;
+    //         hasYTLoaded[data.tabs[index].RevealVideo] = false;
+    //         hasYTLoaded[data.tabs[index].RecapVideo] = false;
+    //
+    //         YTLoadInterval[data.tabs[index].GameReveal] = null;
+    //         YTLoadInterval[data.tabs[index].RevealVideo] = null;
+    //         YTLoadInterval[data.tabs[index].RecapVideo] = null;
+    //         setUseEffectHasRun(true);
+    //     }
+    //
+    // }, [hasYTLoaded, YTLoadInterval, forceRenderNum]);
 
     const {children, value, index, ...other} = props;
 
@@ -110,7 +116,7 @@ export default function RobotHistoryTab(props) {
     function HistoryCard(props) {
         return (
             <Card {...props}
-                  sx={{backgroundColor: '#ffe9e9', mt: 9, height: '100%', width: "100%", boxShadow: 2}}>
+                  sx={{backgroundColor: '#ffc2c2', mt: 9, height: '100%', width: "100%", boxShadow: 10, borderRadius: 5}}>
 
             </Card>
         )
@@ -137,205 +143,250 @@ export default function RobotHistoryTab(props) {
 
                 {data.tabs[index].GameName &&
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <Typography variant={"h3"} sx={{marginLeft: isScreenBig ? "20%" : "10%"}}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <Typography variant={"h3"} sx={{marginLeft: isScreenBig ? "20%" : "10%"}}>
 
-                            {data.tabs[index].GameName}
+                                {data.tabs[index].GameName}
 
-                        </Typography>
+                            </Typography>
+                        </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].GameDescription &&
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-                        <HistoryCard>
-                            <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
-                                {data.tabs[index].GameDescription}
-                            </Typography>
-                        </HistoryCard>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <HistoryCard>
+                                <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
+                                    {data.tabs[index].GameDescription}
+                                </Typography>
+                            </HistoryCard>
+                        </motion.div>
                     </Grid>
                 }
                 {data.tabs[index].GameReveal &&
                     <Grid item xs={12} sm={12} md={12} lg={8} xl={8} sx={{}}>
-                        <div style={{marginTop: '0%', justifyContent: "center"}} ref={gameRevealRef}>
-                            <Typography variant='h4' sx={{m: 2, marginLeft: isScreenBig ? "30%" : "10%"}} width="auto"
-                                        height='auto'>
-                                Game Reveal
-                            </Typography>
-                            <YouTube
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <div style={{marginTop: '0%', justifyContent: "center"}}>
+                                <Typography variant='h4' sx={{m: 2, marginLeft: isScreenBig ? "30%" : "10%"}}
+                                            width="auto"
+                                            height='auto'>
+                                    Game Reveal
+                                </Typography>
+                                <iframe src={'https://www.youtube.com/embed/' + data.tabs[index].GameReveal}
+                                        allow='autoplay; encrypted-media'
+                                        allowFullScreen
+                                        loading="lazy"
+                                        style={{
+                                            width: "100%",
+                                            height: bigScreen ? 450 : 200,
+                                            border: 0,
+                                            borderRadius: 20,
+                                        }}
+                                />
 
-                                videoId={data.tabs[index].GameReveal}
-                                opts={{
-                                    height: isScreenBig ? '400' : '200',
-                                    width: '90%',
-                                    playerVars: {
-                                        // https://developers.google.com/youtube/player_parameters
-                                        autoplay: 0,
-                                        disablekb: 0,
-                                        loop: 0,
-                                        modestbranding: 1,
-
-                                    },
-                                }}
-                                onReady={onPlayerReady(data.tabs[index].GameReveal, gameRevealRef)}/>
-                            {!hasYTLoaded[data.tabs[index].GameReveal] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}>
-                                    YouTube Video</a> Has Not Loaded</p>}
-
-                        </div>
+                            </div>
+                        </motion.div>
                     </Grid>
                 }
 
 
                 {data.tabs[index].RecapVideo &&
                     <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
-                        <div style={{marginLeft: 10}} ref={recapRef}>
-                            <Typography variant='h4' sx={{m: 2, marginLeft: isScreenBig ? "30%" : "10%"}} width="auto"
-                                        height='auto'>
-                                Recap Video
-                            </Typography>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <div style={{marginLeft: 10}}>
+                                <Typography variant='h4' sx={{m: 2, marginLeft: isScreenBig ? "30%" : "10%"}}
+                                            width="auto"
+                                            height='auto'>
+                                    Recap Video
+                                </Typography>
 
-                            <YouTube
+                                <iframe src={'https://www.youtube.com/embed/' + data.tabs[index].RecapVideo}
+                                        allow='autoplay; encrypted-media'
+                                        allowFullScreen
+                                        loading="lazy"
+                                        style={{
+                                            width: "100%",
+                                            height: bigScreen ? 450 : 200,
+                                            border: 0,
+                                            borderRadius: 20
+                                        }}
+                                />
 
-                                videoId={data.tabs[index].RecapVideo}
-                                opts={{
-                                    height: isScreenBig ? '400' : '200',
-                                    width: '100%',
-                                    playerVars: {
-                                        // https://developers.google.com/youtube/player_parameters
-                                        autoplay: 0,
-                                        disablekb: 0,
-                                        loop: 0,
-                                        modestbranding: 1,
-
-                                    },
-                                }}
-                                onReady={onPlayerReady(data.tabs[index].RecapVideo, recapRef)}/>
-
-                            {!hasYTLoaded[data.tabs[index].RecapVideo] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}>
-                                    YouTube Video</a> Has Not Loaded</p>}
-
-                        </div>
+                            </div>
+                        </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].yearSummary &&
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-                        <HistoryCard>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <HistoryCard>
 
 
-                            <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
+                                <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
 
-                                {data.tabs[index].yearSummary}
+                                    {data.tabs[index].yearSummary}
 
-                            </Typography>
-                        </HistoryCard>
+                                </Typography>
+                            </HistoryCard>
+                        </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].RobotName &&
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <Typography variant="h4" sx={{marginLeft: isScreenBig ? "30%" : "10%"}}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <Typography variant="h4" sx={{marginLeft: isScreenBig ? "30%" : "10%"}}>
 
-                            {data.tabs[index].RobotName}
+                                {data.tabs[index].RobotName}
 
-                        </Typography>
+                            </Typography>
+                        </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].CadModelPath &&
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <div>
-                            <Canvas frameloop="demand"
-                                    style={{
-                                        width: "80%",
-                                        marginLeft: "10%",
-                                        height: 400,
-                                        backgroundColor: (79, 79, 79)
-                                    }}>
-                                <Suspense fallback={<LoadingBar/>}>
-                                    <ambientLight/>
-                                    <pointLight position={[10, 10, 10]}/>
-                                    <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
-                                    <OrbitControls/>
-                                </Suspense>
-                            </Canvas>
-                        </div>
+                            <div>
+                                <Canvas frameloop="demand"
+                                        style={{
+                                            width: "80%",
+                                            marginLeft: "10%",
+                                            height: 400,
+                                            backgroundColor: (79, 79, 79)
+                                        }}>
+                                    <Suspense fallback={<LoadingBar/>}>
+                                        <ambientLight/>
+                                        <pointLight position={[10, 10, 10]}/>
+                                        <CadModel position={[0, 0, 0]} rotation={[0, -45, 0]} scale={[.6, .6, .6]}/>
+                                        <OrbitControls/>
+                                    </Suspense>
+                                </Canvas>
+                            </div>
                     </Grid>
                 }
 
                 {data.tabs[index].RobotImagePath &&
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                        <img src={data.tabs[index].RobotImagePath} height="auto" width="100%"
-                             alt={data.tabs[index].year + " robot picture"} style={{marginTop: 73.25}}/>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <img src={data.tabs[index].RobotImagePath} height="auto" width="100%"
+                                 alt={data.tabs[index].year + " robot picture"} style={{marginTop: 73.25, borderRadius:20, boxShadow: 10}}/>
+                        </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].RevealVideo &&
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-                        <div style={{marginLeft: 0}} ref={robotRevealRef}>
-                            <Typography variant='h4' sx={{m: 2, marginLeft: "30%"}} width="auto" height='auto'>
-                                Robot Reveal
-                            </Typography>
-                            <YouTube
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <div style={{marginLeft: 0}}>
+                                <Typography variant='h4' sx={{m: 2, marginLeft: "30%"}} width="auto" height='auto'>
+                                    Robot Reveal
+                                </Typography>
 
-                                videoId={data.tabs[index].RevealVideo}
-                                opts={{
-                                    height: isScreenBig ? '400' : '200',
-                                    width: '100%',
-                                    playerVars: {
-                                        // https://developers.google.com/youtube/player_parameters
-                                        autoplay: 0,
-                                        disablekb: 0,
-                                        loop: 0,
-                                        modestbranding: 1,
+                                <iframe src={'https://www.youtube.com/embed/' + data.tabs[index].RevealVideo}
+                                        allow='autoplay; encrypted-media'
+                                        allowFullScreen
+                                        loading="lazy"
+                                        style={{
+                                            width: "100%",
+                                            height: bigScreen ? 400 : 200,
+                                            border: 0,
+                                            borderRadius: 20
 
-                                    },
-                                }}
-                                onReady={onPlayerReady(data.tabs[index].RevealVideo, robotRevealRef)}/>
-
-                            {!hasYTLoaded[data.tabs[index].RevealVideo] &&
-                                <p> If the <a rel="noreferrer noopener" target="_blank"
-                                              href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}>
-                                    YouTube Video</a> Has Not Loaded</p>}
-
-                        </div>
+                                        }}
+                                />
+                            </div>
+                        </motion.div>
                     </Grid>
                 }
 
-                {!isScreenBig &&
+
+                {data.tabs[index].GithubCode &&
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <a rel="noreferrer noopener" target="_blank"
+                               href={data.tabs[index].GithubCode}
+                               style={{color: '#90caf9'}}>
+                                <img src="/images/resources/GitHub_Logo.png" alt="Link To Github Repo" width="auto"
+                                     height="100"/>
+                            </a>
+                            <div style={{height: "20px"}}>
+                            </div>
+                        </motion.div>
+                    </Grid>
+                }
+
+                {!bigScreen &&
+                    <motion.div
+                        style={{height: "100%", width: "100%", marginBottom: 50}}
+                        initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                        whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                        viewport={{margin: "100px", once: !bigScreen}}
+                    >
                     <HistoryCard>
-                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m:2}}>
+                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                             {data.tabs[index].GameReveal && <a rel="noreferrer noopener" target="_blank"
                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].GameReveal}
                             >{data.tabs[index].year + " Game Animation \n"}</a>}
                         </Typography>
-                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m:2}}>
+                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                             {data.tabs[index].RevealVideo && <a rel="noreferrer noopener" target="_blank"
                                                                 href={"https://www.youtube.com/watch?v=" + data.tabs[index].RevealVideo}
                             >{data.tabs[index].year + " Robot Reveal \n"}</a>}
                         </Typography>
-                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m:2}}>
+                        <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                             {data.tabs[index].RecapVideo && <a rel="noreferrer noopener" target="_blank"
                                                                href={"https://www.youtube.com/watch?v=" + data.tabs[index].RecapVideo}
                             >{data.tabs[index].year + " Season Recap \n"}</a>}
                         </Typography>
                     </HistoryCard>
-                }
-
-                {data.tabs[index].GithubCode &&
-                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <a rel="noreferrer noopener" target="_blank"
-                           href={data.tabs[index].GithubCode}
-                           style={{color: '#90caf9'}}>
-                            <img src="/images/resources/GitHub_Logo.png" alt="Link To Github Repo" width="auto"
-                                 height="100"/>
-                        </a>
-                        <div style={{height: "20px"}}>
-                        </div>
-                    </Grid>
+                    </motion.div>
                 }
             </Grid>
 

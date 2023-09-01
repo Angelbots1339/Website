@@ -1,11 +1,14 @@
 import {useEffect, useRef, useState} from "react";
-import {Box, Grid, Paper, Typography} from "@mui/material";
-import YouTube from "react-youtube";
+import {Box, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
+import {mainTheme} from "../theme";
+import { motion } from "framer-motion"
 
 export default function FirstRobotics() {
     // This code can be used for variable size on mobile vs desktop
 
     const [forceRenderNum, setForceRenderNum] = useState({});
+    const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
+
 
     const data = require('./json/firstRobotics.json');
 
@@ -13,22 +16,22 @@ export default function FirstRobotics() {
 
     // const [YTRefs, setYTRefs] = useState(new Map()); // videosArray.reduce((a, v) => ({ ...a, [v]: createRef()}), {});
 
-    const FRCVidRef = new useRef(null);
-    const FTCVidRef = new useRef(null);
-    const FLLVidRef = new useRef(null);
+    // const FRCVidRef = new useRef(null);
+    // const FTCVidRef = new useRef(null);
+    // const FLLVidRef = new useRef(null);
     const [hasYTLoaded, setYTLoaded] = useState({});
     const [YTLoadInterval, setYTLoadInterval] = useState({});
-    const onPlayerReady = (id, ref) => {
-        YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
-    }
-    const delayedOnPlayerReady = (id, ref) => {
-        if (!hasYTLoaded[id] && ref.current != null) {
-            let clientWidthBool = ref.current.clientWidth >= 5;
-            hasYTLoaded[id] = clientWidthBool;
-            clearInterval(YTLoadInterval[id]);
-            setForceRenderNum(forceRenderNum + 1);
-        }
-    }
+    // const onPlayerReady = (id, ref) => {
+    //     YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
+    // }
+    // const delayedOnPlayerReady = (id, ref) => {
+    //     if (!hasYTLoaded[id] && ref.current != null) {
+    //         let clientWidthBool = ref.current.clientWidth >= 5;
+    //         hasYTLoaded[id] = clientWidthBool;
+    //         clearInterval(YTLoadInterval[id]);
+    //         setForceRenderNum(forceRenderNum + 1);
+    //     }
+    // }
 
     const [isScreenBig, setScreenBig] = useState(false);
 
@@ -36,16 +39,16 @@ export default function FirstRobotics() {
 
         setScreenBig(window.innerWidth > 1200);
 
-        hasYTLoaded[data.FRC.gameVideo] = false;
-        hasYTLoaded[data.FTC.gameVideo] = false;
-        hasYTLoaded[data.FLL.gameVideo] = false;
+        // hasYTLoaded[data.FRC.gameVideo] = false;
+        // hasYTLoaded[data.FTC.gameVideo] = false;
+        // hasYTLoaded[data.FLL.gameVideo] = false;
+        //
+        // YTLoadInterval[data.FRC.gameVideo] = null;
+        // YTLoadInterval[data.FTC.gameVideo] = null;
+        // YTLoadInterval[data.FLL.gameVideo] = null;
 
-        YTLoadInterval[data.FRC.gameVideo] = null;
-        YTLoadInterval[data.FTC.gameVideo] = null;
-        YTLoadInterval[data.FLL.gameVideo] = null;
-
-
-    }, [hasYTLoaded, YTLoadInterval, data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo, forceRenderNum]);
+    })
+    // }, [hasYTLoaded, YTLoadInterval, data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo, forceRenderNum]);
 
 
     return (
@@ -55,7 +58,7 @@ export default function FirstRobotics() {
             <div style={{
                 display: "flex",
                 alignItems: "center",
-                width: "95%",
+                width: "90%",
                 height: "auto",
                 marginLeft: '2.5%',
                 marginTop: 50
@@ -64,6 +67,12 @@ export default function FirstRobotics() {
                 <Grid container spacing={2} sx={{width: "98%", height: "auto", ml: "0%", mr: "0%", mt: 1, mb: 2}}>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{
                             width: "100%",
                             height: "auto",
@@ -99,9 +108,16 @@ export default function FirstRobotics() {
                                 </Grid>
                             </Grid>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{
                             width: "100%",
                             height: "auto",
@@ -110,7 +126,7 @@ export default function FirstRobotics() {
                             boxShadow: 5
                         }}>
 
-                            <Grid container spacing={2} sx={{p: 10}}>
+                            <Grid container spacing={2} sx={{p: 2}}>
                                 <Grid item xs={12} sm={12} md={12} lg={5} xl={5}>
 
                                     <a rel="noreferrer noopener" target="_blank"
@@ -128,35 +144,33 @@ export default function FirstRobotics() {
 
                                 <Grid item xs={12} sm={12} md={12} lg={7} xl={7}>
 
-                                    <div style={{marginBottom: 20, marginTop: 20, marginLeft: "2.5%"}}
-                                         ref={FRCVidRef}>
-                                        <YouTube
-                                            videoId={data.FRC.gameVideo}
-                                            opts={{
-                                                height: isScreenBig ? '450' : '200',
-                                                width: '95%',
-                                                playerVars: {
-                                                    // https://developers.google.com/youtube/player_parameters
-                                                    autoplay: 0,
-                                                    disablekb: 0,
-                                                    loop: 0,
-                                                    modestbranding: 1,
+                                    <div style={{marginBottom: 20, marginTop: 20, marginLeft: "2.5%"}}>
+                                        <iframe src={'https://www.youtube.com/embed/' + data.FRC.gameVideo}
+                                                allow='autoplay; encrypted-media'
+                                                allowFullScreen
+                                                loading="lazy"
+                                                style={{
+                                                    width: "95%",
+                                                    height: bigScreen ? 450 : 200,
+                                                    borderRadius: 20
 
-                                                },
-                                            }}
-                                            onReady={onPlayerReady(data.FRC.gameVideo, FRCVidRef)}/>
+                                                }}
+                                        />
                                     </div>
 
-                                    {!hasYTLoaded[data.FRC.gameVideo] &&
-                                        <p> If the <a rel="noreferrer noopener" target="_blank"
-                                                      href={"https://www.youtube.com/watch?v=" + data.FRC.gameVideo}>
-                                            YouTube Video</a> Has Not Loaded</p>}
                                 </Grid>
                             </Grid>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
                             <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
@@ -170,36 +184,32 @@ export default function FirstRobotics() {
                                     {data.FTC.generalDescription}
                                 </Typography>
 
-                                <div style={{marginLeft: '5%'}} ref={FTCVidRef}>
-                                    <YouTube
-
-                                        videoId={data.FTC.gameVideo}
-                                        opts={{
-                                            height: isScreenBig ? '350' : '200',
-                                            width: '90%',
-                                            playerVars: {
-                                                // https://developers.google.com/youtube/player_parameters
-                                                autoplay: 0,
-                                                disablekb: 0,
-                                                loop: 0,
-                                                modestbranding: 1,
-
-                                            },
-                                        }}
-                                        onReady={onPlayerReady(data.FTC.gameVideo, FTCVidRef)}/>
-
-                                    {!hasYTLoaded[data.FTC.gameVideo] &&
-                                        <p> If the <a rel="noreferrer noopener" target="_blank"
-                                                      href={"https://www.youtube.com/watch?v=" + data.FTC.gameVideo}>
-                                            YouTube Video</a> Has Not Loaded</p>}
+                                <div style={{marginLeft: '5%'}}>
+                                    <iframe src={'https://www.youtube.com/embed/' + data.FTC.gameVideo}
+                                            allow='autoplay; encrypted-media'
+                                            allowFullScreen
+                                            loading="lazy"
+                                            style={{
+                                                width: "95%",
+                                                height: bigScreen ? 350 : 200,
+                                                borderRadius: 20
+                                            }}
+                                    />
                                 </div>
                             </Box>
 
                         </Paper>
+                        </motion.div>
                     </Grid>
 
 
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5,}}>
                             <Box sx={{p: 5}}>
                                 <a rel="noreferrer noopener" target="_blank"
@@ -213,35 +223,31 @@ export default function FirstRobotics() {
                                     {data.FLL.generalDescription}
                                 </Typography>
 
-                                <div style={{marginLeft: '5%'}} ref={FLLVidRef}>
-                                    <YouTube
-
-                                        videoId={data.FLL.gameVideo}
-                                        opts={{
-                                            height: isScreenBig ? '350' : '200',
-                                            width: '90%',
-                                            playerVars: {
-                                                // https://developers.google.com/youtube/player_parameters
-                                                autoplay: 0,
-                                                disablekb: 0,
-                                                loop: 0,
-                                                modestbranding: 1,
-
-                                            },
-                                        }}
-                                        onReady={onPlayerReady(data.FLL.gameVideo, FLLVidRef)}/>
-
-                                    {!hasYTLoaded[data.FLL.gameVideo] &&
-                                        <p> If the <a rel="noreferrer noopener" target="_blank"
-                                                      href={"https://www.youtube.com/watch?v=" + data.FLL.gameVideo}>
-                                            YouTube Video</a> Has Not Loaded</p>}
+                                <div style={{marginLeft: '5%'}}>
+                                    <iframe src={'https://www.youtube.com/embed/' + data.FLL.gameVideo}
+                                            allow='autoplay; encrypted-media'
+                                            loading="lazy"
+                                            allowFullScreen
+                                            style={{
+                                                width: "95%",
+                                                height: bigScreen ? 350 : 200,
+                                                borderRadius: 20
+                                            }}
+                                    />
 
                                 </div>
                             </Box>
                         </Paper>
+                        </motion.div>
                     </Grid>
 
                     {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
                         <Paper sx={{width: "100%", height: "100%", boxShadow: 5, borderRadius: 5}}>
                             <Typography variant='h5' fontSize='1' width="auto" height='390' sx={{m: 2}}>
                                 {data.FRC.gameVideo && <a rel="noreferrer noopener" target="_blank"
@@ -259,6 +265,7 @@ export default function FirstRobotics() {
                                 >{"FLL Game Video"}</a>}
                             </Typography>
                         </Paper>
+                        </motion.div>
                     </Grid>}
                 </Grid>
             </div>

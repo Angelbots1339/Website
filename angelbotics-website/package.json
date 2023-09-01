@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@cloudflare/wrangler": "^1.19.12",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.3",
@@ -16,11 +15,9 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "css-select": "^4.3.0",
+    "framer-motion": "^6.5.1",
     "fs": "*",
-    "gh-pages": "^3.2.3",
-    "ky": "^0.30.0",
     "mui": "^0.0.1",
-    "node-instagram": "^4.3.0",
     "nth-check": "^2.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,7 +27,6 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-simple-image-slider": "^2.4.1",
-    "react-youtube": "^9.0.1",
     "three": "^0.138.3",
     "three-stdlib": "^2.8.8",
     "web-vitals": "^2.1.4"
