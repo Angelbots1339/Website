@@ -1,13 +1,11 @@
-import {useEffect, useState} from "react";
+import { useState} from "react";
 import {Box, Button, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
-import homeJSON from "./json/home.json";
 import { motion } from "framer-motion"
 import {mainTheme} from "../theme";
 export default function Home() {
 
 
-    const [isScreenBig, setScreenBig] = useState(false);
     const [screenWidth, setScreenWidth] = useState(0);
     // This code can be used for variable size on mobile vs desktop
 
@@ -15,15 +13,6 @@ export default function Home() {
     const homeJSON = require('./json/home.json');
 
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
-
-    useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-        setScreenWidth(window.innerWidth);
-
-
-    }, []);
 
 
     function slideshowHeight() {
@@ -183,7 +172,7 @@ export default function Home() {
                             </Box>
                         </Paper>
 
-                        <Box sx={{ml: -5}}>
+                        <Box sx={{ml: -5, overflow: "hidden"}}>
                             <Grid container spacing={5} sx={{width: "95%", height: "auto", ml: "2.5%", mt: 1}}>
                                 {homeJSON.entries.map((entry) =>
                                     <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
@@ -195,7 +184,7 @@ export default function Home() {
                                             justifyContent: "center",
                                             borderRadius: 5
                                         }}>
-                                            <Grid container spacing={5} sx={{width: "90%", ml: "3.75%", mt: 1, mb: 2}}>
+                                            <Grid container spacing={5} sx={{width: "90%", ml: "0%", mt: 1, mb: 2}}>
 
                                                 {entry.title &&
                                                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
