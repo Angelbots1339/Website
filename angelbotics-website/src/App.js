@@ -9,16 +9,16 @@ import {
     Paper, Stack, Toolbar,
     Typography, useMediaQuery
 } from "@mui/material";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import DensitySmallIcon from '@mui/icons-material/DensitySmall';
-import {Outlet} from "react-router";
+import {Outlet, useLocation} from "react-router";
 import {Link} from "react-router-dom";
 import {mainTheme} from "./theme";
 
 
 function App() {
 
-    const resourceJSON = require('./pages/json/resources.json');
+    // const resourceJSON = require('./pages/json/resources.json');
 
 
     const [drawerState, setDrawerState] = useState(false);
@@ -36,10 +36,20 @@ function App() {
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
 
+
+
+    const { pathname } = useLocation();
+
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+
+
     return (
 
         <div className="App">
-
             <div>
 
                 <AppBar position="sticky" style={{alignItems: "center", width: "100", display: "flex"}}>
@@ -200,13 +210,13 @@ function App() {
                                          }}/>
                                 </Button>
                             </div>
-                            <Stack>
+                            <Stack sx={{textAlign: "center"}}>
                                 <a href={"https://east.dpsk12.org/"} target="_blank" rel="noopener noreferrer">
                                     <img src='images/logos/4/East.png' alt="East Logo"
                                          style={{
                                              borderRadius: 5,
                                              width: "100%",
-                                             maxWidth: 100,
+                                             maxWidth: 150,
                                              aspectRatio: 1,
 
                                          }}/>

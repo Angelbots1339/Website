@@ -1,17 +1,10 @@
 import {Box, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
-import {useEffect, useState} from "react";
 import {motion} from "framer-motion"
 import {mainTheme} from "../theme";
 
 export default function Supporters() {
 
-    const [isScreenBig, setScreenBig] = useState(false);
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
-
-    useEffect(() => {
-        setScreenBig(window.innerWidth > 800);
-    }, []);
-
 
     const supportersJSON = require('./json/supporters.json');
 

@@ -1,4 +1,3 @@
-import {useEffect, useRef, useState} from "react";
 import {Box, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import {mainTheme} from "../theme";
 import { motion } from "framer-motion"
@@ -6,49 +5,10 @@ import { motion } from "framer-motion"
 export default function FirstRobotics() {
     // This code can be used for variable size on mobile vs desktop
 
-    const [forceRenderNum, setForceRenderNum] = useState({});
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
 
     const data = require('./json/firstRobotics.json');
-
-    // const videosArray = ["Placeholder", data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo] // Skips the first index for some reason, so I added placeholder
-
-    // const [YTRefs, setYTRefs] = useState(new Map()); // videosArray.reduce((a, v) => ({ ...a, [v]: createRef()}), {});
-
-    // const FRCVidRef = new useRef(null);
-    // const FTCVidRef = new useRef(null);
-    // const FLLVidRef = new useRef(null);
-    const [hasYTLoaded, setYTLoaded] = useState({});
-    const [YTLoadInterval, setYTLoadInterval] = useState({});
-    // const onPlayerReady = (id, ref) => {
-    //     YTLoadInterval[id] = setInterval(delayedOnPlayerReady, 1000, id, ref);
-    // }
-    // const delayedOnPlayerReady = (id, ref) => {
-    //     if (!hasYTLoaded[id] && ref.current != null) {
-    //         let clientWidthBool = ref.current.clientWidth >= 5;
-    //         hasYTLoaded[id] = clientWidthBool;
-    //         clearInterval(YTLoadInterval[id]);
-    //         setForceRenderNum(forceRenderNum + 1);
-    //     }
-    // }
-
-    const [isScreenBig, setScreenBig] = useState(false);
-
-    useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-        // hasYTLoaded[data.FRC.gameVideo] = false;
-        // hasYTLoaded[data.FTC.gameVideo] = false;
-        // hasYTLoaded[data.FLL.gameVideo] = false;
-        //
-        // YTLoadInterval[data.FRC.gameVideo] = null;
-        // YTLoadInterval[data.FTC.gameVideo] = null;
-        // YTLoadInterval[data.FLL.gameVideo] = null;
-
-    })
-    // }, [hasYTLoaded, YTLoadInterval, data.FRC.gameVideo, data.FTC.gameVideo, data.FLL.gameVideo, forceRenderNum]);
 
 
     return (
@@ -145,8 +105,8 @@ export default function FirstRobotics() {
                                 <Grid item xs={12} sm={12} md={12} lg={7} xl={7}>
 
                                     <div style={{marginBottom: 20, marginTop: 20, marginLeft: "2.5%"}}>
-                                        <iframe src={'https://www.youtube.com/embed/' + data.FRC.gameVideo}
-                                                allow='autoplay; encrypted-media'
+                                        <iframe src={'https://www.youtube.com/embed/' + data.FRC.gameVideo + "?enablejsapi=1&origin=http://angelbotics.org"}
+                                                // allow='autoplay; encrypted-media'
                                                 allowFullScreen
                                                 loading="lazy"
                                                 style={{
@@ -185,8 +145,8 @@ export default function FirstRobotics() {
                                 </Typography>
 
                                 <div style={{marginLeft: '5%'}}>
-                                    <iframe src={'https://www.youtube.com/embed/' + data.FTC.gameVideo}
-                                            allow='autoplay; encrypted-media'
+                                    <iframe src={'https://www.youtube.com/embed/' + data.FTC.gameVideo + "?enablejsapi=1&origin=http://angelbotics.org"}
+                                            // allow='autoplay; encrypted-media'
                                             allowFullScreen
                                             loading="lazy"
                                             style={{
@@ -224,8 +184,8 @@ export default function FirstRobotics() {
                                 </Typography>
 
                                 <div style={{marginLeft: '5%'}}>
-                                    <iframe src={'https://www.youtube.com/embed/' + data.FLL.gameVideo}
-                                            allow='autoplay; encrypted-media'
+                                    <iframe src={'https://www.youtube.com/embed/' + data.FLL.gameVideo + "?enablejsapi=1&origin=http://angelbotics.org"}
+                                            // allow='autoplay; encrypted-media'
                                             loading="lazy"
                                             allowFullScreen
                                             style={{
@@ -241,7 +201,7 @@ export default function FirstRobotics() {
                         </motion.div>
                     </Grid>
 
-                    {!isScreenBig && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                    {!bigScreen && <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
                         <motion.div
                             style={{height: "100%"}}
                             initial={{opacity: 0, translateY: "0%", scale: "20%"}}
