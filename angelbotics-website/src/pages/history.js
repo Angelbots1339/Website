@@ -1,4 +1,4 @@
-import {Suspense, useEffect, useState} from "react";
+import {Suspense} from "react";
 import {Box, CircularProgress, Grid, Paper, Stack, Tab, Tabs, Typography, useMediaQuery} from "@mui/material";
 import React from "react";
 import {mainTheme} from "../theme";
@@ -26,27 +26,14 @@ export default function History() {
 
 
     // This code can be used for variable size on mobile vs desktop
-    //
-    //
-    const [isScreenBig, setScreenBig] = useState(false);
+
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
-
-
-
-
-    useEffect(() => {
-
-        setScreenBig(window.innerWidth > 1200);
-
-    }, []);
 
     return (
 
         <div>
 
-
             {/*----------Big Screens----------*/}
-
 
             <div>
 
@@ -63,7 +50,7 @@ export default function History() {
                                 borderRadius: 5
                             }}>
                                 <Box
-                                    sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: "100%"}}
+                                    sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: "100%", borderRadius: 5}}
                                 >
                                     <Tabs
                                         orientation="vertical"
@@ -71,7 +58,7 @@ export default function History() {
                                         value={value}
                                         onChange={handleChange}
                                         aria-label="Vertical tabs"
-                                        sx={{borderRight: 1, borderColor: 'divider', width: "100%"}}
+                                        sx={{borderRight: 1, borderColor: 'divider', width: "100%", borderRadius: 5}}
                                     >
 
                                         {data.tabs.map((year, index) =>
@@ -140,14 +127,14 @@ export default function History() {
                         <Paper sx={{width: '100%', height: "auto", marginBottom: 5, borderRadius: 5}}>
 
                             <Box
-                                sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 60}}
+                                sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 60, borderRadius: 5}}
                             >
                                 <Tabs
                                     variant="scrollable"
                                     value={value}
                                     onChange={handleChange}
                                     aria-label="Vertical tabs example"
-                                    sx={{borderRight: 1, borderColor: 'divider', width: "100%"}}
+                                    sx={{borderRight: 1, borderColor: 'divider', width: "100%", borderRadius: 5}}
                                 >
 
                                     {data.tabs.map((year, index) =>

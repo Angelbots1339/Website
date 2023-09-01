@@ -1,4 +1,3 @@
-import { useState} from "react";
 import {Box, Button, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import SimpleImageSlider from "react-simple-image-slider";
 import { motion } from "framer-motion"
@@ -6,7 +5,6 @@ import {mainTheme} from "../theme";
 export default function Home() {
 
 
-    const [screenWidth, setScreenWidth] = useState(0);
     // This code can be used for variable size on mobile vs desktop
 
 
@@ -15,15 +13,16 @@ export default function Home() {
     const bigScreen = useMediaQuery(mainTheme.breakpoints.up('sm'));
 
 
-    function slideshowHeight() {
-        let width = screenWidth * 0.7;
-        return width / 2;
-    }
-
-    function slideshowHeightMobile() {
-        let width = screenWidth;
-        return width / 1.777777;
-    }
+    // const [screenWidth, setScreenWidth] = useState(0);
+    // function slideshowHeight() {
+    //     let width = screenWidth * 0.7;
+    //     return width / 2;
+    // }
+    //
+    // function slideshowHeightMobile() {
+    //     let width = screenWidth;
+    //     return width / 1.777777;
+    // }
 
 
 
@@ -173,10 +172,16 @@ export default function Home() {
                         </Paper>
 
                         <Box sx={{ml: -5, overflow: "hidden"}}>
-                            <Grid container spacing={5} sx={{width: "95%", height: "auto", ml: "2.5%", mt: 1}}>
+                            <Grid container spacing={5} sx={{width: "95%", height: "auto", ml: "2.5%", mt: 1, mb:5}}>
                                 {homeJSON.entries.map((entry) =>
                                     <Grid item xs={12} sm={12} md={12} lg={entry.gridSpaces} xl={entry.gridSpaces}
                                           key={entry.name}>
+                                        <motion.div
+                                            style={{height: "100%"}}
+                                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                                            viewport={{margin: "100px", once: !bigScreen}}
+                                        >
                                         <Paper sx={{
                                             width: '100%',
                                             height: "100%",
@@ -237,6 +242,7 @@ export default function Home() {
 
                                             </Grid>
                                         </Paper>
+                                        </motion.div>
                                     </Grid>
                                 )}
                             </Grid>
