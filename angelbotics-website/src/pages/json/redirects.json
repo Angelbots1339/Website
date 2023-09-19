@@ -37,6 +37,10 @@
       "path": "facebook"
     },
     {
+      "link": "https://www.firstinspires.org/resource-library/youth-registration-system",
+      "path": "first"
+    },
+    {
       "link": "https://github.com/Angelbots1339",
       "path": "github"
     },
@@ -143,6 +147,10 @@
     {
       "link": "https://trello.com/w/angelbotics",
       "path": "trello"
+    },
+    {
+      "link": "https://trello.com/invite/angelbotics/ATTI276ce4a2c47b1b1a84220993990929d2BFF75341",
+      "path": "trelloinvite"
     },
     {
       "link": "https://twitch.tv/angelbotics",
