@@ -33,6 +33,10 @@
       "path": "email"
     },
     {
+      "link": "mailto:parents@angelbotics.org",
+      "path": "emailparents"
+    },
+    {
       "link": "https://www.facebook.com/angelbotics",
       "path": "facebook"
     },
