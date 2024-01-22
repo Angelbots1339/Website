@@ -71,7 +71,7 @@ model. Most of the time, straight out of cad the model has a massive file size, 
 To optimize the model for the website using Blender:
 
 1. Install the latest version of Blender from [here](https://www.blender.org/download/).
-2Export the model as a .stl or any compatible format from the CAD Software.
+2. Export the model as a .stl or any compatible format from the CAD Software.
 3. `File > Import` to import this model into Blender.
 4. It is a good idea to be familiar with viewport movement in Blender. It will be similar to cad software, however 
    it uses `middle-click` and `shift-middle-click` for the majority of navigation. Selecting an object with the mouse,  
