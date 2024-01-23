@@ -1,6 +1,20 @@
 {
   "tabs": [
     {
+      "year": "2024",
+      "RobotImagePath": "",
+      "CadModelPath": "",
+      "CadMaterialPath": "",
+      "GameDescription": "In the 2024 game Crescendo, robots collect notes to score into their alliance's Speaker and Amp. Each note scored in the Amp works towards amplification, which increases the points gained in the Speaker. During endgame robots climb onto the Stage and can score additional notes in the Trap.",
+      "GameName": "2024 Crescendo",
+      "RevealVideo": "",
+      "GameReveal": "9keeDyFxzY4",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2024Competition",
+      "RobotName": "",
+      "yearSummary": ""
+    },
+    {
       "year": "2023",
       "RobotImagePath": "/images/history/2023/2023Worlds.JPG",
       "CadModelPath": "/images/history/2023/2023CAD.obj",
