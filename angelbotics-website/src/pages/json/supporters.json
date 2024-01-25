@@ -3,7 +3,7 @@
 
     {
       "name": "Joel Noble",
-      "description": "Joel Noble is a founder, and has been the lead mentor/head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+      "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
       "imagePath": "/images/supporters/noble.JPG"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "Garrett Calkins",
-      "description": "Garrett is an engineer at Intertech Plastics, and has mentored our team since 2022. He helps us with Manufacturing, Design, and Strategy.",
+      "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
       "imagePath": "/images/supporters/Garrett_Calkins.jpg"
     },
     {
@@ -40,6 +40,11 @@
       "name": "Nathan Baldwin",
       "description": "Nathan Baldwin is a test engineer at Medtronic. This is his first year as a mentor so he has been helping the team where needed.",
       "imagePath": "/images/supporters/Natxhan.jpg"
+    },
+    {
+    "name": "Nathaniel Chin",
+    "description": "Nathaniel works as a CAD and design engineer at Lunasonde. He assists the team in CAD and design decisions.",
+    "imagePath": "/images/supporters/Nathaniel_Chin.jpg"
     },
     {
       "name": "Wes Naake",
