@@ -13,6 +13,10 @@
       "path": "calendar"
     },
     {
+      "link": "https://www.coloradogives.org/organization/Angelbotics",
+      "path": "COgives"
+    },
+    {
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSf7w-7n1AymzYP-c2kAxAOx3Czh3DWoYRmy4rzdZLuU0iSu5Q/viewform?usp=sf_link",
       "path": "concerttee"
     },
@@ -57,7 +61,7 @@
       "path": "imgur"
     },
     {
-      "link": "https://www.instagram.com/angelbots1339/",
+      "link": "https://www.instagram.com/angelbotics/",
       "path": "instagram"
     },
     {
