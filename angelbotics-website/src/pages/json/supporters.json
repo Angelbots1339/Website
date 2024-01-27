@@ -99,12 +99,6 @@
 
 
     {
-      "name": "The Wizard's Chest",
-      "level": 3,
-      "logo": "/images/logos/3/wizardschest.jpg",
-      "website": "https://www.wizardschest.com/"
-    },
-    {
       "name": "Ball Aerospace",
       "level": 3,
       "logo": "/images/logos/3/Ball-Aerospace.jpeg",
