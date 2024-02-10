@@ -3,7 +3,7 @@
 
     {
       "name": "Joel Noble",
-      "description": "Joel Noble is a founder, and has been the lead mentor/head coach since the team started in 2004. He plays a crucial role in keeping Angelbotics operational, and is an amazing person.",
+      "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
       "imagePath": "/images/supporters/noble.JPG"
     },
     {
@@ -17,13 +17,8 @@
       "imagePath": "/images/supporters/Arturo_Earle.jpg"
     },
     {
-      "name": "Jeff Kieft",
-      "description": "Jeff is a biophysicist and professor. He is the treasurer and board member on the nonprofit, offers general team support, and helps manage scouting at competitions.",
-      "imagePath": "/images/supporters/Jeffrey_Kieft.jpg"
-    },
-    {
       "name": "Garrett Calkins",
-      "description": "Garrett is an engineer at Intertech Plastics, and has mentored our team since 2022. He helps us with Manufacturing, Design, and Strategy.",
+      "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
       "imagePath": "/images/supporters/Garrett_Calkins.jpg"
     },
     {
@@ -39,7 +34,17 @@
     {
       "name": "Nathan Baldwin",
       "description": "Nathan Baldwin is a test engineer at Medtronic. This is his first year as a mentor so he has been helping the team where needed.",
-      "imagePath": "/images/supporters/Nathan.jpg"
+      "imagePath": "/images/supporters/Natxhan.jpg"
+    },
+    {
+    "name": "Nathaniel Chin",
+    "description": "Nathaniel works as a CAD and design engineer at Lunasonde. He assists the team in CAD and design decisions.",
+    "imagePath": "/images/supporters/Nathaniel_Chin.jpg"
+    },
+    {
+    "name": "Trevor Daly",
+    "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
+    "imagePath": "/images/supporters/Trevor Daly.jfif"
     },
     {
       "name": "Wes Naake",
@@ -47,9 +52,9 @@
       "imagePath": "/images/supporters/Wes_Naake.jpg"
     },
     {
-      "name": "Rose Bandrowski",
-      "description": "Rose works for the Colorado Department of Transportation, and is a FIRST Alumni of team 4915. They started mentoring this season and help organize, motivate, and support the team.",
-      "imagePath": "/images/supporters/Rose_Bandrowski.jpg"
+      "name": "Wren Bandrowski",
+      "description": "Wren works for the Colorado Department of Transportation, and is a FIRST Alumni of team 4915. They started mentoring this season and help organize, motivate, and support the team.",
+      "imagePath": "/images/supporters/Wren_Bandrowski.jpg"
     }
   ],
 
@@ -76,7 +81,6 @@
 
 
 
-
     {
       "name": "Lockheed Martin",
       "level": 2,
@@ -100,12 +104,6 @@
 
 
     {
-      "name": "The Wizard's Chest",
-      "level": 3,
-      "logo": "/images/logos/3/wizardschest.jpg",
-      "website": "https://www.wizardschest.com/"
-    },
-    {
       "name": "Ball Aerospace",
       "level": 3,
       "logo": "/images/logos/3/Ball-Aerospace.jpeg",
@@ -124,19 +122,13 @@
       "website": "https://corporate.comcast.com/"
     },
     {
-      "name": "Raytheon Technologies",
-      "level": 3,
-      "logo": "/images/logos/3/RaytheonLogoLarge.png",
-      "website": "https://www.rtx.com/"
-    },
-    {
       "name": "Gene Haas Foundation",
       "level": 3,
       "logo": "/images/logos/3/GeneHaasLogo.png",
       "website": "https://ghaasfoundation.org/"
     },
     {
-      "name": "East Friends and Family",
+      "name": "East Friends and Family", 
       "level": 3,
       "logo": "/images/logos/3/EAFAFTall.png",
       "website": "https://eastangelfriends.org/"
@@ -169,26 +161,18 @@
       "website": "https://www.intuitive-foundation.org/"
     },
     {
-      "name": "Scenic Mercenary Studio",
-      "level": 4,
-      "logo": "/images/logos/4/ScenicMercenaryStudio.png",
-      "website": "https://www.scenicmercenary.com/"
-    },
-    {
       "name": "Hallmoore",
       "level": 4,
       "logo": "/images/logos/4/hallmoore.webp",
       "website": "https://hallmoore.com/home"
     },
-
-
-
     {
-      "name": "Actuonix",
-      "level": 5,
-      "logo": "/images/logos/5/Actuonix.png",
-      "website": "https://www.actuonix.com/"
+      "name": "ALTEN Technologies",
+      "level": 4,
+      "logo": "/images/logos/4/ALTEN.png",
+      "website": "https://www.alten.com/"
     }
+    
 
 
   ],

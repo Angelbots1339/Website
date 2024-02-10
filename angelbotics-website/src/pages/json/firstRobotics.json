@@ -13,8 +13,8 @@
   },
   "FTC":{
 
-    "gameVideo": "HsitvZ0JaDc",
-    "generalDescription": "In FTC, the field is much smaller, and consequently robots are much smaller. There are 2 robots on each team, and there is a new game each year. FTC robots are constructed in a similar way to FRC robots, just with different components on a smaller scale.",
+    "gameVideo": "6e-5Uo1dRic",
+    "generalDescription": "In FTC, the field is much smaller, and consequently robots are much smaller. There are 2 robots on each team, and there is a new game each year. FTC robots are constructed in a similar way to FRC robots, just with different components on a smaller scale. Angelbotics does not participate in FTC but East has 2 engineering classes that do.",
     "logo": "/images/firstRobotics/ftcLogo.jpg",
     "website": "https://www.firstinspires.org/robotics/ftc"
 
@@ -22,7 +22,7 @@
   },
   "FLL": {
 
-    "gameVideo": "okR1AMFNV3Q",
+    "gameVideo": "zI_vz9YUw1g",
     "generalDescription": "FLL robots are designed to complete specific challenges throughout the game field, but unlike FRC and FTC, there is only one robot on the field at a time. Robots are constructed from legos, and are generally smaller than FTC bots.",
     "logo": "/images/firstRobotics/fllLogo.png",
     "website": "https://www.firstinspires.org/robotics/fll"
