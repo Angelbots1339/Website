@@ -2,18 +2,33 @@
 
   "contactUs": {
 
-    "text": "You can reach us any time by emailing leadership@angelbotics.org, or by reaching out on social media! Email is by far the better method of communication for our team however.",
+    "text": "If you would like to support Angelbotics, please donate through the links below or contact us any time at leadership@angelbotics.org or via social media to discuss other ways to support us.",
     "email": "leadership@angelbotics.org",
     "socialMedia":[
       {
+        "name": "Venmo",
+        "imagePath": "/images/resources/VenmoLogo.png",
+        "link": "https://angelbotics.org/Venmo"
+      },
+      {
+        "name": "PayPal",
+        "imagePath": "/images/resources/PayPalLogo.png",
+        "link": "https://angelbotics.org/paypal"
+      },
+      {
+        "name": "Colorado Gives",
+        "imagePath": "/images/resources/CGDLogo.png",
+        "link": "https://angelbotics.org/COgives"
+      },
+      {
         "name": "Instagram",
-        "imagePath": "/images/resources/instagramLogo.png",
-        "link": "https://www.instagram.com/angelbotics/"
+        "imagePath": "/images/resources/InstagramLogo.png",
+        "link": "https://angelbotics.org/instagram"
       },
       {
         "name": "Youtube",
         "imagePath": "/images/resources/YouTubeLogo.png",
-        "link": "https://www.youtube.com/channel/UCnSzQ-8Qmtml3HG_GehLN4g"
+        "link": "https://angelbotics.org/youtube"
       }
     ]
 
@@ -25,7 +40,7 @@
     {
       "name": "Github",
       "description": "We make all of our code publicly visible on GitHub. Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
-      "imagePath": "/images/resources/GitHub_Logo.png",
+      "imagePath": "/images/resources/GitHubLogo.png",
       "url": "https://github.com/Angelbots1339"
     },
     {
