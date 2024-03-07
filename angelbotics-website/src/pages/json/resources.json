@@ -8,12 +8,12 @@
       {
         "name": "Instagram",
         "imagePath": "/images/resources/instagramLogo.png",
-        "link": "https://www.instagram.com/angelbotics/"
+        "link": "https://angelbotics.org/instagram"
       },
       {
         "name": "Youtube",
         "imagePath": "/images/resources/YouTubeLogo.png",
-        "link": "https://www.youtube.com/channel/UCnSzQ-8Qmtml3HG_GehLN4g"
+        "link": "https://angelbotics.org/youtube"
       }
     ]
 
