@@ -22,8 +22,8 @@
       "topText": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
       "bottomText": "",
       "gridSpaces": "7",
-      "learnMoreText": "",
-      "learnMoreLink": ""
+      "learnMoreText": "Support Us!",
+      "learnMoreLink": "https://angelbotics.org/resources"
     },
     {
       "name": "Robot Picture",
