@@ -69,7 +69,7 @@ export default function Resources() {
                                                 alignItems: "flex-start"
                                             }}>
                                                 <Typography variant={'h4'}>
-                                                    Contact Us
+                                                    Support Us
                                                 </Typography>
                                                 <IconButton href={"mailto:" + resourcesJSON.contactUs.email}
                                                             rel="noreferrer" target="_blank">
