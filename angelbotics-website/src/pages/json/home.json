@@ -10,7 +10,13 @@
     {"url":"/images/home/2023StLouisRobotBalance.jpg"},
     {"url":"/images/home/2023TulsaDriveStation.jpg"},
     {"url":"/images/home/subteams/2023WorkingOnStructure.jpg"},
-    {"url":"/images/home/2023StLouisDriveStation.jpg"}
+    {"url":"/images/home/2023StLouisDriveStation.jpg"},
+    {"url":"/images/home/2024UtahCheer.jpg"},
+    {"url":"/images/home/2024UtahDriveFlag.jpg"},
+    {"url":"/images/home/2024UtahNoteFire.jpg"},
+    {"url":"/images/home/2024UtahRobotSetup.jpg"},
+    {"url":"/images/home/2024UtahTeamPic.JPG"},
+    {"url":"/images/home/2024UtahZoom.jpg"}
 
   ],
 
@@ -108,7 +114,7 @@
     {
       "name": "Imagery",
       "title": "Imagery",
-      "imagePath": "/images/home/subteams/KISSLogoWhite.png",
+      "imagePath": "/images/home/subteams/OutrunLogo.png",
       "topText": "",
       "bottomText": "",
       "gridSpaces": "4",
