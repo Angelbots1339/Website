@@ -312,7 +312,7 @@ export default function RobotHistoryTab(props) {
                             <a rel="noreferrer noopener" target="_blank"
                                href={data.tabs[index].GithubCode}
                                style={{color: '#90caf9'}}>
-                                <img src="/images/resources/GitHub_Logo.png" alt="Link To Github Repo" width="auto"
+                                <img src="/images/resources/GitHubLogo.png" alt="Link To Github Repo" width="auto"
                                      height="100"/>
                             </a>
                             <div style={{height: "20px"}}>
