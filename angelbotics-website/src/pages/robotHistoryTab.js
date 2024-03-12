@@ -300,7 +300,59 @@ export default function RobotHistoryTab(props) {
                     </Grid>
                 }
 
+                {data.tabs[index].ThemeName &&
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "30%" : "10%"}}>
 
+                                {"Theme: " + data.tabs[index].ThemeName}
+
+                            </Typography>
+                        </motion.div>
+                    </Grid>
+                }
+
+                {data.tabs[index].ThemeImagePath &&
+                    <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <img src={data.tabs[index].ThemeImagePath} height="auto" width="100%"
+                                 alt={data.tabs[index].year + " robot picture"}
+                                 style={{marginTop: 73.25, borderRadius: 20, boxShadow: 10}}/>
+                        </motion.div>
+                    </Grid>
+                }
+
+                {data.tabs[index].themeSummary &&
+                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <HistoryCard>
+
+
+                                <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
+
+                                    {data.tabs[index].themeSummary}
+
+                                </Typography>
+                            </HistoryCard>
+                        </motion.div>
+                    </Grid>
+                }
+                
                 {data.tabs[index].GithubCode &&
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <motion.div
