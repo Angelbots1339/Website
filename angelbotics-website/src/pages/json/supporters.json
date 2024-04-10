@@ -37,14 +37,14 @@
       "imagePath": "/images/supporters/Natxhan.jpg"
     },
     {
-    "name": "Nathaniel Chin",
-    "description": "Nathaniel works as a CAD and design engineer at Lunasonde. He assists the team in CAD and design decisions.",
-    "imagePath": "/images/supporters/Nathaniel_Chin.jpg"
+      "name": "Nathaniel Chin",
+      "description": "Nathaniel works as a CAD and design engineer at Lunasonde. He assists the team in CAD and design decisions.",
+      "imagePath": "/images/supporters/Nathaniel_Chin.jpg"
     },
     {
-    "name": "Trevor Daly",
-    "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
-    "imagePath": "/images/supporters/Trevor Daly.jfif"
+      "name": "Trevor Daly",
+      "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
+      "imagePath": "/images/supporters/Trevor Daly.jfif"
     },
     {
       "name": "Wren Bandrowski",
@@ -77,16 +77,40 @@
 
 
     {
-      "name": "Lockheed Martin",
-      "level": 2,
-      "logo": "/images/logos/2/LockheedMartin.jpg",
-      "website": "https://www.lockheedmartin.com/en-us/index.html"
-    },
-    {
       "name": "Medtronic",
       "level": 2,
       "logo": "/images/logos/2/Medtronic.png",
       "website": "https://www.medtronic.com/us-en/index.html"
+    },
+    {
+      "name": "Hallmoore",
+      "level": 2,
+      "logo": "/images/logos/2/hallmoore.webp",
+      "website": "https://hallmoore.com/home"
+    },
+    {
+      "name": "Comcast",
+      "level": 2,
+      "logo": "/images/logos/2/ComcastTall.png",
+      "website": "https://corporate.comcast.com/"
+    },
+    {
+      "name": "Denver Cherry Creek Rotary Club", 
+      "level": 2,
+      "logo": "/images/logos/2/RotaryLogo.svg",
+      "website": "https://www.cherrycreekrotary.org/"
+    },
+    {
+      "name": "Hayes Family Foundation", 
+      "level": 2,
+      "logo": "/images/logos/2/HayesFFLogo.png",
+      "website": "https://www.thehayesfamilyfoundation.org/"
+    },
+    {
+      "name": "Gene Haas Foundation",
+      "level": 2,
+      "logo": "/images/logos/2/GeneHaasLogo.png",
+      "website": "https://ghaasfoundation.org/"
     },
     {
       "name": "Rev Robotics",
@@ -94,33 +118,20 @@
       "logo": "/images/logos/2/TeamRev.png",
       "website": "https://www.revrobotics.com/"
     },
+    {
+      "name": "Lockheed Martin",
+      "level": 2,
+      "logo": "/images/logos/2/LockheedMartin.jpg",
+      "website": "https://www.lockheedmartin.com/en-us/index.html"
+    },
 
-
-
-
+    
+    
     {
       "name": "Ball Aerospace",
       "level": 3,
       "logo": "/images/logos/3/Ball-Aerospace.jpeg",
       "website": "https://www.ball.com/aerospace"
-    },
-    {
-      "name": "Denver Cherry Creek Rotary Club", 
-      "level": 3,
-      "logo": "/images/logos/3/RotaryLogo.svg",
-      "website": "https://www.cherrycreekrotary.org/"
-    },
-    {
-      "name": "Comcast",
-      "level": 3,
-      "logo": "/images/logos/3/ComcastTall.png",
-      "website": "https://corporate.comcast.com/"
-    },
-    {
-      "name": "Gene Haas Foundation",
-      "level": 3,
-      "logo": "/images/logos/3/GeneHaasLogo.png",
-      "website": "https://ghaasfoundation.org/"
     },
     {
       "name": "East Friends and Family", 
@@ -137,16 +148,16 @@
 
 
     {
-      "name": "East High School",
-      "level": 4,
-      "logo": "/images/logos/4/East.png",
-      "website": "https://east.dpsk12.org/"
-    },
-    {
       "name": "United Launch Alliance",
       "level": 4,
       "logo": "/images/logos/4/ULA_Logo.png",
       "website": "https://www.ulalaunch.com/"
+    },
+    {
+      "name": "East High School",
+      "level": 4,
+      "logo": "/images/logos/4/East.png",
+      "website": "https://east.dpsk12.org/"
     },
     {
       "name": "Plasticare",
@@ -159,12 +170,6 @@
       "level": 4,
       "logo": "/images/logos/4/IntuitiveFoundation.png",
       "website": "https://www.intuitive-foundation.org/"
-    },
-    {
-      "name": "Hallmoore",
-      "level": 4,
-      "logo": "/images/logos/4/hallmoore.webp",
-      "website": "https://hallmoore.com/home"
     },
     {
       "name": "ALTEN Technologies",
