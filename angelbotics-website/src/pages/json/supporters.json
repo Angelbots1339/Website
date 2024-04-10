@@ -105,10 +105,10 @@
       "website": "https://www.ball.com/aerospace"
     },
     {
-      "name": "Denver Public Schools",
+      "name": "Denver Cherry Creek Rotary Club", 
       "level": 3,
-      "logo": "/images/logos/3/DPSLogo.png",
-      "website": "https://www.dpsk12.org/"
+      "logo": "/images/logos/3/RotaryLogo.svg",
+      "website": "https://www.cherrycreekrotary.org/"
     },
     {
       "name": "Comcast",
@@ -128,7 +128,12 @@
       "logo": "/images/logos/3/EAFAFTall.png",
       "website": "https://eastangelfriends.org/"
     },
-
+    {
+      "name": "Denver Public Schools",
+      "level": 3,
+      "logo": "/images/logos/3/DPSLogo.png",
+      "website": "https://www.dpsk12.org/"
+    },
 
 
     {
