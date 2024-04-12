@@ -6,6 +6,11 @@
       "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
       "imagePath": "/images/supporters/noble.JPG"
     },
+        {
+      "name": "Garrett Calkins",
+      "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
+      "imagePath": "/images/supporters/Garrett_Calkins.jpg"
+    },
     {
       "name": "Chad Bartel",
       "description": "Chad works at ULA and has been with the team since 2011. He helps diagnose issues, troubleshoot, and advise both Programming and Electrical.",
@@ -15,11 +20,6 @@
       "name": "Arturo Earle",
       "description": "Arturo works in cyber security but has more fun mentoring the team on various tasks and helping our with infrastructure.",
       "imagePath": "/images/supporters/Arturo_Earle.jpg"
-    },
-    {
-      "name": "Garrett Calkins",
-      "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
-      "imagePath": "/images/supporters/Garrett_Calkins.jpg"
     },
     {
       "name": "Critter Thompson",
