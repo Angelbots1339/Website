@@ -124,6 +124,15 @@ export default function Home() {
                                                     </Button>
                                                 </Grid>
                                             }
+                                            {entry.learnMoreText2 && //i am so sorry
+                                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}
+                                                      key={entry.name + " Learn More Button"} sx={{justifyContent: "center"}}>
+                                                    <Button variant="outlined" size={"large"} href={entry.learnMoreLink2}
+                                                            sx={{width: "50%", maxWidth: 300, ml: "25%"}} align="center">
+                                                        {entry.learnMoreText2}
+                                                    </Button>
+                                                </Grid>
+                                            }
 
                                         </Grid>
                                     </Paper>

@@ -22,6 +22,18 @@
 
   "entries": [
     {
+      "name": "How to watch",
+      "title": "How To Watch",
+      "imagePath": "",
+      "topText": "We are going to the World Championship in Houston! If you want to watch us compete, we are in the Archimedes Division (linked below). Championships are from April 19th to April 22nd. You can find our schedule on The Blue Alliance",
+      "bottomText": "Our rookie team 9586 Anglebotics competed in the Colorado Regional with us and were also able to secure a ticket to worlds! They are in the Galileo division (linked below)",
+      "gridSpaces": "5",
+      "learnMoreText": "Watch Us Live!",
+      "learnMoreLink": "https://www.twitch.tv/firstinspires_archimedes",
+      "learnMoreText2": "Watch The Rookies Live!",
+      "learnMoreLink2": "https://www.twitch.tv/firstinspires_galileo"
+    },
+    {
       "name": "Overall",
       "title": "About 1339",
       "imagePath": "/images/home/2023StLouisPit.jpg",
@@ -37,7 +49,7 @@
       "imagePath": "/images/history/2023/2023Worlds.JPG",
       "topText": "",
       "bottomText": "Heart of Chrome is our robot for the 2022-2023 season. Students fully constructed the robot in a matter of weeks, and continued with small improvements throughout the season. With it, we ranked 1st at the Colorado Regional and later won the event for a second year in a row, giving us another trip to the World Championship.",
-      "gridSpaces": "5",
+      "gridSpaces": "6",
       "learnMoreText": "Learn More",
       "learnMoreLink": "/history"
     },
@@ -47,7 +59,7 @@
       "imagePath": "",
       "topText": "",
       "bottomText": "Angelbotics consists of about 30-40 high school students, usually from East High School. We are a mostly student-led team, but we still have supportive mentors to help us along the way.",
-      "gridSpaces": "4",
+      "gridSpaces": "6",
       "learnMoreText": "See Our Mentors",
       "learnMoreLink": "/supporters"
     },
@@ -57,7 +69,7 @@
       "imagePath": "/images/home/2023ColoradoTeamPic.JPG",
       "topText": "",
       "bottomText": "",
-      "gridSpaces": "8",
+      "gridSpaces": "12",
       "learnMoreText": "",
       "learnMoreLink": ""
     },
