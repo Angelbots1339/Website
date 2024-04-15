@@ -73,38 +73,20 @@
       "logo": "/images/logos/1/Chevron_Logo.svg",
       "website": "https://www.chevron.com/"
     },
-
-
-
     {
       "name": "Medtronic",
-      "level": 2,
-      "logo": "/images/logos/2/Medtronic.png",
+      "level": 1,
+      "logo": "/images/logos/1/Medtronic.png",
       "website": "https://www.medtronic.com/us-en/index.html"
     },
+
+
+
     {
       "name": "Hallmoore",
       "level": 2,
       "logo": "/images/logos/2/hallmoore.webp",
       "website": "https://hallmoore.com/home"
-    },
-    {
-      "name": "Comcast",
-      "level": 2,
-      "logo": "/images/logos/2/ComcastTall.png",
-      "website": "https://corporate.comcast.com/"
-    },
-    {
-      "name": "Denver Cherry Creek Rotary Club", 
-      "level": 2,
-      "logo": "/images/logos/2/RotaryLogo.svg",
-      "website": "https://www.cherrycreekrotary.org/"
-    },
-    {
-      "name": "Hayes Family Foundation", 
-      "level": 2,
-      "logo": "/images/logos/2/HayesFFLogo.png",
-      "website": "https://www.thehayesfamilyfoundation.org/"
     },
     {
       "name": "Gene Haas Foundation",
@@ -113,20 +95,59 @@
       "website": "https://ghaasfoundation.org/"
     },
     {
+      "name": "Denver Cherry Creek Rotary Club", 
+      "level": 2,
+      "logo": "/images/logos/2/RotaryLogo.svg",
+      "website": "https://www.cherrycreekrotary.org/"
+    },    
+    {
+      "name": "Comcast",
+      "level": 2,
+      "logo": "/images/logos/2/ComcastTall.png",
+      "website": "https://corporate.comcast.com/"
+    },
+    {
+      "name": "Hayes Family Foundation", 
+      "level": 2,
+      "logo": "/images/logos/2/HayesFFLogo.png",
+      "website": "https://www.thehayesfamilyfoundation.org/"
+    },
+    {
+      "name": "Nasa",
+      "level": 2,
+      "logo": "/images/logos/2/NasaLogo.png",
+      "website": "https://www.nasa.gov/"
+    },
+    {
+      "name": "Steadman Group",
+      "level": 2,
+      "logo": "/images/logos/2/SteadmanGroupLogo.png",
+      "website": "https://steadmangroup.com/"
+    },
+    {
       "name": "Rev Robotics",
       "level": 2,
       "logo": "/images/logos/2/TeamRev.png",
       "website": "https://www.revrobotics.com/"
     },
+
+
+
     {
       "name": "Lockheed Martin",
-      "level": 2,
-      "logo": "/images/logos/2/LockheedMartin.jpg",
+      "level": 3,
+      "logo": "/images/logos/3/LockheedMartin.jpg",
       "website": "https://www.lockheedmartin.com/en-us/index.html"
     },
+    {
+      "name": "Intuitive Foundation",
+      "level": 3,
+      "logo": "/images/logos/3/IntuitiveFoundation.png",
+      "website": "https://www.intuitive-foundation.org/"
+    },
 
-    
-    
+
+
     {
       "name": "Ball Aerospace",
       "level": 3,
@@ -165,12 +186,7 @@
       "logo": "/images/logos/4/plasticareTall.png",
       "website": "https://www.plasticareinc.com/"
     },
-    {
-      "name": "Intuitive Foundation",
-      "level": 4,
-      "logo": "/images/logos/4/IntuitiveFoundation.png",
-      "website": "https://www.intuitive-foundation.org/"
-    },
+
     {
       "name": "ALTEN Technologies",
       "level": 4,
