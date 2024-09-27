@@ -1,6 +1,6 @@
 {
 
-  "contactUs": {
+  "supportUs": {
 
     "text": "If you would like to support Angelbotics, please donate through the links below or contact us any time at leadership@angelbotics.org or via social media to discuss other ways to support us.",
     "email": "leadership@angelbotics.org",
@@ -27,6 +27,26 @@
       }
     ]
 
+  },
+
+  "joinInfo": {
+    "text": "Are you interested in joining angelbotics? You need to:",
+    "joinLink": "join",
+    "TODOListItem1": "Fill out the application form",
+    "TODOListItem2": "Join our discord",
+    "TODOListItem3": "Register with FIRST",
+    "resources":[
+      {
+        "name": "Discord",
+        "imagePath": "/images/resources/DiscordLogo.png",
+        "link": "https://angelbotics.org/Discord"
+      },
+      {
+        "name": "Registration",
+        "imagePath": "/images/resources/FIRSTShapes.png",
+        "link": "https://my.firstinspires.org/JoinTeam/Welcome/737cb624-7b9d-11ef-9604-00505699b848"
+      }
+    ]
   },
 
   "googleCalendarPublicLink": "https://calendar.google.com/calendar/embed?src=c_9157fac1ae373d2662806d04a6d76c998543bfd521b0b79bcdf92b09766c44ba%40group.calendar.google.com&ctz=America%2FDenver",
