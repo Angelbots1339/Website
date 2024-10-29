@@ -133,7 +133,7 @@ export default function Resources() {
                                                         <img src={app.imagePath} alt={"Angelbotics " + app.name}
                                                              width="100%"
                                                              height="auto" style={{
-                                                            marginLeft: "25%", borderRadius: 0, marginTop: 10
+                                                            marginLeft: "5%", marginRight: "5%", borderRadius: 0, marginTop: 10
                                                         }}/>
                                                     </a>
                                                 </Grid>)}
