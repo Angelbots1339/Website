@@ -2,8 +2,8 @@
 
   "supportUs": {
 
-    "text": "If you would like to support Angelbotics, please donate through the links below or contact us any time at leadership@angelbotics.org or via social media to discuss other ways to support us.",
-    "email": "leadership@angelbotics.org",
+    "text": "If you would like to support Angelbotics, please donate through the links below, purchase something from our Amazon wishlist or contact us any time at friendsofangelbotics@gmail.com or via social media to discuss other ways to support us.",
+    "email": "friendsofangelbotics@gmail.com",
     "socialMedia":[
       {
         "name": "Venmo",
@@ -14,6 +14,16 @@
         "name": "PayPal",
         "imagePath": "/images/resources/PayPalLogo.png",
         "link": "https://angelbotics.org/paypal"
+      },
+      {
+        "name": "COGives",
+        "imagePath": "images/resources/COGives.png",
+        "link": "https://angelbotics.org/COGives"
+      },
+      {
+        "name": "Amazon wishlist",
+        "imagePath": "/images/resources/AmazonWishList.png",
+        "link": "https://angelbotics.org/wishlist"
       },
       {
         "name": "Instagram",

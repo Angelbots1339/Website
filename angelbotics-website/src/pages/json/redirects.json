@@ -217,6 +217,10 @@
       "path": "venmo"
     },
     {
+      "link": "https://www.amazon.com/hz/wishlist/ls/3JOT45FFDYZD8/ref=hz_ls_biz_ex",
+      "path": "wishlist"
+    },
+    {
       "link": "https://www.youtube.com/@Angelbotics",
       "path": "youtube"
     }
