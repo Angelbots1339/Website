@@ -1,4 +1,4 @@
-import {Card, Grid, IconButton, Paper, Typography, useMediaQuery} from "@mui/material";
+import {Card, Grid, IconButton, Paper, Typography, useMediaQuery, Link} from "@mui/material";
 import {ReactEmbeddedGoogleCalendar} from "react-embedded-google-calendar";
 import {Outbound, Email, Assignment, CheckBox, CheckBoxOutlineBlank} from '@mui/icons-material';
 import FormGroup from '@mui/material/FormGroup';
@@ -6,6 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { SvgIcon } from '@mui/material';
 import {motion} from "framer-motion"
 import {mainTheme} from "../theme";
+// import { Link } from "react-router-dom";
 
 const resourcesJSON = require('./json/resources.json');
 
@@ -108,14 +109,17 @@ export default function Resources() {
                                                 <Typography variant={'h4'}>
                                                     Support Us
                                                 </Typography>
-                                                <IconButton href={"mailto:" + resourcesJSON.supportUs.email}
+                                                <IconButton href={resourcesJSON.supportUs.moreResourcesLink}
                                                             rel="noreferrer" target="_blank">
-                                                    <Email fontSize={"large"}/>
+                                                    <Outbound fontSize={"large"}/>
                                                 </IconButton>
                                             </div>
 
                                             <Typography variant='h6'>
                                                 {resourcesJSON.supportUs.text}
+                                                <Link href={"mailto:" + resourcesJSON.supportUs.email} rel="noreferrer" target="_blank" variant="h6">
+                                                    {resourcesJSON.supportUs.email}
+                                                </Link>
                                             </Typography>
 
                                             <Grid container direction="row"
