@@ -12,19 +12,9 @@
       "imagePath": "/images/supporters/Garrett_Calkins.jpg"
     },
     {
-      "name": "Chad Bartel",
-      "description": "Chad works at ULA and has been with the team since 2011. He helps diagnose issues, troubleshoot, and advise both Programming and Electrical.",
-      "imagePath": "/images/supporters/mentor_chad.jpg"
-    },
-    {
-      "name": "Critter Thompson",
-      "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
-      "imagePath": "/images/supporters/Critter_Thompson.jpg"
-    },
-    {
-      "name": "Craig Dorroh",
-      "description": "Craig has driven our trailer to all 4 competitions in 2023 and 2024, and has helped the team during each one of them.",
-      "imagePath": "/images/supporters/Craig_Dorroh.jpg"
+      "name": "Nathan Baldwin",
+      "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
+      "imagePath": "/images/supporters/Nathan_Baldwin.jpg"
     },
     {
       "name":"Michelle Scott",
@@ -32,9 +22,19 @@
       "imagePath":"images/supporters/Michelle_Scott.jpg"
     },
     {
-      "name": "Nathan Baldwin",
-      "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
-      "imagePath": "/images/supporters/Nathan_Baldwin.jpg"
+      "name": "Chad Bartel",
+      "description": "Chad works at ULA and has been with the team since 2011. He helps diagnose issues, troubleshoot, and advise both Programming and Electrical.",
+      "imagePath": "/images/supporters/mentor_chad.jpg"
+    },
+    {
+      "name": "Craig Dorroh",
+      "description": "Craig has driven our trailer to all 4 competitions in 2023 and 2024, and has helped the team during each one of them.",
+      "imagePath": "/images/supporters/Craig_Dorroh.jpg"
+    },
+    {
+      "name": "Critter Thompson",
+      "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
+      "imagePath": "/images/supporters/Critter_Thompson.jpg"
     },
     {
       "name": "Trevor Daly",

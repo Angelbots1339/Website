@@ -41,11 +41,13 @@
   },
 
   "joinInfo": {
-    "text": "Are you interested in joining angelbotics? You need to:",
+    "text": "Are you interested in joining Angelbotics? You need to:",
     "joinLink": "join",
     "TODOListItem1": "Fill out the application form",
     "TODOListItem2": "Join our discord",
     "TODOListItem3": "Register with FIRST",
+    "postListText": "For further questions, email us at ",
+    "email": "mentors@angelbotics.org",
     "resources":[
       {
         "name": "Discord",

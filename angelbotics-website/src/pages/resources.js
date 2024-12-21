@@ -179,7 +179,8 @@ export default function Resources() {
                                                 </Typography>
                                                 <IconButton href={resourcesJSON.joinInfo.joinLink}
                                                             rel="noreferrer" target="_blank">
-                                                    <Assignment fontSize="large"/> {/*TODO: make this angelbotics logo later*/}
+                                                    <Assignment fontSize="large"/> {/* TODO: make this angelbotics logo */}
+                                                    
                                                 </IconButton>
                                             </div>
 
@@ -205,7 +206,16 @@ export default function Resources() {
                                                 </Typography>
                                                 <Typography variant='h6'>
                                                     {"3: "+resourcesJSON.joinInfo.TODOListItem3}
-                                                </Typography> {/*TODO: try to make this better*/}
+                                                </Typography> {/* TODO: make this cleaner */}
+                                                <Typography variant='caption' color='white'>
+                                                    {"________________________________________________"}
+                                                </Typography>
+                                                <Typography variant='h6'>
+                                                    {resourcesJSON.joinInfo.postListText}
+                                                <Link href={"mailto:" + resourcesJSON.joinInfo.email} rel="noreferrer" target="_blank" variant="h6">
+                                                    {resourcesJSON.joinInfo.email}
+                                                </Link>
+                                                </Typography>
                                             </Grid>
                                             <Grid container direction="row"
                                                   justifyContent="space-evenly"
