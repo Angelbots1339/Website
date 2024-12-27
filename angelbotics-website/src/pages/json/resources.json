@@ -72,10 +72,10 @@
       "url": "https://github.com/Angelbots1339"
     },
     {
-      "name": "The Open Alliance",
-      "description": "Angelbotics is a member of the Open Alliance, which is a group of teams that have agreed to share all information about their robot, and essentially make it open source. The goal of this group is to create an inclusive environment where teams can learn from each other in order to make everyone's robot better.",
-      "imagePath": "/images/resources/OpenAlliance.png",
-      "url": "https://www.theopenalliance.com/"
+      "name": "Onshape",
+      "description": "Angelbotics uses Onshape to CAD our robots, because it is online, collaborative and free for students and educators. You can view our 2024 robot cad here!",
+      "imagePath": "/images/resources/OnshapeLogo.png",
+      "url": "https://angelbotics.org/onshape"
     },
     {
       "name": "The Blue Alliance",
