@@ -66,10 +66,16 @@
 
   "resourceCards": [
     {
+      "name": "Join Us!",
+      "description": "Are you interested in joining Angelbotics? Fill out the form below for more information!",
+      "imagePath": "RedLogo.svg",
+      "url": "https://angelbotics.org/join"
+    },
+    {
       "name": "Github",
       "description": "We make all of our code publicly visible on GitHub. Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
       "imagePath": "/images/resources/GitHubLogo.png",
-      "url": "https://github.com/Angelbots1339"
+      "url": "https://angelbotics.org/github"
     },
     {
       "name": "Onshape",

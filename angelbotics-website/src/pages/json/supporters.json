@@ -6,7 +6,7 @@
       "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
       "imagePath": "/images/supporters/noble.JPG"
     },
-        {
+    {
       "name": "Garrett Calkins",
       "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
       "imagePath": "/images/supporters/Garrett_Calkins.jpg"
@@ -35,6 +35,11 @@
       "name": "Critter Thompson",
       "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
       "imagePath": "/images/supporters/Critter_Thompson.jpg"
+    },
+    {
+      "name": "Jeremy Nielsen",
+      "description": "Jeremy is Angelbotics CAD mentor and assists our students in designing and modeling our robots.",
+      "imagePath": "/images/supporters/Jeremy_Nielsen.jpg"
     },
     {
       "name": "Trevor Daly",
@@ -135,9 +140,6 @@
       "logo": "/images/logos/3/IntuitiveFoundation.png",
       "website": "https://www.intuitive-foundation.org/"
     },
-
-
-
     {
       "name": "Ball Aerospace",
       "level": 3,
@@ -149,6 +151,12 @@
       "level": 3,
       "logo": "/images/logos/3/EAFAFTall.png",
       "website": "https://eastangelfriends.org/"
+    },
+    {
+      "name": "Fabworks",
+      "level": 3,
+      "logo": "/images/logos/3/fabworksLogo.png",
+      "website": "https://www.fabworks.com/"
     },
     {
       "name": "Denver Public Schools",
