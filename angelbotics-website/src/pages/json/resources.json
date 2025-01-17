@@ -67,7 +67,7 @@
   "resourceCards": [
     {
       "name": "Join Us!",
-      "description": "Are you interested in joining Angelbotics? Fill out the form below for more information!",
+      "description": "Are you interested in joining Angelbotics? Fill out the form below for more information! Email mentors@angelbotics.org for more information.",
       "imagePath": "RedLogo.svg",
       "url": "https://angelbotics.org/join"
     },
