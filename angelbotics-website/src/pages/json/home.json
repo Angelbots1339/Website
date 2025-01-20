@@ -18,15 +18,23 @@
   "entries": [
     {
       "name": "What we are doing",
+      "title": "What are we doing?",
+      "imagePath": "",
+      "topText": "This years game reefscape has been revealed, so we are hard at work designing, building and programming our robot in order to play.",
+      "bottomText": "",
+      "gridSpaces": "6",
+      "learnMoreText": "Watch this years game video",
+      "learnMoreLink": "https://www.youtube.com/watch?v=YWbxcjlY9JY"
+    },
+    {
+      "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "We are starting up the new year and getting prepared for KCMT on October 12th and 13th!",
+      "topText": "We are going to be attending to 2025 Colorado regional with 50 other teams from March 19th-22nd.",
       "bottomText": "",
-      "gridSpaces": "5",
-      "learnMoreText": "Interested in joining?",
-      "learnMoreLink": "/resources",
-      "learnMoreText2": "",
-      "learnMoreLink2": ""
+      "gridSpaces": "6",
+      "learnMoreText": "More Information",
+      "learnMoreLink": "https://frc-events.firstinspires.org/2025/CODE"
     },
     {
       "name": "Overall",
@@ -34,7 +42,7 @@
       "imagePath": "/images/home/2023StLouisPit.jpg",
       "topText": "Angelbotics is a FIRST Robotics Competition team, and a Non-Profit organization affiliated with Denver East High School. Team 1339 Angelbotics was started around 2004, and has been competing ever since. We are based in Denver, Colorado, right in the center of the city.",
       "bottomText": "",
-      "gridSpaces": "7",
+      "gridSpaces": "12",
       "learnMoreText": "Support Us!",
       "learnMoreLink": "https://angelbotics.org/resources"
     },
