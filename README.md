@@ -66,35 +66,11 @@ before committing. For all entries, leave them with blank quotes `"` if that dat
 For Video IDs: The id of the YouTube video is used to find the video. This can be found in the url of a given video, or
 through developer tools.
 
-For Cad Models: The file must be in a .obj format. It is highly recommended to use Blender or similar software with the 
-model. Most of the time, straight out of cad the model has a massive file size, which doesn't work for websites. 
-To optimize the model for the website using Blender:
-
-1. Install the latest version of Blender from [here](https://www.blender.org/download/).
-2. Export the model as a .stl or any compatible format from the CAD Software.
-3. `File > Import` to import this model into Blender.
-4. It is a good idea to be familiar with viewport movement in Blender. It will be similar to cad software, however 
-   it uses `middle-click` and `shift-middle-click` for the majority of navigation. Selecting an object with the mouse,  
-   you can press `h` to hide it, and `alt-h` to unhide all objects. To delete an object, you can press `x`.
-5. Go through and delete small objects like screws or nuts, or objects that are hidden inside of others. Hiding larger
-   objects will help with finding the smaller ones.
-6. This is somewhat optional, but if you have the experience or motivation, apply a basic texture to the robot. The
-   website rendering looks different than inside Blender, so make sure to test. 
-7. Apply a `Decimate` modifier, and ensure it is set to `Collapse`. From there, you can slide the ratio down to around
-   0.2, or until the mesh is simplified enough but detail is preserved to an acceptable level. Apply this modifier when
-   you are happy. Note, this can have some weird effects on the mesh, so make sure you have deleted or textured 
-   everything you wish to beforehand, because this will make it harder. This modifier will also make the mesh look very
-   strange, especially the geometry itself, but most people are unlikely to notice, and it honestly doesn't matter. 
-   Reducing file size is just so important.
-8. `File > Export` to export as an obj when you are happy with it. Remember, you can just tweak and export repeatedly if
-   you want to, just replacing the previous file, to test on the site fast. Find the file and ensure there is an 
-   accompanying .mtl file (this specifies the material of the object).
-9. Move the files into the correct directory, name them, and then set those paths in the json.
+For Cad Models: See the [CADVICE.md](/CADVICE.md) file
 
 - `Year:` The year for that specific tab.
 - `RobotImagePath:` The path to an image of the robot. For the most part aspect ratio doesn't matter.
-- `CadModelPath:` This is the path to the CAD Model for the robot. Ensure this is in .obj format. Make sure to follow
-  the instructions above.
+- `CadModelPath:` This is the path to the CAD Model for the robot. Ensure this is in .obj format. See the CADVICE.md file
 - `CadMaterialPath` This is the path to the material for the CAD Model. Ensure this is in .mtl format.
 - `GameDescription:` This is a general outline for what this year's game entails. Try to make it the same length or
   similar to previous years.
@@ -125,7 +101,12 @@ is to put the image into google docs or similar software with a white background
 in order to increase the height. 
 
 - `name:` The name of the sponsor
-- `level:` There are different tiers of sponsors for our team depending on donations. This is the level.
+- `level:` There are different tiers of sponsors for our team depending on donations:
+  - **Angel**: Level 1, $10,000+
+  - **Archangel**: Level 2, $5,000 - $9,999
+  - **Guardian**: Level 3, $2,000 - $4,999
+  - **Seraph**: Level 4, $500 - $1,999
+  - **Cherub**: Level 5, $250 - $499
 - `logo:` This is the path to a logo for the sponsor. The logos should be horizontal, and there should be a substantial
   amount of whitespace around the logo itself for it to display nicely. Make sure to test.
 - `website:` This is the url for the sponsor's website.
