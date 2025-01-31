@@ -65,131 +65,77 @@
     {
       "name": "Chevron",
       "level": 1,
-      "logo": "/images/logos/1/Chevron_Logo.svg",
+      "logo": "/images/logos/Chevron_Logo.svg",
       "website": "https://www.chevron.com/"
     },
-    {
-      "name": "Medtronic",
-      "level": 1,
-      "logo": "/images/logos/1/Medtronic.png",
-      "website": "https://www.medtronic.com/us-en/index.html"
-    },
 
 
 
-    {
-      "name": "Hallmoore",
-      "level": 2,
-      "logo": "/images/logos/2/hallmoore.webp",
-      "website": "https://hallmoore.com/home"
-    },
-    {
-      "name": "Gene Haas Foundation",
-      "level": 2,
-      "logo": "/images/logos/2/GeneHaasLogo.png",
-      "website": "https://ghaasfoundation.org/"
-    },
-    {
-      "name": "Denver Cherry Creek Rotary Club", 
-      "level": 2,
-      "logo": "/images/logos/2/RotaryLogo.svg",
-      "website": "https://www.cherrycreekrotary.org/"
-    },    
     {
       "name": "Comcast",
       "level": 2,
-      "logo": "/images/logos/2/ComcastTall.png",
+      "logo": "/images/logos/ComcastTall.png",
       "website": "https://corporate.comcast.com/"
     },
     {
       "name": "Hayes Family Foundation", 
       "level": 2,
-      "logo": "/images/logos/2/HayesFFLogo.png",
+      "logo": "/images/logos/HayesFFLogo.png",
       "website": "https://www.thehayesfamilyfoundation.org/"
     },
-    {
-      "name": "Nasa",
-      "level": 2,
-      "logo": "/images/logos/2/NasaLogo.png",
-      "website": "https://www.nasa.gov/"
-    },
-    {
-      "name": "Steadman Group",
-      "level": 2,
-      "logo": "/images/logos/2/SteadmanGroupLogo.png",
-      "website": "https://steadmangroup.com/"
-    },
-    {
-      "name": "Rev Robotics",
-      "level": 2,
-      "logo": "/images/logos/2/TeamRev.png",
-      "website": "https://www.revrobotics.com/"
-    },
 
 
 
     {
-      "name": "Lockheed Martin",
+      "name": "Gene Haas Foundation",
       "level": 3,
-      "logo": "/images/logos/3/LockheedMartin.jpg",
-      "website": "https://www.lockheedmartin.com/en-us/index.html"
+      "logo": "/images/logos/GeneHaasLogo.png",
+      "website": "https://ghaasfoundation.org/"
     },
     {
-      "name": "Intuitive Foundation",
+      "name": "Medtronic",
       "level": 3,
-      "logo": "/images/logos/3/IntuitiveFoundation.png",
-      "website": "https://www.intuitive-foundation.org/"
+      "logo": "/images/logos/Medtronic.png",
+      "website": "https://www.medtronic.com/us-en/index.html"
     },
     {
-      "name": "Ball Aerospace",
+      "name": "Hallmoore",
       "level": 3,
-      "logo": "/images/logos/3/Ball-Aerospace.jpeg",
-      "website": "https://www.ball.com/aerospace"
+      "logo": "/images/logos/hallmoore.webp",
+      "website": "https://hallmoore.com/home"
     },
     {
-      "name": "East Friends and Family", 
+      "name": "Denver Cherry Creek Rotary Club", 
       "level": 3,
-      "logo": "/images/logos/3/EAFAFTall.png",
-      "website": "https://eastangelfriends.org/"
-    },
+      "logo": "/images/logos/RotaryLogo.svg",
+      "website": "https://www.cherrycreekrotary.org/"
+    },    
+
+
+
     {
       "name": "Fabworks",
-      "level": 3,
-      "logo": "/images/logos/3/fabworksLogo.png",
+      "level": 4,
+      "logo": "/images/logos/fabworksLogo.png",
       "website": "https://www.fabworks.com/"
-    },
-    {
-      "name": "Denver Public Schools",
-      "level": 3,
-      "logo": "/images/logos/3/DPSLogo.png",
-      "website": "https://www.dpsk12.org/"
-    },
-
-
-    {
-      "name": "United Launch Alliance",
-      "level": 4,
-      "logo": "/images/logos/4/ULA_Logo.png",
-      "website": "https://www.ulalaunch.com/"
-    },
-    {
-      "name": "East High School",
-      "level": 4,
-      "logo": "/images/logos/4/East.png",
-      "website": "https://east.dpsk12.org/"
     },
     {
       "name": "Plasticare",
       "level": 4,
-      "logo": "/images/logos/4/plasticareTall.png",
+      "logo": "/images/logos/plasticareTall.png",
       "website": "https://www.plasticareinc.com/"
     },
-
     {
-      "name": "ALTEN Technologies",
+      "name": "United Launch Alliance",
       "level": 4,
-      "logo": "/images/logos/4/ALTEN.png",
-      "website": "https://www.alten.com/"
+      "logo": "/images/logos/ULA_Logo.png",
+      "website": "https://www.ulalaunch.com/"
+    },
+    {
+      "name": "Blue Flame Powder Coating",
+      "level": 4,
+      "logo": "/images/logos/BlueFlameBlack.png",
+      "website": "https://www.blueflamepowder.com/#"
     }
     
 
