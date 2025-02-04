@@ -223,7 +223,7 @@ export default function RobotHistoryTab(props) {
                             whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
                             viewport={{margin: "100px", once: !bigScreen}}
                         >
-                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "30%" : "10%"}}>
+                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "35%" : "10%"}}>
 
                                 {data.tabs[index].RobotName}
 
