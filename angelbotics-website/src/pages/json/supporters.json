@@ -147,6 +147,23 @@
     "level": 1,
     "logo": "",
     "website": ""
+  },
+
+
+
+
+  "Donors": [
+    {
+      "name": "The Shepard Family"
+    },
+    {
+      "name": "The Daly Family"
+    }
+    
+  ],
+
+  "Donor Template": {
+    "name": ""
   }
 
 
