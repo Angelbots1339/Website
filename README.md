@@ -111,6 +111,12 @@ in order to increase the height.
   amount of whitespace around the logo itself for it to display nicely. Make sure to test.
 - `website:` This is the url for the sponsor's website.
 
+### Donors
+
+Donors list individuals/families who have supported our team
+
+- `name:` The name of the donor
+
 # Home.json
 
 ### Image Carousel

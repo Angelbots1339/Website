@@ -246,6 +246,40 @@ export default function Supporters() {
                                     </div>}
                                 </motion.div>
                             </div>
+
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                width: "95%",
+                                height: 'auto',
+                                marginLeft: '2.5%',
+                                paddingTop: 10,
+                                paddingBottom: 10
+                            }}>
+                                <Typography variant="h3">
+                                    Donors
+                                </Typography>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "left",
+                                justifyContent: "center",
+                                width: "95%",
+                                height: 'auto',
+                                marginLeft: '2.5%',
+                                paddingTop: 10,
+                                paddingBottom: 10
+                            }}>
+                                {supportersJSON.Donors.map((donor, idx) =>
+                                    <Typography variant="h4">
+                                        {donor.name}{idx !== supportersJSON.Donors.length - 1 ? "\u00A0•\u00A0" : ""}
+                                        {/* prints donor name, then a dot if it isn't the last donor,
+                                        which is surrounded by non breaking spaces because html is funny*/}
+                                    </Typography>
+                                )}
+                            </div>
+
                         </Paper>
 
 
