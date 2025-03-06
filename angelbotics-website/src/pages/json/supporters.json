@@ -136,6 +136,18 @@
       "level": 4,
       "logo": "/images/logos/BlueFlameBlack.png",
       "website": "https://www.blueflamepowder.com/#"
+    },
+    {
+      "name": "East High School",
+      "level": 4,
+      "logo": "/images/logos/East.png",
+      "website": "https://east.dpsk12.org/"
+    },
+    {
+      "name": "The Moné Family",
+      "level": 4,
+      "logo": "/images/logos/Moné.png",
+      "website": ""
     }
     
 
@@ -153,6 +165,9 @@
 
 
   "Donors": [
+    {
+      "name": "The Moné Family"
+    },
     {
       "name": "The Shepard Family"
     },
