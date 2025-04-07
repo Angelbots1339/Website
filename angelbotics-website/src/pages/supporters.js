@@ -440,6 +440,36 @@ export default function Supporters() {
                                 </Grid>
                             </div>}
                         </motion.div>
+                        <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                width: "95%",
+                                height: 'auto',
+                                marginLeft: '2.5%',
+                                paddingTop: 10,
+                                paddingBottom: 10
+                            }}>
+                                <Typography variant="h3">
+                                    Donors
+                                </Typography>
+                            </div>
+                            {supportersJSON.Donors.map((donor, idx) =>
+                                <div style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    width: "95%",
+                                    height: 'auto',
+                                    marginLeft: '2.5%',
+                                    paddingTop: 10,
+                                    paddingBottom: 10
+                                }}>
+                                    <Typography variant="h4">
+                                        {donor.name}
+                                    </Typography>
+                                </div>
+                            )}
                     </Paper>
 
 
