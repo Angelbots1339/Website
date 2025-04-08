@@ -87,6 +87,12 @@
 
 
     {
+      "name": "TopoCut",
+      "level": 3,
+      "logo": "/images/logos/TopoCutLogo.png",
+      "website": "https://topocut.com/"
+    },
+    {
       "name": "Gene Haas Foundation",
       "level": 3,
       "logo": "/images/logos/GeneHaasLogo.png",
