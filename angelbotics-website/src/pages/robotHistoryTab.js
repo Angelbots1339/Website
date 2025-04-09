@@ -195,7 +195,9 @@ export default function RobotHistoryTab(props) {
                 }
 
                 {data.tabs[index].yearSummary &&
-                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+                    <Grid item xs={12} sm={12} md={12} 
+                        lg={data.tabs[index].RecapVideo !== "" ? 4 : 12} xl={data.tabs[index].RecapVideo !== "" ? 4 : 12}>
+                        {/* Changes the size of the year recap if there isn't a recap video*/}
                         <motion.div
                             style={{height: "100%", width: "100%"}}
                             initial={{opacity: 0, translateY: "0%", scale: "20%"}}
@@ -318,7 +320,7 @@ export default function RobotHistoryTab(props) {
                 }
 
                 {data.tabs[index].ThemeImagePath &&
-                    <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
                         <motion.div
                             style={{height: "100%", width: "100%"}}
                             initial={{opacity: 0, translateY: "0%", scale: "20%"}}
@@ -333,7 +335,7 @@ export default function RobotHistoryTab(props) {
                 }
 
                 {data.tabs[index].themeSummary &&
-                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
                         <motion.div
                             style={{height: "100%", width: "100%"}}
                             initial={{opacity: 0, translateY: "0%", scale: "20%"}}
