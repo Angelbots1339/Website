@@ -212,7 +212,7 @@ function App() {
                             </div>
                             <Stack sx={{textAlign: "center"}}>
                                 <a href={"https://east.dpsk12.org/"} target="_blank" rel="noopener noreferrer">
-                                    <img src='images/logos/4/East.png' alt="East Logo"
+                                    <img src='images/logos/East.png' alt="East Logo"
                                          style={{
                                              borderRadius: 5,
                                              width: "100%",
