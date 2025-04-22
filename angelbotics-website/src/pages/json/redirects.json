@@ -49,6 +49,10 @@
       "path": "first"
     },
     {
+      "link": "https://angelbotics.gitbook.io/angelbotics",
+      "path": "gitbook"
+    },
+    {
       "link": "https://github.com/Angelbots1339",
       "path": "github"
     },
