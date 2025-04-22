@@ -97,16 +97,16 @@ The images for sponsors can get weird with formatting. Make sure to test on a va
 a width of 600 pixels should always be fine, and so the most important size to test is 601 pixels width. If the sponsors 
 are poking off 
 the right side of the site or overlapping with others, you can increase their height or decrease their width. One method 
-is to put the image into google docs or similar software with a white background, and then take a screenshot and crop, 
+is to put the image into Google Docs or similar software with a white background, and then take a screenshot and crop, 
 in order to increase the height. 
 
 - `name:` The name of the sponsor
 - `level:` There are different tiers of sponsors for our team depending on donations:
-  - **Angel**: Level 1, $10,000+
-  - **Archangel**: Level 2, $5,000 - $9,999
-  - **Guardian**: Level 3, $2,000 - $4,999
-  - **Seraph**: Level 4, $500 - $1,999
-  - **Cherub**: Level 5, $250 - $499
+  - **Archangel**: Level 1, $10,000+
+  - **Angel**: Level 2, $5,000 - $9,999
+  - **Seraphim**: Level 3, $2,000 - $4,999
+  - **Cherub**: Level 4, $500 - $1,999
+  - **Guardian**: Level 5, $250 - $499
 - `logo:` This is the path to a logo for the sponsor. The logos should be horizontal, and there should be a substantial
   amount of whitespace around the logo itself for it to display nicely. Make sure to test.
 - `website:` This is the url for the sponsor's website.
