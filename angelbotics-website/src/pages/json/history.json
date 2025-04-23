@@ -1,6 +1,19 @@
 {
   "tabs": [
     {
+      "year": "2025",
+      "RobotImagePath": "/images/history/2025/Shortstop.jpg",
+      "CadModelPath": "",
+      "GameDescription": "In 2025's game Reefcape, robots collect coral to score onto their team's reef with varying amounts of points scored respective to what level of the reef the coral is scored. They also collect algae to score into either their teams proccesor or barge. In endgame, the robots have the opportunity to hang on the cages attatched to the barge.",
+      "GameName": "2025 Reefscape",
+      "RevealVideo": "mE5PJwI9qrc",
+      "GameReveal": "YWbxcjlY9JY",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2025Competition",
+      "RobotName": "Shortstop",
+      "yearSummary": ""
+    },
+    {
       "year": "2024",
       "RobotImagePath": "",
       "CadModelPath": "/images/history/2024/2024CAD.obj",
