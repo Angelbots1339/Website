@@ -24,8 +24,6 @@ export default function Home() {
     //     return width / 1.777777;
     // }
 
-
-
     return (
 
         <div>
@@ -50,7 +48,7 @@ export default function Home() {
                                     <SimpleImageSlider
                                         width={900}
                                         height={900 * (9/16)}
-                                        images={homeJSON.imageCarousel}
+                                        images={homeJSON.imageCarousel.sort((a, b) => Math.random() - 0.5)}
                                         showBullets={false}
                                         showNavs={true}
                                         loop={true}
