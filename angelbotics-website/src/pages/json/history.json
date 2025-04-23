@@ -1,6 +1,19 @@
 {
   "tabs": [
     {
+      "year": "2025",
+      "RobotImagePath": "/images/history/2025/Shortstop.jpg",
+      "CadModelPath": "",
+      "GameDescription": "In 2025's game Reefcape, robots collect coral to score onto their team's reef with varying amounts of points scored respective to what level of the reef the coral is scored. They also collect algae to score into either their teams proccesor or barge. In endgame, the robots have the opportunity to hang on the cages attatched to the barge.",
+      "GameName": "2025 Reefscape",
+      "RevealVideo": "mE5PJwI9qrc",
+      "GameReveal": "YWbxcjlY9JY",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2025Competition",
+      "RobotName": "Shortstop",
+      "yearSummary": ""
+    },
+    {
       "year": "2024",
       "RobotImagePath": "",
       "CadModelPath": "/images/history/2024/2024CAD.obj",
@@ -12,7 +25,11 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2024Competition",
       "RobotName": "Outrunner",
-      "yearSummary": "Our first regional was in Utah. We ranked 6th and were the first pick of the second alliance. We won Utah, our first time winning an out of state regional! We also went to the Colorado regional and despite ranking 33rd, we were the first pick of the second alliance again and won the event! Unfortunately, our fist robot was so badly damaged, we had to build a whole new one for worlds. When we went to worlds we were in the archimedes division and ranked 61st. We were the 3rd pick of the 8th alliance and were eliminated in the semifinals."
+      "yearSummary": "Our first regional was in Utah. We ranked 6th and were the first pick of the second alliance. We won Utah, our first time winning an out of state regional! We also went to the Colorado regional and despite ranking 33rd, we were the first pick of the second alliance again and won the event! Unfortunately, our fist robot was so badly damaged, we had to build a whole new one for worlds. When we went to worlds we were in the archimedes division and ranked 61st. We were the 3rd pick of the 8th alliance and were eliminated in the semifinals.",
+      "ThemeName": "Outrun",
+      "ThemeImagePath": "images/history/2024/OutrunLogo.png",
+      "themeSummary": ""
+
     },
     {
       "year": "2023",
@@ -26,7 +43,10 @@
       "RecapVideo": "fVAG-dM2OCM",
       "GithubCode": "https://github.com/Angelbots1339/2023CompetitionSeason",
       "RobotName": "Heart Of Chrome",
-      "yearSummary": "We went to St Louis for our first regional, for our second regional we ranked 1st and won Colorado for a second year in a row, then for a third regional we sent younger members to Green County to gain experience. We ended up in the Johnson Division at Worlds, and made it to the finals as a first pick."
+      "yearSummary": "We went to St Louis for our first regional, for our second regional we ranked 1st and won Colorado for a second year in a row, then for a third regional we sent younger members to Green County to gain experience. We ended up in the Johnson Division at Worlds, and made it to the finals as a first pick.",
+      "ThemeName": "KISS",
+      "ThemeImagePath": "/images/history/2023/KISSLogoWhite.png",
+      "themeSummary": ""
     },
     {
       "year": "2022",
@@ -40,7 +60,10 @@
       "RecapVideo": "l-FUae_8Po4",
       "GithubCode": "https://github.com/Angelbots1339/2022_Competition_Season",
       "RobotName": "Jazzy Judi",
-      "yearSummary": "We went to the Orange County Regional in California and placed 3rd, we won the Colorado Regional, our first ever. We then made it to the FRC World Championship where we placed 7th in the Hopper division and unseated the 3rd seeded team. During the summer we were invited to IRI, and made it into the finals."
+      "yearSummary": "We went to the Orange County Regional in California and placed 3rd, we won the Colorado Regional, our first ever. We then made it to the FRC World Championship where we placed 7th in the Hopper division and unseated the 3rd seeded team. During the summer we were invited to IRI, and made it into the finals.",
+      "ThemeName": "Jazzercise",
+      "ThemeImagePath": "images/history/2022/JazzyLogo.png",
+      "themeSummary": ""
     },
     {
       "year": "2020",
@@ -54,7 +77,10 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2020FinalBot",
       "RobotName": "Imperator",
-      "yearSummary": "A very promising robot and team were able to play in Utah and place 3nd (captaining the #3 seed alliance) and earning a spot to the Championship, which was canceled along with the rest of the season due to the advent of Covid-19. We still managed to win Imagery again."
+      "yearSummary": "A very promising robot and team were able to play in Utah and place 3nd (captaining the #3 seed alliance) and earning a spot to the Championship, which was canceled along with the rest of the season due to the advent of Covid-19. We still managed to win Imagery again.",
+      "ThemeName": "Star Wars",
+      "ThemeImagePath": "/images/history/2020/STARBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2019",
@@ -68,7 +94,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "Xenomorph",
-      "yearSummary": "Our \"short\" robot could only do so much on the field, but it did it well enough to earn the Autonomous award in Utah, make it into playoffs at both Regionals, and come in 13th at Championship in the Carver Division, where we were picked for eliminations by the #1 seed, team 364."
+      "yearSummary": "Our \"short\" robot could only do so much on the field, but it did it well enough to earn the Autonomous award in Utah, make it into playoffs at both Regionals, and come in 13th at Championship in the Carver Division, where we were picked for eliminations by the #1 seed, team 364.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2018",
@@ -81,7 +110,10 @@
       "RecapVideo": "tbb_z9BS53g",
       "GithubCode": "https://github.com/Angelbots1339/2018-Robot",
       "RobotName": "The DeLorean",
-      "yearSummary": "With our strongest robot and strongest team ever, AngelBotics placed 2nd in Utah and 7th in Colorado, made deep runs in the playoffs, and won both the Excellence in Engineering and Imagery awards. We also went to our first off-season event in Texas, and won the event!"
+      "yearSummary": "With our strongest robot and strongest team ever, AngelBotics placed 2nd in Utah and 7th in Colorado, made deep runs in the playoffs, and won both the Excellence in Engineering and Imagery awards. We also went to our first off-season event in Texas, and won the event!",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2017",
@@ -94,7 +126,10 @@
       "RecapVideo": "qnfytMcyrTg",
       "GithubCode": "https://github.com/Angelbots1339/2017-Robot",
       "RobotName": "Riptide",
-      "yearSummary": "Finalists twice, in both Utah and Colorado, we received our second invitation to Champs (this time in Houston). Amazingly, we placed 11th in the Roebling Division, and were the third pick for the #3 seed alliance. What a ride! We also won the Team Spirit award in Colorado and the Quality award at Worlds."
+      "yearSummary": "Finalists twice, in both Utah and Colorado, we received our second invitation to Champs (this time in Houston). Amazingly, we placed 11th in the Roebling Division, and were the third pick for the #3 seed alliance. What a ride! We also won the Team Spirit award in Colorado and the Quality award at Worlds.",
+      "ThemeName": "Surfing",
+      "ThemeImagePath": "/images/history/2017/RiptideBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2016",
@@ -107,7 +142,10 @@
       "RecapVideo": "7fZWoDd7_gY",
       "GithubCode": "https://github.com/Angelbots1339/2016-Robot",
       "RobotName": "Horton",
-      "yearSummary": "First trip to the World Championship in St. Louis! As finalists in Colorado, we took our Dr. Seuss themed team to Champs and had a blast. Thing 1 and Thing 2 were our drive team, and the robot (named Horton) had bumpers made from Truffula tufts (not really)."
+      "yearSummary": "First trip to the World Championship in St. Louis! As finalists in Colorado, we took our Dr. Seuss themed team to Champs and had a blast. Thing 1 and Thing 2 were our drive team, and the robot (named Horton) had bumpers made from Truffula tufts (not really).",
+      "ThemeName": "Dr. Seuss",
+      "ThemeImagePath": "/images/history/2016/SeussBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2015",
@@ -120,7 +158,10 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2015-Robot",
       "RobotName": "The Bus",
-      "yearSummary": "Dressed for 1969, AngelBotics won the Imagery award in both Utah and Colorado, and placed our highest ever in any event up to that point (4th after qualifications). For the first time we captained an eliminations match alliance."
+      "yearSummary": "Dressed for 1969, AngelBotics won the Imagery award in both Utah and Colorado, and placed our highest ever in any event up to that point (4th after qualifications). For the first time we captained an eliminations match alliance.",
+      "ThemeName": "",
+      "ThemeImagePath": "images/history/2015/HippieBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2014",
@@ -133,7 +174,10 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2014-Robot",
       "RobotName": "Phoenix",
-      "yearSummary": "AngelBotics attended the Utah Regional for the first time, where unfortunately the robot was literally torn in half during a brutal quarterfinals match. We made friends with our opponents (including 1619, Up-A-Creek Robotics) and rebuilt for Colorado. We won the Excellence in Engineering award and appeared in the quarterfinals at both events."
+      "yearSummary": "AngelBotics attended the Utah Regional for the first time, where unfortunately the robot was literally torn in half during a brutal quarterfinals match. We made friends with our opponents (including 1619, Up-A-Creek Robotics) and rebuilt for Colorado. We won the Excellence in Engineering award and appeared in the quarterfinals at both events.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2013",
@@ -146,7 +190,10 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2013-Robot",
       "RobotName": "Murus Angelorum",
-      "yearSummary": "A simplified strategy led to a much more effective robot on the field, and our second appearance in a semifinal. We learned a lot from studying how other teams designed and built their robots in the off-season."
+      "yearSummary": "A simplified strategy led to a much more effective robot on the field, and our second appearance in a semifinal. We learned a lot from studying how other teams designed and built their robots in the off-season.",
+      "ThemeName": "Star Trek",
+      "ThemeImagePath": "/images/history/2013/TrekBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2012",
@@ -159,7 +206,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "",
-      "yearSummary": "Not a great year. We welcomed our mentors from United Launch Alliance (ULA) for the first time, but unfortunately built a robot that was poorly planned and executed. This year helped us rethink many of our attitudes and approaches to FRC, and ushered in a new era for the team."
+      "yearSummary": "Not a great year. We welcomed our mentors from United Launch Alliance (ULA) for the first time, but unfortunately built a robot that was poorly planned and executed. This year helped us rethink many of our attitudes and approaches to FRC, and ushered in a new era for the team.",
+      "ThemeName": "Portal",
+      "ThemeImagePath": "images/history/2012/ApertureBotics.png",
+      "themeSummary": ""
     },
     {
       "year": "2011",
@@ -172,7 +222,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "Shaaark",
-      "yearSummary": "Continuing with our fresh themes, we went with \"Hawaiian Surf\", won our second Imagery award, and made it all the way to the semifinals for the first time ever."
+      "yearSummary": "Continuing with our fresh themes, we went with \"Hawaiian Surf\", won our second Imagery award, and made it all the way to the semifinals for the first time ever.",
+      "ThemeName": "",
+      "ThemeImagePath": "/images/history/2011/Thing.png",
+      "themeSummary": ""
     },
     {
       "year": "2010",
@@ -185,7 +238,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "The Covered Wagon",
-      "yearSummary": "A year of many firsts. Our first trip to another state (Louisiana), our first Imagery award (for theming as \"Old West\"), and we were picked for a playoff alliance in both CO and LA!"
+      "yearSummary": "A year of many firsts. Our first trip to another state (Louisiana), our first Imagery award (for theming as \"Old West\"), and we were picked for a playoff alliance in both CO and LA!",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2009",
@@ -198,7 +254,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "",
-      "yearSummary": "Our first year as AngelBotics. Our Lunacy robot used in-frame suspension to keep the slick wheels in contact with the \"regolith\" floor, and we edged our way toward having a more competitive robot. Still had not made the cut to playoffs."
+      "yearSummary": "Our first year as AngelBotics. Our Lunacy robot used in-frame suspension to keep the slick wheels in contact with the \"regolith\" floor, and we edged our way toward having a more competitive robot. Still had not made the cut to playoffs.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2008",
@@ -211,7 +270,11 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "Beat Bot",
-      "yearSummary": "With our newly optimistic attitude, we returned as Team BeatBot. Unfortunately our robot was overweight by almost 20 pounds, and we used the \"swiss cheese\" method to lighten up, which made our manipulator break. Won our first award, Xerox Creativity, for utilizing a rat trap as a chain tensioner."},
+      "yearSummary": "With our newly optimistic attitude, we returned as Team BeatBot. Unfortunately our robot was overweight by almost 20 pounds, and we used the \"swiss cheese\" method to lighten up, which made our manipulator break. Won our first award, Xerox Creativity, for utilizing a rat trap as a chain tensioner.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
+    },
     {
       "year": "2007",
       "RobotImagePath": "/images/history/2007/2007Robot.JPG",
@@ -223,7 +286,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "GhettoBot",
-      "yearSummary": "After several years away from FIRST, we returned as Team GhettoBot, and built a robot with the help of mentors from a low rider shop. Our first \"elevator\" was made from an extension ladder."
+      "yearSummary": "After several years away from FIRST, we returned as Team GhettoBot, and built a robot with the help of mentors from a low rider shop. Our first \"elevator\" was made from an extension ladder.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     },
     {
       "year": "2004",
@@ -236,7 +302,10 @@
       "RecapVideo": "",
       "GithubCode": "",
       "RobotName": "",
-      "yearSummary": "In our inaugural year as a team, we hosted the kickoff event at East High School, and then went on to build a very simple robot using kids' bicycle wheels, DeWalt drill motors, and an abandoned doghouse. The robot drove once, fell over and broke. We only played in one round."
+      "yearSummary": "In our inaugural year as a team, we hosted the kickoff event at East High School, and then went on to build a very simple robot using kids' bicycle wheels, DeWalt drill motors, and an abandoned doghouse. The robot drove once, fell over and broke. We only played in one round.",
+      "ThemeName": "",
+      "ThemeImagePath": "",
+      "themeSummary": ""
     }
   ],
   "template (For copy-paste to tabs only)": {
@@ -250,7 +319,10 @@
     "RecapVideo": "",
     "GithubCode": "",
     "RobotName": "",
-    "yearSummary": ""
+    "yearSummary": "",
+    "ThemeName": "",
+    "ThemeImagePath": "",
+    "themeSummary": ""
   }
 }
 

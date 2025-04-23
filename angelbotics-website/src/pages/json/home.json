@@ -20,21 +20,21 @@
       "name": "What we are doing",
       "title": "What are we doing?",
       "imagePath": "",
-      "topText": "This years game Reefscape has been revealed, so we are hard at work designing, building and programming our robot in order to play.",
+      "topText": "The official FRC season is now over, so we are now in the offseason, preparing for next year.",
       "bottomText": "",
       "gridSpaces": "6",
-      "learnMoreText": "Watch this years game video",
-      "learnMoreLink": "https://www.youtube.com/watch?v=YWbxcjlY9JY"
+      "learnMoreText": "Watch our robot reveal",
+      "learnMoreLink": "https://www.youtube.com/watch?v=mE5PJwI9qrc"
     },
     {
       "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "We are going to be attending to 2025 Colorado regional with 50 other teams from March 19th-22nd.",
+      "topText": "We will be competing in the Kendrick Castillo Memorial Tournament in October.",
       "bottomText": "",
       "gridSpaces": "6",
       "learnMoreText": "More Information",
-      "learnMoreLink": "https://frc-events.firstinspires.org/2025/CODE"
+      "learnMoreLink": "https://coloradofirst.org/frc/kcmt/"
     },
     {
       "name": "Overall",
