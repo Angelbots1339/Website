@@ -137,7 +137,7 @@ export default function RobotHistoryTab(props) {
                             viewport={{margin: "100px", once: !bigScreen}}
                         >
                             <div style={{marginTop: '0%', justifyContent: "center"}}>
-                                <Typography variant='h4' sx={{m: 2, marginLeft: bigScreen ? "30%" : "10%"}}
+                                <Typography variant='h4' sx={{m: 2, marginLeft: bigScreen ? "35%" : "10%"}}
                                             width="auto"
                                             height='auto'>
                                     Game Reveal
@@ -170,7 +170,7 @@ export default function RobotHistoryTab(props) {
                             viewport={{margin: "100px", once: !bigScreen}}
                         >
                             <div style={{marginLeft: 10}}>
-                                <Typography variant='h4' sx={{m: 2, marginLeft: bigScreen ? "30%" : "10%"}}
+                                <Typography variant='h4' sx={{m: 2, marginLeft: bigScreen ? "37.5%" : "10%"}}
                                             width="auto"
                                             height='auto'>
                                     Recap Video
@@ -225,21 +225,19 @@ export default function RobotHistoryTab(props) {
                             whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
                             viewport={{margin: "100px", once: !bigScreen}}
                         >
-                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "35%" : "10%"}}>
-
+                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "25%" : "10%"}}>
                                 {data.tabs[index].RobotName}
-
                             </Typography>
                         </motion.div>
                     </Grid>
                 }
 
                 {data.tabs[index].CadModelPath &&
-                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
                         <div>
                             <Canvas frameloop="demand"
                                     style={{
-                                        width: "80%",
+                                        width: "90%",
                                         marginLeft: "10%",
                                         height: 400,
                                         backgroundColor: (79, 79, 79)
@@ -252,6 +250,45 @@ export default function RobotHistoryTab(props) {
                                 </Suspense>
                             </Canvas>
                         </div>
+                    </Grid>
+                }
+                {data.tabs[index].ThemeImagePath &&
+                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <img src={data.tabs[index].ThemeImagePath} height="auto" width="100%"
+                                 alt={data.tabs[index].year + " robot picture"}
+                                 style={{marginTop: 25, borderRadius: 20, boxShadow: 10}}/>
+                        </motion.div>
+                    </Grid>
+                }
+
+                {data.tabs[index].themeSummary &&
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <motion.div
+                            style={{height: "100%", width: "100%"}}
+                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
+                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
+                            viewport={{margin: "100px", once: !bigScreen}}
+                        >
+                            <Card
+                                sx={{
+                                    backgroundColor: '#ffc2c2',
+                                    mt: 3,
+                                    height: '100%',
+                                    width: "100%",
+                                    boxShadow: 10,
+                                    borderRadius: 5
+                                }}>
+                                <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
+                                    {data.tabs[index].themeSummary}
+                                </Typography>
+                            </Card>
+                        </motion.div>
                     </Grid>
                 }
 
@@ -298,59 +335,6 @@ export default function RobotHistoryTab(props) {
                                     }}
                                 />
                             </div>
-                        </motion.div>
-                    </Grid>
-                }
-
-                {data.tabs[index].ThemeName &&
-                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <motion.div
-                            style={{height: "100%", width: "100%"}}
-                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
-                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
-                            viewport={{margin: "100px", once: !bigScreen}}
-                        >
-                            <Typography variant="h4" sx={{marginLeft: bigScreen ? "30%" : "10%"}}>
-
-                                {"Theme: " + data.tabs[index].ThemeName}
-
-                            </Typography>
-                        </motion.div>
-                    </Grid>
-                }
-
-                {data.tabs[index].ThemeImagePath &&
-                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-                        <motion.div
-                            style={{height: "100%", width: "100%"}}
-                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
-                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
-                            viewport={{margin: "100px", once: !bigScreen}}
-                        >
-                            <img src={data.tabs[index].ThemeImagePath} height="auto" width="100%"
-                                 alt={data.tabs[index].year + " robot picture"}
-                                 style={{marginTop: 73.25, borderRadius: 20, boxShadow: 10}}/>
-                        </motion.div>
-                    </Grid>
-                }
-
-                {data.tabs[index].themeSummary &&
-                    <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
-                        <motion.div
-                            style={{height: "100%", width: "100%"}}
-                            initial={{opacity: 0, translateY: "0%", scale: "20%"}}
-                            whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
-                            viewport={{margin: "100px", once: !bigScreen}}
-                        >
-                            <HistoryCard>
-
-
-                                <Typography variant='h6' sx={{m: 5}} width="auto" height='auto'>
-
-                                    {data.tabs[index].themeSummary}
-
-                                </Typography>
-                            </HistoryCard>
                         </motion.div>
                     </Grid>
                 }
