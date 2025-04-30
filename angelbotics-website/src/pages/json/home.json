@@ -11,7 +11,10 @@
     {"url":"/images/home/2024ColoradoAlliancePhoto.jpg"},
     {"url":"/images/home/2024ColoradoMentors.jpg"},
     {"url":"/images/home/2024ColoradoDriveTeam.jpg"},
-    {"url":"/images/home/2024UtahCheer.jpg"}
+    {"url":"/images/home/2024UtahCheer.jpg"},
+    {"url":"/images/home/2025ImageryAward.jpg"},
+    {"url":"/images/home/2025DriveTeam.jpg"},
+    {"url":"/images/home/2025AlliancePic.jpg"}
 
   ],
 
@@ -47,21 +50,11 @@
       "learnMoreLink": "https://angelbotics.org/resources"
     },
     {
-      "name": "Outrun Picture",
-      "title": "Outrun",
-      "imagePath": "/images/history/2024/2024Utah.jpeg",
+      "name": "Shortstop Picture",
+      "title": "Shortstop",
+      "imagePath": "/images/history/2025/Shortstop.jpg",
       "topText": "",
-      "bottomText": "Outrun was our robot for the Utah and Colorado regionals, we managed to win both with it but unfortunately it didn't make it out of Colorado.",
-      "gridSpaces": "6",
-      "learnMoreText": "Learn More",
-      "learnMoreLink": "/history"
-    },
-    {
-      "name": "Outrunner Picture",
-      "title": "Outrunner",
-      "imagePath": "/images/history/2024/2024Outrunner.jpg",
-      "topText": "",
-      "bottomText": "Outrunner was built for worlds, as we realized after Utah that Outrun would not suffice.",
+      "bottomText": "Shortstop is our robot for the 2025 season. With it we placed 2nd at the Colorado Regional behind the 2022 world champions. It never had any mechanical failures.",
       "gridSpaces": "6",
       "learnMoreText": "Learn More",
       "learnMoreLink": "/history"
@@ -75,16 +68,6 @@
       "gridSpaces": "6",
       "learnMoreText": "See Our Mentors",
       "learnMoreLink": "/supporters"
-    },
-    {
-      "name": "Anglebotics mention",
-      "title": "Anglebotics",
-      "imagePath": "",
-      "topText": "",
-      "bottomText": "Anglebotics (9586) was a FRC team we made for our rookies last year, they managed to make it to worlds! This year they are leaving us and becoming a community team.",
-      "gridSpaces": "6",
-      "learnMoreText": "",
-      "learnMoreLink": ""
     },
     {
       "name": "Team Pic",
@@ -149,7 +132,7 @@
     {
       "name": "Imagery",
       "title": "Imagery",
-      "imagePath": "/images/home/subteams/OutrunLogo.png",
+      "imagePath": "/images/history/2025/BaseballLogo.png",
       "topText": "",
       "bottomText": "",
       "gridSpaces": "4",
