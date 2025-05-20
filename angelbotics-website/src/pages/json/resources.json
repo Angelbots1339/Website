@@ -90,6 +90,12 @@
       "url": "https://www.thebluealliance.com/teams"
     },
     {
+      "name": "Gitbook",
+      "description": "Gitbook is a hub angelbotics uses for all our training material, to help our new students learn.",
+      "imagePath": "/images/resources/Gitbook.png",
+      "url": "https://angelbotics.org/gitbook"
+    },
+    {
       "name": "Chief Delphi Forums",
       "description": "Chief Delphi functions as the main forum for all things FIRST related. News from FIRST themselves and many other major contributors is usually posted on Chief Delphi. It's also a place for teams to find solutions for their problems, post questions if needed, and participate in discussions surrounding all things FIRST.",
       "imagePath": "/images/resources/ChiefDelphiLogo.png",
