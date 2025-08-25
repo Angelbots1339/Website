@@ -196,44 +196,53 @@ function App() {
                         {/*    {resourceJSON.contactUs.email}*/}
                         {/*</Typography>*/}
 
-                        <Grid container sx={{justifyContent: "center"}}>
-                            <div>
-                                <Button sx={{ p:5}} component={Link} to={'/'}>
-                                    <img src='/Logo.svg' alt="Angelbotics Logo"
-                                         style={{
-                                             background: "red",
-                                             borderRadius: 5,
-                                             width: bigScreen ? 200 : 100,
-                                             height: bigScreen ? 200 : 100,
+                        <Stack sx={{textAlign: "center"}}>
+                            <Grid container sx={{justifyContent: "center"}}>
+                                <div>
+                                    <Button sx={{ p:5}} component={Link} to={'/'}>
+                                        <img src='/Logo.svg' alt="Angelbotics Logo"
+                                            style={{
+                                                background: "red",
+                                                borderRadius: 5,
+                                                width: bigScreen ? 200 : 100,
+                                                height: bigScreen ? 200 : 100,
+                                                
+                                                // aspectRatio: 1,
+                                                }}/>
+                                    </Button>
+                                </div>
+                                <Stack sx={{textAlign: "center"}}>
+                                    <a href={"https://east.dpsk12.org/"} target="_blank" rel="noopener noreferrer">
+                                        <img src='images/logos/East.png' alt="East Logo"
+                                            style={{
+                                                borderRadius: 5,
+                                                width: "100%",
+                                                maxWidth: 150,
+                                                aspectRatio: 1,
+                                                
+                                                }}/>
+                                    </a>
 
-                                             // aspectRatio: 1,
-                                         }}/>
-                                </Button>
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        East High School
+                                    </Typography>
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        1600 City Park Esplanade
+                                    </Typography>
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        Denver, CO 80206
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                            <div style={{
+                                marginTop: 20
+                            }}>
+                                <Typography> 
+                                    {/* TODO: make this pretty and look good on mobile */}
+                                    Angelbotics, PO Box 300023, Denver, CO 80203
+                                </Typography>
                             </div>
-                            <Stack sx={{textAlign: "center"}}>
-                                <a href={"https://east.dpsk12.org/"} target="_blank" rel="noopener noreferrer">
-                                    <img src='images/logos/East.png' alt="East Logo"
-                                         style={{
-                                             borderRadius: 5,
-                                             width: "100%",
-                                             maxWidth: 150,
-                                             aspectRatio: 1,
-
-                                         }}/>
-                                </a>
-
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    East High School
-                                </Typography>
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    1600 City Park Esplanade
-                                </Typography>
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    Denver, CO 80206
-                                </Typography>
-                            </Stack>
-                        </Grid>
-
+                        </Stack>
                     </div>
 
 
