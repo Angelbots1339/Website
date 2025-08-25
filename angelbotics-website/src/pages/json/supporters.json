@@ -2,47 +2,42 @@
   "mentors": [
 
     {
-      "name": "Joel Noble",
+      "name": "Joel",
       "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
       "imagePath": "/images/supporters/noble.JPG"
     },
     {
-      "name": "Garrett Calkins",
+      "name": "Garrett",
       "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
       "imagePath": "/images/supporters/Garrett_Calkins.jpg"
     },
     {
-      "name": "Nathan Baldwin",
+      "name": "Nathan",
       "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
       "imagePath": "/images/supporters/Nathan_Baldwin.jpg"
     },
     {
-      "name":"Michelle Scott",
+      "name":"Michelle",
       "description":"Michelle watched her kids grow through Angelbotics so is mentoring now. She believes that it is a 4th place activity, and that hungry bellies can’t robot.",
       "imagePath":"images/supporters/Michelle_Scott.jpg"
     },
     {
-      "name": "Chad Bartel",
+      "name": "Chad",
       "description": "Chad works at ULA and has been with the team since 2011. He helps diagnose issues, troubleshoot, and advise both Programming and Electrical.",
       "imagePath": "/images/supporters/mentor_chad.jpg"
     },
     {
-      "name": "Craig Dorroh",
-      "description": "Craig has driven our trailer to all 4 competitions in 2023 and 2024, and has helped the team during each one of them.",
-      "imagePath": "/images/supporters/Craig_Dorroh.jpg"
-    },
-    {
-      "name": "Critter Thompson",
+      "name": "Critter",
       "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
       "imagePath": "/images/supporters/Critter_Thompson.jpg"
     },
     {
-      "name": "Jeremy Nielsen",
+      "name": "Jeremy",
       "description": "Jeremy is Angelbotics CAD mentor and assists our students in designing and modeling our robots.",
       "imagePath": "/images/supporters/Jeremy_Nielsen.jpg"
     },
     {
-      "name": "Trevor Daly",
+      "name": "Trevor",
       "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
       "imagePath": "/images/supporters/Trevor Daly.jfif"
     }
