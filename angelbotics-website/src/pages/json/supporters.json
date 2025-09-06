@@ -58,6 +58,12 @@
 
   "Sponsors": [
     {
+      "name": "MesaLabs", 
+      "level": 2,
+      "logo": "/images/logos/MesaLabsLogo.png",
+      "website": "https://mesalabs.com/"
+    },
+    {
       "name": "Comcast",
       "level": 2,
       "logo": "/images/logos/ComcastTall.png",
