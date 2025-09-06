@@ -227,9 +227,6 @@ function App() {
                                         East High School
                                     </Typography>
                                     <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                        1600 City Park Esplanade
-                                    </Typography>
-                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
                                         Denver, CO 80206
                                     </Typography>
                                 </Stack>
@@ -238,7 +235,6 @@ function App() {
                                 marginTop: 20
                             }}>
                                 <Typography> 
-                                    {/* TODO: make this pretty and look good on mobile */}
                                     Angelbotics, PO Box 300023, Denver, CO 80203
                                 </Typography>
                             </div>
