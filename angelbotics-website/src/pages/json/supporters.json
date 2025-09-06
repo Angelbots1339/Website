@@ -63,15 +63,6 @@
 
   "Sponsors": [
     {
-      "name": "Chevron",
-      "level": 1,
-      "logo": "/images/logos/Chevron_Logo.svg",
-      "website": "https://www.chevron.com/"
-    },
-
-
-
-    {
       "name": "Comcast",
       "level": 2,
       "logo": "/images/logos/ComcastTall.png",

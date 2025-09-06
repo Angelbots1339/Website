@@ -226,9 +226,6 @@ function App() {
                                     East High School
                                 </Typography>
                                 <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    1600 City Park Esplanade
-                                </Typography>
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
                                     Denver, CO 80206
                                 </Typography>
                             </Stack>
