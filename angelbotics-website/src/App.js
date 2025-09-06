@@ -223,15 +223,22 @@ function App() {
                                                 }}/>
                                     </a>
 
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    East High School
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        East High School
+                                    </Typography>
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        Denver, CO 80206
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                            <div style={{
+                                marginTop: 20
+                            }}>
+                                <Typography> 
+                                    Angelbotics, PO Box 300023, Denver, CO 80203
                                 </Typography>
-                                <Typography variant={"body"} sx={{fontSize: "1rem"}}>
-                                    Denver, CO 80206
-                                </Typography>
-                            </Stack>
-                        </Grid>
-
+                            </div>
+                        </Stack>
                     </div>
 
 
