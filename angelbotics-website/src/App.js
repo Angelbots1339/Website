@@ -199,7 +199,7 @@ function App() {
                         <Stack sx={{textAlign: "center"}}>
                             <Grid container sx={{justifyContent: "center"}}>
                                 <div>
-                                    <Button sx={{ p:5}} component={Link} to={'/'}>
+                                    <Button sx={{ p:1}} component={Link} to={'/'}>
                                         <img src='/Logo.svg' alt="Angelbotics Logo"
                                             style={{
                                                 background: "red",
@@ -225,6 +225,9 @@ function App() {
 
                                     <Typography variant={"body"} sx={{fontSize: "1rem"}}>
                                         East High School
+                                    </Typography>
+                                    <Typography variant={"body"} sx={{fontSize: "1rem"}}>
+                                        1600 City Park Esplanade
                                     </Typography>
                                     <Typography variant={"body"} sx={{fontSize: "1rem"}}>
                                         Denver, CO 80206
