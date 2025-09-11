@@ -57,6 +57,13 @@
 
 
   "Sponsors": [
+        {
+      "name": "Chevron",
+      "level": 1,
+      "logo": "/images/logos/Chevron_Logo.svg",
+      "website": "https://www.chevron.com/"
+    },
+
     {
       "name": "MesaLabs", 
       "level": 2,
@@ -109,6 +116,12 @@
       "website": "https://www.dawnfoods.com/"
     },    
     {
+      "name": "Plasticare",
+      "level": 3,
+      "logo": "/images/logos/plasticareTall.png",
+      "website": "https://www.plasticareinc.com/"
+    },
+    {
       "name": "Denver Cherry Creek Rotary Club", 
       "level": 3,
       "logo": "/images/logos/RotaryLogo.svg",
@@ -122,12 +135,6 @@
       "level": 4,
       "logo": "/images/logos/fabworksLogo.png",
       "website": "https://www.fabworks.com/"
-    },
-    {
-      "name": "Plasticare",
-      "level": 4,
-      "logo": "/images/logos/plasticareTall.png",
-      "website": "https://www.plasticareinc.com/"
     },
     {
       "name": "United Launch Alliance",
