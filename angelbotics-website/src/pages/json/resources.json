@@ -41,23 +41,29 @@
   },
 
   "joinInfo": {
-    "text": "Are you interested in joining Angelbotics? You need to:",
+
+    "text": "Are you interested in joining Angelbotics? Follow the steps below. For more questions please email mentors@angelbotics.org",
     "joinLink": "join",
-    "TODOListItem1": "Fill out the application form",
-    "TODOListItem2": "Join our discord",
-    "TODOListItem3": "Register with FIRST",
-    "postListText": "For further questions, email us at ",
-    "email": "mentors@angelbotics.org",
-    "resources":[
+    "steps":[
       {
-        "name": "Discord",
-        "imagePath": "/images/resources/DiscordLogo.png",
-        "link": "https://angelbotics.org/Discord"
+        "name": "Form",
+        "text": "Fill out the application form and join our discord linked at the end",
+        "link": "https://angelbotics.org/join"
       },
       {
         "name": "Registration",
-        "imagePath": "/images/resources/FIRSTShapes.png",
-        "link": "https://angelbotics.org/First"
+        "text": "Read and sign our handbook",
+        "link": "https://angelbotics.org/first"
+      },
+      {
+        "name": "Handbook",
+        "text": "Register with FIRST",
+        "link": "https://angelbotics.org/handbook"
+      },
+      {
+        "name": "Meeting",
+        "text": "Come to a meeting in butler 3!",
+        "link": "https://angelbotics.org/calendar"
       }
     ]
   },
@@ -65,12 +71,6 @@
   "googleCalendarPublicLink": "https://calendar.google.com/calendar/embed?src=c_9157fac1ae373d2662806d04a6d76c998543bfd521b0b79bcdf92b09766c44ba%40group.calendar.google.com&ctz=America%2FDenver",
 
   "resourceCards": [
-    {
-      "name": "Join Us!",
-      "description": "Are you interested in joining Angelbotics? Fill out the form below for more information! Email mentors@angelbotics.org with any questions.",
-      "imagePath": "RedLogo.svg",
-      "url": "https://angelbotics.org/join"
-    },
     {
       "name": "Github",
       "description": "We make all of our code publicly visible on GitHub. Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
