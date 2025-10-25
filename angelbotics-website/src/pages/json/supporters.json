@@ -2,11 +2,6 @@
   "mentors": [
 
     {
-      "name": "Joel",
-      "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
-      "imagePath": "/images/supporters/noble.JPG"
-    },
-    {
       "name": "Nathan",
       "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
       "imagePath": "/images/supporters/Nathan_Baldwin.jpg"
@@ -25,11 +20,6 @@
       "name": "Critter",
       "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
       "imagePath": "/images/supporters/Critter_Thompson.jpg"
-    },
-    {
-      "name": "Jeremy",
-      "description": "Jeremy is Angelbotics CAD mentor and assists our students in designing and modeling our robots.",
-      "imagePath": "/images/supporters/Jeremy_Nielsen.jpg"
     },
     {
       "name":"Michelle",
