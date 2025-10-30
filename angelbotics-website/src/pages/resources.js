@@ -81,7 +81,11 @@ export default function Resources() {
                                             </div>
 
                                             <Typography variant='h6'>
-                                                {resourcesJSON.supportUs.text}
+                                                {resourcesJSON.supportUs.text1}
+                                                <Link href={"https://" + resourcesJSON.supportUs.link} rel="noreferrer" target="_blank" variant="h6">
+                                                    {resourcesJSON.supportUs.link}
+                                                </Link>
+                                                {resourcesJSON.supportUs.text2}
                                                 <Link href={"mailto:" + resourcesJSON.supportUs.email} rel="noreferrer" target="_blank" variant="h6">
                                                     {resourcesJSON.supportUs.email}
                                                 </Link>
