@@ -14,7 +14,9 @@
     {"url":"/images/home/2024UtahCheer.jpg"},
     {"url":"/images/home/2025ImageryAward.jpg"},
     {"url":"/images/home/2025DriveTeam.jpg"},
-    {"url":"/images/home/2025AlliancePic.jpg"}
+    {"url":"/images/home/2025AlliancePic.jpg"},
+    {"url":"/images/home/2025KCMTRobot.jpg"},
+    {"url":"/images/home/2025KCMTTeamCheer.jpg"}
 
   ],
 
@@ -33,11 +35,11 @@
       "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "We will be competing in the Kendrick Castillo Memorial Tournament in October.",
+      "topText": "Next stop is the 2026 FRC Kickoff on January 10th where we will be finding out what this year's game is.",
       "bottomText": "",
       "gridSpaces": "6",
       "learnMoreText": "More Information",
-      "learnMoreLink": "https://coloradofirst.org/frc/kcmt/"
+      "learnMoreLink": "https://www.firstinspires.org/programs/frc/game-and-season"
     },
     {
       "name": "Overall",
