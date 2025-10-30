@@ -3,7 +3,9 @@
   "supportUs": {
 
     "moreResourcesLink": "https://angelbotics.org/supportus",
-    "text": "You can support the Angelbotics team through our 501(c)(3) Friends of Angelbotics!  Please click the arrow for current opportunities, donate through the links below, or share the Angelbotics story on social media. Contact us any time at ",
+    "text1": "You can support the Angelbotics team through our 501(c)(3) Friends of Angelbotics! Please go to ",
+    "link":"angelbotics.org/supportus",
+    "text2": " for current ways to support, donate through the links below, or share the Angelbotics story on social media. Contact us any time at ",
     "email": "friendsofangelbotics@gmail.com",
     "socialMedia":[
       {
