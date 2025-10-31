@@ -139,12 +139,6 @@
       "website": "https://www.fabworks.com/"
     },
     {
-      "name": "United Launch Alliance",
-      "level": 4,
-      "logo": "/images/logos/ULA_Logo.png",
-      "website": "https://www.ulalaunch.com/"
-    },
-    {
       "name": "Blue Flame Powder Coating",
       "level": 4,
       "logo": "/images/logos/BlueFlameBlack.png",
@@ -161,12 +155,19 @@
       "level": 4,
       "logo": "/images/logos/Moné.png",
       "website": ""
-    }
+    },
     
 
+    
+    {
+      "name": "United Launch Alliance",
+      "level": 5,
+      "logo": "/images/logos/ULA_Logo.png",
+      "website": "https://www.ulalaunch.com/"
+    }
 
   ],
-
+  
   "Sponsor Template": {
     "name": "",
     "level": 1,
