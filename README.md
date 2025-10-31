@@ -103,10 +103,17 @@ in order to increase the height.
 - `name:` The name of the sponsor
 - `level:` There are different tiers of sponsors for our team depending on donations:
   - **Archangel**: Level 1, $10,000+
+    - Extra Large logo on angelbotics.org, signage, t-shirts, and the robot!
   - **Angel**: Level 2, $5,000 - $9,999
+    - Large logo on angelbotics.org, signage, t-shirts, and the robot!
   - **Seraphim**: Level 3, $2,000 - $4,999
-  - **Cherub**: Level 4, $500 - $1,999
-  - **Guardian**: Level 5, $250 - $499
+    - Medium logo on angelbotics.org, signage, t-shirts, and the robot!
+  - **Cherub**: Level 4, $1,000 - $1,999
+    - Small logo or donor name listed on angelbotics.org and our t-shirts
+  - **Throne**: Level 5, $500 - $999
+    - Small logo or donor name listed on angelbotics.org/supporters 
+  - **Guardian**: Level 6, $250 - $499
+    - Acknowledgment from the team - our sincere thanks!
 - `logo:` This is the path to a logo for the sponsor. The logos should be horizontal, and there should be a substantial
   amount of whitespace around the logo itself for it to display nicely. Make sure to test.
 - `website:` This is the url for the sponsor's website.
