@@ -46,14 +46,14 @@ export default function Resources() {
                               spacing={2}
                               sx={{width: "95%", height: "100%", ml: "2.5%", mt: 5}}
                         >
-                            <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
+                            <Grid item xs={12} sm={12} md={12} lg={8} xl={6}>
                                 <motion.div
                                     style={{height: "100%"}}
                                     initial={{opacity: 0, translateY: "0%", scale: "20%"}}
                                     whileInView={{opacity: 1, translateY: "0%", scale: "100%"}}
                                     viewport={{margin: "100px", once: !bigScreen}}
                                 >
-                                    <Card sx={{height: 650, width: "100%", boxShadow: 2, borderRadius: 5}}>
+                                    <Card sx={{height: 650, width: "100%", boxShadow: 2, borderRadius: 5}}> 
 
                                         <div style={{
                                             alignItems: "center",
@@ -68,7 +68,7 @@ export default function Resources() {
                                                 display: "flex",
                                                 width: "100%",
                                                 height: "auto",
-                                                justifyContent: "space-evenly",
+                                                justifyContent: "center",
                                                 alignItems: "flex-start"
                                             }}>
                                                 <Typography variant={'h4'}>
@@ -96,10 +96,10 @@ export default function Resources() {
                                                   alignItems="center"
                                                   spacing={1}
                                                   sx={{width: "100%", height: "100%"}}
-                                                  key={"Support Us"} //This used to be contact us
+                                                  key={"Support Us"}
                                             >
 
-                                                {resourcesJSON.supportUs.socialMedia.map((app) => <Grid item xs={4}
+                                                {resourcesJSON.supportUs.socialMedia.map((app) => <Grid item xs={3}
                                                                                                         key={app.name}>
                                                     <a rel="noreferrer noopener" target="_blank"
                                                        href={app.link}>
