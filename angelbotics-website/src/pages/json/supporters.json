@@ -1,6 +1,11 @@
 {
   "mentors": [
-
+    
+    {
+      "name": "Santo",
+      "description": "Mr. Santo is a teacher at East High School.  He is a former Aerospace engineer but new to the robotics world.  This is his second year as a FIRST robotics mentor.",
+      "imagePath": "/images/supporters/Santo.jpg"
+    },
     {
       "name": "Nathan",
       "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
