@@ -27,6 +27,11 @@
       "imagePath": "/images/supporters/Critter_Thompson.jpg"
     },
     {
+      "name":"David",
+      "description":"David hss worked on software for satellites for many years and is now trying to keep up with the Angelbotics programming team. This is his 5th year helping wherever he can.",
+      "imagePath":"/images/supporters/David.jpg"
+    },
+    {
       "name":"Michelle",
       "description":"Michelle watched her kids grow through Angelbotics so is mentoring now. She believes that it is a 4th place activity, and that hungry bellies can’t robot.",
       "imagePath":"images/supporters/Michelle_Scott.jpg"
