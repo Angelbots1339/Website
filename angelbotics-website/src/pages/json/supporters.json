@@ -32,6 +32,11 @@
       "imagePath":"/images/supporters/David.jpg"
     },
     {
+      "name":"Jeremy",
+      "description":"Jeremy is a Electrical mentor. He helps wherever he is needed. He has worked for Comcast for 31 years in different roles. Current he is a deployment Engineer and builds deployments for 30 million subscribers",
+      "imagePath":"/images/supporters/JeremyS.jpg"
+    },
+    {
       "name":"Michelle",
       "description":"Michelle watched her kids grow through Angelbotics so is mentoring now. She believes that it is a 4th place activity, and that hungry bellies can’t robot.",
       "imagePath":"images/supporters/Michelle.jpg"
