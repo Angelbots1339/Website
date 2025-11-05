@@ -149,16 +149,16 @@
       "website": "https://www.fabworks.com/"
     },
     {
-      "name": "Blue Flame Powder Coating",
-      "level": 4,
-      "logo": "/images/logos/BlueFlameBlack.png",
-      "website": "https://www.blueflamepowder.com/#"
-    },
-    {
       "name": "East High School",
       "level": 4,
       "logo": "/images/logos/East.png",
       "website": "https://east.dpsk12.org/"
+    },
+    {
+      "name": "Blue Flame Powder Coating",
+      "level": 4,
+      "logo": "/images/logos/BlueFlameBlack.png",
+      "website": "https://www.blueflamepowder.com/#"
     },
     {
       "name": "The Moné Family",
