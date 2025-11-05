@@ -23,7 +23,7 @@ export default function Resources() {
             {/*----------Big Screens----------*/}
 
             <div style={{
-                display: "flex", alignItems: "center", width: "95%", height: "auto", marginLeft: '2.5%', marginTop: 100
+                display: "flex", alignItems: "center", width: "95%", height: "auto", marginLeft: '2.5%', marginTop: 50
             }}>
 
 
