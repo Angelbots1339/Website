@@ -42,6 +42,11 @@
       "imagePath":"images/supporters/Michelle.jpg"
     },
     {
+      "name":"Thomas",
+      "description":"Thomas is a bioinformatics analyst with some programming exerience, trying to help the team wherever he can.",
+      "imagePath":"images/supporters/Thomas.png"
+    },
+    {
       "name": "Trevor",
       "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
       "imagePath": "/images/supporters/Trevor.jfif"
