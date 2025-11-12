@@ -1,15 +1,20 @@
 {
   "mentors": [
-
+    
+    {
+      "name": "Santo",
+      "description": "Mr. Santo is a teacher at East High School.  He is a former Aerospace engineer but new to the robotics world.  This is his second year as a FIRST robotics mentor.",
+      "imagePath": "/images/supporters/Santo.jpg"
+    },
     {
       "name": "Nathan",
       "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
-      "imagePath": "/images/supporters/Nathan_Baldwin.jpg"
+      "imagePath": "/images/supporters/Nathan.jpg"
     },
     {
       "name": "Garrett",
       "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
-      "imagePath": "/images/supporters/Garrett_Calkins.jpg"
+      "imagePath": "/images/supporters/Garrett.jpg"
     },
     {
       "name": "Chad",
@@ -19,17 +24,32 @@
     {
       "name": "Critter",
       "description": "Critter is a programming mentor, who has spent many hours helping out wherever needed.",
-      "imagePath": "/images/supporters/Critter_Thompson.jpg"
+      "imagePath": "/images/supporters/Critter.jpg"
+    },
+    {
+      "name":"David",
+      "description":"David hss worked on software for satellites for many years and is now trying to keep up with the Angelbotics programming team. This is his 5th year helping wherever he can.",
+      "imagePath":"/images/supporters/David.jpg"
+    },
+    {
+      "name":"Jeremy",
+      "description":"Jeremy is a Electrical mentor. He helps wherever he is needed. He has worked for Comcast for 31 years in different roles. Current he is a deployment Engineer and builds deployments for 30 million subscribers",
+      "imagePath":"/images/supporters/JeremyS.jpg"
     },
     {
       "name":"Michelle",
       "description":"Michelle watched her kids grow through Angelbotics so is mentoring now. She believes that it is a 4th place activity, and that hungry bellies can’t robot.",
-      "imagePath":"images/supporters/Michelle_Scott.jpg"
+      "imagePath":"images/supporters/Michelle.jpg"
+    },
+    {
+      "name":"Thomas",
+      "description":"Thomas is a bioinformatics analyst with some programming exerience, trying to help the team wherever he can.",
+      "imagePath":"images/supporters/Thomas.png"
     },
     {
       "name": "Trevor",
       "description": "Trevor currently works in Data Analytics and has been working to help incorporate that into the team. He has been helping with building things for the team including the field elements and team signs.",
-      "imagePath": "/images/supporters/Trevor Daly.jfif"
+      "imagePath": "/images/supporters/Trevor.jfif"
     }
   ],
 
@@ -139,16 +159,16 @@
       "website": "https://www.fabworks.com/"
     },
     {
-      "name": "Blue Flame Powder Coating",
-      "level": 4,
-      "logo": "/images/logos/BlueFlameBlack.png",
-      "website": "https://www.blueflamepowder.com/#"
-    },
-    {
       "name": "East High School",
       "level": 4,
       "logo": "/images/logos/East.png",
       "website": "https://east.dpsk12.org/"
+    },
+    {
+      "name": "Blue Flame Powder Coating",
+      "level": 4,
+      "logo": "/images/logos/BlueFlameBlack.png",
+      "website": "https://www.blueflamepowder.com/#"
     },
     {
       "name": "The Moné Family",

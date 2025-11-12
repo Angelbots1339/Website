@@ -549,7 +549,7 @@ export default function Supporters() {
                                                 <Typography variant="h4" sx={{mb: 2, mt: 2}}>
                                                     {mentor.name}
                                                 </Typography>
-                                                <Typography variant="h6" sx={{mb: 10}}>
+                                                <Typography variant="h6" sx={{mb: 5}}>
                                                     {mentor.description}
                                                 </Typography>
                                             </div>
