@@ -12,9 +12,10 @@ To optimize the model for the website using Blender:
 6. This is somewhat optional, but if you have the experience or motivation, apply a basic texture to the robot. The
    website rendering looks different than inside Blender, so make sure to test.
    - Because you have all the geometry in one object, You have to use some tricks
+   - First, make sure you are in material preview mode so you can see the colors
    - After making several different materials, using the principled BSDF shader and nothing else (use Alpha setting for transparency, the other settings don’t work)
    - You can press tab to go into edit mode with the robot selected
-   - Click on a vertex or edge or face of a part, it doesn’t really matter which. Then press ctrl-l to select everything linked to it
+   - Click on a vertex or edge or face of a part, it doesn’t really matter which. Then press ctrl-l to select everything linked to it. If too much is selected, click on the select linked all box in the bottom left and choose normal. If that still doesn't work, check to make sure those are seperate parts in onshape, if they aren't you will either have to seperate them in CAD or do it manually in blender.
    - Then, under the material tab on the right side, add a new slot or two, select the slot, then click assign (with all the vertexes for the part selected in the viewport still)
    - Then it is assigned to that slot. You can have multiple slots, and go manually assign each piece to one of the slots. Like, have one slot for polycarb, one for metal, etc.
    - When you export the the object, it will create a .mtl file
