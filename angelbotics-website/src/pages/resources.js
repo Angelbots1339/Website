@@ -89,6 +89,7 @@ export default function Resources() {
                                                 <Link href={"mailto:" + resourcesJSON.supportUs.email} rel="noreferrer" target="_blank" variant="h6">
                                                     {resourcesJSON.supportUs.email}
                                                 </Link>
+                                                {"."}
                                             </Typography>
 
                                             <Grid container direction="row"

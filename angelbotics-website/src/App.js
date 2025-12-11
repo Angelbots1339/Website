@@ -219,8 +219,7 @@ function App() {
                                                 width: "100%",
                                                 maxWidth: 150,
                                                 aspectRatio: 1,
-                                                
-                                                }}/>
+                                        }}/>
                                     </a>
 
                                     <Typography variant={"body"} sx={{fontSize: "1rem"}}>
@@ -235,11 +234,20 @@ function App() {
                                 </Stack>
                             </Grid>
                             <div style={{
-                                marginTop: 20
+                                marginTop: 15
                             }}>
                                 <Typography> 
-                                    Angelbotics, PO Box 300023, Denver, CO 80203
+                                    This website is built by students, see our code on
                                 </Typography>
+                                    <a href={"https://github.com/Angelbots1339/Website"} target="_blank" rel="noopener noreferrer">
+                                        <img src='images/logos/GithubLogo.png' alt="github logo"
+                                            style={{
+                                                borderRadius: 5,
+                                                width: "100%",
+                                                maxWidth: 150,
+                                                aspectRatio: 1,
+                                        }}/>
+                                    </a>
                             </div>
                         </Stack>
                     </div>
