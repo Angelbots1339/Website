@@ -240,7 +240,7 @@ function App() {
                                     This website is built by students, see our code on
                                 </Typography>
                                     <a href={"https://github.com/Angelbots1339/Website"} target="_blank" rel="noopener noreferrer">
-                                        <img src='images/logos/GithubLogo.png' alt="github logo"
+                                        <img src='images/logos/GitHubLogo.png' alt="github logo"
                                             style={{
                                                 borderRadius: 5,
                                                 width: "100%",
