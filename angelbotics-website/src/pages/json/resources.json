@@ -80,7 +80,7 @@
   "resourceCards": [
     {
       "name": "Github",
-      "description": "We make all of our code publicly visible on GitHub. Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
+      "description": "We make all of our code publicly visible on GitHub, including the code for this website! Our team believes in sharing as much as possible to help other FRC teams succeed. You can find the latest version of any code we have on our GitHub Organization page.",
       "imagePath": "/images/resources/GitHubLogo.png",
       "url": "https://angelbotics.org/github"
     },

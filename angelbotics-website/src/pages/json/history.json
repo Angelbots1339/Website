@@ -3,7 +3,8 @@
     {
       "year": "2025",
       "RobotImagePath": "/images/history/2025/Shortstop.jpg",
-      "CadModelPath": "",
+      "CadModelPath": "/images/history/2025/2025CAD.obj",
+      "CadMaterialPath": "/images/history/2025/2025CAD.mtl",
       "GameDescription": "In 2025's game Reefcape, robots collect coral to score onto their team's reef with varying amounts of points scored respective to what level of the reef the coral is scored. They also collect algae to score into either their teams proccesor or barge. In endgame, the robots have the opportunity to hang on the cages attatched to the barge.",
       "GameName": "2025 Reefscape",
       "RevealVideo": "mE5PJwI9qrc",
@@ -11,6 +12,8 @@
       "RecapVideo": "",
       "GithubCode": "https://github.com/Angelbots1339/2025Competition",
       "RobotName": "Shortstop",
+      "ThemeName": "Baseball",
+      "ThemeImagePath": "images/history/2025/BaseballLogo.png",
       "yearSummary": "We had a short year, only going to the Colorado regional. We ranked 11th in quals before being picked by the second ranked team. Our alliance made it all the way through finals before losing to the first ranked team. Along the way, we also picked up the Imagery award, for the 10th time, for our incredible Baseball theme!"
     },
     {
