@@ -2,21 +2,17 @@
 
   "imageCarousel": [
  
-    {"url":"/images/home/2024UtahDriveFlag.jpg"},
-    {"url":"/images/home/2024UtahNoteFire.jpg"},
-    {"url":"/images/home/2024UtahRobotSetup.jpg"},
-    {"url":"/images/home/2024UtahTeamPic.JPG"},
-    {"url":"/images/home/2024UtahZoom.jpg"},
-    {"url":"/images/home/2024OutrunnerZoom.JPG"},
-    {"url":"/images/home/2024ColoradoAlliancePhoto.jpg"},
-    {"url":"/images/home/2024ColoradoMentors.jpg"},
-    {"url":"/images/home/2024ColoradoDriveTeam.jpg"},
-    {"url":"/images/home/2024UtahCheer.jpg"},
     {"url":"/images/home/2025ImageryAward.jpg"},
     {"url":"/images/home/2025DriveTeam.jpg"},
     {"url":"/images/home/2025AlliancePic.jpg"},
     {"url":"/images/home/2025KCMTRobot.jpg"},
-    {"url":"/images/home/2025KCMTTeamCheer.jpg"}
+    {"url":"/images/home/2025KCMTTeamCheer.jpg"},
+    {"url":"/images/home/2025KCMTDriveTeamPic.jpeg"},
+    {"url":"/images/home/2025Outreach.jpg"},
+    {"url":"/images/home/2024UtahDriveFlag.jpg"},
+    {"url":"/images/home/2024UtahNoteFire.jpg"},
+    {"url":"/images/home/2024UtahZoom.jpg"},
+    {"url":"/images/home/2024ColoradoAlliancePhoto.jpg"}
 
   ],
 
