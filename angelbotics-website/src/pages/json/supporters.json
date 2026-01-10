@@ -205,6 +205,12 @@
 
   "Donors": [
     {
+      "name": "The Boberg Family"
+    },
+    {
+      "name": "The Daly Family"
+    },
+    {
       "name": "The Moné Family"
     },
     {
@@ -212,9 +218,6 @@
     },
     {
       "name": "The Shepard Family"
-    },
-    {
-      "name": "The Daly Family"
     }
     
   ],
