@@ -5,7 +5,7 @@
 
   "FRC": {
 
-    "gameVideo": "YWbxcjlY9JY",
+    "gameVideo": "_fybREErgyM",
     "generalDescription": "FRC is the game that we participate in. Similar to the other two competitions, there is a new game concept each year, and they are wildly unique. The game gets released in early January, and we have about 6-8 weeks to build a fully-functioning robot before our first competition. The robots in FRC are generally big, heavy, and fast. There are 6 robots on the field at a time, 3 on each team. Robots are made from many different materials, like aluminum and polycarbonate, and parts are often custom-machined, 3D printed, or bought from a vendor.",
     "logo": "/images/firstRobotics/frcLogo.jpg",
     "website": "https://www.firstinspires.org/robotics/frc"
@@ -13,7 +13,7 @@
   },
   "FTC":{
 
-    "gameVideo": "ewlDPvRK4U4",
+    "gameVideo": "LCqWA6gSCXA",
     "generalDescription": "In FTC, the field is much smaller, and consequently robots are much smaller. There are 2 robots on each alliance, and there is a new game each year. FTC robots are constructed in a similar way to FRC robots, just with different components on a smaller scale. Angelbotics does not participate in FTC but East has engineering classes that do.",
     "logo": "/images/firstRobotics/ftcLogo.jpg",
     "website": "https://www.firstinspires.org/robotics/ftc"
@@ -22,7 +22,7 @@
   },
   "FLL": {
 
-    "gameVideo": "J5u-2q_K3O0",
+    "gameVideo": "exWkcUBS0j8",
     "generalDescription": "FLL robots are designed to complete specific challenges throughout the game field, but unlike FRC and FTC, there is only one robot on the field at a time. Robots are constructed from legos, and are generally smaller than FTC bots.",
     "logo": "/images/firstRobotics/fllLogo.png",
     "website": "https://www.firstinspires.org/robotics/fll"
