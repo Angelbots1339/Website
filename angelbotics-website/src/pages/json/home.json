@@ -21,21 +21,21 @@
       "name": "What we are doing",
       "title": "What are we doing?",
       "imagePath": "",
-      "topText": "The official FRC season is now over, so we are now in the offseason, preparing for next year.",
+      "topText": "The 2026 FRC season just began, so we are hard at work building our robot!",
       "bottomText": "",
       "gridSpaces": "6",
-      "learnMoreText": "Watch our robot reveal",
-      "learnMoreLink": "https://www.youtube.com/watch?v=mE5PJwI9qrc"
+      "learnMoreText": "Watch the game reveal",
+      "learnMoreLink": "https://www.youtube.com/watch?v=_fybREErgyM"
     },
     {
       "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "Next stop is the 2026 FRC Kickoff on January 10th where we will be finding out what this year's game is.",
+      "topText": "Next stop is the pikes peak regional from March 5 to March 8.",
       "bottomText": "",
       "gridSpaces": "6",
       "learnMoreText": "More Information",
-      "learnMoreLink": "https://www.firstinspires.org/programs/frc/game-and-season"
+      "learnMoreLink": "https://frc-events.firstinspires.org/2026/COSP"
     },
     {
       "name": "Overall",
