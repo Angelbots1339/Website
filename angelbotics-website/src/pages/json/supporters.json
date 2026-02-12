@@ -72,13 +72,6 @@
 
 
   "Sponsors": [
-        {
-      "name": "Chevron",
-      "level": 1,
-      "logo": "/images/logos/Chevron_Logo.svg",
-      "website": "https://www.chevron.com/"
-    },
-
     {
       "name": "MesaLabs", 
       "level": 2,
@@ -86,25 +79,38 @@
       "website": "https://mesalabs.com/"
     },
     {
-      "name": "Comcast",
+      "name": "The Moné Family",
       "level": 2,
-      "logo": "/images/logos/ComcastTall.png",
-      "website": "https://corporate.comcast.com/"
+      "logo": "/images/logos/Moné.png",
+      "website": ""
     },
+    
+    
+    
+    
     {
       "name": "Hayes Family Foundation", 
-      "level": 2,
+      "level": 3,
       "logo": "/images/logos/HayesFFLogo.png",
       "website": "https://www.thehayesfamilyfoundation.org/"
     },
-
-
-
     {
       "name": "TopoCut",
       "level": 3,
       "logo": "/images/logos/TopoCutLogo.png",
       "website": "https://topocut.com/"
+    },
+    {
+      "name": "Comcast",
+      "level": 3,
+      "logo": "/images/logos/ComcastTall.png",
+      "website": "https://corporate.comcast.com/"
+    },
+    {
+      "name": "Plasticare",
+      "level": 3,
+      "logo": "/images/logos/plasticareTall.png",
+      "website": "https://www.plasticareinc.com/"
     },
     {
       "name": "Gene Haas Foundation",
@@ -137,17 +143,17 @@
       "website": "https://coloradoinjurylaw.com/"
     },
     {
-      "name": "Plasticare",
-      "level": 3,
-      "logo": "/images/logos/plasticareTall.png",
-      "website": "https://www.plasticareinc.com/"
-    },
-    {
       "name": "Denver Cherry Creek Rotary Club", 
       "level": 3,
       "logo": "/images/logos/RotaryLogo.svg",
       "website": "https://www.cherrycreekrotary.org/"
     },    
+    {
+      "name": "Fabworks",
+      "level": 3,
+      "logo": "/images/logos/fabworksLogo.png",
+      "website": "https://www.fabworks.com/"
+    },
     {
       "name": "Fat Cat Investment Management", 
       "level": 3,
@@ -155,40 +161,27 @@
       "website": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },    
     
-
     
-    {
-      "name": "Fabworks",
-      "level": 4,
-      "logo": "/images/logos/fabworksLogo.png",
-      "website": "https://www.fabworks.com/"
-    },
+
     {
       "name": "East High School",
       "level": 4,
       "logo": "/images/logos/East.png",
       "website": "https://east.dpsk12.org/"
     },
-    {
-      "name": "Blue Flame Powder Coating",
-      "level": 4,
-      "logo": "/images/logos/BlueFlameBlack.png",
-      "website": "https://www.blueflamepowder.com/#"
-    },
-    {
-      "name": "The Moné Family",
-      "level": 4,
-      "logo": "/images/logos/Moné.png",
-      "website": ""
-    },
     
-
     
     {
       "name": "United Launch Alliance",
       "level": 5,
       "logo": "/images/logos/ULA_Logo.png",
       "website": "https://www.ulalaunch.com/"
+    },
+    {
+      "name": "Blue Flame Powder Coating",
+      "level": 5,
+      "logo": "/images/logos/BlueFlameBlack.png",
+      "website": "https://www.blueflamepowder.com/#"
     }
 
   ],
