@@ -155,6 +155,11 @@ function App() {
                                 <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                             </ListItemButton>
                         </ListItem>
+                        <ListItem sx={{backgroundColor: currentPage === "/store" ? drawerHighlightColor : ''}}>
+                            <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
+                                <Typography variant={"h6"} sx={{m: 1}}>Store</Typography>
+                            </ListItemButton>
+                        </ListItem>
                     </List>
                 </Drawer>
 
