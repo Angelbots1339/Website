@@ -37,11 +37,6 @@
         "name": "Youtube",
         "imagePath": "/images/resources/YouTubeLogo.png",
         "link": "https://angelbotics.org/youtube"
-      },
-      {
-        "name": "Store",
-        "imagePath": "/images/resources/StoreImage.png",
-        "link": "https://angelbotics.org/store"
       }
     ]
 
