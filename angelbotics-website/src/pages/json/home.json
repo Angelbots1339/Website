@@ -1,6 +1,9 @@
 {
   "imageCarousel": [
     {
+      "url": "/images/home/2026PikesBump.jpg"
+    },
+    {
       "url": "/images/home/2026PikesAlliance.jpg"
     },
     {
@@ -52,11 +55,11 @@
       "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "Next stop is the pikes peak regional from March 5 to March 8.",
+      "topText": "Next we will be going to the Denver Regional from April 8th to the 11th",
       "bottomText": "",
       "gridSpaces": "6",
       "learnMoreText": "More Information",
-      "learnMoreLink": "https://frc-events.firstinspires.org/2026/COSP"
+      "learnMoreLink": "https://frc-events.firstinspires.org/2026/CODE"
     },
     {
       "name": "Overall",
