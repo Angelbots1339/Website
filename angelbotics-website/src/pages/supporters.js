@@ -261,7 +261,7 @@ export default function Supporters() {
                                     Donors
                                 </Typography>
                             </div>
-                            <div style={{
+                            <Grid container spacing={2}style={{
                                 display: "flex",
                                 alignItems: "left",
                                 justifyContent: "center",
@@ -278,7 +278,7 @@ export default function Supporters() {
                                         which is surrounded by non breaking spaces because html is funny*/}
                                     </Typography>
                                 )}
-                            </div>
+                            </Grid>
 
                         </Paper>
 
@@ -454,22 +454,22 @@ export default function Supporters() {
                                     Donors
                                 </Typography>
                             </div>
-                            {supportersJSON.Donors.map((donor, idx) =>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    width: "95%",
-                                    height: 'auto',
-                                    marginLeft: '2.5%',
-                                    paddingTop: 10,
-                                    paddingBottom: 10
-                                }}>
-                                    <Typography variant="h4">
-                                        {donor.name}
-                                    </Typography>
-                                </div>
-                            )}
+                                {supportersJSON.Donors.map((donor, idx) =>
+                                    <div style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        width: "95%",
+                                        height: 'auto',
+                                        marginLeft: '2.5%',
+                                        paddingTop: 10,
+                                        paddingBottom: 10
+                                    }}>
+                                        <Typography variant="h4">
+                                            {donor.name}
+                                        </Typography>
+                                    </div>
+                                )}
                     </Paper>
 
 
