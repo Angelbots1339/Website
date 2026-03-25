@@ -1,21 +1,33 @@
 {
-
   "imageCarousel": [
- 
-    {"url":"/images/home/2025ImageryAward.jpg"},
-    {"url":"/images/home/2025DriveTeam.jpg"},
-    {"url":"/images/home/2025AlliancePic.jpg"},
-    {"url":"/images/home/2025KCMTRobot.jpg"},
-    {"url":"/images/home/2025KCMTTeamCheer.jpg"},
-    {"url":"/images/home/2025KCMTDriveTeamPic.jpeg"},
-    {"url":"/images/home/2025Outreach.jpg"},
-    {"url":"/images/home/2024UtahDriveFlag.jpg"},
-    {"url":"/images/home/2024UtahNoteFire.jpg"},
-    {"url":"/images/home/2024UtahZoom.jpg"},
-    {"url":"/images/home/2024ColoradoAlliancePhoto.jpg"}
-
+    {
+      "url": "/images/home/2026PikesBump.jpg"
+    },
+    {
+      "url": "/images/home/2026PikesAlliance.jpg"
+    },
+    {
+      "url": "/images/home/2025ImageryAward.jpg"
+    },
+    {
+      "url": "/images/home/2025DriveTeam.jpg"
+    },
+    {
+      "url": "/images/home/2025AlliancePic.jpg"
+    },
+    {
+      "url": "/images/home/2025KCMTRobot.jpg"
+    },
+    {
+      "url": "/images/home/2025KCMTTeamCheer.jpg"
+    },
+    {
+      "url": "/images/home/2025KCMTDriveTeamPic.jpeg"
+    },
+    {
+      "url": "/images/home/2025Outreach.jpg"
+    }
   ],
-
   "entries": [
     {
       "name": "What we are doing",
@@ -31,11 +43,11 @@
       "name": "Whats up next",
       "title": "What's up next?",
       "imagePath": "",
-      "topText": "Next stop is the pikes peak regional from March 5 to March 8.",
+      "topText": "Next we will be going to the Denver Regional from April 8th to the 11th",
       "bottomText": "",
       "gridSpaces": "6",
       "learnMoreText": "More Information",
-      "learnMoreLink": "https://frc-events.firstinspires.org/2026/COSP"
+      "learnMoreLink": "https://frc-events.firstinspires.org/2026/CODE"
     },
     {
       "name": "Overall",
@@ -138,6 +150,4 @@
       "learnMoreLink": ""
     }
   ]
-
-
 }
