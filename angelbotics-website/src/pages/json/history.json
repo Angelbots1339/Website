@@ -178,8 +178,8 @@
       "GithubCode": "https://github.com/Angelbots1339/2014-Robot",
       "RobotName": "Phoenix",
       "yearSummary": "AngelBotics attended the Utah Regional for the first time, where unfortunately the robot was literally torn in half during a brutal quarterfinals match. We made friends with our opponents (including 1619, Up-A-Creek Robotics) and rebuilt for Colorado. We won the Excellence in Engineering award and appeared in the quarterfinals at both events.",
-      "ThemeName": "",
-      "ThemeImagePath": "",
+      "ThemeName": "Star Trek",
+      "ThemeImagePath": "/images/history/2014/TrekBotics.png",
       "themeSummary": ""
     },
     {
@@ -194,8 +194,8 @@
       "GithubCode": "https://github.com/Angelbots1339/2013-Robot",
       "RobotName": "Murus Angelorum",
       "yearSummary": "A simplified strategy led to a much more effective robot on the field, and our second appearance in a semifinal. We learned a lot from studying how other teams designed and built their robots in the off-season.",
-      "ThemeName": "Star Trek",
-      "ThemeImagePath": "/images/history/2013/TrekBotics.png",
+      "ThemeName": "",
+      "ThemeImagePath": "",
       "themeSummary": ""
     },
     {
