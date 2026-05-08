@@ -1,6 +1,22 @@
 {
   "tabs": [
     {
+      "year": "2026",
+      "RobotImagePath": "",
+      "CadModelPath": "/images/history/2026/2026CAD.obj",
+      "CadMaterialPath": "/images/history/2026/2026CAD.mtl",
+      "GameDescription": "",
+      "GameName": "2026 Rebuilt",
+      "RevealVideo": "",
+      "GameReveal": "_fybREErgyM",
+      "RecapVideo": "",
+      "GithubCode": "https://github.com/Angelbots1339/2026Competition",
+      "RobotName": "Smokestack",
+      "ThemeName": "Trains",
+      "ThemeImagePath": "/images/history/2026/2026Logo.jpg",
+      "yearSummary": ""
+    },
+    {
       "year": "2025",
       "RobotImagePath": "/images/history/2025/Shortstop.jpg",
       "CadModelPath": "/images/history/2025/2025CAD.obj",
