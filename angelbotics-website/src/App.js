@@ -84,10 +84,10 @@ function App() {
                                     to={'resources'}>
                                 <Typography variant={"subtitle2"} sx={{m: 1}}>Resources</Typography>
                             </Button>
-                            <Button sx={{cursor: 'store'}} component={Link} variant="contained"
+                            {/* <Button sx={{cursor: 'store'}} component={Link} variant="contained"
                                     to={'store'}>
                                 <Typography variant={"subtitle2"} sx={{m: 1}}>store</Typography>
-                            </Button>
+                            </Button> */}
                         </ButtonGroup>
                     </Toolbar>
 
