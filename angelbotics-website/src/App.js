@@ -84,10 +84,10 @@ function App() {
                                     to={'resources'}>
                                 <Typography variant={"subtitle2"} sx={{m: 1}}>Resources</Typography>
                             </Button>
-                            <Button sx={{cursor: 'store'}} component={Link} variant="contained"
+                            {/* <Button sx={{cursor: 'store'}} component={Link} variant="contained"
                                     to={'store'}>
                                 <Typography variant={"subtitle2"} sx={{m: 1}}>store</Typography>
-                            </Button>
+                            </Button> */}
                         </ButtonGroup>
                     </Toolbar>
 
@@ -155,11 +155,11 @@ function App() {
                                 <Typography variant={"h6"} sx={{m: 1}}>Resources</Typography>
                             </ListItemButton>
                         </ListItem>
-                        <ListItem sx={{backgroundColor: currentPage === "/store" ? drawerHighlightColor : ''}}>
+                        {/* <ListItem sx={{backgroundColor: currentPage === "/store" ? drawerHighlightColor : ''}}>
                             <ListItemButton sx={{cursor: 'pointer'}} component={Link} to={'/resources'}>
                                 <Typography variant={"h6"} sx={{m: 1}}>Store</Typography>
                             </ListItemButton>
-                        </ListItem>
+                        </ListItem> */}
                     </List>
                 </Drawer>
 
