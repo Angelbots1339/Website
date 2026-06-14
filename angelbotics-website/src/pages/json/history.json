@@ -5,7 +5,7 @@
       "RobotImagePath": "",
       "CadModelPath": "/images/history/2026/2026CAD.obj",
       "CadMaterialPath": "/images/history/2026/2026CAD.mtl",
-      "GameDescription": "",
+      "GameDescription": "The 2026 game, Rebuilt, is about shooting foam balls, called fuel, into your team's hoop, which is called a hub. Your teams hub can be either inactive or active, dictating weither or not that hub can be scored into. At the end of the game, teams have the option to climb on their side's tower, giving them a large amount of points if successful.",
       "GameName": "2026 Rebuilt",
       "RevealVideo": "",
       "GameReveal": "_fybREErgyM",
@@ -14,7 +14,7 @@
       "RobotName": "Smokestack",
       "ThemeName": "Trains",
       "ThemeImagePath": "/images/history/2026/2026Logo.jpg",
-      "yearSummary": ""
+      "yearSummary": "This year we attended both the Pikes Peak regional, and the Colorado Regional. In Pikes Peak, we where the 8th ranked team in the qualification matches, being first pick of the 5th Alliance which ended up coming in 4th place. At Colorado, we where the 10th ranked team, letting us be captain of the 7th alliance which ended up also being fourth place. Other than that we won the Industrial Design Award because of our CAD subteam."
     },
     {
       "year": "2025",
@@ -48,7 +48,6 @@
       "ThemeName": "Outrun",
       "ThemeImagePath": "images/history/2024/OutrunLogo.png",
       "themeSummary": ""
-
     },
     {
       "year": "2023",
@@ -344,4 +343,3 @@
     "themeSummary": ""
   }
 }
-
