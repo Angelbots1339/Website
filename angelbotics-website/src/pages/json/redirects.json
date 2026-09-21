@@ -237,8 +237,12 @@
       "path": "wishlist"
     },
     {
-      "link": "https://www.youtube.com/@Angelbotics",
-      "path": "youtube"
+        "link": "https://www.youtube.com/@Angelbotics",
+        "path": "youtube"
+    },
+    {
+        "Link": "https://docs.google.com/forms/d/1hRqgbkcGCsiUfNIp-vFXICM7mIUljeOhnaCji6TGCf8",
+        "path": "RobotSafety"
     }
   ]
 }
