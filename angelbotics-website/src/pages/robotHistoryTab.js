@@ -1,11 +1,10 @@
 import {Box, Card, CircularProgress, Grid, Typography, useMediaQuery} from "@mui/material";
 import PropTypes from 'prop-types';
-import {Canvas} from "@react-three/fiber";
 import {Html, OrbitControls} from "@react-three/drei";
 import {Suspense, useRef} from "react";
 import * as THREE from "three";
-import {useLoader} from "@react-three/fiber";
-import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader";
 import {DDSLoader} from "three-stdlib";
 import {mainTheme} from "../theme";
