@@ -5,52 +5,16 @@
       "path": "asciinema"
     },
     {
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSeHr5foj49coiCRZtavNacKaWjSpOVdi7XHjT4BTOvNM021jg/viewform?usp=sf_link",
-      "path": "badge"
-    },
-    {
       "link": "https://calendar.google.com/calendar/embed?src=c_9157fac1ae373d2662806d04a6d76c998543bfd521b0b79bcdf92b09766c44ba%40group.calendar.google.com&ctz=America%2FDenver",
       "path": "calendar"
-    },
-    {
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSc-X_uilKmjvnluvtdzfPyIfIkv99kAYuisOAkuJvgTWo0efQ/viewform",
-      "path": "chipotle"
     },
     {
       "link": "https://www.coloradogives.org/organization/Angelbotics",
       "path": "COgives"
     },
     {
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSf7w-7n1AymzYP-c2kAxAOx3Czh3DWoYRmy4rzdZLuU0iSu5Q/viewform?usp=sf_link",
-      "path": "concerttee"
-    },
-    {
-      "link": "https://www.google.com",
-      "path": "google"
-    },
-    {
-      "link": "https://discord.gg/crs27pT88Y",
-      "path": "discord"
-    },
-    {
-      "link": "https://drive.google.com/a/angelbotics.org",
-      "path": "drive"
-    },
-    {
-      "link": "https://mail.google.com/a/angelbotics.org",
-      "path": "email"
-    },
-    {
-      "link": "mailto:parents@angelbotics.org",
-      "path": "emailparents"
-    },
-    {
       "link": "https://www.facebook.com/angelbotics",
       "path": "facebook"
-    },
-    {
-      "link": "https://my.firstinspires.org/JoinTeam/Welcome/a121598e-81a3-11ef-b894-00505699b848",
-      "path": "first"
     },
     {
       "link": "https://angelbotics.gitbook.io/angelbotics",
@@ -61,7 +25,7 @@
       "path": "github"
     },
     {
-      "link": "https://drive.google.com/file/d/1MguKGiVibQm_FE7W_SDAkbaCcLa99531/view?usp=sharing",
+      "link": "https://drive.google.com/file/d/1TViF470NI7nfBzVKCj5kKrDOSlEfDFqB/view?usp=sharing",
       "path": "handbook"
     },
     {
@@ -88,13 +52,6 @@
       "link": "https://www.linkedin.com/company/angelbotics/",
       "path": "linkedin"
     },
-    {
-      "link": "https://docs.google.com/document/d/e/2PACX-1vR3xoBy49IhEIUgBcEIfzk8tI7cM1uY9CFJpxiCAo5Gaho0btDJF4sDDD7wGtssdCScGOW31FzlEND1/pub",
-      "path": "lostcard"
-    },
-    {
-      "link": "https://youtu.be/xvFZjo5PgG0",
-      "path": "lostcarb"
     },
     {
       "link": "https://www.signupgenius.com/go/70A0C45ADAA2AA2F58-58715233-build#/",
@@ -109,20 +66,12 @@
       "path": "mentalhealth"
     },
     {
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfUd2cDW_xRX6g5yawcbRFC0MtCsoBfedv3qjfr0WJ2vCsm2w/viewform?usp=sf_link",
-      "path": "mentor"
-    },
-    {
       "link": "https://docs.google.com/spreadsheets/d/1PeQ04JWKaDbPeq76xbt_-MeNj5jmULGiS6HnE_0zNvo/edit?pli=1#gid=157903099",
       "path": "motors"
     },
     {
       "link": "https://cad.onshape.com/documents/eb206322e1adbbef03cba96b/w/d5013dec9fd3598427fdcb8c/e/806813cecd9df825f54006cf",
       "path": "cad"
-    },
-    {
-      "link": "https://drive.google.com/drive/folders/1vbIpwIWFldwxIB6FIBEXRdM12k1UYjmy?usp=share_link",
-      "path": "openalliance"
     },
     {
       "link": "https://docs.google.com/forms/d/e/1FAIpQLScpnR-txj6nhlFGO4swyOfZj0l0uT2qSdixqbw2KOrjPfaWBg/viewform?usp=sf_link",
@@ -133,48 +82,12 @@
       "path": "paypal"
     },
     {
-      "link": "https://angelbotics.1password.com/teamjoin/invitation/ECBUIGQE6VFMHFEYOWZN7MQ27Q",
-      "path": "password"
-    },
-    {
       "link": "https://forms.gle/Rm7YceSUhadk7C5C8",
       "path": "pitscout"
     },
     {
-      "link": "https://docs.google.com/spreadsheets/d/1r-_JCFTJJ3xo8wuXD2njelzR2rjaeJluOJEmjpmz9No/edit#gid=1268593795",
-      "path": "printsqueue"
-    },
-    {
-      "link": "https://forms.gle/WSKGSMXbJzpUGT2V8",
-      "path": "prints"
-    },
-    {
       "link": "https://www.reddit.com/user/angelbotics",
       "path": "reddit"
-    },
-    {
-      "link": "https://www.remind.com/join/nglbtcs",
-      "path": "remind"
-    },
-    {
-      "link": "https://www.remind.com/join/nglbtcs",
-      "path": "remindparents"
-    },
-    {
-      "link": "https://www.remind.com/join/angelbot",
-      "path": "remindstudents"
-    },
-    {
-      "link": "https://safesporttrained.org/#/curricula/b4da5e48-3a1a-4a10-9724-f7324eaf7206",
-      "path": "safesportfamily"
-    },
-    {
-      "link": "https://safesporttrained.org/#/curricula/e13f5965-7e12-4d40-9466-2b7fccae360e",
-      "path": "safesportmentor"
-    },
-    {
-      "link": "https://safesporttrained.org/#/curricula/f007c269-c2fa-4ffa-b455-c6461e013c89",
-      "path": "safesportstudent"
     },
     {
       "link": "https://frc2713.github.io/QRScout/",
@@ -189,16 +102,8 @@
       "path": "scoutschedule"
     },
     {
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfiA-MgmqdnRib02edBKfiVQ2dq_dSiLmQQ2qA5rw4qrvwKGw/viewform?usp=sf_link",
-      "path": "shirts"
-    },
-    {
       "link": "https://www.snapchat.com/add/angelbotics",
       "path": "snapchat"
-    },
-    {
-      "link": "https://angelbotics-1339.printify.me/",
-      "path": "store"
     },
     {
       "link": "https://docs.google.com/document/d/1ftm0IVs3P4fXHv0a7ut2oz7zvYfPmaL0JUvbG9m_I88/edit?tab=t.0",
@@ -211,14 +116,6 @@
     {
       "link": "https://www.tiktok.com/@angelbotics",
       "path": "tiktok"
-    },
-    {
-      "link": "https://trello.com/w/angelbotics",
-      "path": "trello"
-    },
-    {
-      "link": "https://trello.com/invite/angelbotics/ATTI276ce4a2c47b1b1a84220993990929d2BFF75341",
-      "path": "trelloinvite"
     },
     {
       "link": "https://twitch.tv/angelbotics",
