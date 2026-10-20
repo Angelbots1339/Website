@@ -2,24 +2,24 @@
   "mentors": [
     
     {
+    "name": "Kate",
+    "description": "Mz.K8 is an engineering teacher at East High School. They studied engineering at Colorado School of Mines and worked in oil and gas, telecommunications, and cyber security prior to becoming a teacher. This is their first year as a FIRST robotics mentor.",
+    "imagePath": "/images/supporters/KThis year we attended both the inaugural Pikes Peak Regional and the Denver(previously Colorado) Regional. At the Pikes Peak Regional we finished 8th in qualification matches, being first pick of the Alliance #5 and ended up placing 4th overall. At the Denver Regional we ranked 10th at the end of qualifications, which ended up letting us be captain of the 7th alliance and ending in fourth place yet again. During playoff of the Denver Regional, we won the Industrial Design Award for our redesign of Smokestack.ate.jpg"
+    },
+    {
       "name": "Santo",
-      "description": "Mr. Santo is a teacher at East High School.  He is a former Aerospace engineer but new to the robotics world.  This is his second year as a FIRST robotics mentor.",
+      "description": "Mr. Santo is a teacher at East High School.  He is a former Aerospace engineer but new to the robotics world.  This is his third year as a FIRST robotics mentor.",
       "imagePath": "/images/supporters/Santo.jpg"
     },
     {
       "name": "Nathan",
-      "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his third year as a mentor for Angelbotics",
+      "description": "Nathan is currently a test engineer at Medtronic. He has been volunteering at the FIRST Lego League and FIRST Tech Challenge competitions for over 15 years. This is his fourth year as a mentor for Angelbotics",
       "imagePath": "/images/supporters/Nathan.jpg"
     },
     {
       "name": "Garrett",
       "description": "Garrett is a manufacturing engineer for TriMas Life Sciences. He helps our team with manufacturing, strategy, and design. He has been with our team since 2022. ",
       "imagePath": "/images/supporters/Garrett.jpg"
-    },
-    {
-      "name": "Joel",
-      "description": "Joel (\"Mr.N\") has been teaching at East High School since 2001 and has been a lead mentor and Head Coach for team 1339 since it was founded in 2003. He currently teaches Engineering, and works with the team leadership.",
-      "imagePath": "/images/supporters/noble.JPG"
     },
     {
       "name": "Chad",
@@ -32,29 +32,9 @@
       "imagePath": "/images/supporters/Critter.jpg"
     },
     {
-      "name":"David",
-      "description":"David hss worked on software for satellites for many years and is now trying to keep up with the Angelbotics programming team. This is his 5th year helping wherever he can.",
-      "imagePath":"/images/supporters/David.jpg"
-    },
-    {
       "name":"Jeremy",
       "description":"Jeremy is a Electrical mentor. He helps wherever he is needed. He has worked for Comcast for 31 years in different roles. Current he is a deployment Engineer and builds deployments for 30 million subscribers",
       "imagePath":"/images/supporters/JeremyS.jpg"
-    },
-    {
-      "name":"Katy",
-      "description":"Katy is a mentor who brings more enthusiasm than technical expertise, but is delighted to be learning along with the team.  She helps out where needed and asks lots of questions.",
-      "imagePath":"/images/supporters/Katy.jpg"
-    },
-    {
-      "name":"Michelle",
-      "description":"Michelle watched her kids grow through Angelbotics so is mentoring now. She believes that it is a 4th place activity, and that hungry bellies can’t robot.",
-      "imagePath":"images/supporters/Michelle.jpg"
-    },
-    {
-      "name":"Thomas",
-      "description":"Thomas is a bioinformatics analyst with some programming exerience, trying to help the team wherever he can.",
-      "imagePath":"images/supporters/Thomas.png"
     },
     {
       "name": "Trevor",
