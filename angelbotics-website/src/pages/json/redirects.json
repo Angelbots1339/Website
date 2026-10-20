@@ -132,6 +132,10 @@
         "link": "https://www.youtube.com/@Angelbotics",
         "path": "youtube"
     },
+     {
+        "link": "https://my.firstinspires.org/JoinTeam/Welcome/3861767d-cc8a-11f1-a95e-00505699b848",
+        "path": "first"
+    },
     {
         "link": "https://docs.google.com/forms/d/1hRqgbkcGCsiUfNIp-vFXICM7mIUljeOhnaCji6TGCf8",
         "path": "RobotSafety"
