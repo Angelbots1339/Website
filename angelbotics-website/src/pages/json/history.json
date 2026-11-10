@@ -2,7 +2,7 @@
   "tabs": [
     {
       "year": "2026",
-      "RobotImagePath": "",
+      "RobotImagePath": "/images/history/2026/Smokestack.jpg",
       "CadModelPath": "/images/history/2026/2026CAD.obj",
       "CadMaterialPath": "/images/history/2026/2026CAD.mtl",
       "GameDescription": "The 2026 game, Rebuilt, was centered around is about shooting foam balls, called fuel, into your alliance's hub. Your alliance's hub can be either inactive or active, meaning teams have to be strategic about when they make their shots. At the end of the game, teams have the option to climb on their side's tower, resulting in additional points.",
