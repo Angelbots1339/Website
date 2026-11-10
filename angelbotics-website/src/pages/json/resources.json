@@ -44,7 +44,7 @@
     "steps":[
       {
         "name": "Form",
-        "text": "Fill out the application form and join our discord linked at the end",
+        "text": "Fill out the application form",
         "link": "https://angelbotics.org/join"
       },
       {
